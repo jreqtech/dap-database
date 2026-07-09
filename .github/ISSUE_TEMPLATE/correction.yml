@@ -1,0 +1,36 @@
+name: Correction
+description: Report incorrect or incomplete DAP data.
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: input
+    id: dap
+    attributes:
+      label: DAP brand/model
+      description: Include the variant if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current incorrect data
+    validations:
+      required: true
+  - type: textarea
+    id: corrected
+    attributes:
+      label: Corrected data
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source link
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+    validations:
+      required: false

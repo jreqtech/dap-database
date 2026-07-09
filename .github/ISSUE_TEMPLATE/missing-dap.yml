@@ -1,0 +1,41 @@
+name: Missing DAP
+description: Suggest a digital audio player to add.
+title: "Missing DAP: "
+labels: ["missing dap"]
+body:
+  - type: input
+    id: brand
+    attributes:
+      label: Brand
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model
+    validations:
+      required: true
+  - type: input
+    id: variant
+    attributes:
+      label: Variant
+    validations:
+      required: false
+  - type: input
+    id: official
+    attributes:
+      label: Official product link
+    validations:
+      required: false
+  - type: input
+    id: source
+    attributes:
+      label: Source link
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+    validations:
+      required: false
