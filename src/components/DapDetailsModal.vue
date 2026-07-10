@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted } from 'vue';
+import { computed, onBeforeUnmount, onMounted } from 'vue';
 import { ExternalLink, X } from 'lucide-vue-next';
-import type { Dap } from '../types/dap';
-import { formatBattery, formatBoolean, formatColors, formatPower, formatPrice, formatValue } from '../utils/formatters';
-import { getStatusBadgeMeta, imageUrlForDap } from '../utils/dapDisplay';
+import type { Dap, MixedSpecValue } from '../types/dap';
+import { formatBattery, formatColors, formatPower, formatPrice, formatValue, hasValue } from '../utils/formatters';
+import { getStatusBadgeMeta, getVerificationBadgeMeta, imageUrlForDap, isAndroidBased } from '../utils/dapDisplay';
 import DapPhoto from './DapPhoto.vue';
-import SpecChip from './SpecChip.vue';
-import VerificationBadge from './VerificationBadge.vue';
 
 const props = defineProps<{
   dap: Dap | null;
@@ -16,9 +14,147 @@ const emit = defineEmits<{
   close: [];
 }>();
 
+interface DetailRow {
+  label: string;
+  value: string;
+}
+
 function handleKeydown(event: KeyboardEvent) {
   if (event.key === 'Escape' && props.dap) emit('close');
 }
+
+function textValue(value: MixedSpecValue | boolean | undefined): string {
+  if (!hasValue(value)) return '';
+  return formatValue(value);
+}
+
+function listValue(values: string[] | null | undefined): string {
+  return values?.length ? formatColors(values) : '';
+}
+
+function gbValue(value: MixedSpecValue | undefined): string {
+  if (!hasValue(value)) return '';
+  if (typeof value === 'number') return `${value.toLocaleString('en-US')}GB`;
+  const raw = String(value).trim();
+  return /(?:gb|tb)$/i.test(raw) ? raw : `${raw}GB`;
+}
+
+function powerValue(power: MixedSpecValue | undefined, load: string): string {
+  if (!hasValue(power)) return '';
+  const formattedPower = formatPower(power);
+  return hasValue(load) ? `${formattedPower} @ ${load}` : formattedPower;
+}
+
+function addRow(rows: DetailRow[], label: string, value: string) {
+  if (value) rows.push({ label, value });
+}
+
+const summaryItems = computed(() => {
+  if (!props.dap) return [];
+  const dap = props.dap;
+  const items = [
+    hasValue(dap.releaseYear) ? formatValue(dap.releaseYear) : '',
+    hasValue(dap.msrpUsd) ? formatPrice(dap.msrpUsd) : '',
+    hasValue(dap.status) ? getStatusBadgeMeta(dap.status).label : '',
+    hasValue(dap.verificationStatus) ? getVerificationBadgeMeta(dap.verificationStatus).label : '',
+    hasValue(dap.os) ? (isAndroidBased(dap) ? 'Android' : 'Non-Android') : '',
+    dap.has44mm ? '4.4mm' : '',
+  ];
+  return items.filter(Boolean);
+});
+
+const coreRows = computed<DetailRow[]>(() => {
+  if (!props.dap) return [];
+  const dap = props.dap;
+  const rows: DetailRow[] = [
+    { label: 'Brand', value: dap.brand },
+    { label: 'Model', value: dap.model },
+  ];
+  addRow(rows, 'Variant', textValue(dap.variant));
+  addRow(rows, 'Year', textValue(dap.releaseYear));
+  addRow(rows, 'MSRP', hasValue(dap.msrpUsd) ? formatPrice(dap.msrpUsd) : '');
+  return rows;
+});
+
+const outputSummary = computed(() => {
+  if (!props.dap) return '';
+  const dap = props.dap;
+  const balancedType = dap.balancedOutputType.toLowerCase();
+  const outputs: string[] = [];
+  if (dap.has35mm) outputs.push('3.5mm');
+  if (dap.has25mm) outputs.push(balancedType.includes('2.5') ? '2.5mm balanced' : '2.5mm');
+  if (dap.has44mm) outputs.push(balancedType.includes('4.4') ? '4.4mm balanced' : '4.4mm');
+  if (dap.has635mm) outputs.push('6.35mm');
+  if (dap.lineOut) outputs.push('line out');
+  if (dap.coaxOut) outputs.push('coax');
+  if (dap.opticalOut) outputs.push('optical');
+  return outputs.join(', ');
+});
+
+const audioRows = computed<DetailRow[]>(() => {
+  if (!props.dap) return [];
+  const dap = props.dap;
+  const rows: DetailRow[] = [];
+  addRow(rows, 'DAC', textValue(dap.dac));
+  addRow(rows, 'Amp', textValue(dap.amp));
+  addRow(rows, 'Outputs', outputSummary.value);
+  addRow(rows, 'Balanced Output', textValue(dap.balancedOutputType));
+  addRow(rows, 'SE Power', powerValue(dap.sePowerMw, dap.sePowerLoad));
+  addRow(rows, 'Balanced Power', powerValue(dap.balPowerMw, dap.balPowerLoad));
+  return rows;
+});
+
+const hardwareRows = computed<DetailRow[]>(() => {
+  if (!props.dap) return [];
+  const dap = props.dap;
+  const rows: DetailRow[] = [];
+  addRow(rows, 'SoC', textValue(dap.soc));
+  addRow(rows, 'RAM', gbValue(dap.ramGb));
+  addRow(rows, 'OS', textValue(dap.os));
+  addRow(rows, 'Battery', hasValue(dap.batteryMah) ? formatBattery(dap.batteryMah) : '');
+  addRow(rows, 'Battery Life', textValue(dap.batteryLifeHours));
+  addRow(rows, 'Display', textValue(dap.displaySize));
+  addRow(rows, 'Weight', textValue(dap.weight));
+  addRow(rows, 'Dimensions', textValue(dap.dimensions));
+  addRow(rows, 'Storage', gbValue(dap.storageGb));
+  if (dap.microSd === true) {
+    addRow(rows, 'Expansion', hasValue(dap.storageExpansionMax) ? `microSD up to ${dap.storageExpansionMax}` : 'microSD');
+  }
+  addRow(rows, 'Colors', listValue(dap.colors));
+  return rows;
+});
+
+const connectivityRows = computed<DetailRow[]>(() => {
+  if (!props.dap) return [];
+  const dap = props.dap;
+  const rows: DetailRow[] = [];
+  if (dap.bluetooth === true) addRow(rows, 'Bluetooth', textValue(dap.bluetoothVersion) || 'Yes');
+  addRow(rows, 'Codecs', listValue(dap.bluetoothCodecs));
+  if (dap.wifi === true) addRow(rows, 'Wi-Fi', textValue(dap.wifiBands) || 'Yes');
+  if (dap.cellular === true) addRow(rows, 'Cellular', 'Yes');
+  if (dap.has4g === true) addRow(rows, '4G', 'Yes');
+  if (dap.has5g === true) addRow(rows, '5G', 'Yes');
+
+  const usbParts = [textValue(dap.usbPort)];
+  if (dap.usbDac === true) usbParts.push('USB DAC');
+  addRow(rows, 'USB', usbParts.filter(Boolean).join(', '));
+
+  const formats = [];
+  if (hasValue(dap.pcmMax)) formats.push(`PCM ${dap.pcmMax}`);
+  if (hasValue(dap.dsdMax)) formats.push(String(dap.dsdMax));
+  addRow(rows, 'Formats', formats.join(', '));
+
+  if (dap.mqa === true) addRow(rows, 'MQA', 'Yes');
+  addRow(rows, 'Streaming', listValue(dap.streamingServices));
+  return rows;
+});
+
+const sourceTypeLabel = computed(() => {
+  if (!props.dap) return '';
+  const sourceType = getVerificationBadgeMeta(props.dap.verificationStatus).label;
+  if (props.dap.sourceUrl) return `${sourceType} - Open source`;
+  return sourceType || 'Source not listed';
+});
 
 onMounted(() => {
   window.addEventListener('keydown', handleKeydown);
@@ -45,128 +181,89 @@ onBeforeUnmount(() => {
         </header>
 
         <div class="details-modal__body">
-          <aside class="details-photo-panel">
-            <DapPhoto :dap="dap" size="large" />
-            <a
-              v-if="dap.images[0]?.sourceUrl"
-              class="source-link"
-              :href="dap.images[0].sourceUrl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <ExternalLink :size="15" aria-hidden="true" />
-              <span>Image source</span>
-            </a>
-            <p v-else-if="imageUrlForDap(dap)" class="muted-block">Image source not listed.</p>
-          </aside>
+          <div v-if="summaryItems.length" class="details-summary" aria-label="DAP summary">
+            <span v-for="item in summaryItems" :key="item">{{ item }}</span>
+          </div>
+
+          <div class="details-top">
+            <aside class="details-photo-panel">
+              <DapPhoto :dap="dap" size="large" />
+              <a
+                v-if="dap.images[0]?.sourceUrl"
+                class="source-link"
+                :href="dap.images[0].sourceUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ExternalLink :size="15" aria-hidden="true" />
+                <span>Image source</span>
+              </a>
+              <p v-else-if="imageUrlForDap(dap)" class="muted-block">Image source not listed</p>
+            </aside>
+
+            <section class="details-section details-section--core">
+              <h3>Core Info</h3>
+              <dl class="spec-grid spec-grid--single">
+                <div v-for="row in coreRows" :key="row.label" class="spec-row">
+                  <dt class="spec-label">{{ row.label }}</dt>
+                  <dd class="spec-value">{{ row.value }}</dd>
+                </div>
+              </dl>
+            </section>
+          </div>
 
           <div class="details-sections">
-            <section class="details-section">
-              <h3>Core Info</h3>
-              <dl class="detail-list">
-                <div><dt>Brand</dt><dd>{{ dap.brand }}</dd></div>
-                <div><dt>Model</dt><dd>{{ dap.model }}</dd></div>
-                <div><dt>Year</dt><dd>{{ formatValue(dap.releaseYear) }}</dd></div>
-                <div><dt>MSRP</dt><dd>{{ formatPrice(dap.msrpUsd) }}</dd></div>
-                <div>
-                  <dt>Status</dt>
-                  <dd>
-                    <SpecChip
-                      :label="getStatusBadgeMeta(dap.status).label"
-                      :badge-class="getStatusBadgeMeta(dap.status).className"
-                      :title="getStatusBadgeMeta(dap.status).title"
-                    />
-                  </dd>
+
+            <section v-if="audioRows.length" class="details-section">
+              <h3>Audio</h3>
+              <dl class="spec-grid">
+                <div v-for="row in audioRows" :key="row.label" class="spec-row">
+                  <dt class="spec-label">{{ row.label }}</dt>
+                  <dd class="spec-value">{{ row.value }}</dd>
                 </div>
-                <div><dt>Verification</dt><dd><VerificationBadge :status="dap.verificationStatus" /></dd></div>
               </dl>
             </section>
 
-            <section class="details-section">
-              <h3>Audio Specs</h3>
-              <dl class="detail-list">
-                <div><dt>DAC</dt><dd>{{ formatValue(dap.dac) }}</dd></div>
-                <div><dt>Amp</dt><dd>{{ formatValue(dap.amp) }}</dd></div>
-                <div><dt>SE Power</dt><dd>{{ formatPower(dap.sePowerMw) }}</dd></div>
-                <div><dt>BAL Power</dt><dd>{{ formatPower(dap.balPowerMw) }}</dd></div>
-                <div><dt>SE Load</dt><dd>{{ formatValue(dap.sePowerLoad) }}</dd></div>
-                <div><dt>BAL Load</dt><dd>{{ formatValue(dap.balPowerLoad) }}</dd></div>
-                <div><dt>2.5mm</dt><dd>{{ formatBoolean(dap.has25mm) }}</dd></div>
-                <div><dt>3.5mm</dt><dd>{{ formatBoolean(dap.has35mm) }}</dd></div>
-                <div><dt>4.4mm</dt><dd>{{ formatBoolean(dap.has44mm) }}</dd></div>
-                <div><dt>6.35mm</dt><dd>{{ formatBoolean(dap.has635mm) }}</dd></div>
-                <div><dt>Balanced Type</dt><dd>{{ formatValue(dap.balancedOutputType) }}</dd></div>
-                <div><dt>Line Out</dt><dd>{{ formatBoolean(dap.lineOut) }}</dd></div>
-                <div><dt>Coax Out</dt><dd>{{ formatBoolean(dap.coaxOut) }}</dd></div>
-                <div><dt>Optical Out</dt><dd>{{ formatBoolean(dap.opticalOut) }}</dd></div>
-              </dl>
-            </section>
-
-            <section class="details-section">
+            <section v-if="hardwareRows.length" class="details-section">
               <h3>Hardware</h3>
-              <dl class="detail-list">
-                <div><dt>SoC</dt><dd>{{ formatValue(dap.soc) }}</dd></div>
-                <div><dt>RAM</dt><dd>{{ formatValue(dap.ramGb) }}</dd></div>
-                <div><dt>Battery</dt><dd>{{ formatBattery(dap.batteryMah) }}</dd></div>
-                <div><dt>Battery Life</dt><dd>{{ formatValue(dap.batteryLifeHours) }}</dd></div>
-                <div><dt>OS</dt><dd>{{ formatValue(dap.os) }}</dd></div>
-                <div><dt>Display</dt><dd>{{ formatValue(dap.displaySize) }}</dd></div>
-                <div><dt>Weight</dt><dd>{{ formatValue(dap.weight) }}</dd></div>
-                <div><dt>Dimensions</dt><dd>{{ formatValue(dap.dimensions) }}</dd></div>
+              <dl class="spec-grid">
+                <div v-for="row in hardwareRows" :key="row.label" class="spec-row">
+                  <dt class="spec-label">{{ row.label }}</dt>
+                  <dd class="spec-value">{{ row.value }}</dd>
+                </div>
+              </dl>
+            </section>
+
+            <section v-if="connectivityRows.length" class="details-section">
+              <h3>Connectivity</h3>
+              <dl class="spec-grid">
+                <div v-for="row in connectivityRows" :key="row.label" class="spec-row">
+                  <dt class="spec-label">{{ row.label }}</dt>
+                  <dd class="spec-value">{{ row.value }}</dd>
+                </div>
               </dl>
             </section>
 
             <section class="details-section">
-              <h3>Storage and Colors</h3>
-              <dl class="detail-list">
-                <div><dt>Storage</dt><dd>{{ formatValue(dap.storageGb) }}</dd></div>
-                <div><dt>microSD</dt><dd>{{ formatBoolean(dap.microSd) }}</dd></div>
-                <div><dt>Expansion Max</dt><dd>{{ formatValue(dap.storageExpansionMax) }}</dd></div>
-                <div><dt>Colors</dt><dd>{{ formatColors(dap.colors) }}</dd></div>
-              </dl>
-            </section>
-
-            <section class="details-section">
-              <h3>Connectivity and Formats</h3>
-              <dl class="detail-list">
-                <div><dt>Bluetooth</dt><dd>{{ formatBoolean(dap.bluetooth) }}</dd></div>
-                <div><dt>Bluetooth Version</dt><dd>{{ formatValue(dap.bluetoothVersion) }}</dd></div>
-                <div><dt>Bluetooth Codecs</dt><dd>{{ formatColors(dap.bluetoothCodecs) }}</dd></div>
-                <div><dt>Wi-Fi</dt><dd>{{ formatBoolean(dap.wifi) }}</dd></div>
-                <div><dt>Wi-Fi Bands</dt><dd>{{ formatValue(dap.wifiBands) }}</dd></div>
-                <div><dt>Cellular</dt><dd>{{ formatBoolean(dap.cellular) }}</dd></div>
-                <div><dt>4G</dt><dd>{{ formatBoolean(dap.has4g) }}</dd></div>
-                <div><dt>5G</dt><dd>{{ formatBoolean(dap.has5g) }}</dd></div>
-                <div><dt>USB DAC</dt><dd>{{ formatBoolean(dap.usbDac) }}</dd></div>
-                <div><dt>USB Port</dt><dd>{{ formatValue(dap.usbPort) }}</dd></div>
-                <div><dt>PCM Max</dt><dd>{{ formatValue(dap.pcmMax) }}</dd></div>
-                <div><dt>DSD Max</dt><dd>{{ formatValue(dap.dsdMax) }}</dd></div>
-                <div><dt>MQA</dt><dd>{{ formatBoolean(dap.mqa) }}</dd></div>
-                <div><dt>Streaming</dt><dd>{{ formatColors(dap.streamingServices) }}</dd></div>
-              </dl>
-            </section>
-
-            <section class="details-section">
-              <h3>Verification and Source</h3>
-              <dl class="detail-list">
-                <div><dt>Source Type</dt><dd>{{ formatValue(dap.sourceType) }}</dd></div>
-                <div>
-                  <dt>Source URL</dt>
-                  <dd>
+              <h3>Source</h3>
+              <dl class="spec-grid spec-grid--single">
+                <div class="spec-row">
+                  <dt class="spec-label">Source</dt>
+                  <dd class="spec-value">
                     <a v-if="dap.sourceUrl" class="source-link" :href="dap.sourceUrl" target="_blank" rel="noopener noreferrer">
                       <ExternalLink :size="15" aria-hidden="true" />
-                      <span>Open source</span>
+                      <span>{{ sourceTypeLabel }}</span>
                     </a>
-                    <span v-else>Unknown</span>
+                    <span v-else>{{ sourceTypeLabel }}</span>
                   </dd>
                 </div>
               </dl>
             </section>
 
-            <section class="details-section">
-              <h3>Notes</h3>
+            <details class="details-section notes-panel">
+              <summary>Notes and source details</summary>
               <p class="notes-text">{{ formatValue(dap.notes) }}</p>
-            </section>
+            </details>
           </div>
         </div>
       </section>

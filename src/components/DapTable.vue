@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ArrowDown, ArrowUp, ChevronsUpDown, Info, Pin, PinOff } from 'lucide-vue-next';
+import { ArrowDown, ArrowUp, ChevronsUpDown, Info } from 'lucide-vue-next';
 import type { Dap, SortKey, SortState } from '../types/dap';
 import { formatBattery, formatPrice, formatValue } from '../utils/formatters';
 import { getStatusBadgeMeta, getVerificationBadgeMeta } from '../utils/dapDisplay';
@@ -8,13 +8,11 @@ import SpecChip from './SpecChip.vue';
 
 defineProps<{
   daps: Dap[];
-  pinnedIds: Set<string>;
   sortState: SortState;
 }>();
 
 const emit = defineEmits<{
   sort: [key: SortKey];
-  pin: [id: string];
   details: [dap: Dap];
 }>();
 
@@ -36,7 +34,6 @@ function sortLabel(key: SortKey, sortState: SortState): string {
   <div class="table-wrap">
     <table class="dap-table">
       <colgroup>
-        <col class="col-compare" />
         <col class="col-photo" />
         <col class="col-brand" />
         <col class="col-model" />
@@ -52,8 +49,7 @@ function sortLabel(key: SortKey, sortState: SortState): string {
       </colgroup>
       <thead>
         <tr>
-          <th class="pin-col"><span class="compact-th">Cmp</span></th>
-          <th class="photo-col"><span class="compact-th">Img</span></th>
+          <th class="photo-col"><span class="compact-th">Image</span></th>
           <th
             v-for="column in sortableColumns"
             :key="column.key"
@@ -101,7 +97,7 @@ function sortLabel(key: SortKey, sortState: SortState): string {
               :aria-label="`${sortLabel('verificationStatus', sortState)} by Verification`"
               @click="emit('sort', 'verificationStatus')"
             >
-              <span>Verify</span>
+              <span>Source</span>
               <span class="sort-glyph">
                 <ArrowUp v-if="sortState.key === 'verificationStatus' && sortState.direction === 'asc'" :size="14" aria-hidden="true" />
                 <ArrowDown v-else-if="sortState.key === 'verificationStatus'" :size="14" aria-hidden="true" />
@@ -113,20 +109,7 @@ function sortLabel(key: SortKey, sortState: SortState): string {
         </tr>
       </thead>
       <tbody>
-        <tr v-for="dap in daps" :key="dap.id" :class="{ 'is-pinned-row': pinnedIds.has(dap.id) }">
-          <td class="pin-col">
-            <button
-              class="btn btn-secondary btn-sm btn-icon pin-button"
-              :class="{ 'is-pinned': pinnedIds.has(dap.id) }"
-              type="button"
-              :aria-label="`${pinnedIds.has(dap.id) ? 'Remove from comparison' : 'Add to comparison'} ${dap.brand} ${dap.model}`"
-              :title="`${pinnedIds.has(dap.id) ? 'Remove from comparison' : 'Add to comparison'} ${dap.brand} ${dap.model}`"
-              @click="emit('pin', dap.id)"
-            >
-              <PinOff v-if="pinnedIds.has(dap.id)" :size="15" aria-hidden="true" />
-              <Pin v-else :size="15" aria-hidden="true" />
-            </button>
-          </td>
+        <tr v-for="dap in daps" :key="dap.id">
           <td class="photo-col">
             <button class="photo-button" type="button" @click="emit('details', dap)">
               <DapPhoto :dap="dap" size="thumb" />

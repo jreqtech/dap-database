@@ -40,6 +40,10 @@ A community-friendly digital audio player database with specs, sources, and vali
 - Partial - Official: official page exists, but full specs are not readable.
 - Needs Source: source still missing.
 
+## Source/data notes
+
+"Rows with sources" means each row has at least one source link. Verification quality may still vary by model. Official, Review, Web, Partial, and Unverified labels indicate source confidence.
+
 ## Data Workflow
 
 - Edit `src/data/daps.csv`.

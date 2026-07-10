@@ -9,13 +9,13 @@ export function hasValue(value: MixedSpecValue | boolean | undefined): boolean {
 }
 
 export function formatValue(value: MixedSpecValue | boolean | undefined): string {
-  if (value === null || value === undefined || value === '') return 'Unknown';
+  if (value === null || value === undefined || value === '') return '-';
   if (typeof value === 'boolean') return value ? 'Yes' : 'No';
   return String(value);
 }
 
 export function formatBoolean(value: boolean | null | undefined): string {
-  if (value === null || value === undefined) return 'Unknown';
+  if (value === null || value === undefined) return '-';
   return value ? 'Yes' : 'No';
 }
 
