@@ -1037,6 +1037,12 @@ h1 {
   padding: 0;
 }
 
+.photo-button:hover,
+.dap-card__button:hover,
+.details-row-button:hover {
+  text-decoration: none;
+}
+
 .muted-block,
 .variant-text {
   display: block;

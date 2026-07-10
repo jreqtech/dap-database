@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue';
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import {
   Grid2X2,
   Headphones,
@@ -19,11 +19,15 @@ import SortControl from './components/SortControl.vue';
 import type { Dap, DapFilters as DapFiltersType, SortKey, SortState } from './types/dap';
 import { isAndroidBased } from './utils/dapDisplay';
 import { filterDaps, numberFromMixed, sortDaps, uniqueSorted } from './utils/filters';
+import { dapSlug } from './utils/slugs';
 
 type ViewMode = 'cards' | 'table';
 
 const daps = rawDaps as Dap[];
 const viewStorageKey = 'dap-database-view-mode-v2';
+const detailHashPrefix = '#/dap/';
+const defaultDocumentTitle = 'DAP Database - Digital Audio Player Specs and Sources';
+const defaultMetaDescription = 'A searchable database of digital audio players with specs, source links, verification status, and filters.';
 const socialIcons = {
   github: siGithub.path,
   blogger: siBlogger.path,
@@ -104,6 +108,7 @@ const yearBounds = computed(() => {
   return { min: Math.min(...years, currentYear), max: currentYear };
 });
 const visibleDaps = computed(() => sortDaps(filterDaps(daps, filters.value), sortState.value));
+const dapBySlug = computed(() => new Map(daps.map((dap) => [dapSlug(dap), dap])));
 const sourcedCount = computed(() => daps.filter((dap) => !dap.verificationStatus.toLowerCase().includes('needs source')).length);
 const androidCount = computed(() => daps.filter(isAndroidBased).length);
 const balancedCount = computed(() => daps.filter((dap) => dap.has44mm).length);
@@ -179,6 +184,37 @@ function removeFilter(key: keyof DapFiltersType) {
   };
 }
 
+function syncSelectedDapWithHash() {
+  if (!window.location.hash.startsWith(detailHashPrefix)) {
+    selectedDap.value = null;
+    return;
+  }
+
+  const slug = decodeURIComponent(window.location.hash.slice(detailHashPrefix.length));
+  selectedDap.value = dapBySlug.value.get(slug) ?? null;
+}
+
+function closeDapDetails() {
+  selectedDap.value = null;
+  if (window.location.hash.startsWith(detailHashPrefix)) {
+    window.history.pushState('', document.title, `${window.location.pathname}${window.location.search}`);
+  }
+}
+
+function dapDisplayName(dap: Dap): string {
+  return [dap.brand, dap.model, dap.variant].filter(Boolean).join(' ');
+}
+
+function updatePageMeta(dap: Dap | null) {
+  document.title = dap ? `${dapDisplayName(dap)} Specs - DAP Database` : defaultDocumentTitle;
+  const metaDescription = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+  if (!metaDescription) return;
+
+  metaDescription.content = dap
+    ? `${dapDisplayName(dap)} digital audio player specs, source link, verification status, and filters in DAP Database.`
+    : defaultMetaDescription;
+}
+
 function toggleMobileFilters() {
   showMobileFilters.value = !showMobileFilters.value;
 }
@@ -221,10 +257,21 @@ onMounted(() => {
   } else if (window.matchMedia('(max-width: 540px)').matches) {
     viewMode.value = 'cards';
   }
+
+  syncSelectedDapWithHash();
+  window.addEventListener('hashchange', syncSelectedDapWithHash);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('hashchange', syncSelectedDapWithHash);
 });
 
 watch(viewMode, (mode) => {
   localStorage.setItem(viewStorageKey, mode);
+});
+
+watch(selectedDap, (dap) => {
+  updatePageMeta(dap);
 });
 
 </script>
@@ -300,7 +347,7 @@ watch(viewMode, (mode) => {
         <header class="catalog-hero">
           <div>
             <h1>DAP Database</h1>
-            <p class="intro">Specs, sources, verification, and comparison for digital audio players.</p>
+            <p class="intro">Specs, sources, and verification for digital audio players.</p>
             <nav class="header-actions" aria-label="Contribution links">
               <a
                 class="btn btn-primary"
@@ -382,7 +429,6 @@ watch(viewMode, (mode) => {
           :daps="visibleDaps"
           :sort-state="sortState"
           @sort="cycleSort"
-          @details="selectedDap = $event"
         />
 
         <section v-else class="card-grid" aria-label="DAP cards">
@@ -390,7 +436,6 @@ watch(viewMode, (mode) => {
             v-for="dap in visibleDaps"
             :key="dap.id"
             :dap="dap"
-            @details="selectedDap = $event"
           />
         </section>
 
@@ -403,7 +448,7 @@ watch(viewMode, (mode) => {
     </div>
   </main>
 
-  <DapDetailsModal :dap="selectedDap" @close="selectedDap = null" />
+  <DapDetailsModal :dap="selectedDap" @close="closeDapDetails" />
 
   <footer class="site-footer">
     <div class="footer-copy">

@@ -3,6 +3,7 @@ import { ArrowDown, ArrowUp, ChevronsUpDown, Info } from 'lucide-vue-next';
 import type { Dap, SortKey, SortState } from '../types/dap';
 import { formatBattery, formatPrice, formatValue } from '../utils/formatters';
 import { getStatusBadgeMeta, getVerificationBadgeMeta } from '../utils/dapDisplay';
+import { dapDetailHash } from '../utils/slugs';
 import DapPhoto from './DapPhoto.vue';
 import SpecChip from './SpecChip.vue';
 
@@ -13,7 +14,6 @@ defineProps<{
 
 const emit = defineEmits<{
   sort: [key: SortKey];
-  details: [dap: Dap];
 }>();
 
 const sortableColumns: Array<{ key: SortKey; label: string; align?: 'right' }> = [
@@ -111,13 +111,13 @@ function sortLabel(key: SortKey, sortState: SortState): string {
       <tbody>
         <tr v-for="dap in daps" :key="dap.id">
           <td class="photo-col">
-            <button class="photo-button" type="button" @click="emit('details', dap)">
+            <a class="photo-button" :href="dapDetailHash(dap)">
               <DapPhoto :dap="dap" size="thumb" />
-            </button>
+            </a>
           </td>
           <td>{{ dap.brand }}</td>
           <td>
-            <button class="link-button" type="button" @click="emit('details', dap)">{{ dap.model }}</button>
+            <a class="link-button" :href="dapDetailHash(dap)">{{ dap.model }}</a>
             <span v-if="dap.variant" class="muted-block">{{ dap.variant }}</span>
           </td>
           <td class="is-numeric">{{ formatValue(dap.releaseYear) }}</td>
@@ -141,15 +141,14 @@ function sortLabel(key: SortKey, sortState: SortState): string {
             />
           </td>
           <td class="actions-col">
-            <button
+            <a
               class="btn btn-primary-soft btn-sm btn-icon details-row-button"
-              type="button"
+              :href="dapDetailHash(dap)"
               :aria-label="`Open details for ${dap.brand} ${dap.model}`"
               :title="`Open details for ${dap.brand} ${dap.model}`"
-              @click="emit('details', dap)"
             >
               <Info :size="16" aria-hidden="true" />
-            </button>
+            </a>
           </td>
         </tr>
       </tbody>

@@ -2,14 +2,11 @@
 import type { Dap } from '../types/dap';
 import { formatPrice, formatValue, hasValue } from '../utils/formatters';
 import { getStatusBadgeMeta, getVerificationBadgeMeta, isAndroidBased } from '../utils/dapDisplay';
+import { dapDetailHash } from '../utils/slugs';
 import DapPhoto from './DapPhoto.vue';
 
 defineProps<{
   dap: Dap;
-}>();
-
-defineEmits<{
-  details: [dap: Dap];
 }>();
 
 const isDiscontinued = (status: string) => status.toLowerCase().includes('discontinued');
@@ -17,11 +14,10 @@ const isDiscontinued = (status: string) => status.toLowerCase().includes('discon
 
 <template>
   <article class="dap-card">
-    <button
+    <a
       class="dap-card__button"
-      type="button"
+      :href="dapDetailHash(dap)"
       :aria-label="`Open details for ${dap.brand} ${dap.model}`"
-      @click="$emit('details', dap)"
     >
       <span class="dap-card__media">
         <DapPhoto :dap="dap" size="card" />
@@ -67,6 +63,6 @@ const isDiscontinued = (status: string) => status.toLowerCase().includes('discon
           </span>
         </span>
       </span>
-    </button>
+    </a>
   </article>
 </template>
