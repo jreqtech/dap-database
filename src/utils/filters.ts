@@ -69,6 +69,30 @@ function compareMixed(a: MixedSpecValue, b: MixedSpecValue, direction: 'asc' | '
   return direction === 'asc' ? textResult : -textResult;
 }
 
+function statusRank(status: string): number {
+  const normalized = status.toLowerCase();
+  if (normalized === 'active') return 0;
+  if (normalized === 'upcoming') return 1;
+  if (normalized === 'discontinued') return 2;
+  return 3;
+}
+
+function compareDefaultOrder(a: Dap, b: Dap): number {
+  const statusResult = statusRank(a.status) - statusRank(b.status);
+  if (statusResult) return statusResult;
+
+  const yearResult = compareMixed(a.releaseYear, b.releaseYear, 'desc');
+  if (yearResult) return yearResult;
+
+  const brandResult = compareText(a.brand, b.brand);
+  if (brandResult) return brandResult;
+
+  const modelResult = compareText(a.model, b.model);
+  if (modelResult) return modelResult;
+
+  return compareText(a.variant, b.variant);
+}
+
 export function filterDaps(daps: Dap[], filters: DapFilters): Dap[] {
   const term = filters.search.trim().toLowerCase();
   const priceMin = numberFromFilter(filters.priceMin);
@@ -120,6 +144,8 @@ export function sortDaps(daps: Dap[], sortState: SortState): Dap[] {
 
   sorted.sort((a, b) => {
     switch (sortState.key) {
+      case 'default':
+        return compareDefaultOrder(a, b);
       case 'brand':
         return sortState.direction === 'asc'
           ? compareText(`${a.brand} ${a.model}`, `${b.brand} ${b.model}`)

@@ -95,6 +95,7 @@ export interface DapFilters {
 }
 
 export type SortKey =
+  | 'default'
   | 'brand'
   | 'model'
   | 'releaseYear'

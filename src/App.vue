@@ -50,7 +50,8 @@ const filters = ref<DapFiltersType>({
   androidOnly: false,
 });
 
-const sortState = ref<SortState>({ key: null, direction: 'asc' });
+const defaultSortState: SortState = { key: 'default', direction: 'asc' };
+const sortState = ref<SortState>({ ...defaultSortState });
 const pinnedIds = ref(new Set<string>());
 const viewMode = ref<ViewMode>('table');
 const selectedDap = ref<Dap | null>(null);
@@ -97,7 +98,7 @@ function cycleSort(key: SortKey) {
     return;
   }
 
-  sortState.value = { key: null, direction: 'asc' };
+  sortState.value = { ...defaultSortState };
 }
 
 function togglePinned(id: string) {

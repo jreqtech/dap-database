@@ -10,6 +10,7 @@ defineEmits<{
 }>();
 
 const options: Array<{ value: string; label: string; state: SortState }> = [
+  { value: 'default:asc', label: 'Newest', state: { key: 'default', direction: 'asc' } },
   { value: 'none', label: 'Original order', state: { key: null, direction: 'asc' } },
   { value: 'brand:asc', label: 'Brand A-Z', state: { key: 'brand', direction: 'asc' } },
   { value: 'brand:desc', label: 'Brand Z-A', state: { key: 'brand', direction: 'desc' } },
