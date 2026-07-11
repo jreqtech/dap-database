@@ -1,10 +1,10 @@
 # DAP Database Roadmap
 
-This is a working list of DAP models planned for future addition.
+This roadmap tracks source-backed DAP model additions planned for the public DAP Database. It is intentionally prioritized instead of being a complete wish list.
 
-The database source of truth is `src/data/daps.csv`; `src/data/daps.json` is generated from it. Do not use this roadmap as a complete list of existing rows.
+The database source of truth is `src/data/daps.csv`; `src/data/daps.json` is generated from it. Do not use this roadmap as a list of existing rows. Before adding any model, check the CSV first to avoid duplicates.
 
-Inclusion depends on available sources and whether the device fits the DAP Database scope.
+The project is already suitable for public beta. More rows are useful, but completeness should be driven by major historical gaps and user requests rather than chasing every obscure model before launch.
 
 ## Scope
 
@@ -37,6 +37,23 @@ If official sources are unavailable, add the row only when at least two reliable
 If only one secondary source is available, the row may be added as Partial or Unverified, with uncertain fields left blank.
 
 Do not guess specs from memory.
+
+## Review Link Rules
+
+Review links are optional and separate from spec sources.
+
+Currently accepted review-link sources:
+
+- Headfonics
+- Headfonia
+- Twister6
+
+Rules:
+
+- Use exact model or exact variant matches only.
+- Do not use review links as proof for unrelated specs unless the review is also named in Notes as a secondary source.
+- Keep review links out of source, buy, and affiliate fields.
+- Use `Label|URL; Label|URL` format.
 
 ## Variant Rules
 
@@ -73,9 +90,78 @@ Long term, the CSV should include a dedicated aliases column so search can match
 
 Until an aliases column exists, aliases may be documented in Notes, but they should not create duplicate model rows.
 
-## Planned Additions
+## Priority 1: Major Historical Gaps
 
-These are candidates for future source-backed rows. Before adding any row, check `src/data/daps.csv` first to avoid duplicates.
+These should be filled before spending time on obscure long-tail models.
+
+### Astell&Kern Core History
+
+This is the most visible remaining gap. The database has good modern Astell&Kern coverage, but several important historical models are still missing.
+
+- Astell&Kern A&norma SR15
+- Astell&Kern A&norma SR25
+- Astell&Kern A&norma SR25 MKII
+- Astell&Kern A&futura SE100
+- Astell&Kern A&futura SE200
+- Astell&Kern A&ultima SP1000
+- Astell&Kern A&ultima SP1000M
+- Astell&Kern A&ultima SP2000
+- Astell&Kern A&ultima SP2000T
+- Astell&Kern KANN
+- Astell&Kern KANN Cube
+- Astell&Kern KANN Alpha
+- Astell&Kern SA700
+- Astell&Kern AK70
+- Astell&Kern AK70 MKII
+- Astell&Kern AK Jr
+
+Later Astell&Kern pass:
+
+- Astell&Kern A&futura SE180
+- Astell&Kern A&futura SE300
+- Astell&Kern A&futura SE300 Titan
+
+Variant note:
+
+Astell&Kern often has limited material/color editions. Do not add those unless specs, chassis material, or major hardware meaningfully differ.
+
+### iBasso MAX and Sony ZX
+
+These are historically important or commonly searched models that should be handled carefully.
+
+- iBasso DX220 MAX
+- iBasso DX300 MAX
+- iBasso DX320 MAX Ti
+- Sony NW-ZX300
+- Sony NW-ZX500 / NW-ZX505
+
+Variant note:
+
+Sony model numbers often represent region/storage variants. Avoid duplicate rows unless specs differ. For iBasso MAX models, do not merge specs into the non-MAX rows.
+
+### FiiO X-Series and Early M-Series
+
+FiiO legacy coverage is important because these models are common used-market references.
+
+- FiiO M3
+- FiiO M3K
+- FiiO M5
+- FiiO X1
+- FiiO X1 II
+- FiiO X3
+- FiiO X3 II
+- FiiO X3 III
+- FiiO X5
+- FiiO X5 II
+- FiiO X7
+
+Variant note:
+
+Skip Stainless Steel, color, and bundle editions unless specs differ.
+
+## Priority 2: Useful Historical Coverage
+
+These are valid additions, but they should come after the major-brand gaps above.
 
 ### Cowon / Plenue
 
@@ -107,77 +193,7 @@ Variant note:
 
 Watch for regional naming and storage variants.
 
-### Sony Walkman
-
-- Sony NW-A40 Series
-- Sony NW-A100 Series
-- Sony NW-ZX300
-- Sony NW-ZX500 / NW-ZX505
-
-Variant note:
-
-Sony model numbers often represent region/storage variants. Avoid duplicate rows unless specs differ.
-
-### FiiO
-
-- FiiO M3
-- FiiO M3K
-- FiiO M5
-- FiiO X1
-- FiiO X1 II
-- FiiO X3
-- FiiO X3 II
-- FiiO X3 III
-- FiiO X5
-- FiiO X5 II
-- FiiO X7
-
-Variant note:
-
-FiiO M11 Pro is tracked separately from M11. Skip Stainless Steel, color, and bundle editions unless specs differ.
-
-### Astell&Kern
-
-- Astell&Kern A&norma SR15
-- Astell&Kern A&norma SR25
-- Astell&Kern A&norma SR25 MKII
-- Astell&Kern A&futura SE100
-- Astell&Kern A&futura SE180
-- Astell&Kern A&futura SE200
-- Astell&Kern A&futura SE300
-- Astell&Kern A&futura SE300 Titan
-- Astell&Kern A&ultima SP1000
-- Astell&Kern A&ultima SP1000M
-- Astell&Kern A&ultima SP2000
-- Astell&Kern A&ultima SP2000T
-- Astell&Kern KANN
-- Astell&Kern KANN Cube
-- Astell&Kern KANN Alpha
-- Astell&Kern SA700
-- Astell&Kern AK70
-- Astell&Kern AK70 MKII
-- Astell&Kern AK Jr
-
-Variant note:
-
-Astell&Kern often has limited material/color editions. Do not add those unless specs, chassis material, or major hardware meaningfully differ.
-
-### iBasso
-
-- iBasso DX50
-- iBasso DX80
-- iBasso DX90
-- iBasso DX120
-- iBasso DX150
-- iBasso DX220 MAX
-- iBasso DX300 MAX
-- iBasso DX320 MAX Ti
-
-Variant note:
-
-For modular iBasso players, the base row should note stock amp module. Add separate variant rows only if a model was officially sold with a distinct stock module/configuration.
-
-### Shanling
+### Older Shanling
 
 - Shanling M1
 - Shanling M2
@@ -193,6 +209,10 @@ For modular iBasso players, the base row should note stock amp module. Add separ
 Naming note:
 
 Confirm whether `M6 Pro 21` and `M6 Pro 2021` refer to the same model before adding. Do not duplicate.
+
+## Priority 3: Add by Request or When Sources Are Easy
+
+These fit the broader DAP scope, but they should not block launch or higher-priority historical gaps.
 
 ### Other Modern / Relevant DAPs
 
@@ -234,3 +254,14 @@ Some HIFIMAN and Colorfly models may need extra source checking because older pr
 Variant note:
 
 Budget DAPs often have inconsistent listings, relabels, and silent revisions. Add only when sources are clear enough. Avoid duplicate rows for obvious rebrands unless there is enough evidence that they are sold as meaningfully different models.
+
+## Launch Guidance
+
+For public beta, prioritize:
+
+1. Correct existing rows over adding more rows.
+2. Major Astell&Kern, iBasso MAX, Sony ZX, and FiiO historical gaps.
+3. User-requested missing models.
+4. Long-tail budget or obscure models only when sources are clear.
+
+Avoid implying the database is complete. Use language such as "public beta", "source-backed where possible", and "missing model requests welcome."
