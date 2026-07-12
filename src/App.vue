@@ -575,8 +575,8 @@ watch([filters, sortState], resetCardLimit, { deep: true });
         >
           Report a correction
         </a>
-        <a href="https://github.com/jreqtech/dap-database/blob/main/docs/source-data-notes.md" target="_blank" rel="noopener noreferrer">
-          Source/data notes
+        <a href="https://github.com/jreqtech/dap-database/issues/new" target="_blank" rel="noopener noreferrer">
+          Request a feature
         </a>
         <a href="https://github.com/jreqtech/dap-database/blob/main/ROADMAP.md" target="_blank" rel="noopener noreferrer">
           Roadmap
