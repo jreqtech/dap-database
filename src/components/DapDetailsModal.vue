@@ -2,8 +2,8 @@
 import { computed, onBeforeUnmount, onMounted } from 'vue';
 import { ChevronLeft, ChevronRight, ExternalLink, X } from 'lucide-vue-next';
 import type { Dap, MixedSpecValue } from '../types/dap';
-import { formatBattery, formatColors, formatPower, formatPrice, formatValue, hasValue } from '../utils/formatters';
-import { getStatusBadgeMeta, getVerificationBadgeMeta, imageUrlForDap } from '../utils/dapDisplay';
+import { formatBattery, formatColors, formatCompactPrice, formatPower, formatValue, hasValue } from '../utils/formatters';
+import { getStatusBadgeMeta, getVerificationBadgeMeta } from '../utils/dapDisplay';
 import DapPhoto from './DapPhoto.vue';
 
 const props = defineProps<{
@@ -62,16 +62,13 @@ function addRow(rows: DetailRow[], label: string, value: string) {
   if (value) rows.push({ label, value });
 }
 
-const coreRows = computed<DetailRow[]>(() => {
+const summaryRows = computed<DetailRow[]>(() => {
   if (!props.dap) return [];
   const dap = props.dap;
-  const rows: DetailRow[] = [
-    { label: 'Brand', value: dap.brand },
-    { label: 'Model', value: dap.model },
-  ];
-  addRow(rows, 'Variant', textValue(dap.variant));
+  const rows: DetailRow[] = [];
   addRow(rows, 'Year', textValue(dap.releaseYear));
-  addRow(rows, 'MSRP', hasValue(dap.msrpUsd) ? formatPrice(dap.msrpUsd) : '');
+  addRow(rows, 'MSRP', hasValue(dap.msrpUsd) ? formatCompactPrice(dap.msrpUsd) : '');
+  addRow(rows, 'Source Confidence', hasValue(dap.verificationStatus) ? getVerificationBadgeMeta(dap.verificationStatus).label : '');
   return rows;
 });
 
@@ -236,42 +233,27 @@ onBeforeUnmount(() => {
           <div class="details-top">
             <aside class="details-photo-panel">
               <DapPhoto :dap="dap" size="large" />
-              <a
-                v-if="dap.images[0]?.sourceUrl"
-                class="source-link"
-                :href="dap.images[0].sourceUrl"
-                target="_blank"
-                :rel="referenceLinkRel"
-              >
-                <ExternalLink :size="15" aria-hidden="true" />
-                <span>Image source</span>
-              </a>
-              <p v-else-if="imageUrlForDap(dap)" class="muted-block">Image source not listed</p>
             </aside>
 
             <section class="details-section details-section--core">
-              <h3>Core Info</h3>
+              <h3>Summary</h3>
               <dl class="spec-grid spec-grid--single">
-                <div v-for="row in coreRows" :key="row.label" class="spec-row">
+                <div v-for="row in summaryRows" :key="row.label" class="spec-row">
                   <dt class="spec-label">{{ row.label }}</dt>
                   <dd class="spec-value">{{ row.value }}</dd>
                 </div>
               </dl>
-              <dl v-if="hasReviewInfo" class="inline-review-block spec-grid spec-grid--single">
-                <div class="spec-row">
-                  <dt class="spec-label">Reviews</dt>
-                  <dd class="spec-value">
-                    <ul v-if="dap.reviewLinks.length" class="buy-link-list">
-                      <li v-for="link in dap.reviewLinks" :key="link.url">
-                        <a class="source-link" :href="link.url" target="_blank" :rel="referenceLinkRel">
-                          <ExternalLink :size="15" aria-hidden="true" />
-                          <span>{{ link.label }}</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </dd>
-                </div>
-              </dl>
+              <div v-if="hasReviewInfo" class="summary-review-section">
+                <h4>Reviews</h4>
+                <ul class="review-list">
+                  <li v-for="link in dap.reviewLinks" :key="link.url">
+                    <a class="source-link" :href="link.url" target="_blank" :rel="referenceLinkRel">
+                      <ExternalLink :size="15" aria-hidden="true" />
+                      <span>{{ link.label }}</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </section>
           </div>
 

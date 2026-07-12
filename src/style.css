@@ -1755,14 +1755,6 @@ dd {
   font-size: 1rem;
 }
 
-.inline-review-block {
-  display: grid;
-  gap: 7px;
-  margin-top: 12px;
-  border-top: 1px solid #e7edf0;
-  padding-top: 12px;
-}
-
 .detail-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1814,6 +1806,34 @@ dd {
 
 .spec-value .badge {
   vertical-align: middle;
+}
+
+.summary-review-section {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+  border-top: 1px solid #e7edf0;
+  padding-top: 12px;
+}
+
+.summary-review-section h4 {
+  margin: 0;
+  color: #5c6f7b;
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.review-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 1.1rem;
+  list-style: none;
+}
+
+.review-list .source-link {
+  font-size: 0.92rem;
+  font-weight: 750;
 }
 
 .notes-panel {
