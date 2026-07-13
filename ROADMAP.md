@@ -246,13 +246,6 @@ Confirm whether hyphenated and non-hyphenated names are aliases before adding. D
 - xDuoo X10
 - xDuoo X20
 - xDuoo Nano D3
-- xDuoo DP-10
-- xDuoo X10T
-- xDuoo X10T II
-
-Scope note:
-
-Confirm whether DP-10, X10T, and X10T II are standalone players or primarily digital transports before adding.
 
 ### Other Modern / Relevant DAPs
 
