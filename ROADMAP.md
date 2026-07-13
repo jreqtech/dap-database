@@ -28,7 +28,7 @@ Audio-focused phones such as the Moondrop MIAD 01 and general consumer MP3 playe
 
 ## Current Data Status
 
-As of 2026-07-13, `src/data/daps.csv` contains 194 source-backed DAP rows, and every row has a local optimized image referenced through `image_filename`.
+As of 2026-07-13, `src/data/daps.csv` contains 208 source-backed DAP rows, and every row has a local optimized image referenced through `image_filename`.
 
 Latest local checks:
 
@@ -110,44 +110,9 @@ Long term, the CSV should include a dedicated aliases column so search can match
 
 Until an aliases column exists, aliases may be documented in Notes, but they should not create duplicate model rows.
 
-## Priority 1: Major Historical Gaps
+## Priority 1: Useful Historical Coverage
 
-These should be filled before spending time on obscure long-tail models.
-
-### Astell&Kern Core History
-
-This is the most visible remaining gap. The database now has broad modern and historical Astell&Kern coverage.
-
-Variant note:
-
-Astell&Kern line names such as A&norma, A&futura, and A&ultima should be kept as aliases/notes, not included in the `Model` value. Astell&Kern often has limited material/color editions. Do not add those unless core hardware or specifications meaningfully differ. Skip AK CD rippers, amps, desktop servers, and IEM/headphone collaborations.
-
-### FiiO X-Series and Early M-Series
-
-FiiO legacy coverage is important because these models are common used-market references.
-
-- FiiO M33 R2R
-- FiiO M3
-- FiiO M3K
-- FiiO M3 Pro
-- FiiO M5
-- FiiO Snowsky ECHO
-- FiiO X1
-- FiiO X1 II
-- FiiO X3
-- FiiO X3 II
-- FiiO X3 III
-- FiiO X5
-- FiiO X5 II
-- FiiO X7
-
-Variant note:
-
-Skip Stainless Steel, color, material-only, and bundle editions unless core hardware or specifications differ. Snowsky ECHO is distinct from Snowsky Echo Mini.
-
-## Priority 2: Useful Historical Coverage
-
-These are valid additions, but they should come after the major-brand gaps above.
+These are the highest-value remaining historical additions.
 
 ### Cowon / Plenue
 
@@ -189,7 +154,7 @@ Naming note:
 
 M7T and M30 Pro are verified standalone player models.
 
-## Priority 3: Add by Request or When Sources Are Easy
+## Priority 2: Add by Request or When Sources Are Easy
 
 These fit the broader DAP scope, but they should not block launch or higher-priority historical gaps.
 
