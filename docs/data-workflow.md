@@ -58,7 +58,6 @@ Buying-link CSV fields are supported but intentionally blank unless populated ma
 
 - `official_store_url`
 - `buy_links`
-- `affiliate_links`
 - `buy_notes`
 
 Buying links use labeled-link format:
@@ -67,7 +66,7 @@ Buying links use labeled-link format:
 Label|URL; Label|URL
 ```
 
-Do not use buy links or affiliate links as spec sources.
+Do not use buy links as spec sources.
 
 ## Media and Image Usage
 

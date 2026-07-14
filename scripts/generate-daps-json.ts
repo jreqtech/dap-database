@@ -248,7 +248,7 @@ function toDap(row: Record<string, string>): Dap {
     officialUrl: isOfficialSource(sourceUrl, verificationStatus) ? sourceUrl : '',
     officialStoreUrl: isValidHttpUrl(row.official_store_url ?? '') ? row.official_store_url : '',
     buyLinks: parseBuyLinks(row.buy_links ?? ''),
-    affiliateLinks: parseBuyLinks(row.affiliate_links ?? ''),
+    affiliateLinks: [],
     buyNotes: row.buy_notes ?? '',
     reviewLinks: parseLabeledLinks(row.review_links ?? ''),
     reviewNotes: row.review_notes ?? '',
@@ -264,7 +264,7 @@ function toDap(row: Record<string, string>): Dap {
             filename: imageFilename || undefined,
             alt: imageAlt,
             credit: imageCredit,
-            sourceUrl: fallbackImageSourceUrl,
+            sourceUrl: '',
             type: inferImageType(row['Image Type'] ?? '', fallbackImageSourceUrl, sourceUrl),
           },
         ]

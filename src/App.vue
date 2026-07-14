@@ -555,10 +555,6 @@ watch([filters, sortState], resetCardLimit, { deep: true });
         Specs are best-effort and source-backed where possible. Values may vary by region, firmware, revision, gain
         setting, output mode, or measurement method.
       </p>
-      <p class="footer-disclaimer">
-        Some buying links may be affiliate links. I may earn a small commission at no extra cost to you. Specs, reviews,
-        and sources stay separate.
-      </p>
       <nav class="footer-actions" aria-label="Project links">
         <a href="https://github.com/jreqtech/dap-database" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a

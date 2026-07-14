@@ -47,7 +47,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "20h",
+    "batteryLifeHours": "20",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=138",
     "officialStoreUrl": "",
@@ -79,8 +79,8 @@
         "filename": "astell-kern-a-norma-sr35.webp",
         "alt": "Astell&Kern SR35 digital audio player",
         "credit": "Astell&Kern",
-        "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=138",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -132,7 +132,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=133",
     "officialStoreUrl": "",
@@ -171,8 +171,8 @@
         "filename": "astell-kern-a-ultima-sp3000.webp",
         "alt": "Astell&Kern SP3000 digital audio player",
         "credit": "Astell&Kern",
-        "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=133",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -221,11 +221,11 @@
     "dimensions": "69.1 x 119.6 x 18.8 mm",
     "pcmMax": "32-bit/768kHz",
     "dsdMax": "DSD512",
-    "mqa": null,
+    "mqa": true,
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=153",
     "officialStoreUrl": "",
@@ -253,8 +253,8 @@
         "filename": "astell-kern-a-ultima-sp3000m.webp",
         "alt": "Astell&Kern SP3000M digital audio player",
         "credit": "Astell&Kern",
-        "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=153",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -306,7 +306,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "13h",
+    "batteryLifeHours": "13",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=128",
     "officialStoreUrl": "",
@@ -334,8 +334,8 @@
         "filename": "astell-kern-kann-max.webp",
         "alt": "Astell&Kern KANN MAX digital audio player",
         "credit": "Astell&Kern",
-        "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=128",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -388,7 +388,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "11h",
+    "batteryLifeHours": "11",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=145",
     "officialStoreUrl": "",
@@ -410,8 +410,8 @@
         "filename": "astell-kern-kann-ultra.webp",
         "alt": "Astell&Kern KANN ULTRA digital audio player",
         "credit": "Astell&Kern",
-        "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=145",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -470,7 +470,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "16h SE / 12.5h BAL",
+    "batteryLifeHours": "16",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/jm21_parameters",
     "officialStoreUrl": "",
@@ -480,19 +480,14 @@
         "url": "https://hifigo.com/products/fiio-jm21"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/fiio-jm21?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [],
     "reviewNotes": "",
     "sourceUrl": "https://www.fiio.com/jm21_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact JM21 parameter page verifies Snapdragon 680, Android 13, dual CS43198 DACs, dual SGM8262 op-amps, microSD up to 2TB, 3.5mm SE and 4.4mm balanced outputs, 245mW SE and 700mW balanced at 32 ohms in high gain, Bluetooth 5.0 with the listed TX/RX codec sets, dual-band Wi-Fi, USB DAC, line out, coaxial out through the shared 3.5mm port, 4.7in display, 156g weight, 120.7 x 68 x 13 mm dimensions, local PCM up to 32-bit/384kHz, native DSD256, USB-C, Sky Blue / Black colors, and the 4GB/64GB configuration with 3100mAh battery and 16h SE / 12.5h balanced runtime.",
+    "notes": "Verified - Official: FiiO's exact JM21 parameter page verifies Snapdragon 680, Android 13, dual CS43198 DACs, dual SGM8262 op-amps, microSD up to 2TB, 3.5mm SE and 4.4mm balanced outputs, 245mW SE and 700mW balanced at 32 ohms in high gain, Bluetooth 5.0 with the listed TX/RX codec sets, dual-band Wi-Fi, USB DAC, line out, coaxial out through the shared 3.5mm port, 4.7in display, 156g weight, 120.7 x 68 x 13 mm dimensions, local PCM up to 32-bit/384kHz, native DSD256, USB-C, Sky Blue / Black colors, and the 4GB/64GB configuration with 3100mAh battery and 16h SE / 12.5h balanced runtime. | Battery runtime detail from prior data: 16h SE / 12.5h BAL.",
     "colors": [
       "Sky Blue",
       "Black"
@@ -503,7 +498,7 @@
         "filename": "jm21-blue.webp",
         "alt": "FiiO JM21 4GB/64GB Refresh digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/jm21",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -563,7 +558,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "12.5h SE / 9.5h BAL",
+    "batteryLifeHours": "12.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/jm21_parameters",
     "officialStoreUrl": "",
@@ -589,7 +584,7 @@
     "sourceUrl": "https://www.fiio.com/jm21_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact JM21 parameter page verifies Snapdragon 680, Android 13, dual CS43198 DACs, dual SGM8262 op-amps, microSD up to 2TB, 3.5mm SE and 4.4mm balanced outputs, 245mW SE and 700mW balanced at 32 ohms in high gain, Bluetooth 5.0 with the listed TX/RX codec sets, dual-band Wi-Fi, USB DAC, line out, coaxial out through the shared 3.5mm port, 4.7in display, 156g weight, 120.7 x 68 x 13 mm dimensions, local PCM up to 32-bit/384kHz, native DSD256, USB-C, Sky Blue / Black colors, and the 3GB/32GB configuration with 2400mAh battery and 12.5h SE / 9.5h balanced runtime.",
+    "notes": "Verified - Official: FiiO's exact JM21 parameter page verifies Snapdragon 680, Android 13, dual CS43198 DACs, dual SGM8262 op-amps, microSD up to 2TB, 3.5mm SE and 4.4mm balanced outputs, 245mW SE and 700mW balanced at 32 ohms in high gain, Bluetooth 5.0 with the listed TX/RX codec sets, dual-band Wi-Fi, USB DAC, line out, coaxial out through the shared 3.5mm port, 4.7in display, 156g weight, 120.7 x 68 x 13 mm dimensions, local PCM up to 32-bit/384kHz, native DSD256, USB-C, Sky Blue / Black colors, and the 3GB/32GB configuration with 2400mAh battery and 12.5h SE / 9.5h balanced runtime. | Battery runtime detail from prior data: 12.5h SE / 9.5h BAL.",
     "colors": [
       "Sky Blue",
       "Black"
@@ -600,7 +595,7 @@
         "filename": "jm21-blue.webp",
         "alt": "FiiO JM21 Original 3GB/32GB digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/jm21",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -658,7 +653,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "20h",
+    "batteryLifeHours": "20",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m7_parameters",
     "officialStoreUrl": "",
@@ -692,7 +687,7 @@
         "filename": "fiio-m7.webp",
         "alt": "FiiO M7 digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m7",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -718,7 +713,7 @@
     "has44mm": false,
     "has635mm": null,
     "sePowerMw": 170,
-    "balPowerMw": null,
+    "balPowerMw": 220,
     "bluetooth": true,
     "wifi": true,
     "cellular": null,
@@ -740,7 +735,7 @@
     "opticalOut": false,
     "balancedOutputType": "2.5mm",
     "sePowerLoad": "32 ohms",
-    "balPowerLoad": "",
+    "balPowerLoad": "32 ohms",
     "displaySize": "3.2in",
     "weight": "133g",
     "dimensions": "60 x 106 x 13.3 mm",
@@ -754,7 +749,7 @@
     ],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": ">10h SE / >9h BAL",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m9_parameters",
     "officialStoreUrl": "",
@@ -775,7 +770,7 @@
     "sourceUrl": "https://www.fiio.com/m9_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M9 parameter page verifies Exynos 7270, customized Android, dual AK4490EN, OPA1612 LPF with dual OPA1622 buffers, 768MB RAM, 4GB ROM, 2350mAh battery, 3.5mm SE and 2.5mm balanced outputs, 170mW SE at 32 ohms, Bluetooth 4.2 with the listed TX/RX codecs, 2.4GHz Wi-Fi, USB DAC, line and SPDIF/coax output, 3.2in display, 133g, 60 x 106 x 13.3 mm, PCM to 24-bit/192kHz, DSD128, USB-C, theoretical 2TB microSD expansion, >10h SE / >9h balanced playback, and Black / Silver colors. Balanced power remains blank because the official page lists different 32-ohm values with balanced turbo off versus on.",
+    "notes": "Verified - Official: FiiO's exact M9 parameter page verifies Exynos 7270, customized Android, dual AK4490EN, OPA1612 LPF with dual OPA1622 buffers, 768MB RAM, 4GB ROM, 2350mAh battery, 3.5mm SE and 2.5mm balanced outputs, 170mW SE at 32 ohms, Bluetooth 4.2 with the listed TX/RX codecs, 2.4GHz Wi-Fi, USB DAC, line and SPDIF/coax output, 3.2in display, 133g, 60 x 106 x 13.3 mm, PCM to 24-bit/192kHz, DSD128, USB-C, theoretical 2TB microSD expansion, >10h SE / >9h balanced playback, and Black / Silver colors. Balanced power remains blank because the official page lists different 32-ohm values with balanced turbo off versus on. | Battery runtime detail from prior data: >10h SE / >9h BAL. | Source audit pass5 FiiO: official output varies by mode; balanced output is 195 mW @32 ohms with turbo off and 220 mW @32 ohms with turbo on.",
     "colors": [
       "Black",
       "Silver"
@@ -786,7 +781,7 @@
         "filename": "fiio-m9.webp",
         "alt": "FiiO M9 digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m9",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -848,7 +843,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": ">13h SE / >9h BAL",
+    "batteryLifeHours": "13",
     "storageExpansionMax": "4TB total across two slots",
     "officialUrl": "https://www.fiio.com/m11_parameters",
     "officialStoreUrl": "",
@@ -869,7 +864,7 @@
     "sourceUrl": "https://www.fiio.com/m11_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M11 parameter page verifies Exynos 7872, customized Android 7.0, dual AK4493EQ, dual OPA1642 LPF plus dual OPA926, 3GB RAM, 32GB ROM, 3800mAh battery, 3.5mm SE and 2.5mm/4.4mm balanced outputs, 195mW SE and 550mW balanced at 32 ohms, Bluetooth 4.2 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, 3.5mm line/SPDIF output, 5.15in display, 211g, 70.5 x 130 x 15.5 mm, PCM to 32-bit/384kHz, DSD256, USB-C, dual microSD slots with 4TB theoretical total expansion, and >13h SE / >9h balanced playback.",
+    "notes": "Verified - Official: FiiO's exact M11 parameter page verifies Exynos 7872, customized Android 7.0, dual AK4493EQ, dual OPA1642 LPF plus dual OPA926, 3GB RAM, 32GB ROM, 3800mAh battery, 3.5mm SE and 2.5mm/4.4mm balanced outputs, 195mW SE and 550mW balanced at 32 ohms, Bluetooth 4.2 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, 3.5mm line/SPDIF output, 5.15in display, 211g, 70.5 x 130 x 15.5 mm, PCM to 32-bit/384kHz, DSD256, USB-C, dual microSD slots with 4TB theoretical total expansion, and >13h SE / >9h balanced playback. | Battery runtime detail from prior data: >13h SE / >9h BAL.",
     "colors": [
       "Black"
     ],
@@ -879,7 +874,7 @@
         "filename": "fiio-m11.webp",
         "alt": "FiiO M11 digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m11",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -944,7 +939,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "14h SE / 14h BAL",
+    "batteryLifeHours": "14",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m11plusess_parameters",
     "officialStoreUrl": "",
@@ -965,7 +960,7 @@
     "sourceUrl": "https://www.fiio.com/m11plusess_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M11 Plus ESS parameter page verifies Snapdragon 660, Android 10, dual ES9068AS, dual THX AAA-78, 4GB/64GB, 6000mAh, 3.5mm SE plus 2.5mm/4.4mm balanced outputs, 210mW SE and 660mW balanced at 32 ohms in the official high-gain output tables, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, 3.5mm line/coax and 4.4mm balanced line out, 5.5in display, 295g, 136.6 x 75.7 x 17.6 mm, PCM to 32-bit/384kHz, DSD256, MQA 8x, Android streaming/AirPlay/DLNA/Roon Ready, USB-C, 14h SE / 14h balanced playback, and 2TB microSD.",
+    "notes": "Verified - Official: FiiO's exact M11 Plus ESS parameter page verifies Snapdragon 660, Android 10, dual ES9068AS, dual THX AAA-78, 4GB/64GB, 6000mAh, 3.5mm SE plus 2.5mm/4.4mm balanced outputs, 210mW SE and 660mW balanced at 32 ohms in the official high-gain output tables, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, 3.5mm line/coax and 4.4mm balanced line out, 5.5in display, 295g, 136.6 x 75.7 x 17.6 mm, PCM to 32-bit/384kHz, DSD256, MQA 8x, Android streaming/AirPlay/DLNA/Roon Ready, USB-C, 14h SE / 14h balanced playback, and 2TB microSD. | Battery runtime detail from prior data: 14h SE / 14h BAL.",
     "colors": [
       "Black"
     ],
@@ -975,16 +970,16 @@
         "filename": "fiio-m11-plus-ess.webp",
         "alt": "FiiO M11 Plus ESS digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m11plusess",
+        "sourceUrl": "",
         "type": ""
       }
     ]
   },
   {
-    "id": "fiio-m11-plus-ltd",
+    "id": "fiio-m11-plus-ltd-black",
     "brand": "FiiO",
     "model": "M11 Plus LTD",
-    "variant": "",
+    "variant": "Black",
     "releaseYear": 2021,
     "status": "Discontinued",
     "msrpUsd": 749,
@@ -1027,7 +1022,7 @@
     "sePowerLoad": "32 ohms",
     "balPowerLoad": "32 ohms",
     "displaySize": "5.5in",
-    "weight": "",
+    "weight": "310g",
     "dimensions": "136.6 x 75.7 x 17.6 mm",
     "pcmMax": "32-bit/384kHz",
     "dsdMax": "DSD256",
@@ -1040,7 +1035,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": ">11.5h SE / >10h BAL",
+    "batteryLifeHours": "11.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m11plusltd_parameters",
     "officialStoreUrl": "",
@@ -1061,18 +1056,113 @@
     "sourceUrl": "https://www.fiio.com/m11plusltd_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M11 Plus LTD parameter page verifies Snapdragon 660, Android 10, dual AK4497EQ, THX AAA-78 dual-amp architecture with OPA1642/LMH6644 analog stages, 4GB/64GB, 6000mAh, 3.5mm SE plus 2.5mm/4.4mm balanced outputs, 206mW SE and 588mW balanced at 32 ohms, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, line/SPDIF and balanced line out, 5.5in display, 136.6 x 75.7 x 17.6 mm, PCM to 32-bit/384kHz, DSD256, MQA 8x, Android streaming/AirPlay/DLNA/Roon Ready, USB-C, >11.5h SE / >10h balanced playback, 2TB microSD, and Black / Stainless Steel variants. Weight is left blank because the official page lists about 310g Black and 405g Stainless Steel.",
+    "notes": "Verified - Official: FiiO's exact M11 Plus LTD parameter page verifies Snapdragon 660, Android 10, dual AK4497EQ, THX AAA-78 dual-amp architecture with OPA1642/LMH6644 analog stages, 4GB/64GB, 6000mAh, 3.5mm SE plus 2.5mm/4.4mm balanced outputs, 206mW SE and 588mW balanced at 32 ohms, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, line/SPDIF and balanced line out, 5.5in display, 136.6 x 75.7 x 17.6 mm, PCM to 32-bit/384kHz, DSD256, MQA 8x, Android streaming/AirPlay/DLNA/Roon Ready, USB-C, >11.5h SE / >10h balanced playback, 2TB microSD, and Black material/finish. Official weight for this variant is about 310g. | Battery runtime detail from prior data: >11.5h SE / >10h BAL.",
     "colors": [
-      "Black",
+      "Black"
+    ],
+    "images": [
+      {
+        "url": "",
+        "filename": "fiio-m11-plus-ltd.webp",
+        "alt": "FiiO M11 Plus LTD Black digital audio player",
+        "credit": "FiiO",
+        "sourceUrl": "",
+        "type": ""
+      }
+    ]
+  },
+  {
+    "id": "fiio-m11-plus-ltd-stainless-steel",
+    "brand": "FiiO",
+    "model": "M11 Plus LTD",
+    "variant": "Stainless Steel",
+    "releaseYear": 2021,
+    "status": "Discontinued",
+    "msrpUsd": null,
+    "soc": "Snapdragon 660",
+    "os": "Android 10",
+    "ramGb": 4,
+    "storageGb": 64,
+    "microSd": true,
+    "batteryMah": 6000,
+    "dac": "Dual AK4497EQ",
+    "amp": "Dual THX AAA-78; OPA1642 x3 LPF + LMH6644 x2",
+    "has25mm": true,
+    "has35mm": true,
+    "has44mm": true,
+    "has635mm": null,
+    "sePowerMw": 206,
+    "balPowerMw": 588,
+    "bluetooth": true,
+    "wifi": true,
+    "cellular": null,
+    "has4g": null,
+    "has5g": null,
+    "bluetoothVersion": "5.0",
+    "bluetoothCodecs": [
+      "TX: SBC",
+      "AAC",
+      "aptX",
+      "aptX HD",
+      "LDAC",
+      "LHDC",
+      "RX: SBC",
+      "AAC",
+      "LDAC"
+    ],
+    "usbDac": true,
+    "lineOut": true,
+    "coaxOut": true,
+    "opticalOut": false,
+    "balancedOutputType": "2.5mm/4.4mm",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
+    "displaySize": "5.5in",
+    "weight": "405g",
+    "dimensions": "136.6 x 75.7 x 17.6 mm",
+    "pcmMax": "32-bit/384kHz",
+    "dsdMax": "DSD256",
+    "mqa": true,
+    "streamingServices": [
+      "Third-party Android apps",
+      "AirPlay",
+      "DLNA",
+      "Roon Ready"
+    ],
+    "wifiBands": "2.4GHz / 5GHz",
+    "usbPort": "USB-C",
+    "batteryLifeHours": "11.5",
+    "storageExpansionMax": "2TB",
+    "officialUrl": "https://www.fiio.com/m11plusltd_parameters",
+    "officialStoreUrl": "",
+    "buyLinks": [],
+    "affiliateLinks": [],
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/fiio-m11-plus-ltd-review/"
+      },
+      {
+        "label": "Headfonia",
+        "url": "https://www.headfonia.com/fiio-m11-plus-ltd-review/"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://www.fiio.com/m11plusltd_parameters",
+    "sourceType": "Official",
+    "verificationStatus": "Verified - Official",
+    "notes": "Verified - Official: FiiO's exact M11 Plus LTD parameter page verifies Snapdragon 660, Android 10, dual AK4497EQ, THX AAA-78 dual-amp architecture with OPA1642/LMH6644 analog stages, 4GB/64GB, 6000mAh, 3.5mm SE plus 2.5mm/4.4mm balanced outputs, 206mW SE and 588mW balanced at 32 ohms, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, line/SPDIF and balanced line out, 5.5in display, 136.6 x 75.7 x 17.6 mm, PCM to 32-bit/384kHz, DSD256, MQA 8x, Android streaming/AirPlay/DLNA/Roon Ready, USB-C, >11.5h SE / >10h balanced playback, 2TB microSD, and Stainless Steel material/finish. Official weight for this variant is about 405g. | Battery runtime detail from prior data: >11.5h SE / >10h BAL.",
+    "colors": [
       "Stainless Steel"
     ],
     "images": [
       {
         "url": "",
         "filename": "fiio-m11-plus-ltd.webp",
-        "alt": "FiiO M11 Plus LTD digital audio player",
+        "alt": "FiiO M11 Plus LTD Stainless Steel digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m11plusltd",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -1137,7 +1227,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": ">14h SE / >14h BAL",
+    "batteryLifeHours": "14",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m11s_parameters",
     "officialStoreUrl": "",
@@ -1163,7 +1253,7 @@
     "sourceUrl": "https://www.fiio.com/m11s_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M11S parameter page verifies Snapdragon 660, Android 10, dual ES9038Q2M, dual OPA926, 3GB/32GB, 5300mAh, 3.5mm SE and 4.4mm balanced outputs, 200mW SE and 670mW balanced at 32 ohms, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, 3.5mm line/coax and 4.4mm balanced line out, 5.0in display, 271g, 125.2 x 74 x 18.5 mm, PCM to 32-bit/384kHz, DSD256, USB-C, >14h SE / >14h balanced playback, 2TB microSD, and Black color.",
+    "notes": "Verified - Official: FiiO's exact M11S parameter page verifies Snapdragon 660, Android 10, dual ES9038Q2M, dual OPA926, 3GB/32GB, 5300mAh, 3.5mm SE and 4.4mm balanced outputs, 200mW SE and 670mW balanced at 32 ohms, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, 3.5mm line/coax and 4.4mm balanced line out, 5.0in display, 271g, 125.2 x 74 x 18.5 mm, PCM to 32-bit/384kHz, DSD256, USB-C, >14h SE / >14h balanced playback, 2TB microSD, and Black color. | Battery runtime detail from prior data: >14h SE / >14h BAL.",
     "colors": [
       "Black"
     ],
@@ -1173,7 +1263,7 @@
         "filename": "fiio-m11s.webp",
         "alt": "FiiO M11S digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m11s",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -1198,8 +1288,8 @@
     "has35mm": true,
     "has44mm": true,
     "has635mm": null,
-    "sePowerMw": null,
-    "balPowerMw": null,
+    "sePowerMw": 490,
+    "balPowerMw": 800,
     "bluetooth": true,
     "wifi": true,
     "cellular": null,
@@ -1223,8 +1313,8 @@
     "coaxOut": true,
     "opticalOut": false,
     "balancedOutputType": "2.5mm/4.4mm",
-    "sePowerLoad": "",
-    "balPowerLoad": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
     "displaySize": "5.15in",
     "weight": "307g",
     "dimensions": "134 x 75 x 18 mm",
@@ -1238,7 +1328,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": ">15h SE / >9h BAL",
+    "batteryLifeHours": "15",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m15_parameters",
     "officialStoreUrl": "",
@@ -1259,7 +1349,7 @@
     "sourceUrl": "https://www.fiio.com/m15_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M15 parameter page verifies Exynos 7872, Android, dual AK4499EQ, PA2211/OPA1622/OPA1612 analog stages, 3GB/64GB, 7490mAh, 3.5mm SE plus 2.5mm/4.4mm balanced outputs, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, line/SPDIF, 5.15in display, 307g, 134 x 75 x 18 mm, PCM to 32-bit/384kHz, DSD256, MQA 8x, AirPlay/DLNA and Android app support, USB-C, >15h SE / >9h balanced playback, 2TB microSD, and Black color. Structured power is intentionally blank because the official 32-ohm figures differ between normal and Over-ear Headphone modes.",
+    "notes": "Verified - Official: FiiO's exact M15 parameter page verifies Exynos 7872, Android, dual AK4499EQ, PA2211/OPA1622/OPA1612 analog stages, 3GB/64GB, 7490mAh, 3.5mm SE plus 2.5mm/4.4mm balanced outputs, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, line/SPDIF, 5.15in display, 307g, 134 x 75 x 18 mm, PCM to 32-bit/384kHz, DSD256, MQA 8x, AirPlay/DLNA and Android app support, USB-C, >15h SE / >9h balanced playback, 2TB microSD, and Black color. Structured power is intentionally blank because the official 32-ohm figures differ between normal and Over-ear Headphone modes. | Battery runtime detail from prior data: >15h SE / >9h BAL. | Source audit pass5 FiiO: official output varies by mode; 3.5mm is 215 mW @32 ohms ordinary and 490 mW @32 ohms over-ear mode, balanced is 635 mW @32 ohms ordinary and 800 mW @32 ohms over-ear mode.",
     "colors": [
       "Black"
     ],
@@ -1269,7 +1359,7 @@
         "filename": "fiio-m15.webp",
         "alt": "FiiO M15 digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m15",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -1294,8 +1384,8 @@
     "has35mm": true,
     "has44mm": true,
     "has635mm": null,
-    "sePowerMw": null,
-    "balPowerMw": null,
+    "sePowerMw": 580,
+    "balPowerMw": 1200,
     "bluetooth": true,
     "wifi": true,
     "cellular": null,
@@ -1322,8 +1412,8 @@
     "coaxOut": true,
     "opticalOut": false,
     "balancedOutputType": "4.4mm",
-    "sePowerLoad": "",
-    "balPowerLoad": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
     "displaySize": "5.5in",
     "weight": "345g",
     "dimensions": "140 x 80 x 18.9 mm",
@@ -1338,7 +1428,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "10.5h SE / 9h BAL",
+    "batteryLifeHours": "10.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m15s_parameters",
     "officialStoreUrl": "",
@@ -1352,12 +1442,7 @@
         "url": "https://www.amazon.com/dp/B0BZCZV6C5"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/fiio-m15s?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -1373,7 +1458,7 @@
     "sourceUrl": "https://www.fiio.com/m15s_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M15S parameter page verifies Snapdragon 660, Android 10, ES9038PRO, dual OPA926, 4GB/64GB, 6200mAh, 3.5mm and 4.4mm outputs, Bluetooth 5.0 with the listed TX/RX codecs, dual-band Wi-Fi, USB DAC, 3.5mm line/coax and 4.4mm balanced line out, 5.5in display, 345g, 140 x 80 x 18.9 mm, PCM to 32-bit/384kHz, DSD256, MQA, Android apps/AirPlay/DLNA/Roon Ready, USB-C, 10.5h SE / 9h balanced playback, 2TB microSD, and Black color. Structured power remains blank because the official 32-ohm figures vary by Ultra High and Super High gain/mode.",
+    "notes": "Verified - Official: FiiO's exact M15S parameter page verifies Snapdragon 660, Android 10, ES9038PRO, dual OPA926, 4GB/64GB, 6200mAh, 3.5mm and 4.4mm outputs, Bluetooth 5.0 with the listed TX/RX codecs, dual-band Wi-Fi, USB DAC, 3.5mm line/coax and 4.4mm balanced line out, 5.5in display, 345g, 140 x 80 x 18.9 mm, PCM to 32-bit/384kHz, DSD256, MQA, Android apps/AirPlay/DLNA/Roon Ready, USB-C, 10.5h SE / 9h balanced playback, 2TB microSD, and Black color. Structured power remains blank because the official 32-ohm figures vary by Ultra High and Super High gain/mode. | Battery runtime detail from prior data: 10.5h SE / 9h BAL. | Source audit pass5 FiiO: official output varies by gain/power mode; 3.5mm is 395 mW @32 ohms super high gain and 580 mW @32 ohms ultra high gain, balanced is 990 mW @32 ohms super high gain and 1200 mW @32 ohms ultra high gain.",
     "colors": [
       "Black"
     ],
@@ -1383,7 +1468,7 @@
         "filename": "fiio-m15s.webp",
         "alt": "FiiO M15S digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m15s",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -1408,8 +1493,8 @@
     "has35mm": true,
     "has44mm": true,
     "has635mm": null,
-    "sePowerMw": null,
-    "balPowerMw": null,
+    "sePowerMw": 1100,
+    "balPowerMw": 3000,
     "bluetooth": true,
     "wifi": true,
     "cellular": null,
@@ -1436,8 +1521,8 @@
     "coaxOut": true,
     "opticalOut": false,
     "balancedOutputType": "2.5mm/4.4mm",
-    "sePowerLoad": "",
-    "balPowerLoad": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
     "displaySize": "5.99in",
     "weight": "610g",
     "dimensions": "156.4 x 88.5 x 28 mm",
@@ -1451,7 +1536,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Dual USB-C",
-    "batteryLifeHours": "10h SE / 8h BAL",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m17_parameters",
     "officialStoreUrl": "",
@@ -1465,12 +1550,7 @@
         "url": "https://www.amazon.com/dp/B09JWN12D5"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/fiio-m17?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -1486,7 +1566,7 @@
     "sourceUrl": "https://www.fiio.com/m17_parameters",
     "sourceType": "Official",
     "verificationStatus": "Partial - Official",
-    "notes": "Partial - Official: FiiO M17 page confirms Snapdragon 660, Android 10, dual ES9038PRO DACs, dual THX AAA 788+ amps, 4GB RAM, 64GB storage, microSD up to 2TB, 9200mAh battery, 3.5mm/2.5mm/4.4mm outputs, Bluetooth 5.0 with listed transmit/receive codecs, USB DAC, line output and coaxial functions, 5.99-inch display, 610g weight, 156.4 x 88.5 x 28 mm dimensions, PCM 32-bit/768kHz, DSD512, MQA, AirPlay, Roon Ready, dual-band Wi-Fi, Black color, and approximately 10h SE / 8h BAL playback. Official public power figures remain out of the structured fields because the page does not cleanly separate SE and balanced mW figures for database entry.",
+    "notes": "Partial - Official: FiiO M17 page confirms Snapdragon 660, Android 10, dual ES9038PRO DACs, dual THX AAA 788+ amps, 4GB RAM, 64GB storage, microSD up to 2TB, 9200mAh battery, 3.5mm/2.5mm/4.4mm outputs, Bluetooth 5.0 with listed transmit/receive codecs, USB DAC, line output and coaxial functions, 5.99-inch display, 610g weight, 156.4 x 88.5 x 28 mm dimensions, PCM 32-bit/768kHz, DSD512, MQA, AirPlay, Roon Ready, dual-band Wi-Fi, Black color, and approximately 10h SE / 8h BAL playback. Official public power figures remain out of the structured fields because the page does not cleanly separate SE and balanced mW figures for database entry. | Source audit pass5 FiiO: official output varies by mode; 3.5mm is 500 mW @32 ohms over-ear mode and 1.1 W @32 ohms enhanced over-ear mode, balanced output reaches 3 W @32 ohms.",
     "colors": [
       "Black"
     ],
@@ -1496,7 +1576,7 @@
         "filename": "fiio-m17.webp",
         "alt": "FiiO M17 digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m17",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -1521,8 +1601,8 @@
     "has35mm": true,
     "has44mm": true,
     "has635mm": null,
-    "sePowerMw": null,
-    "balPowerMw": null,
+    "sePowerMw": 405,
+    "balPowerMw": 950,
     "bluetooth": true,
     "wifi": true,
     "cellular": null,
@@ -1545,8 +1625,8 @@
     "coaxOut": true,
     "opticalOut": null,
     "balancedOutputType": "4.4mm",
-    "sePowerLoad": "",
-    "balPowerLoad": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
     "displaySize": "4.7in",
     "weight": "193g",
     "dimensions": "68 x 121 x 17 mm",
@@ -1560,7 +1640,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.0 data/charging + USB-C power input",
-    "batteryLifeHours": "15h SE / 12.5h BAL",
+    "batteryLifeHours": "15",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m21_parameters",
     "officialStoreUrl": "",
@@ -1574,16 +1654,7 @@
         "url": "https://www.linsoul.com/products/fiio-m21"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/fiio-m21?rfsn=8393475.dcd124"
-      },
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/fiio-m21?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -1599,7 +1670,7 @@
     "sourceUrl": "https://www.fiio.com/m21_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M21 parameter page verifies Snapdragon 680, Android 13, 4GB/64GB, quad CS43198 with OPA1692 and SGM8262-2 stages, 4000mAh battery, 3.5mm PO/LO/SPDIF and 4.4mm balanced PO/LO, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, 4.7in display, 193g, 68 x 121 x 17 mm, local PCM to 32-bit/384kHz and DSD256, Android apps/AirPlay/DLNA, USB-C data plus dedicated USB-C power input, 15h SE / 12.5h balanced playback, 2TB microSD, and Titanium Gold / Dark Blue / Black colors. Structured power is intentionally blank because the official 32-ohm figures differ between High Gain and Super High Gain modes (290/720mW versus 405/950mW SE/balanced).",
+    "notes": "Verified - Official: FiiO's exact M21 parameter page verifies Snapdragon 680, Android 13, 4GB/64GB, quad CS43198 with OPA1692 and SGM8262-2 stages, 4000mAh battery, 3.5mm PO/LO/SPDIF and 4.4mm balanced PO/LO, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, 4.7in display, 193g, 68 x 121 x 17 mm, local PCM to 32-bit/384kHz and DSD256, Android apps/AirPlay/DLNA, USB-C data plus dedicated USB-C power input, 15h SE / 12.5h balanced playback, 2TB microSD, and Titanium Gold / Dark Blue / Black colors. Structured power is intentionally blank because the official 32-ohm figures differ between High Gain and Super High Gain modes (290/720mW versus 405/950mW SE/balanced). | Battery runtime detail from prior data: 15h SE / 12.5h BAL. | Source audit pass5 FiiO: official output varies by gain; 3.5mm is 290 mW @32 ohms high gain and 405 mW @32 ohms super high gain, balanced is 720 mW @32 ohms high gain and 950 mW @32 ohms super high gain.",
     "colors": [
       "Titanium Gold",
       "Dark Blue",
@@ -1611,16 +1682,16 @@
         "filename": "fiio-m21.webp",
         "alt": "FiiO M21 digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m21",
+        "sourceUrl": "",
         "type": ""
       }
     ]
   },
   {
-    "id": "fiio-m23",
+    "id": "fiio-m23-deep-blue",
     "brand": "FiiO",
     "model": "M23",
-    "variant": "",
+    "variant": "Deep Blue",
     "releaseYear": 2024,
     "status": "Active",
     "msrpUsd": 699,
@@ -1636,8 +1707,8 @@
     "has35mm": true,
     "has44mm": true,
     "has635mm": null,
-    "sePowerMw": null,
-    "balPowerMw": null,
+    "sePowerMw": 440,
+    "balPowerMw": 1000,
     "bluetooth": true,
     "wifi": true,
     "cellular": null,
@@ -1660,10 +1731,10 @@
     "coaxOut": true,
     "opticalOut": false,
     "balancedOutputType": "4.4mm",
-    "sePowerLoad": "",
-    "balPowerLoad": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
     "displaySize": "5.5in",
-    "weight": "",
+    "weight": "299g",
     "dimensions": "75.7 x 136.5 x 18.1 mm",
     "pcmMax": "32-bit/384kHz",
     "dsdMax": "DSD256",
@@ -1676,7 +1747,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Dual USB-C: USB 3.0 data/charging + dedicated power input",
-    "batteryLifeHours": "10.5h SE / 9h BAL",
+    "batteryLifeHours": "10.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m23_parameters",
     "officialStoreUrl": "",
@@ -1686,12 +1757,7 @@
         "url": "https://hifigo.com/products/fiio-m23"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/fiio-m23?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -1707,18 +1773,118 @@
     "sourceUrl": "https://www.fiio.com/m23_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M23 parameter page verifies Snapdragon 660, Android 10, AK4191EQ + AK4499EX, four-way THX AAA-78+, 4GB/64GB, 5500mAh, 3.5mm PO/LO/coax and 4.4mm balanced PO/LO, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, dual USB-C, 5.5in display, 75.7 x 136.5 x 18.1 mm, local PCM to 32-bit/384kHz and DSD256, MQA 8x, Android apps/AirPlay/DLNA/Roon Ready, 10.5h SE / 9h balanced playback, 2TB microSD, and Deep Blue / Stainless Steel variants. Weight remains blank because official weight is about 299g Deep Blue and 392.3g Stainless Steel. Structured power remains blank because the official 32-ohm values differ by gain/power mode.",
+    "notes": "Verified - Official: FiiO's exact M23 parameter page verifies Snapdragon 660, Android 10, AK4191EQ + AK4499EX, four-way THX AAA-78+, 4GB/64GB, 5500mAh, 3.5mm PO/LO/coax and 4.4mm balanced PO/LO, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, dual USB-C, 5.5in display, 75.7 x 136.5 x 18.1 mm, local PCM to 32-bit/384kHz and DSD256, MQA 8x, Android apps/AirPlay/DLNA/Roon Ready, 10.5h SE / 9h balanced playback, 2TB microSD, and Deep Blue material/finish. Official weight for this variant is about 299g. Structured power uses the highest clearly labeled official 32-ohm values while Notes preserve gain/power-mode context. | Battery runtime detail from prior data: 10.5h SE / 9h BAL. | Source audit pass5 FiiO: official output varies by gain/power mode; 3.5mm is 125 mW @32 ohms high gain and 440 mW @32 ohms super high gain, balanced is 475 mW @32 ohms high gain, 760 mW @32 ohms high gain with HiFi Boost, and 1000 mW @32 ohms super high gain.",
     "colors": [
-      "Deep Blue",
+      "Deep Blue"
+    ],
+    "images": [
+      {
+        "url": "",
+        "filename": "fiio-m23.webp",
+        "alt": "FiiO M23 Deep Blue digital audio player",
+        "credit": "FiiO",
+        "sourceUrl": "",
+        "type": ""
+      }
+    ]
+  },
+  {
+    "id": "fiio-m23-stainless-steel",
+    "brand": "FiiO",
+    "model": "M23",
+    "variant": "Stainless Steel",
+    "releaseYear": 2024,
+    "status": "Active",
+    "msrpUsd": null,
+    "soc": "Snapdragon 660",
+    "os": "Android 10",
+    "ramGb": 4,
+    "storageGb": 64,
+    "microSd": true,
+    "batteryMah": 5500,
+    "dac": "AK4191EQ + AK4499EX",
+    "amp": "THX AAA 78+",
+    "has25mm": null,
+    "has35mm": true,
+    "has44mm": true,
+    "has635mm": null,
+    "sePowerMw": 440,
+    "balPowerMw": 1000,
+    "bluetooth": true,
+    "wifi": true,
+    "cellular": null,
+    "has4g": null,
+    "has5g": null,
+    "bluetoothVersion": "5.0",
+    "bluetoothCodecs": [
+      "TX: SBC",
+      "AAC",
+      "aptX",
+      "aptX HD",
+      "LHDC",
+      "LDAC",
+      "RX: SBC",
+      "AAC",
+      "LDAC"
+    ],
+    "usbDac": true,
+    "lineOut": true,
+    "coaxOut": true,
+    "opticalOut": false,
+    "balancedOutputType": "4.4mm",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
+    "displaySize": "5.5in",
+    "weight": "392.3g",
+    "dimensions": "75.7 x 136.5 x 18.1 mm",
+    "pcmMax": "32-bit/384kHz",
+    "dsdMax": "DSD256",
+    "mqa": true,
+    "streamingServices": [
+      "Third-party Android apps",
+      "AirPlay",
+      "DLNA",
+      "Roon Ready"
+    ],
+    "wifiBands": "2.4GHz / 5GHz",
+    "usbPort": "Dual USB-C: USB 3.0 data/charging + dedicated power input",
+    "batteryLifeHours": "10.5",
+    "storageExpansionMax": "2TB",
+    "officialUrl": "https://www.fiio.com/m23_parameters",
+    "officialStoreUrl": "",
+    "buyLinks": [
+      {
+        "label": "HiFiGo",
+        "url": "https://hifigo.com/products/fiio-m23"
+      }
+    ],
+    "affiliateLinks": [],
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/fiio-m23-review/"
+      },
+      {
+        "label": "Headfonia",
+        "url": "https://www.headfonia.com/fiio-m23-review/"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://www.fiio.com/m23_parameters",
+    "sourceType": "Official",
+    "verificationStatus": "Verified - Official",
+    "notes": "Verified - Official: FiiO's exact M23 parameter page verifies Snapdragon 660, Android 10, AK4191EQ + AK4499EX, four-way THX AAA-78+, 4GB/64GB, 5500mAh, 3.5mm PO/LO/coax and 4.4mm balanced PO/LO, Bluetooth 5.0 with listed TX/RX codecs, dual-band Wi-Fi, USB DAC, dual USB-C, 5.5in display, 75.7 x 136.5 x 18.1 mm, local PCM to 32-bit/384kHz and DSD256, MQA 8x, Android apps/AirPlay/DLNA/Roon Ready, 10.5h SE / 9h balanced playback, 2TB microSD, and Stainless Steel material/finish. Official weight for this variant is about 392.3g. Structured power uses the highest clearly labeled official 32-ohm values while Notes preserve gain/power-mode context. | Battery runtime detail from prior data: 10.5h SE / 9h BAL. | Source audit pass5 FiiO: official output varies by gain/power mode; 3.5mm is 125 mW @32 ohms high gain and 440 mW @32 ohms super high gain, balanced is 475 mW @32 ohms high gain, 760 mW @32 ohms high gain with HiFi Boost, and 1000 mW @32 ohms super high gain.",
+    "colors": [
       "Stainless Steel"
     ],
     "images": [
       {
         "url": "",
         "filename": "fiio-m23.webp",
-        "alt": "FiiO M23 digital audio player",
+        "alt": "FiiO M23 Stainless Steel digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/m23",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -1772,7 +1938,7 @@
     ],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "12h",
+    "batteryLifeHours": "12",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/DISC",
     "officialStoreUrl": "",
@@ -1786,16 +1952,7 @@
         "url": "https://www.linsoul.com/products/fiio-disc"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/fiio-snowsky-disc?rfsn=8393475.dcd124"
-      },
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/fiio-disc?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -1819,8 +1976,8 @@
         "filename": "fiio-snowsky-disc.webp",
         "alt": "FiiO Snowsky Disc digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/DISC",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -1869,7 +2026,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": ">15h",
+    "batteryLifeHours": "15",
     "storageExpansionMax": "256GB",
     "officialUrl": "https://www.fiio.com/echomini",
     "officialStoreUrl": "",
@@ -1883,16 +2040,7 @@
         "url": "https://www.linsoul.com/products/fiio-snowsky-echo-mini"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/fiio-snowsky-echo-mini?rfsn=8393475.dcd124"
-      },
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/fiio-snowsky-echo-mini?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -1916,8 +2064,8 @@
         "filename": "fiio-snowsky-echo-mini.webp",
         "alt": "FiiO Snowsky Echo Mini digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/echomini",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -1934,14 +2082,14 @@
     "ramGb": null,
     "storageGb": null,
     "microSd": true,
-    "batteryMah": null,
+    "batteryMah": 360,
     "dac": "CS43131",
     "amp": "",
     "has25mm": null,
     "has35mm": true,
     "has44mm": false,
     "has635mm": null,
-    "sePowerMw": null,
+    "sePowerMw": 120,
     "balPowerMw": null,
     "bluetooth": null,
     "wifi": null,
@@ -1955,24 +2103,24 @@
     "coaxOut": null,
     "opticalOut": null,
     "balancedOutputType": "",
-    "sePowerLoad": "",
+    "sePowerLoad": "32 ohms",
     "balPowerLoad": "",
     "displaySize": "0.91in",
-    "weight": "",
-    "dimensions": "",
+    "weight": "33.5g",
+    "dimensions": "83.5 x 23 x 14 mm",
     "pcmMax": "24-bit/192kHz",
     "dsdMax": "DSD256",
     "mqa": null,
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "",
+    "batteryLifeHours": "7",
     "storageExpansionMax": "256GB",
     "officialUrl": "https://www.fiio.com/ECHONANO",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://fiio.eu/product/fiio-snowsky-echo-nano-portable-hi-res-music-player-black",
     "buyLinks": [],
     "affiliateLinks": [],
-    "buyNotes": "",
+    "buyNotes": "FiiO.eu exact Echo Nano listing shows price as EUR 59.99 for the Black variant; MSRP USD remains blank because the source price is EUR.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -1987,16 +2135,24 @@
     "sourceUrl": "https://www.fiio.com/ECHONANO",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified against FiiO page: released product page exists. Metal body, 0.91-inch OLED, CS43131 DAC, USB DAC/UAC mode, DSD256 and PCM 24/192 support, 3.5mm output, CTIA in-line controls, up to 256GB microSD. No 4.4mm listed on official page.",
-    "colors": [],
+    "notes": "Verified against FiiO page/screenshot: Echo Nano has Black / Titanium / Green / White / Pink / Sky blue / Purple colors, 33.5g weight, 83.5 x 23 x 14 mm dimensions, 0.91-inch OLED, CS43131 DAC, microSD up to 256GB with exFAT/FAT32 support, DSD/WAV/FLAC/APE/MP3/M4A/WMA/OGG format support, local DSD64/128/256 and PCM-family file support up to 24-bit/192kHz, USB DAC support at PCM 16-bit/48kHz, 3.5mm single-ended output, at least 120mW + 120mW output at 32 ohms under THD+N < 1%, 360mAh battery, and about 7h battery life. No 4.4mm listed on official material. FiiO Echo Nano page also appears to link/show UTWS5 2025 parameter data elsewhere; that table was rejected because it identifies Name/Model as UTWS5 2025. FiiO.eu exact Echo Nano listing shows EUR 59.99 for the Black variant; MSRP USD remains blank because the source price is not USD.",
+    "colors": [
+      "Black",
+      "Titanium",
+      "Green",
+      "White",
+      "Pink",
+      "Sky blue",
+      "Purple"
+    ],
     "images": [
       {
         "url": "",
         "filename": "fiio-snowsky-echo-nano.webp",
         "alt": "FiiO Snowsky Echo Nano digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/ECHONANO",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -2009,45 +2165,49 @@
     "status": "Discontinued",
     "msrpUsd": 350,
     "soc": "RK3188",
-    "os": "Android 5.1",
+    "os": "Android 5.1.1",
     "ramGb": 1,
     "storageGb": 32,
     "microSd": true,
     "batteryMah": 3400,
     "dac": "Dual AK4490",
-    "amp": "",
-    "has25mm": null,
+    "amp": "OPA1642 x2 LPF + customized OPA426 x2",
+    "has25mm": true,
     "has35mm": true,
     "has44mm": false,
     "has635mm": null,
-    "sePowerMw": null,
-    "balPowerMw": null,
+    "sePowerMw": 250,
+    "balPowerMw": 240,
     "bluetooth": true,
     "wifi": true,
     "cellular": null,
     "has4g": null,
     "has5g": null,
     "bluetoothVersion": "4.0",
-    "bluetoothCodecs": [],
+    "bluetoothCodecs": [
+      "aptX"
+    ],
     "usbDac": true,
-    "lineOut": null,
-    "coaxOut": null,
+    "lineOut": true,
+    "coaxOut": true,
     "opticalOut": null,
-    "balancedOutputType": "Balanced",
-    "sePowerLoad": "",
-    "balPowerLoad": "",
-    "displaySize": "",
-    "weight": "",
-    "dimensions": "",
-    "pcmMax": "",
-    "dsdMax": "",
+    "balancedOutputType": "2.5mm",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
+    "displaySize": "3.97in",
+    "weight": "186g",
+    "dimensions": "114.2 x 66.2 x 14.8 mm",
+    "pcmMax": "32-bit/384kHz",
+    "dsdMax": "DSD128",
     "mqa": null,
-    "streamingServices": [],
-    "wifiBands": "2.4GHz",
-    "usbPort": "",
-    "batteryLifeHours": "",
-    "storageExpansionMax": "256GB each",
-    "officialUrl": "https://www.fiio.com/x5iii",
+    "streamingServices": [
+      "Third-party Android apps"
+    ],
+    "wifiBands": "2.4GHz 802.11 b/g/n",
+    "usbPort": "Micro-USB 2.0",
+    "batteryLifeHours": "10",
+    "storageExpansionMax": "512GB total across two slots",
+    "officialUrl": "https://www.fiio.com/x5iii_parameters",
     "officialStoreUrl": "",
     "buyLinks": [],
     "affiliateLinks": [],
@@ -2067,19 +2227,23 @@
       }
     ],
     "reviewNotes": "",
-    "sourceUrl": "https://www.fiio.com/x5iii",
+    "sourceUrl": "https://www.fiio.com/x5iii_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO X5 III page confirms X5 3rd gen, dual AK4490EN DACs, Android 5.1, single-ended + balanced headphone outputs, Bluetooth 4.0, Wi-Fi 2.4G, 32GB built-in storage, dual microSD slots up to 256GB each, 3400mAh battery, USB DAC mode. 4.4mm remains FALSE because the balanced output is not 4.4mm.",
-    "colors": [],
+    "notes": "Verified - Official: FiiO X5 III exact parameter page confirms X5 3rd gen / FX5321, deeply customized Android 5.1.1, RK3188 quad-core SoC, dual AK4490 DACs, OPA1642 x2 LPF and customized OPA426 x2 op-amp stage, 1GB RAM, 32GB ROM, dual microSD expansion to 512GB total, 3400mAh battery, Titanium / Black / Red colors, 3.97in 480 x 800 IPS display, 114.2 x 66.2 x 14.8 mm dimensions, 186g weight, 3.5mm headphone output, 2.5mm balanced output, shared 3.5mm line/coax output, Micro-USB 2.0 with USB DAC/docking/data/charging, Bluetooth 4.0 with aptX, 2.4GHz 802.11 b/g/n Wi-Fi, 250mW single-ended and 240mW balanced output at 32 ohms, USB DAC up to 24-bit/192kHz, local WAV up to 32-bit/384kHz, DSD64/128 support, more than 10h 3.5mm playback and at least 8h 2.5mm balanced playback. 4.4mm remains FALSE because the balanced output is 2.5mm.",
+    "colors": [
+      "Titanium",
+      "Black",
+      "Red"
+    ],
     "images": [
       {
         "url": "",
         "filename": "fiio-x5-iii.webp",
         "alt": "FiiO X5 III digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://www.fiio.com/x5iii",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -2132,7 +2296,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Micro-USB",
-    "batteryLifeHours": ">8h SE / >7h BAL",
+    "batteryLifeHours": "8",
     "storageExpansionMax": "512GB total across two slots",
     "officialUrl": "https://www.fiio.com/x7markiiparameters",
     "officialStoreUrl": "",
@@ -2153,7 +2317,7 @@
     "sourceUrl": "https://www.fiio.com/x7markiiparameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact X7 Mark II parameter page verifies Android 5.1.1, RK3188, ESS9028PRO, OPA1612 x2 LPF and customized OPA926 x2 with the stock AM3A module, 2GB RAM, 64GB storage, dual microSD expansion to 512GB total, 3.5mm SE and 2.5mm balanced outputs, 150mW SE and 400mW balanced at 32 ohms, Bluetooth 4.2 with aptX, dual-band Wi-Fi, USB DAC, line/coax/optical output via the shared 3.5mm port, 3.97in display, 3800mAh battery, 212g, 128.7 x 67.2 x 15.5 mm dimensions, PCM up to 32-bit/384kHz file support, DSD256, Micro-USB, >8h SE / >7h balanced runtime under FiiO test conditions, and Titanium color. This row represents the stock AM3A configuration; module-dependent amplifier/output specs are not merged.",
+    "notes": "Verified - Official: FiiO's exact X7 Mark II parameter page verifies Android 5.1.1, RK3188, ESS9028PRO, OPA1612 x2 LPF and customized OPA926 x2 with the stock AM3A module, 2GB RAM, 64GB storage, dual microSD expansion to 512GB total, 3.5mm SE and 2.5mm balanced outputs, 150mW SE and 400mW balanced at 32 ohms, Bluetooth 4.2 with aptX, dual-band Wi-Fi, USB DAC, line/coax/optical output via the shared 3.5mm port, 3.97in display, 3800mAh battery, 212g, 128.7 x 67.2 x 15.5 mm dimensions, PCM up to 32-bit/384kHz file support, DSD256, Micro-USB, >8h SE / >7h balanced runtime under FiiO test conditions, and Titanium color. This row represents the stock AM3A configuration; module-dependent amplifier/output specs are not merged. | Battery runtime detail from prior data: >8h SE / >7h BAL.",
     "colors": [
       "Titanium"
     ],
@@ -2163,7 +2327,7 @@
         "filename": "fiio-x7-mark-ii.webp",
         "alt": "FiiO X7 Mark II digital audio player",
         "credit": "FiiO",
-        "sourceUrl": "https://en.wikipedia.org/wiki/FiiO_X_Series",
+        "sourceUrl": "",
         "type": "official"
       }
     ]
@@ -2222,7 +2386,7 @@
     ],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "29h",
+    "batteryLifeHours": "29",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://wiki.hiby.com/en/docs/products/audio_player/hibydigital_m300/guide",
     "officialStoreUrl": "",
@@ -2251,7 +2415,7 @@
         "filename": "hiby-m300.webp",
         "alt": "HiBy M300 3GB/32GB digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-digital-m300",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -2321,8 +2485,8 @@
         "filename": "hiby-m500.webp",
         "alt": "HiBy M500 4G digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-digital-m500",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -2391,8 +2555,8 @@
         "filename": "hiby-m500.webp",
         "alt": "HiBy M500 WiFi digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-digital-m500",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -2441,7 +2605,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "15h",
+    "batteryLifeHours": "15",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.hiby.com/products/hiby-r1",
     "officialStoreUrl": "",
@@ -2455,12 +2619,7 @@
         "url": "https://www.amazon.com/dp/B0DKTF38HX"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/hiby-r1?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -2486,8 +2645,8 @@
         "filename": "hiby-r1.webp",
         "alt": "HiBy R1 digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-r1",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -2536,7 +2695,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "19h",
+    "batteryLifeHours": "19",
     "storageExpansionMax": "",
     "officialUrl": "https://store.hiby.com/products/hiby-r3-ii-2025",
     "officialStoreUrl": "",
@@ -2550,16 +2709,7 @@
         "url": "https://www.linsoul.com/products/hiby-r3ii-2025"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r3ii-2025?rfsn=8393475.dcd124"
-      },
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/hiby-r3ii-2025?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [],
     "reviewNotes": "",
@@ -2578,8 +2728,8 @@
         "filename": "hiby-r3-ii.webp",
         "alt": "HiBy R3 II 2025 digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-r3-ii-2025",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -2628,7 +2778,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "20h SE / 16h balanced",
+    "batteryLifeHours": "20",
     "storageExpansionMax": "",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -2653,7 +2803,7 @@
     "sourceUrl": "https://headfonics.com/hiby-r3-pro-review/",
     "sourceType": "Review",
     "verificationStatus": "Verified - Review",
-    "notes": "Verified - Review: Headfonics review confirms $199 price, dual CS43131 DACs, HiByOS/non-Android platform, 3.5mm + 2.5mm outputs, 1600mAh battery, 20h SE/16h balanced battery life. Existing public power figure removed from structured field because the impedance/load needs re-verification.",
+    "notes": "Verified - Review: Headfonics review confirms $199 price, dual CS43131 DACs, HiByOS/non-Android platform, 3.5mm + 2.5mm outputs, 1600mAh battery, 20h SE/16h balanced battery life. Existing public power figure removed from structured field because the impedance/load needs re-verification. | Battery runtime detail from prior data: 20h SE / 16h balanced.",
     "colors": [],
     "images": [
       {
@@ -2661,8 +2811,8 @@
         "filename": "hiby-r3-pro.webp",
         "alt": "HiBy R3 Pro digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://headfonics.com/hiby-r3-pro-review/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -2731,7 +2881,7 @@
         "filename": "hiby-r3-pro-saber-2020.webp",
         "alt": "HiBy R3 Pro Saber digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://www.linsoul.com/products/hiby-r3-pro-saber",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -2781,7 +2931,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "11h SE",
+    "batteryLifeHours": "11",
     "storageExpansionMax": "",
     "officialUrl": "https://store.hiby.com/products/hiby-r4",
     "officialStoreUrl": "",
@@ -2795,12 +2945,7 @@
         "url": "https://www.amazon.com/dp/B0D9821S9D"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r4?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -2816,7 +2961,7 @@
     "sourceUrl": "https://store.hiby.com/products/hiby-r4",
     "sourceType": "Official",
     "verificationStatus": "Partial - Official",
-    "notes": "Partial - Official: HiBy product page confirms Snapdragon 665, Android 12, quad ES9018C2M DACs, Class A amplification, 11h runtime through 3.5mm SE, over 675h standby, 231g weight, 129.6 x 68.3 x 18.5 mm dimensions, and Black / Silver / Orange / Green official colors with the same configuration. RAM, storage, battery, and connector fields are retained from existing public specs because the accessible official hardware table remains image-based. Structured power remains blank pending explicit output/load verification.",
+    "notes": "Partial - Official: HiBy product page confirms Snapdragon 665, Android 12, quad ES9018C2M DACs, Class A amplification, 11h runtime through 3.5mm SE, over 675h standby, 231g weight, 129.6 x 68.3 x 18.5 mm dimensions, and Black / Silver / Orange / Green official colors with the same configuration. RAM, storage, battery, and connector fields are retained from existing public specs because the accessible official hardware table remains image-based. Structured power remains blank pending explicit output/load verification. | Battery runtime detail from prior data: 11h SE.",
     "colors": [
       "Black",
       "Silver",
@@ -2829,8 +2974,8 @@
         "filename": "hiby-r4.webp",
         "alt": "HiBy R4 digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-r4",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -2881,7 +3026,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "35h SE economy / 28h BAL economy / 10h SE Class A / 7h BAL Class A",
+    "batteryLifeHours": "35",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.hiby.com/products/hiby-r5-gen-2",
     "officialStoreUrl": "",
@@ -2891,12 +3036,7 @@
         "url": "https://hifigo.com/products/hiby-r5-gen-2"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r5-gen-2?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -2916,7 +3056,7 @@
     "sourceUrl": "https://store.hiby.com/products/hiby-r5-gen-2",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: HiBy's exact R5 Gen 2 specification table verifies Android 8.1, Snapdragon 425, dual ES9219C, 2GB RAM, 16GB storage, microSD under 2TB, 4500mAh battery, 3.5mm/2.5mm/4.4mm outputs, Bluetooth 4.2, dual-band Wi-Fi, 4.7in display, 220g, 123 x 71.3 x 15.5 mm, third-party Android app installation, USB-C, Black color, and official runtime of 35h SE economy / 28h balanced economy / 10h SE Class A / 7h balanced Class A. Structured power stays blank because the official 32-ohm table has different economy versus Class A values (110/320mW vs 150/475mW SE/balanced).",
+    "notes": "Verified - Official: HiBy's exact R5 Gen 2 specification table verifies Android 8.1, Snapdragon 425, dual ES9219C, 2GB RAM, 16GB storage, microSD under 2TB, 4500mAh battery, 3.5mm/2.5mm/4.4mm outputs, Bluetooth 4.2, dual-band Wi-Fi, 4.7in display, 220g, 123 x 71.3 x 15.5 mm, third-party Android app installation, USB-C, Black color, and official runtime of 35h SE economy / 28h balanced economy / 10h SE Class A / 7h balanced Class A. Structured power stays blank because the official 32-ohm table has different economy versus Class A values (110/320mW vs 150/475mW SE/balanced). | Battery runtime detail from prior data: 35h SE economy / 28h BAL economy / 10h SE Class A / 7h BAL Class A.",
     "colors": [
       "Black"
     ],
@@ -2926,8 +3066,8 @@
         "filename": "hiby-r5-ii-gen-2.webp",
         "alt": "HiBy R5 II Gen 2 digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-r5-gen-2",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -2976,7 +3116,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "13h SE Class AB / 12h balanced Class AB",
+    "batteryLifeHours": "13",
     "storageExpansionMax": "",
     "officialUrl": "https://store.hiby.com/products/hiby-r6-iii-2025",
     "officialStoreUrl": "",
@@ -2990,16 +3130,7 @@
         "url": "https://www.linsoul.com/products/hiby-r6-iii-2025"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r6-iii-2025?rfsn=8393475.dcd124"
-      },
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/hiby-r6-iii-2025?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -3015,7 +3146,7 @@
     "sourceUrl": "https://store.hiby.com/products/hiby-r6-iii-2025",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: HiBy product page confirms $439 regular price, Snapdragon 665, Android 12, four CS43198 DACs, switchable Class A/AB amplification, 4GB RAM, 64GB storage, system-wide bit-perfect audio, up to 13h SE Class AB and 12h balanced Class AB playback, and Silver / Black official colors. Structured output power remains blank because accessible official text does not provide a complete SE/BAL plus impedance mapping.",
+    "notes": "Verified - Official: HiBy product page confirms $439 regular price, Snapdragon 665, Android 12, four CS43198 DACs, switchable Class A/AB amplification, 4GB RAM, 64GB storage, system-wide bit-perfect audio, up to 13h SE Class AB and 12h balanced Class AB playback, and Silver / Black official colors. Structured output power remains blank because accessible official text does not provide a complete SE/BAL plus impedance mapping. | Battery runtime detail from prior data: 13h SE Class AB / 12h balanced Class AB.",
     "colors": [
       "Silver",
       "Black"
@@ -3026,8 +3157,8 @@
         "filename": "hiby-r6-iii-2025.webp",
         "alt": "HiBy R6 III 2025 digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-r6-iii-2025",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3085,7 +3216,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "6h SE Class A / 5h BAL Class A / 8h SE Class AB / 7h BAL Class AB",
+    "batteryLifeHours": "8",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.hiby.com/products/r6-pro-ii-gen-2",
     "officialStoreUrl": "",
@@ -3099,12 +3230,7 @@
         "url": "https://www.amazon.com/dp/B0CKM5XVLP"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r6-pro-ii?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -3120,7 +3246,7 @@
     "sourceUrl": "https://store.hiby.com/products/r6-pro-ii-gen-2",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: HiBy's official R6 Pro II page and product-parameter text verify Snapdragon 665, Android 12, AK4191EQ + dual AK4499EX, switchable Class A/AB amplification, 4GB RAM, 64GB storage, microSD up to 2TB, 5000mAh battery, 5.9in 1080p display, 3.5mm/4.4mm headphone and line outputs, USB DAC and USB-C coaxial output, two-way Bluetooth 5.0 with UAT/LDAC/aptX/aptX HD/AAC/SBC, dual-band Wi-Fi, PCM 32-bit/1536kHz, DSD1024, MQA 16x, 285g, 147.45 x 75.2 x 15 mm, Purple / Black colors, and runtime of 6h SE A / 5h BAL A / 8h SE AB / 7h BAL AB. Structured power remains blank because the accessible official page does not provide a complete SE/BAL power-and-load mapping.",
+    "notes": "Verified - Official: HiBy's official R6 Pro II page and product-parameter text verify Snapdragon 665, Android 12, AK4191EQ + dual AK4499EX, switchable Class A/AB amplification, 4GB RAM, 64GB storage, microSD up to 2TB, 5000mAh battery, 5.9in 1080p display, 3.5mm/4.4mm headphone and line outputs, USB DAC and USB-C coaxial output, two-way Bluetooth 5.0 with UAT/LDAC/aptX/aptX HD/AAC/SBC, dual-band Wi-Fi, PCM 32-bit/1536kHz, DSD1024, MQA 16x, 285g, 147.45 x 75.2 x 15 mm, Purple / Black colors, and runtime of 6h SE A / 5h BAL A / 8h SE AB / 7h BAL AB. Structured power remains blank because the accessible official page does not provide a complete SE/BAL power-and-load mapping. | Battery runtime detail from prior data: 6h SE Class A / 5h BAL Class A / 8h SE Class AB / 7h BAL Class AB.",
     "colors": [
       "Purple",
       "Black"
@@ -3131,8 +3257,8 @@
         "filename": "hiby-r6-pro-ii.webp",
         "alt": "HiBy R6 Pro II digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/r6-pro-ii-gen-2",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3181,7 +3307,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.2 Gen 2",
-    "batteryLifeHours": "18h Class A / 21h Class AB",
+    "batteryLifeHours": "21",
     "storageExpansionMax": "",
     "officialUrl": "https://store.hiby.com/products/hiby-r8-ii",
     "officialStoreUrl": "https://store.hiby.com/products/hiby-r8-ii",
@@ -3191,12 +3317,7 @@
         "url": "https://hifigo.com/products/hiby-r8ii"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r8ii?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -3228,8 +3349,8 @@
         "filename": "hiby-r8-ii.webp",
         "alt": "HiBy R8 II digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-r8-ii",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3278,7 +3399,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "4TB",
     "officialUrl": "https://store.hiby.com/products/hiby-rs2",
     "officialStoreUrl": "",
@@ -3311,8 +3432,8 @@
         "filename": "hiby-rs2.webp",
         "alt": "HiBy RS2 digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-rs2",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3361,7 +3482,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "8.5h",
+    "batteryLifeHours": "8.5",
     "storageExpansionMax": "",
     "officialUrl": "https://store.hiby.com/products/hiby-rs6",
     "officialStoreUrl": "https://store.hiby.com/products/hiby-rs6",
@@ -3371,12 +3492,7 @@
         "url": "https://hifigo.com/products/hiby-rs6"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-rs6?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -3406,8 +3522,8 @@
         "filename": "hiby-rs6.webp",
         "alt": "HiBy RS6 digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-rs6",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3456,7 +3572,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "8h through 4.4mm balanced",
+    "batteryLifeHours": "8",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.hiby.com/products/hiby-rs8",
     "officialStoreUrl": "",
@@ -3481,7 +3597,7 @@
     "sourceUrl": "https://store.hiby.com/products/hiby-rs8",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: HiBy product page confirms $3299 price, Snapdragon 665, Android 12, second-generation Darwin R2R architecture, Class A amplification, 8GB RAM, 256GB storage, microSD up to 2TB, 5.5in 1080p display, PCM 32-bit/1536kHz, DSD1024, MQA 16x unfolding, 8h playback through 4.4mm balanced, 584g weight, 143 x 82 x 22 mm dimensions, Gray finish, USB-C, and an included USB-C-to-RCA coaxial cable supporting coaxial output. Structured power remains blank because the official accessible text does not provide a complete SE/BAL power and impedance mapping.",
+    "notes": "Verified - Official: HiBy product page confirms $3299 price, Snapdragon 665, Android 12, second-generation Darwin R2R architecture, Class A amplification, 8GB RAM, 256GB storage, microSD up to 2TB, 5.5in 1080p display, PCM 32-bit/1536kHz, DSD1024, MQA 16x unfolding, 8h playback through 4.4mm balanced, 584g weight, 143 x 82 x 22 mm dimensions, Gray finish, USB-C, and an included USB-C-to-RCA coaxial cable supporting coaxial output. Structured power remains blank because the official accessible text does not provide a complete SE/BAL power and impedance mapping. | Battery runtime detail from prior data: 8h through 4.4mm balanced.",
     "colors": [
       "Gray"
     ],
@@ -3491,8 +3607,8 @@
         "filename": "hiby-rs8.webp",
         "alt": "HiBy RS8 digital audio player",
         "credit": "HiBy",
-        "sourceUrl": "https://store.hiby.com/products/hiby-rs8",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3541,7 +3657,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "10-12h PO / 8-10h BAL",
+    "batteryLifeHours": "12",
     "storageExpansionMax": "256GB",
     "officialUrl": "https://www.hidizs.net/products/hidizs-ap30-music-boy-the-truly-wearable-palm-sized-hi-res-music-player",
     "officialStoreUrl": "",
@@ -3553,7 +3669,7 @@
     "sourceUrl": "https://www.hidizs.net/products/hidizs-ap30-music-boy-the-truly-wearable-palm-sized-hi-res-music-player",
     "sourceType": "Official",
     "verificationStatus": "Partial - Official",
-    "notes": "Partial - Official: Hidizs AP30 Music Boy page confirms upcoming Kickstarter status, RKNANOD master chip, CS43198 DAC, RT6863 amplifier, HidizsOS, 1200mAh battery, 3.5mm and 4.4mm outputs, Bluetooth 5.3, USB DAC mode, PCM 24-bit/192kHz, DSD256, microSD up to 256GB, 56g weight, 68 x 53 x 17 mm dimensions, 10-12h SE / 8-10h balanced playback, and Black / Silver finishes. Output-power figures remain blank because a complete output-plus-load mapping was not verified.",
+    "notes": "Partial - Official: Hidizs AP30 Music Boy page confirms upcoming Kickstarter status, RKNANOD master chip, CS43198 DAC, RT6863 amplifier, HidizsOS, 1200mAh battery, 3.5mm and 4.4mm outputs, Bluetooth 5.3, USB DAC mode, PCM 24-bit/192kHz, DSD256, microSD up to 256GB, 56g weight, 68 x 53 x 17 mm dimensions, 10-12h SE / 8-10h balanced playback, and Black / Silver finishes. Output-power figures remain blank because a complete output-plus-load mapping was not verified. | Battery runtime detail from prior data: 10-12h PO / 8-10h BAL.",
     "colors": [
       "Black",
       "Silver"
@@ -3564,8 +3680,8 @@
         "filename": "hidizs-ap30.webp",
         "alt": "Hidizs AP30 Kickstarter digital audio player",
         "credit": "Hidizs",
-        "sourceUrl": "https://www.hidizs.net/products/hidizs-ap30-music-boy-the-truly-wearable-palm-sized-hi-res-music-player",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3618,7 +3734,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "15h",
+    "batteryLifeHours": "15",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.hidizs.net/products/ap80-high-resolution-portable-music-player",
     "officialStoreUrl": "https://www.hidizs.net/products/ap80-high-resolution-portable-music-player",
@@ -3650,8 +3766,8 @@
         "filename": "hidizs-ap80.webp",
         "alt": "Hidizs AP80 digital audio player",
         "credit": "Hidizs",
-        "sourceUrl": "https://www.hidizs.net/products/ap80-high-resolution-portable-music-player",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3706,7 +3822,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "8-10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "512GB",
     "officialUrl": "https://www.hidizs.net/products/ap80-pro-fully-balanced-lossless-music-player",
     "officialStoreUrl": "https://www.hidizs.net/products/ap80-pro-fully-balanced-lossless-music-player",
@@ -3716,12 +3832,7 @@
         "url": "https://hifigo.com/products/hidizs-ap80-pro-fully-balanced-portable-music-player-dap"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hidizs-ap80-pro-fully-balanced-portable-music-player-dap?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -3749,8 +3860,8 @@
         "filename": "hidizs-ap80-pro.webp",
         "alt": "Hidizs AP80 Pro digital audio player",
         "credit": "Hidizs",
-        "sourceUrl": "https://www.hidizs.net/products/ap80-pro-fully-balanced-lossless-music-player",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3810,7 +3921,7 @@
     ],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "12h",
+    "batteryLifeHours": "12",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.hidizs.net/products/hidizs-ap80-pro-max-all-in-one-hi-res-streaming-music-player",
     "officialStoreUrl": "",
@@ -3843,8 +3954,8 @@
         "filename": "hidizs-ap80-pro-max.webp",
         "alt": "Hidizs AP80 Pro Max digital audio player",
         "credit": "Hidizs",
-        "sourceUrl": "https://www.hidizs.net/products/hidizs-ap80-pro-max-all-in-one-hi-res-streaming-music-player",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3899,7 +4010,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "8-11h SE / 6-8h BAL",
+    "batteryLifeHours": "11",
     "storageExpansionMax": "512GB",
     "officialUrl": "https://www.hidizs.net/products/ap80-pro-x-fully-balanced-lossless-music-player-ayfk",
     "officialStoreUrl": "",
@@ -3913,12 +4024,7 @@
         "url": "https://www.amazon.com/dp/B0FFSGSC9V"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hidizs-ap80-pro-x-portable-balanced-mqa-music-player?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -3934,7 +4040,7 @@
     "sourceUrl": "https://www.hidizs.net/products/ap80-pro-x-fully-balanced-lossless-music-player-ayfk",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Hidizs AP80 Pro-X official specification and comparison pages verify Ingenic X1000, HiBy OS 3.0, dual ES9219C DACs, 800mAh battery, 2.45in display, 3.5mm SE and 2.5mm balanced outputs, 70mW SE and 190mW balanced at 32 ohms, bidirectional Bluetooth 4.2 with aptX / LDAC / UAT / AAC / SBC, bidirectional USB DAC through USB-C, PCM 32-bit/384kHz, DSD256, MQA 8x, microSD up to 512GB, 8-11h SE / 6-8h balanced runtime, 72g weight, 61.2 x 54.5 x 13.8 mm dimensions, and Black / Blue / Silver colors.",
+    "notes": "Verified - Official: Hidizs AP80 Pro-X official specification and comparison pages verify Ingenic X1000, HiBy OS 3.0, dual ES9219C DACs, 800mAh battery, 2.45in display, 3.5mm SE and 2.5mm balanced outputs, 70mW SE and 190mW balanced at 32 ohms, bidirectional Bluetooth 4.2 with aptX / LDAC / UAT / AAC / SBC, bidirectional USB DAC through USB-C, PCM 32-bit/384kHz, DSD256, MQA 8x, microSD up to 512GB, 8-11h SE / 6-8h balanced runtime, 72g weight, 61.2 x 54.5 x 13.8 mm dimensions, and Black / Blue / Silver colors. | Battery runtime detail from prior data: 8-11h SE / 6-8h BAL.",
     "colors": [
       "Black",
       "Blue",
@@ -3946,8 +4052,8 @@
         "filename": "hidizs-ap80-pro-x.webp",
         "alt": "Hidizs AP80 Pro X digital audio player",
         "credit": "Hidizs",
-        "sourceUrl": "https://www.hidizs.net/products/ap80-pro-x-fully-balanced-lossless-music-player-ayfk",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -3999,7 +4105,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "512GB",
     "officialUrl": "https://hifiwalker.com/products/h2",
     "officialStoreUrl": "",
@@ -4026,8 +4132,8 @@
         "filename": "hifi-walker-h2.webp",
         "alt": "HiFi Walker H2 digital audio player",
         "credit": "HiFi Walker",
-        "sourceUrl": "https://hifiwalker.com/products/h2",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -4079,7 +4185,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "512GB",
     "officialUrl": "https://hifiwalker.com/products/h2-touch",
     "officialStoreUrl": "",
@@ -4106,8 +4212,8 @@
         "filename": "hifi-walker-h2-touch.webp",
         "alt": "HiFi Walker H2 Touch digital audio player",
         "credit": "HiFi Walker",
-        "sourceUrl": "https://hifiwalker.com/products/h2-touch",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -4156,7 +4262,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "",
-    "batteryLifeHours": "12h 2020 / 13h 2019",
+    "batteryLifeHours": "2020",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://ibasso.com/product/dx160/",
     "officialStoreUrl": "",
@@ -4185,8 +4291,8 @@
         "filename": "ibasso-dx160.webp",
         "alt": "iBasso DX160 digital audio player",
         "credit": "iBasso",
-        "sourceUrl": "https://ibasso.com/product/dx160/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -4235,7 +4341,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "",
-    "batteryLifeHours": "11h",
+    "batteryLifeHours": "11",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://ibasso.com/product/dx170/",
     "officialStoreUrl": "",
@@ -4260,8 +4366,8 @@
         "filename": "ibasso-dx170.webp",
         "alt": "iBasso DX170 digital audio player",
         "credit": "iBasso",
-        "sourceUrl": "https://ibasso.com/product/dx170/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -4310,7 +4416,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.1",
-    "batteryLifeHours": "15.5h low gain / 13h high gain / 30h line out",
+    "batteryLifeHours": "30",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://ibasso.com/product/dx180/",
     "officialStoreUrl": "",
@@ -4320,12 +4426,7 @@
         "url": "https://hifigo.com/products/ibasso-dx180"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/ibasso-dx180?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -4345,7 +4446,7 @@
     "sourceUrl": "https://ibasso.com/product/dx180/",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: iBasso product page and official DX180 user guide confirm Snapdragon 665, Android 13, quad CS43131 DACs, 3GB/32GB and 4GB/128GB variants, microSD up to 2TB, 3200mAh battery, 5.0in display, USB-C 3.1, USB DAC, 3.5mm single-ended and 4.4mm balanced headphone/line outputs, 3.5mm coaxial output, Bluetooth 5.0, dual-band Wi-Fi, PCM 32-bit/768kHz, native DSD256, 206g weight, 123 x 75 x 16 mm dimensions, Black / Green / Blue colors, and 15.5h low-gain / 13h high-gain / 30h line-out playback. Official high-gain output is 281mW SE and 690mW balanced at 32 ohms. RAM GB and Storage GB remain blank because this row combines 3GB/32GB and 4GB/128GB variants, while both structured fields require one numeric value.",
+    "notes": "Verified - Official: iBasso product page and official DX180 user guide confirm Snapdragon 665, Android 13, quad CS43131 DACs, 3GB/32GB and 4GB/128GB variants, microSD up to 2TB, 3200mAh battery, 5.0in display, USB-C 3.1, USB DAC, 3.5mm single-ended and 4.4mm balanced headphone/line outputs, 3.5mm coaxial output, Bluetooth 5.0, dual-band Wi-Fi, PCM 32-bit/768kHz, native DSD256, 206g weight, 123 x 75 x 16 mm dimensions, Black / Green / Blue colors, and 15.5h low-gain / 13h high-gain / 30h line-out playback. Official high-gain output is 281mW SE and 690mW balanced at 32 ohms. RAM GB and Storage GB remain blank because this row combines 3GB/32GB and 4GB/128GB variants, while both structured fields require one numeric value. | Battery runtime detail from prior data: 15.5h low gain / 13h high gain / 30h line out.",
     "colors": [
       "Black",
       "Green",
@@ -4357,8 +4458,8 @@
         "filename": "ibasso-dx180.webp",
         "alt": "iBasso DX180 digital audio player",
         "credit": "iBasso",
-        "sourceUrl": "https://ibasso.com/product/dx180/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -4407,7 +4508,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "USB-C 3.1",
-    "batteryLifeHours": "11h",
+    "batteryLifeHours": "11",
     "storageExpansionMax": "",
     "officialUrl": "https://ibasso.com/product/dx240/",
     "officialStoreUrl": "",
@@ -4443,8 +4544,8 @@
         "filename": "ibasso-dx240.webp",
         "alt": "iBasso DX240 digital audio player",
         "credit": "iBasso",
-        "sourceUrl": "https://ibasso.com/product/dx240/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -4493,7 +4594,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.1",
-    "batteryLifeHours": "14h low gain / 11.5h high gain / 26h line out",
+    "batteryLifeHours": "26",
     "storageExpansionMax": "",
     "officialUrl": "https://ibasso.com/product/dx260/",
     "officialStoreUrl": "",
@@ -4503,12 +4604,7 @@
         "url": "https://hifigo.com/products/ibasso-dx260"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/ibasso-dx260?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -4520,7 +4616,7 @@
     "sourceUrl": "https://ibasso.com/product/dx260/",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: iBasso product page and official DX260 user guide confirm Snapdragon 660, Android 11/Mango OS dual-boot operation, 4GB RAM, 64GB storage, octa CS43198 DAC matrix, 4400mAh battery, 5.0in display, USB-C 3.1, USB DAC, 3.5mm single-ended and 4.4mm balanced headphone/line outputs, 3.5mm coaxial output, Bluetooth 5.0, dual-band Wi-Fi, PCM 32-bit/768kHz, native DSD512, 229g weight, 123 x 74.5 x 17.5 mm dimensions, Black / Silver colors, and 14h low-gain / 11.5h high-gain / 26h line-out playback. The official guide identifies 1015mW balanced output at 32 ohms. SE power remains blank because its complete mW/load line was not exposed clearly enough in the accessible manual text.",
+    "notes": "Verified - Official: iBasso product page and official DX260 user guide confirm Snapdragon 660, Android 11/Mango OS dual-boot operation, 4GB RAM, 64GB storage, octa CS43198 DAC matrix, 4400mAh battery, 5.0in display, USB-C 3.1, USB DAC, 3.5mm single-ended and 4.4mm balanced headphone/line outputs, 3.5mm coaxial output, Bluetooth 5.0, dual-band Wi-Fi, PCM 32-bit/768kHz, native DSD512, 229g weight, 123 x 74.5 x 17.5 mm dimensions, Black / Silver colors, and 14h low-gain / 11.5h high-gain / 26h line-out playback. The official guide identifies 1015mW balanced output at 32 ohms. SE power remains blank because its complete mW/load line was not exposed clearly enough in the accessible manual text. | Battery runtime detail from prior data: 14h low gain / 11.5h high gain / 26h line out.",
     "colors": [
       "Black",
       "Silver"
@@ -4531,8 +4627,8 @@
         "filename": "ibasso-dx260.webp",
         "alt": "iBasso DX260 digital audio player",
         "credit": "iBasso",
-        "sourceUrl": "https://ibasso.com/product/dx260/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -4581,7 +4677,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "",
-    "batteryLifeHours": "15h",
+    "batteryLifeHours": "15",
     "storageExpansionMax": "",
     "officialUrl": "https://ibasso.com/product/dx300/",
     "officialStoreUrl": "",
@@ -4617,8 +4713,8 @@
         "filename": "ibasso-dx300.webp",
         "alt": "iBasso DX300 digital audio player",
         "credit": "iBasso",
-        "sourceUrl": "https://ibasso.com/product/dx300/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -4667,7 +4763,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.1",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "",
     "officialUrl": "https://ibasso.com/product/dx320/",
     "officialStoreUrl": "",
@@ -4703,8 +4799,8 @@
         "filename": "ibasso-dx320.webp",
         "alt": "iBasso DX320 digital audio player",
         "credit": "iBasso",
-        "sourceUrl": "https://ibasso.com/product/dx320/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -4756,7 +4852,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "11h",
+    "batteryLifeHours": "11",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://ibasso.com/uploadfiles/download/DX340userguide.pdf",
     "officialStoreUrl": "",
@@ -4766,12 +4862,7 @@
         "url": "https://hifigo.com/products/ibasso-dx340"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/ibasso-dx340?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -4797,7 +4888,7 @@
         "filename": "ibasso-dx340.webp",
         "alt": "iBasso DX340 digital audio player",
         "credit": "iBasso",
-        "sourceUrl": "https://ibasso.com/product/dx340/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -4855,7 +4946,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "14.5h",
+    "batteryLifeHours": "14.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://en.shanling.com/article-IntroM0Pro.html",
     "officialStoreUrl": "",
@@ -4893,7 +4984,7 @@
         "filename": "shanling-m0-pro.webp",
         "alt": "Shanling M0 Pro digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m0-pro-review/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -4948,7 +5039,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "9h",
+    "batteryLifeHours": "9",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://en.shanling.com/article-IntroM0Pura.html",
     "officialStoreUrl": "",
@@ -4962,12 +5053,7 @@
         "url": "https://www.amazon.com/dp/B0GYSTHXG2"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/shanling-m0-pura?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -4991,7 +5077,7 @@
         "filename": "shanling-m0-pura.webp",
         "alt": "Shanling M0 Pura digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m0-pura-review/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -5046,7 +5132,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "12.5h",
+    "batteryLifeHours": "12.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://en.shanling.com/article-IntroM1plus.html",
     "officialStoreUrl": "",
@@ -5064,16 +5150,7 @@
         "url": "https://www.amazon.com/dp/B0DRSWJJCC"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/shanling-m1-plus?rfsn=8393475.dcd124"
-      },
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/shanling-m1-plus?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -5097,7 +5174,7 @@
         "filename": "shanling-m1-plus.webp",
         "alt": "Shanling M1 Plus digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m1-plus-review/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -5151,7 +5228,7 @@
     ],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "10.5h SE / 7.5h BAL",
+    "batteryLifeHours": "10.5",
     "storageExpansionMax": "",
     "officialUrl": "https://en.shanling.com/article/102",
     "officialStoreUrl": "",
@@ -5172,7 +5249,7 @@
     "sourceUrl": "https://en.shanling.com/article/102",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Shanling's exact M2X announcement verifies the 3.5mm single-ended and 2.5mm balanced outputs, 106mW SE and 120mW balanced at 32 ohms, 2400mAh battery, 10.5h SE / 7.5h balanced playback, 147g weight, and PCM 32-bit/384kHz plus DSD256 support. Existing platform and connectivity fields are retained where consistent with the exact-model source.",
+    "notes": "Verified - Official: Shanling's exact M2X announcement verifies the 3.5mm single-ended and 2.5mm balanced outputs, 106mW SE and 120mW balanced at 32 ohms, 2400mAh battery, 10.5h SE / 7.5h balanced playback, 147g weight, and PCM 32-bit/384kHz plus DSD256 support. Existing platform and connectivity fields are retained where consistent with the exact-model source. | Battery runtime detail from prior data: 10.5h SE / 7.5h BAL.",
     "colors": [],
     "images": [
       {
@@ -5180,7 +5257,7 @@
         "filename": "shanling-m2x.webp",
         "alt": "Shanling M2X digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m2x-review/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -5237,7 +5314,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "14h SE / 11h BAL",
+    "batteryLifeHours": "14",
     "storageExpansionMax": "",
     "officialUrl": "https://en.shanling.com/article-IntroM3Plus.html",
     "officialStoreUrl": "",
@@ -5251,16 +5328,7 @@
         "url": "https://www.linsoul.com/products/shanling-m3-plus"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/shanling-m3-plus?rfsn=8393475.dcd124"
-      },
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/shanling-m3-plus?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -5276,7 +5344,7 @@
     "sourceUrl": "https://en.shanling.com/article-IntroM3Plus.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Shanling launch specifications confirm $469 MSRP, Snapdragon 665, open Android 13, 4GB RAM, 64GB storage plus microSD, four CS43198 DACs, two SGM8262 amps, 3500mAh battery, 4.7in display, 3.5mm SE and 4.4mm balanced outputs, Bluetooth 5.0 with listed transmit/receive codecs, USB DAC and USB transport, PCM 32-bit/768kHz, DSD512, 14h SE / 11h balanced playback, 205g weight, 115 x 70 x 18 mm dimensions, and official high-gain power of 200mW SE / 800mW balanced at 32 ohms. Shanling states three colors including Mocha, but the complete official color list was not exposed in accessible text, so color_variants remains blank.",
+    "notes": "Verified - Official: Shanling launch specifications confirm $469 MSRP, Snapdragon 665, open Android 13, 4GB RAM, 64GB storage plus microSD, four CS43198 DACs, two SGM8262 amps, 3500mAh battery, 4.7in display, 3.5mm SE and 4.4mm balanced outputs, Bluetooth 5.0 with listed transmit/receive codecs, USB DAC and USB transport, PCM 32-bit/768kHz, DSD512, 14h SE / 11h balanced playback, 205g weight, 115 x 70 x 18 mm dimensions, and official high-gain power of 200mW SE / 800mW balanced at 32 ohms. Shanling states three colors including Mocha, but the complete official color list was not exposed in accessible text, so color_variants remains blank. | Battery runtime detail from prior data: 14h SE / 11h BAL.",
     "colors": [],
     "images": [
       {
@@ -5284,7 +5352,7 @@
         "filename": "shanling-m3-plus.webp",
         "alt": "Shanling M3 Plus digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m3-plus-review/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -5341,7 +5409,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "",
-    "batteryLifeHours": "20.5h SE / 14.5h BAL",
+    "batteryLifeHours": "20.5",
     "storageExpansionMax": "",
     "officialUrl": "https://en.shanling.com/article-IntroM3U.html",
     "officialStoreUrl": "",
@@ -5355,16 +5423,7 @@
         "url": "https://www.linsoul.com/products/shanling-m3-ultra"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/shanling-m3-ultra?rfsn=8393475.dcd124"
-      },
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/shanling-m3-ultra?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -5380,7 +5439,7 @@
     "sourceUrl": "https://en.shanling.com/article-IntroM3U.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Shanling launch specifications confirm $479 MSRP, Snapdragon 665, Android 10, 3GB RAM, 32GB storage plus microSD, dual ES9219C DACs, dual RT6863 headphone amps, 3500mAh battery, 4.2in display, 3.5mm SE and 4.4mm balanced outputs, Bluetooth 5.0 with listed transmit/receive codecs, dual-band Wi-Fi, PCM 32-bit/384kHz, DSD256, 20.5h SE / 14.5h balanced playback, 199g weight, 109 x 70.5 x 18 mm dimensions, and official high-gain power of 140mW SE / 260mW balanced at 32 ohms. Corrected the previous erroneous Quad ES9219C entry to Shanling's official dual-DAC specification.",
+    "notes": "Verified - Official: Shanling launch specifications confirm $479 MSRP, Snapdragon 665, Android 10, 3GB RAM, 32GB storage plus microSD, dual ES9219C DACs, dual RT6863 headphone amps, 3500mAh battery, 4.2in display, 3.5mm SE and 4.4mm balanced outputs, Bluetooth 5.0 with listed transmit/receive codecs, dual-band Wi-Fi, PCM 32-bit/384kHz, DSD256, 20.5h SE / 14.5h balanced playback, 199g weight, 109 x 70.5 x 18 mm dimensions, and official high-gain power of 140mW SE / 260mW balanced at 32 ohms. Corrected the previous erroneous Quad ES9219C entry to Shanling's official dual-DAC specification. | Battery runtime detail from prior data: 20.5h SE / 14.5h BAL.",
     "colors": [],
     "images": [
       {
@@ -5388,7 +5447,7 @@
         "filename": "shanling-m3-ultra.webp",
         "alt": "Shanling M3 Ultra digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m3-ultra-review/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -5438,7 +5497,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "23h",
+    "batteryLifeHours": "23",
     "storageExpansionMax": "2TB",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -5467,8 +5526,8 @@
         "filename": "shanling-m3x.webp",
         "alt": "Shanling M3X digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m3x-review/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -5524,7 +5583,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C (XMOS XU316)",
-    "batteryLifeHours": "11h",
+    "batteryLifeHours": "11",
     "storageExpansionMax": "",
     "officialUrl": "https://en.shanling.com/article-Introm5ultra.html",
     "officialStoreUrl": "",
@@ -5538,12 +5597,7 @@
         "url": "https://www.amazon.com/dp/B0F7DQCC1Q"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/shanling-m5-ultra?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -5567,7 +5621,7 @@
         "filename": "shanling-m5-ultra.webp",
         "alt": "Shanling M5 Ultra digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m5-ultra-review/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -5623,7 +5677,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "",
-    "batteryLifeHours": "12h SE / 9h BAL",
+    "batteryLifeHours": "12",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://en.shanling.com/article/118",
     "officialStoreUrl": "",
@@ -5640,7 +5694,7 @@
     "sourceUrl": "https://en.shanling.com/article/118",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Shanling's exact M6 launch page verifies dual AK4495SEQ DACs, 2.5mm and 4.4mm balanced connectors alongside 3.5mm SE, a 4.7in display, 4000mAh battery, Bluetooth 4.2 with LDAC/LHDC/aptX HD/aptX/SBC transmit support, 160mW SE and 350mW balanced at 32 ohms, 12h SE / 9h balanced runtime, 220g weight, and 135.5 x 68.5 x 17 mm dimensions.",
+    "notes": "Verified - Official: Shanling's exact M6 launch page verifies dual AK4495SEQ DACs, 2.5mm and 4.4mm balanced connectors alongside 3.5mm SE, a 4.7in display, 4000mAh battery, Bluetooth 4.2 with LDAC/LHDC/aptX HD/aptX/SBC transmit support, 160mW SE and 350mW balanced at 32 ohms, 12h SE / 9h balanced runtime, 220g weight, and 135.5 x 68.5 x 17 mm dimensions. | Battery runtime detail from prior data: 12h SE / 9h BAL.",
     "colors": [],
     "images": [
       {
@@ -5648,7 +5702,7 @@
         "filename": "shanling-m6.webp",
         "alt": "Shanling M6 digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://en.shanling.com/product/244",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -5708,12 +5762,7 @@
         "url": "https://hifigo.com/products/shanling-m6-pro-portable-music-player-with-dual-ak4497eq"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/shanling-m6-pro-portable-music-player-with-dual-ak4497eq?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -5737,8 +5786,8 @@
         "filename": "shanling-m6-pro.webp",
         "alt": "Shanling M6 Pro digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m6-pro-review/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -5798,7 +5847,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "",
-    "batteryLifeHours": "13.5h SE / 9h BAL",
+    "batteryLifeHours": "13.5",
     "storageExpansionMax": "",
     "officialUrl": "https://en.shanling.com/article-IntroM6U.html",
     "officialStoreUrl": "",
@@ -5823,7 +5872,7 @@
     "sourceUrl": "https://en.shanling.com/article-IntroM6U.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Shanling launch specifications confirm $919 MSRP, Snapdragon 665, open Android 10, 4GB RAM, 64GB storage plus microSD, four AK4493SEQ DACs, OPA1612/OPA2211/LTA8092/BUF634A analog stage, 5650mAh battery, 5in display, 3.5mm SE and 4.4mm balanced outputs, Bluetooth 5.0 with listed transmit/receive codecs, dual-band Wi-Fi, DLNA, AirPlay, PCM 32-bit/768kHz, DSD512, MQA 16x, 13.5h SE / 9h balanced playback, 263g weight, 127 x 77 x 18 mm dimensions, Emerald Green / Black finishes, and official power of 240mW SE / 720mW balanced at 32 ohms. Corrected RAM from 3GB to Shanling's official 4GB specification.",
+    "notes": "Verified - Official: Shanling launch specifications confirm $919 MSRP, Snapdragon 665, open Android 10, 4GB RAM, 64GB storage plus microSD, four AK4493SEQ DACs, OPA1612/OPA2211/LTA8092/BUF634A analog stage, 5650mAh battery, 5in display, 3.5mm SE and 4.4mm balanced outputs, Bluetooth 5.0 with listed transmit/receive codecs, dual-band Wi-Fi, DLNA, AirPlay, PCM 32-bit/768kHz, DSD512, MQA 16x, 13.5h SE / 9h balanced playback, 263g weight, 127 x 77 x 18 mm dimensions, Emerald Green / Black finishes, and official power of 240mW SE / 720mW balanced at 32 ohms. Corrected RAM from 3GB to Shanling's official 4GB specification. | Battery runtime detail from prior data: 13.5h SE / 9h BAL.",
     "colors": [
       "Emerald Green",
       "Black"
@@ -5834,7 +5883,7 @@
         "filename": "shanling-m6-ultra.webp",
         "alt": "Shanling M6 Ultra digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m6-ultra-review/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -5908,16 +5957,7 @@
         "url": "https://www.linsoul.com/products/shanling-m7"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/shanling-m7-audio-player?rfsn=8393475.dcd124"
-      },
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/shanling-m7?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -5941,7 +5981,7 @@
         "filename": "shanling-m7.webp",
         "alt": "Shanling M7 digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m7-review/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -6024,8 +6064,8 @@
         "filename": "shanling-m8.webp",
         "alt": "Shanling M8 digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m8-review/",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -6082,7 +6122,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "15.5h SE / 13h BAL",
+    "batteryLifeHours": "15.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://en.shanling.com/article-IntroM8T.html",
     "officialStoreUrl": "",
@@ -6092,12 +6132,7 @@
         "url": "https://www.linsoul.com/products/shanling-m8t"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/shanling-m8t?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -6113,7 +6148,7 @@
     "sourceUrl": "https://en.shanling.com/article-IntroM8T.html",
     "sourceType": "Official",
     "verificationStatus": "Partial - Official",
-    "notes": "Partial - Official: Shanling's official launch page confirms M8T is shipping, is the current portable flagship, runs open Android 13, supports third-party music and streaming apps, and uses dual JAN6418 tube output with selectable transistor mode. The official product page is image-based in accessible text. Secondary reliable sources Headfonics and Twister6 confirm $1499 pricing, Snapdragon 665, 6GB RAM, 128GB storage, microSD up to 2TB, dual AK4191EQ + dual AK4499EX DAC system, ADA45253/OPA1612/AD8397 transistor stage, 8350mAh battery, 6in display, Bluetooth 5.0 with LDAC/AAC/SBC, dual-band Wi-Fi, USB DAC, PCM 32-bit/768kHz, DSD1024, 15.5h SE / 13h balanced playback, 383g weight, 147 x 82 x 22 mm dimensions, and transistor-mode power of 500mW SE / 1125mW balanced at 32 ohms. Status corrected from Upcoming to Active. Color remains blank because an official chassis color name was not confirmed.",
+    "notes": "Partial - Official: Shanling's official launch page confirms M8T is shipping, is the current portable flagship, runs open Android 13, supports third-party music and streaming apps, and uses dual JAN6418 tube output with selectable transistor mode. The official product page is image-based in accessible text. Secondary reliable sources Headfonics and Twister6 confirm $1499 pricing, Snapdragon 665, 6GB RAM, 128GB storage, microSD up to 2TB, dual AK4191EQ + dual AK4499EX DAC system, ADA45253/OPA1612/AD8397 transistor stage, 8350mAh battery, 6in display, Bluetooth 5.0 with LDAC/AAC/SBC, dual-band Wi-Fi, USB DAC, PCM 32-bit/768kHz, DSD1024, 15.5h SE / 13h balanced playback, 383g weight, 147 x 82 x 22 mm dimensions, and transistor-mode power of 500mW SE / 1125mW balanced at 32 ohms. Status corrected from Upcoming to Active. Color remains blank because an official chassis color name was not confirmed. | Battery runtime detail from prior data: 15.5h SE / 13h BAL.",
     "colors": [],
     "images": [
       {
@@ -6121,7 +6156,7 @@
         "filename": "shanling-m8t.webp",
         "alt": "Shanling M8T digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://en.shanling.com/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -6181,7 +6216,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "",
-    "batteryLifeHours": "18h SE / 10h BAL",
+    "batteryLifeHours": "18",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://en.shanling.com/article-shanling-m9.html",
     "officialStoreUrl": "",
@@ -6206,7 +6241,7 @@
     "sourceUrl": "https://en.shanling.com/article-shanling-m9.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Shanling launch specifications confirm $2799 MSRP, Snapdragon 665, Android 10, 8GB RAM, 256GB storage plus microSD, dual AK4499EQ DACs, ADA4610-2/BUF634A/OPA1612 amplification, 8350mAh battery, 6in 2K display, interchangeable 3.5mm / 2.5mm / 4.4mm / 3.5Pro output modules, Bluetooth 5.0 with listed codecs, dual-band Wi-Fi, DLNA, AirPlay, PCM 32-bit/768kHz, DSD512, MQA 16x, 18h SE / 10h balanced playback, 409g weight, 152 x 82 x 22 mm dimensions, and official power of 460mW SE / 920mW balanced at 32 ohms. The AKM edition was officially limited to 500 units; existing Discontinued status remains unchanged.",
+    "notes": "Verified - Official: Shanling launch specifications confirm $2799 MSRP, Snapdragon 665, Android 10, 8GB RAM, 256GB storage plus microSD, dual AK4499EQ DACs, ADA4610-2/BUF634A/OPA1612 amplification, 8350mAh battery, 6in 2K display, interchangeable 3.5mm / 2.5mm / 4.4mm / 3.5Pro output modules, Bluetooth 5.0 with listed codecs, dual-band Wi-Fi, DLNA, AirPlay, PCM 32-bit/768kHz, DSD512, MQA 16x, 18h SE / 10h balanced playback, 409g weight, 152 x 82 x 22 mm dimensions, and official power of 460mW SE / 920mW balanced at 32 ohms. The AKM edition was officially limited to 500 units; existing Discontinued status remains unchanged. | Battery runtime detail from prior data: 18h SE / 10h BAL.",
     "colors": [],
     "images": [
       {
@@ -6214,7 +6249,7 @@
         "filename": "shanling-m9.webp",
         "alt": "Shanling M9 digital audio player",
         "credit": "Shanling",
-        "sourceUrl": "https://headfonics.com/shanling-m9-review/",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -6272,7 +6307,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.2 Gen 1",
-    "batteryLifeHours": "36h MP3 / 32h FLAC 96/24",
+    "batteryLifeHours": "36",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-a-series/nw-a306/specifications",
     "officialStoreUrl": "",
@@ -6289,7 +6324,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-a-series/nw-a306/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Sony USA and Sony Japan A300-series specifications confirm Android 12 at launch, 32GB storage, microSD/microSDXC, S-Master HX, 3.5mm output, 3.6in display, Bluetooth 5.0 transmit with SBC/AAC/aptX/aptX HD/LDAC, dual-band Wi-Fi, USB-C 3.2 Gen 1, PCM up to 32-bit/384kHz, DSD up to 11.2896MHz (DSD256), MQA, third-party Android streaming apps, 36h MP3 / 32h FLAC 96/24 playback, 113g weight, 56.5 x 98.4 x 11.8 mm dimensions, Gray / Blue / Black colors, and official microSDXC support up to 1TB. Sony's USA output specification is region-capped and differs from other markets, so structured power remains blank.",
+    "notes": "Verified - Official: Sony USA and Sony Japan A300-series specifications confirm Android 12 at launch, 32GB storage, microSD/microSDXC, S-Master HX, 3.5mm output, 3.6in display, Bluetooth 5.0 transmit with SBC/AAC/aptX/aptX HD/LDAC, dual-band Wi-Fi, USB-C 3.2 Gen 1, PCM up to 32-bit/384kHz, DSD up to 11.2896MHz (DSD256), MQA, third-party Android streaming apps, format-dependent battery playback, 113g weight, 56.5 x 98.4 x 11.8 mm dimensions, Gray / Blue / Black colors, and official microSDXC support up to 1TB. Sony's USA output specification is region-capped and differs from other markets, so structured power remains blank. | Official battery rating varies by app, format, and connection. Sony rates Music Player playback at approx. 36h for MP3 128 kbps, AAC 256 kbps, WAV 44.1 kHz/16-bit, and FLAC 44.1 kHz/16-bit; approx. 32h for FLAC 96/192 kHz 24-bit; DSD and Bluetooth/app playback are lower.",
     "colors": [
       "Gray",
       "Blue",
@@ -6301,8 +6336,8 @@
         "filename": "sony-nw-a306.webp",
         "alt": "Sony NW-A306 digital audio player",
         "credit": "Sony",
-        "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-a-series/nw-a306/specifications",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -6359,7 +6394,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.2 Gen 1",
-    "batteryLifeHours": "36h MP3 / 32h FLAC 192/24",
+    "batteryLifeHours": "36",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.jp/walkman/products/NW-A300_series/spec.html",
     "officialStoreUrl": "",
@@ -6371,7 +6406,7 @@
     "sourceUrl": "https://www.sony.jp/walkman/products/NW-A300_series/spec.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Sony Japan's A300-series specifications confirm NW-A307 as the 64GB model alongside the 32GB NW-A306, with Android 12 at launch, microSD, S-Master HX, 3.5mm output, 3.6in display, Bluetooth 5.0 transmit with SBC/AAC/aptX/aptX HD/LDAC, dual-band Wi-Fi, USB-C 3.2 Gen 1, PCM up to 32-bit/384kHz, DSD256, MQA, third-party Android streaming apps, 36h MP3 / 32h FLAC 192/24 playback, 113g weight, 56.5 x 98.4 x 11.8 mm dimensions, Gray / Blue / Black colors, and official microSDXC support up to 1TB. Sony output power varies by sales region, so structured power remains blank.",
+    "notes": "Verified - Official: Sony Japan's A300-series specifications confirm NW-A307 as the 64GB model alongside the 32GB NW-A306, with Android 12 at launch, microSD, S-Master HX, 3.5mm output, 3.6in display, Bluetooth 5.0 transmit with SBC/AAC/aptX/aptX HD/LDAC, dual-band Wi-Fi, USB-C 3.2 Gen 1, PCM up to 32-bit/384kHz, DSD256, MQA, third-party Android streaming apps, format-dependent battery playback, 113g weight, 56.5 x 98.4 x 11.8 mm dimensions, Gray / Blue / Black colors, and official microSDXC support up to 1TB. Sony output power varies by sales region, so structured power remains blank. | Official A300-series battery rating varies by app, format, and connection. Sony lists approx. 36h for MP3 128 kbps; the related NW-A306 Help Guide also lists FLAC 44.1 kHz/16-bit at approx. 36h. FLAC 96/192 kHz 24-bit is approx. 32h, with DSD and Bluetooth/app playback lower.",
     "colors": [
       "Gray",
       "Blue",
@@ -6383,7 +6418,7 @@
         "filename": "sony-nw-a307.webp",
         "alt": "Sony NW-A307 digital audio player",
         "credit": "Sony",
-        "sourceUrl": "https://en.wikipedia.org/wiki/Walkman_A_Series",
+        "sourceUrl": "",
         "type": ""
       }
     ]
@@ -6441,7 +6476,7 @@
     ],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "USB-C 3.2 Gen 1",
-    "batteryLifeHours": "40h",
+    "batteryLifeHours": "40",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1am2/specifications",
     "officialStoreUrl": "",
@@ -6458,7 +6493,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1am2/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Sony specifications confirm Android 11, 128GB storage, microSD/microSDXC, S-Master HX, 3.5mm and 4.4mm balanced outputs, 5.0in display, Bluetooth 5.0 transmit, dual-band Wi-Fi, USB-C 3.2 Gen 1, PCM up to 32-bit/384kHz, native DSD256 through balanced output, MQA, Android streaming apps, up to 40h MP3/FLAC 96/24 playback, 299g weight, 80.5 x 142.5 x 20.8 mm dimensions, Black finish, and official microSDXC support up to 1TB. Sony's published high-gain 60mW SE and 250mW balanced figures are market-dependent, so structured power is left blank to avoid applying one region's output to all units.",
+    "notes": "Verified - Official: Sony specifications confirm Android 11, 128GB storage, microSD/microSDXC, S-Master HX, 3.5mm and 4.4mm balanced outputs, 5.0in display, Bluetooth 5.0 transmit, dual-band Wi-Fi, USB-C 3.2 Gen 1, PCM up to 32-bit/384kHz, native DSD256 through balanced output, MQA, Android streaming apps, up to 40h MP3/FLAC 96/24 playback, 299g weight, 80.5 x 142.5 x 20.8 mm dimensions, Black finish, and official microSDXC support up to 1TB. Sony's published high-gain 60mW SE and 250mW balanced figures are market-dependent, so structured power is left blank to avoid applying one region's output to all units. | Official battery rating varies by app/format/output: W.Music app is approx. 40h for MP3 and FLAC 96/24, 35h for FLAC 192/24, and lower for DSD; other music apps / LDAC playback are lower.",
     "colors": [
       "Black"
     ],
@@ -6468,8 +6503,8 @@
         "filename": "sony-nw-wm1am2.webp",
         "alt": "Sony NW-WM1AM2 digital audio player",
         "credit": "Sony",
-        "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1am2/specifications",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -6526,7 +6561,7 @@
     ],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "USB-C 3.2 Gen 1",
-    "batteryLifeHours": "40h",
+    "batteryLifeHours": "40",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1zm2/specifications",
     "officialStoreUrl": "",
@@ -6538,7 +6573,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1zm2/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Sony specifications confirm Android 11, 256GB storage, microSD/microSDXC, S-Master HX, 3.5mm and 4.4mm balanced outputs, 5.0in display, Bluetooth 5.0 transmit, dual-band Wi-Fi, USB-C 3.2 Gen 1, PCM up to 32-bit/384kHz, native DSD256 through balanced output, MQA, Android streaming apps, up to 40h MP3/FLAC 96/24 playback, 490g weight, 80.5 x 142.5 x 21 mm dimensions, Gold finish, and official microSDXC support up to 1TB. Sony's published high-gain 60mW SE and 250mW balanced figures are market-dependent, so structured power is left blank to avoid applying one region's output to all units.",
+    "notes": "Verified - Official: Sony specifications confirm Android 11, 256GB storage, microSD/microSDXC, S-Master HX, 3.5mm and 4.4mm balanced outputs, 5.0in display, Bluetooth 5.0 transmit, dual-band Wi-Fi, USB-C 3.2 Gen 1, PCM up to 32-bit/384kHz, native DSD256 through balanced output, MQA, Android streaming apps, up to 40h MP3/FLAC 96/24 playback, 490g weight, 80.5 x 142.5 x 21 mm dimensions, Gold finish, and official microSDXC support up to 1TB. Sony's published high-gain 60mW SE and 250mW balanced figures are market-dependent, so structured power is left blank to avoid applying one region's output to all units. | Official battery rating varies by app/format/output: W.Music app is approx. 40h for MP3 and FLAC 96/24, 35h for FLAC 192/24, and lower for DSD; other music apps / LDAC playback are lower.",
     "colors": [
       "Gold"
     ],
@@ -6548,8 +6583,8 @@
         "filename": "sony-nw-wm1zm2.webp",
         "alt": "Sony NW-WM1ZM2 digital audio player",
         "credit": "Sony",
-        "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1zm2/specifications",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -6598,7 +6633,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "20h SE / 19h BAL (MP3 128kbps)",
+    "batteryLifeHours": "20",
     "storageExpansionMax": "",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx507/specifications",
     "officialStoreUrl": "",
@@ -6610,7 +6645,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx507/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Sony's exact NW-ZX507 support specifications verify Android 9.0, 64GB storage, microSD, USB-C, 3.5mm stereo mini-jack, balanced standard-jack, 3.6in 1280 x 720 display, Bluetooth 5.0, dual-band Wi-Fi, 164g weight, 57.9 x 122.6 x 14.8 mm dimensions, PCM-family playback up to 384kHz, DSD up to 11.2896MHz (DSD256), MQA support, and detailed runtime by format/output. The Sony USA specification explicitly states 50mW SE and 200mW balanced at 16 ohms in High Gain; these are entered with US/High Gain context in the load fields because Sony output limits can vary by region. Battery life is recorded using Sony's MP3 128kbps figures: 20h SE / 19h BAL.",
+    "notes": "Verified - Official: Sony's exact NW-ZX507 support specifications verify Android 9.0, 64GB storage, microSD, USB-C, 3.5mm stereo mini-jack, balanced standard-jack, 3.6in 1280 x 720 display, Bluetooth 5.0, dual-band Wi-Fi, 164g weight, 57.9 x 122.6 x 14.8 mm dimensions, PCM-family playback up to 384kHz, DSD up to 11.2896MHz (DSD256), MQA support, and detailed runtime by format/output. The Sony USA specification explicitly states 50mW SE and 200mW balanced at 16 ohms in High Gain; these are entered with US/High Gain context in the load fields because Sony output limits can vary by region. Battery life follows Sony official W.Music app figures. | Official battery rating varies by format/output: approx. 20h MP3/AAC/WAV/FLAC 44.1 kHz over stereo mini-jack, 19h MP3/AAC/WAV over balanced, 18h FLAC 44.1 balanced and FLAC 96/24 SE, 17h FLAC 96/24 balanced, 16h FLAC 192/24 SE, 15h FLAC 192/24 balanced, and lower for DSD.",
     "colors": [],
     "images": [
       {
@@ -6618,8 +6653,8 @@
         "filename": "sony-nw-zx507.webp",
         "alt": "Sony NW-ZX507 digital audio player",
         "credit": "Sony",
-        "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx507/specifications",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -6676,7 +6711,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.2 Gen 1",
-    "batteryLifeHours": "25h SE / 24h balanced MP3",
+    "batteryLifeHours": "25",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx707/specifications",
     "officialStoreUrl": "",
@@ -6688,7 +6723,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx707/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Sony support specifications confirm Android 12, 64GB storage, microSD/microSDXC, S-Master HX, 3.5mm and 4.4mm balanced outputs, 5.0in display, Bluetooth 5.0 transmit with SBC/AAC/aptX/aptX HD/LDAC, dual-band Wi-Fi, USB-C 3.2 Gen 1, PCM up to 32-bit/384kHz, DSD256, MQA, third-party Android streaming apps, 25h SE / 24h balanced MP3 playback, 227g weight, 72.6 x 132.3 x 17 mm dimensions, and official microSDXC support up to 1TB. Sony USA publishes a region-capped output figure that differs from uncapped markets, so structured power remains blank.",
+    "notes": "Verified - Official: Sony support specifications confirm Android 12, 64GB storage, microSD/microSDXC, S-Master HX, 3.5mm and 4.4mm balanced outputs, 5.0in display, Bluetooth 5.0 transmit with SBC/AAC/aptX/aptX HD/LDAC, dual-band Wi-Fi, USB-C 3.2 Gen 1, PCM up to 32-bit/384kHz, DSD256, MQA, third-party Android streaming apps, 25h SE / 24h balanced MP3 playback, 227g weight, 72.6 x 132.3 x 17 mm dimensions, and official microSDXC support up to 1TB. Sony USA publishes a region-capped output figure that differs from uncapped markets, so structured power remains blank. | Official Sony USA output power is region-capped at 0.4-1.1mW at 32Ω for both 3.5mm and balanced outputs; structured power fields are left blank to avoid representing this as global output power. | Official battery rating varies by app/format/output: W.Music app is approx. 25h MP3 SE, 24h MP3 balanced, 23h FLAC 96/24, 21h FLAC 192/24 and DSD; other music apps and Bluetooth transmitter mode are lower.",
     "colors": [],
     "images": [
       {
@@ -6696,8 +6731,8 @@
         "filename": "sony-nw-zx707.webp",
         "alt": "Sony NW-ZX707 digital audio player",
         "credit": "Sony",
-        "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx707/specifications",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -6777,8 +6812,8 @@
         "filename": "surfans-f20.webp",
         "alt": "Surfans F20 digital audio player",
         "credit": "Surfans",
-        "sourceUrl": "https://www.surfans.net/products/surfans-f20",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -6829,7 +6864,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "12h",
+    "batteryLifeHours": "12",
     "storageExpansionMax": "512GB",
     "officialUrl": "https://www.surfans.net/products/surfans-f28",
     "officialStoreUrl": "",
@@ -6856,8 +6891,8 @@
         "filename": "surfans-f28.webp",
         "alt": "Surfans F28 digital audio player",
         "credit": "Surfans",
-        "sourceUrl": "https://www.surfans.net/products/surfans-f28",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -6909,7 +6944,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "10-12h",
+    "batteryLifeHours": "12",
     "storageExpansionMax": "512GB",
     "officialUrl": "https://www.surfans.net/products/surfans-f35",
     "officialStoreUrl": "",
@@ -6931,8 +6966,8 @@
         "filename": "surfans-f35.webp",
         "alt": "Surfans F35 digital audio player",
         "credit": "Surfans",
-        "sourceUrl": "https://www.surfans.net/products/surfans-f35",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -7020,8 +7055,8 @@
         "filename": "tempotec-v3.webp",
         "alt": "TempoTec V3 digital audio player",
         "credit": "TempoTec",
-        "sourceUrl": "https://www.tempotec.net/products/tempotec-v3",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -7111,8 +7146,8 @@
         "filename": "tempotec-v6.webp",
         "alt": "TempoTec V6 digital audio player",
         "credit": "TempoTec",
-        "sourceUrl": "https://www.tempotec.net/products/tempotec-v6",
-        "type": "official"
+        "sourceUrl": "",
+        "type": ""
       }
     ]
   },
@@ -7170,7 +7205,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "20h",
+    "batteryLifeHours": "20",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.activostyle.com/p1",
     "officialStoreUrl": "",
@@ -7251,7 +7286,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=150",
     "officialStoreUrl": "",
@@ -7289,16 +7324,16 @@
     ]
   },
   {
-    "id": "astell-and-kern-sp4000",
+    "id": "astell-and-kern-sp4000-black-silver",
     "brand": "Astell&Kern",
     "model": "SP4000",
-    "variant": "",
+    "variant": "Black / Silver",
     "releaseYear": 2025,
     "status": "Active",
-    "msrpUsd": null,
-    "soc": "",
-    "os": "",
-    "ramGb": null,
+    "msrpUsd": 3900,
+    "soc": "Octa-core",
+    "os": "Full Android",
+    "ramGb": 8,
     "storageGb": 256,
     "microSd": true,
     "batteryMah": 6780,
@@ -7331,7 +7366,7 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "6in",
-    "weight": "",
+    "weight": "615g",
     "dimensions": "85 x 149.8 x 19.5 mm",
     "pcmMax": "32-bit/768kHz",
     "dsdMax": "DSD512",
@@ -7339,7 +7374,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "about 10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.astellnkern.com/cn/product/view.php?idx=159",
     "officialStoreUrl": "",
@@ -7360,22 +7395,99 @@
     "sourceUrl": "https://www.astellnkern.com/cn/product/view.php?idx=159",
     "sourceType": "Official",
     "verificationStatus": "Partial - Official",
-    "notes": "Partial - Official: Astell&Kern specifications confirm the SP4000 DAP, 256GB storage, microSD up to 1.5TB, 6780mAh battery, about 10h playback, real quad AK4191EQ + AK4499EX architecture, 6in display, 3.5mm unbalanced/optical and 4.4mm balanced outputs, Bluetooth 5.0 with aptX HD/LDAC/LHDC/AAC/SBC, dual-band Wi-Fi, USB DAC, PCM 32-bit/768kHz, DSD512, 85 x 149.8 x 19.5 mm dimensions, and Black / Silver / Copper finishes. MSRP and weight remain blank because they are variant-dependent: Black/Silver are $3900 and 615g, while Copper is $4100 and 642g. Output is published as no-load Vrms, so structured mW fields remain blank. RAM and operating-system label remain blank because they were not verified from the selected official specification text. | Full Astell&Kern line name: A&ultima SP4000.",
+    "notes": "Partial - Official: Astell&Kern specifications confirm the SP4000 DAP, Snapdragon 6125 octa-core CPU, 8GB DDR4 RAM, 256GB storage, microSD up to 1.5TB, 6780mAh battery, about 10h playback, real quad AK4191EQ + AK4499EX architecture, 6in display, 3.5mm unbalanced/optical and 4.4mm balanced outputs, Bluetooth 5.0 with aptX HD/LDAC/LHDC/AAC/SBC, dual-band Wi-Fi, USB DAC, PCM 32-bit/768kHz, DSD512, 85 x 149.8 x 19.5 mm dimensions, and Full Android / open Android OS. Output is published as no-load Vrms, so structured mW fields remain blank. | Full Astell&Kern line name: A&ultima SP4000. Black/Silver variant uses official $3900 MSRP and 615g weight. Copper is tracked as a separate row because official MSRP and weight differ.",
     "colors": [
       "Black",
-      "Silver",
-      "Copper"
+      "Silver"
     ],
     "images": [
       {
         "url": "",
         "filename": "astell-and-kern-a-and-ultima-sp4000.webp",
-        "alt": "Astell&Kern SP4000 digital audio player",
+        "alt": "Astell&Kern SP4000 Black / Silver digital audio player",
         "credit": "",
         "sourceUrl": "",
         "type": ""
       }
     ]
+  },
+  {
+    "id": "astell-and-kern-sp4000-copper",
+    "brand": "Astell&Kern",
+    "model": "SP4000",
+    "variant": "Copper",
+    "releaseYear": 2025,
+    "status": "Active",
+    "msrpUsd": 4100,
+    "soc": "Octa-core",
+    "os": "Full Android",
+    "ramGb": 8,
+    "storageGb": 256,
+    "microSd": true,
+    "batteryMah": 6780,
+    "dac": "Quad AK4191EQ + Quad AK4499EX",
+    "amp": "",
+    "has25mm": null,
+    "has35mm": true,
+    "has44mm": true,
+    "has635mm": null,
+    "sePowerMw": null,
+    "balPowerMw": null,
+    "bluetooth": true,
+    "wifi": true,
+    "cellular": null,
+    "has4g": null,
+    "has5g": null,
+    "bluetoothVersion": "5.0",
+    "bluetoothCodecs": [
+      "aptX HD",
+      "LDAC",
+      "LHDC",
+      "AAC",
+      "SBC"
+    ],
+    "usbDac": true,
+    "lineOut": null,
+    "coaxOut": null,
+    "opticalOut": true,
+    "balancedOutputType": "4.4mm",
+    "sePowerLoad": "",
+    "balPowerLoad": "",
+    "displaySize": "6in",
+    "weight": "642g",
+    "dimensions": "85 x 149.8 x 19.5 mm",
+    "pcmMax": "32-bit/768kHz",
+    "dsdMax": "DSD512",
+    "mqa": null,
+    "streamingServices": [],
+    "wifiBands": "2.4GHz / 5GHz",
+    "usbPort": "USB-C",
+    "batteryLifeHours": "10",
+    "storageExpansionMax": "1.5TB",
+    "officialUrl": "https://www.astellnkern.com/cn/product/view.php?idx=159",
+    "officialStoreUrl": "",
+    "buyLinks": [],
+    "affiliateLinks": [],
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Twister6",
+        "url": "https://twister6.com/2025/08/19/astell-kern-ak-sp4000/"
+      },
+      {
+        "label": "Headfonia",
+        "url": "https://www.headfonia.com/astell-kern-sp4000-review/"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://www.astellnkern.com/cn/product/view.php?idx=159",
+    "sourceType": "Official",
+    "verificationStatus": "Partial - Official",
+    "notes": "Partial - Official: Astell&Kern specifications confirm the SP4000 DAP, Snapdragon 6125 octa-core CPU, 8GB DDR4 RAM, 256GB storage, microSD up to 1.5TB, 6780mAh battery, about 10h playback, real quad AK4191EQ + AK4499EX architecture, 6in display, 3.5mm unbalanced/optical and 4.4mm balanced outputs, Bluetooth 5.0 with aptX HD/LDAC/LHDC/AAC/SBC, dual-band Wi-Fi, USB DAC, PCM 32-bit/768kHz, DSD512, 85 x 149.8 x 19.5 mm dimensions, and Full Android / open Android OS. Output is published as no-load Vrms, so structured mW fields remain blank. | Full Astell&Kern line name: A&ultima SP4000. Copper variant uses official $4100 MSRP and 642g weight; official page identifies it as a copper limited edition with different material, price, and weight.",
+    "colors": [
+      "Copper"
+    ],
+    "images": []
   },
   {
     "id": "astell-and-kern-pd10",
@@ -7385,8 +7497,8 @@
     "releaseYear": 2025,
     "status": "Active",
     "msrpUsd": 2200,
-    "soc": "",
-    "os": "",
+    "soc": "Octa-core",
+    "os": "Full Android OS",
     "ramGb": null,
     "storageGb": 256,
     "microSd": true,
@@ -7431,7 +7543,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "about 15h",
+    "batteryLifeHours": "15",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.astellnkern.com/cn/product/view.php?idx=162",
     "officialStoreUrl": "",
@@ -7448,7 +7560,7 @@
     "sourceUrl": "https://www.astellnkern.com/cn/product/view.php?idx=162",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Astell&Kern specifications confirm $2200 MSRP, an octa-core CPU, 256GB storage, microSD expansion up to 1.5TB, dual AK4191EQ + four AK4498EX DACs, 5770mAh battery, about 15h playback, 6in display, 3.5mm optical/unbalanced and 4.4mm balanced outputs, Bluetooth 5.3 with aptX HD/LDAC/LHDC/AAC/SBC, dual-band Wi-Fi, USB DAC, PCM 32-bit/768kHz, DSD512, Roon Ready support, 435g weight, 75.4 x 149.5 x 17.3 mm dimensions, and Black / Silver finishes. Output is published as no-load Vrms, so structured mW fields remain blank. RAM remains blank because it was not verified from the selected official specification text.",
+    "notes": "Verified - Official: Astell&Kern specifications confirm $2200 MSRP, an octa-core CPU, 256GB storage, microSD expansion up to 1.5TB, dual AK4191EQ + four AK4498EX DACs, 5770mAh battery, about 15h playback, 6in display, 3.5mm optical/unbalanced and 4.4mm balanced outputs, Bluetooth 5.3 with aptX HD/LDAC/LHDC/AAC/SBC, dual-band Wi-Fi, USB DAC, PCM 32-bit/768kHz, DSD512, Roon Ready support, 435g weight, 75.4 x 149.5 x 17.3 mm dimensions, and Black / Silver finishes. Output is published as no-load Vrms, so structured mW fields remain blank. RAM remains blank because it was not verified from the selected official specification text. Official feature text identifies PD10 as supporting Full Android OS; OS field records that label without inventing a version.",
     "colors": [
       "Black",
       "Silver"
@@ -7472,7 +7584,7 @@
     "releaseYear": 2026,
     "status": "Active",
     "msrpUsd": 1800,
-    "soc": "",
+    "soc": "Octa-core",
     "os": "",
     "ramGb": null,
     "storageGb": 256,
@@ -7515,7 +7627,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "14h",
+    "batteryLifeHours": "14",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=171",
     "officialStoreUrl": "",
@@ -7669,7 +7781,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "15h Class A SE / 20.7h Class AB SE / 17h Adaptive SE",
+    "batteryLifeHours": "20.7",
     "storageExpansionMax": "",
     "officialUrl": "https://store.hiby.com/products/hiby-rs8-ii",
     "officialStoreUrl": "",
@@ -7694,7 +7806,7 @@
     "sourceUrl": "https://store.hiby.com/products/hiby-rs8-ii",
     "sourceType": "Official",
     "verificationStatus": "Partial - Official",
-    "notes": "Partial - Official: HiBy's official store confirms the RS8 II is an active ultra-flagship DAP priced at $3899, with Qualcomm Dragonwing QCS8550, Android 13, Darwin III DAC architecture, 411g weight, 75.7 x 148.5 x 24.1 mm dimensions, Black / Gold finishes, and stated 3.5mm playback of 15h Class A / 20.7h Class AB / 17h Adaptive AMP. The detailed specification tables are image-only in accessible text, so RAM, storage, battery capacity, display, exact output list, Bluetooth version/codecs, Wi-Fi bands, decoding limits, and structured power remain blank pending manual or text-spec verification.",
+    "notes": "Partial - Official: HiBy's official store confirms the RS8 II is an active ultra-flagship DAP priced at $3899, with Qualcomm Dragonwing QCS8550, Android 13, Darwin III DAC architecture, 411g weight, 75.7 x 148.5 x 24.1 mm dimensions, Black / Gold finishes, and stated 3.5mm playback of 15h Class A / 20.7h Class AB / 17h Adaptive AMP. The detailed specification tables are image-only in accessible text, so RAM, storage, battery capacity, display, exact output list, Bluetooth version/codecs, Wi-Fi bands, decoding limits, and structured power remain blank pending manual or text-spec verification. | Battery runtime detail from prior data: 15h Class A SE / 20.7h Class AB SE / 17h Adaptive SE.",
     "colors": [
       "Black",
       "Gold"
@@ -7755,7 +7867,7 @@
     "streamingServices": [],
     "wifiBands": "5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "13.5h",
+    "batteryLifeHours": "13.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://ibasso.com/uploadfiles/download/DX270UserManual.pdf",
     "officialStoreUrl": "",
@@ -7765,12 +7877,7 @@
         "url": "https://hifigo.com/products/ibasso-dx270-r2r-ultra"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/ibasso-dx270-r2r-ultra?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -8003,7 +8110,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "11.8h SE solid-state / 7.6h BAL tube",
+    "batteryLifeHours": "11.8",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://en.cayin.cn/features/7/15/623.html",
     "officialStoreUrl": "",
@@ -8013,12 +8120,7 @@
         "url": "https://hifigo.com/products/cayin-n3ultra"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/cayin-n3ultra?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -8038,7 +8140,7 @@
     "sourceUrl": "https://en.cayin.cn/features/7/15/623.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Cayin confirms N3Ultra as a triple-timbre DAP using dual AK4493S DACs, solid-state plus dual Raytheon JAN6418 tube stages, a 4500mAh battery, USB DAC, 3.5mm and 4.4mm headphone/line outputs, and 11.8h SE solid-state / 7.6h balanced tube playback. Reliable detailed reviews identify Snapdragon 425, customized Android 8.1, 2GB RAM, 64GB storage, 4.1in display, 204g weight, 125 x 65.5 x 19.5 mm dimensions, PCM 32-bit/768kHz, DSD512, and maximum 250mW SE / 600mW balanced at 32 ohms. Bluetooth and Wi-Fi remain blank because N3Ultra is intentionally designed as an offline-focused player without third-party streaming. Secondary source: https://headfonics.com/cayin-n3ultra-review/",
+    "notes": "Verified - Official: Cayin confirms N3Ultra as a triple-timbre DAP using dual AK4493S DACs, solid-state plus dual Raytheon JAN6418 tube stages, a 4500mAh battery, USB DAC, 3.5mm and 4.4mm headphone/line outputs, and 11.8h SE solid-state / 7.6h balanced tube playback. Reliable detailed reviews identify Snapdragon 425, customized Android 8.1, 2GB RAM, 64GB storage, 4.1in display, 204g weight, 125 x 65.5 x 19.5 mm dimensions, PCM 32-bit/768kHz, DSD512, and maximum 250mW SE / 600mW balanced at 32 ohms. Bluetooth and Wi-Fi remain blank because N3Ultra is intentionally designed as an offline-focused player without third-party streaming. Secondary source: https://headfonics.com/cayin-n3ultra-review/ | Battery runtime detail from prior data: 11.8h SE solid-state / 7.6h BAL tube.",
     "colors": [
       "Black"
     ],
@@ -8110,7 +8212,7 @@
     ],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "11h SE solid-state / 9h BAL",
+    "batteryLifeHours": "11",
     "storageExpansionMax": "1TB",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -8135,7 +8237,7 @@
     "sourceUrl": "https://en.cayin.cn/features/7/15/340.html",
     "sourceType": "Review",
     "verificationStatus": "Verified - Review",
-    "notes": "Partial - Official: Cayin's product page and quick guide confirm N3Pro as a tube/solid-state HiBy OS DAP with dual AK4493EQ DACs, dual JAN6418 tubes, 3.5mm and 4.4mm outputs, Bluetooth, Wi-Fi, USB DAC, line/coaxial functions, and microSD storage. Reliable review specifications support Ingenic X1000, 4100mAh battery, 3.2in display, 195g weight, 115 x 63.5 x 18.9 mm dimensions, PCM 32-bit/384kHz, DSD256, and Black / Blue finishes. Structured power remains blank because output varies by solid-state/tube mode and gain, and the accessible source set did not provide one unambiguous mode/output/load mapping.",
+    "notes": "Partial - Official: Cayin's product page and quick guide confirm N3Pro as a tube/solid-state HiBy OS DAP with dual AK4493EQ DACs, dual JAN6418 tubes, 3.5mm and 4.4mm outputs, Bluetooth, Wi-Fi, USB DAC, line/coaxial functions, and microSD storage. Reliable review specifications support Ingenic X1000, 4100mAh battery, 3.2in display, 195g weight, 115 x 63.5 x 18.9 mm dimensions, PCM 32-bit/384kHz, DSD256, and Black / Blue finishes. Structured power remains blank because output varies by solid-state/tube mode and gain, and the accessible source set did not provide one unambiguous mode/output/load mapping. | Battery runtime detail from prior data: 11h SE solid-state / 9h BAL.",
     "colors": [
       "Black",
       "Blue"
@@ -8199,7 +8301,7 @@
     ],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "12h",
+    "batteryLifeHours": "12",
     "storageExpansionMax": "800GB total across two slots",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -8287,7 +8389,7 @@
     ],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "12h",
+    "batteryLifeHours": "12",
     "storageExpansionMax": "800GB total across two slots",
     "officialUrl": "https://www.facebook.com/CayinAudio/photos/n5iis-with-a-new-ips-screen-2gb-ram-64gb-internal-storage-2xtf-cards-upto-400gb-/436195706791661/",
     "officialStoreUrl": "",
@@ -8367,7 +8469,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "module-dependent",
+    "batteryLifeHours": "",
     "storageExpansionMax": "512GB",
     "officialUrl": "https://en.cayin.cn/features/7/15/150/339.html",
     "officialStoreUrl": "",
@@ -8388,7 +8490,7 @@
     "sourceUrl": "https://en.cayin.cn/features/7/15/150/339.html",
     "sourceType": "Official",
     "verificationStatus": "Partial - Official",
-    "notes": "Partial - Official: Added as an N6ii Platform row because DAC, amplifier, output hardware, power, and battery runtime depend on the installed interchangeable audio motherboard (A01, T01, E01, E02, A02, R01, and others). Base-platform specifications include Snapdragon 425, Android 8.1, 4GB RAM, 64GB storage, microSD, 5900mAh battery, Bluetooth, dual-band Wi-Fi, USB DAC, 4.2in display, 290g weight, and 121 x 70 x 21 mm dimensions. Module-specific fields intentionally remain blank and should be represented by separate Variant rows if added later.",
+    "notes": "Partial - Official: Added as an N6ii Platform row because DAC, amplifier, output hardware, power, and battery runtime depend on the installed interchangeable audio motherboard (A01, T01, E01, E02, A02, R01, and others). Base-platform specifications include Snapdragon 425, Android 8.1, 4GB RAM, 64GB storage, microSD, 5900mAh battery, Bluetooth, dual-band Wi-Fi, USB DAC, 4.2in display, 290g weight, and 121 x 70 x 21 mm dimensions. Module-specific fields intentionally remain blank and should be represented by separate Variant rows if added later. | Battery runtime detail from prior data: module-dependent. Structured Battery Life Hours left blank because no single numeric value was clear.",
     "colors": [
       "Black"
     ],
@@ -8451,7 +8553,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "module-dependent",
+    "batteryLifeHours": "",
     "storageExpansionMax": "2TB",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -8461,12 +8563,7 @@
         "url": "https://hifigo.com/products/cayin-n6iii"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/cayin-n6iii?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -8486,7 +8583,7 @@
     "sourceUrl": "https://en.cayin.cn/features/7/15/685.html",
     "sourceType": "Review",
     "verificationStatus": "Verified - Review",
-    "notes": "Partial - Official: Added as Variant C201 because the N6iii is a modular platform and the stock C201 motherboard materially determines its DAC, outputs, power, and runtime. Cayin confirms Snapdragon 665, Android 12, 6GB RAM, 128GB storage, microSD up to 2TB, and modular audio motherboards. Reliable launch/review sources confirm the stock C201 uses eight CS43198 DACs with 3.5mm and 4.4mm outputs, a 4.97in display, 9000mAh battery, 350g weight, and 126 x 77.8 x 23 mm dimensions. Structured power remains blank because it changes by gain/operation mode and future motherboards require separate Variant rows. Secondary source: https://headfonics.com/cayin-n6iii-review/",
+    "notes": "Partial - Official: Added as Variant C201 because the N6iii is a modular platform and the stock C201 motherboard materially determines its DAC, outputs, power, and runtime. Cayin confirms Snapdragon 665, Android 12, 6GB RAM, 128GB storage, microSD up to 2TB, and modular audio motherboards. Reliable launch/review sources confirm the stock C201 uses eight CS43198 DACs with 3.5mm and 4.4mm outputs, a 4.97in display, 9000mAh battery, 350g weight, and 126 x 77.8 x 23 mm dimensions. Structured power remains blank because it changes by gain/operation mode and future motherboards require separate Variant rows. Secondary source: https://headfonics.com/cayin-n6iii-review/ | Battery runtime detail from prior data: module-dependent. Structured Battery Life Hours left blank because no single numeric value was clear.",
     "colors": [
       "Black"
     ],
@@ -8554,7 +8651,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "10h Class AB / 8.5h Class A",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://en.cayin.cn/features/7/15/592.html",
     "officialStoreUrl": "",
@@ -8564,12 +8661,7 @@
         "url": "https://hifigo.com/products/cayin-n7"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/cayin-n7?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -8589,7 +8681,7 @@
     "sourceUrl": "https://en.cayin.cn/features/7/15/592.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Cayin confirms Snapdragon 665, Android 12, 4GB RAM, 64GB storage, microSD up to 1TB, a fully discrete 1-bit DAC, discrete JFET/BJT Class A and Class AB amplification, 3.5mm SE and 4.4mm balanced headphone/line outputs, USB DAC, Bluetooth 5.0 with LDAC/UAT/AAC/SBC, dual-band Wi-Fi, MQA 16x, wireless connectivity, and Google Play streaming. Reliable detailed review data confirms a 9000mAh battery, 5in display, 380g weight, 142 x 77.8 x 22.2 mm dimensions, and 250mW SE / 500mW balanced at 32 ohms. Secondary source: https://twister6.com/2023/05/02/cayin-n7/",
+    "notes": "Verified - Official: Cayin confirms Snapdragon 665, Android 12, 4GB RAM, 64GB storage, microSD up to 1TB, a fully discrete 1-bit DAC, discrete JFET/BJT Class A and Class AB amplification, 3.5mm SE and 4.4mm balanced headphone/line outputs, USB DAC, Bluetooth 5.0 with LDAC/UAT/AAC/SBC, dual-band Wi-Fi, MQA 16x, wireless connectivity, and Google Play streaming. Reliable detailed review data confirms a 9000mAh battery, 5in display, 380g weight, 142 x 77.8 x 22.2 mm dimensions, and 250mW SE / 500mW balanced at 32 ohms. Secondary source: https://twister6.com/2023/05/02/cayin-n7/ | Battery runtime detail from prior data: 10h Class AB / 8.5h Class A.",
     "colors": [
       "Black"
     ],
@@ -8649,7 +8741,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "9.5h",
+    "batteryLifeHours": "9.5",
     "storageExpansionMax": "512GB",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -8659,12 +8751,7 @@
         "url": "https://hifigo.com/products/cayinn8-vacuum-tube-dap-portable-player-dsd256-pcm32bit-384khz"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/cayinn8-vacuum-tube-dap-portable-player-dsd256-pcm32bit-384khz?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -8754,7 +8841,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "11h",
+    "batteryLifeHours": "11",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://en.cayin.cn/features/7/15/560.html",
     "officialStoreUrl": "",
@@ -8918,7 +9005,7 @@
     ],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "256GB",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -9005,7 +9092,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "10h+",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "",
     "officialUrl": "https://lotoo.cn/english/Hi_Fi_Player/PAW_GOLD_TOUCH/Specs/",
     "officialStoreUrl": "",
@@ -9092,7 +9179,7 @@
     "streamingServices": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "15-16h",
+    "batteryLifeHours": "16",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.lotoo.cn/english/Hi_Fi_Player/PAW_6000/Specs/",
     "officialStoreUrl": "",
@@ -9102,12 +9189,7 @@
         "url": "https://hifigo.com/products/lotoo-paw-6000-hifi-high-res-lossless-digital-music-player-dap"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/lotoo-paw-6000-hifi-high-res-lossless-digital-music-player-dap?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -9199,12 +9281,7 @@
         "url": "https://hifigo.com/products/luxury-precision-p6-64gb-pcm1704k-r2r-dac-portable-music-player-dap"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/luxury-precision-p6-64gb-pcm1704k-r2r-dac-portable-music-player-dap?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -9296,12 +9373,7 @@
         "url": "https://hifigo.com/products/luxury-precision-p6-pro-discrete-r2r-portable-audio-player"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/luxury-precision-p6-pro-discrete-r2r-portable-audio-player?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -9385,7 +9457,7 @@
     ],
     "wifiBands": "",
     "usbPort": "Micro-USB",
-    "batteryLifeHours": "100h MP3 / 51h FLAC",
+    "batteryLifeHours": "100",
     "storageExpansionMax": "",
     "officialUrl": "https://support2.cowon.com/contents/dn2/data/C09/PLENUED/PLENUE_D_Manual_EN.pdf",
     "officialStoreUrl": "",
@@ -9466,7 +9538,7 @@
     ],
     "wifiBands": "",
     "usbPort": "Micro-USB",
-    "batteryLifeHours": "45h MP3 / 30h hi-res",
+    "batteryLifeHours": "45",
     "storageExpansionMax": "192GB",
     "officialUrl": "https://support2.cowon.com/contents/dn2/data/C09/PLENUED2/PLENUE_D2_Manual_EN.pdf",
     "officialStoreUrl": "",
@@ -9554,7 +9626,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Micro-USB",
-    "batteryLifeHours": "16h",
+    "batteryLifeHours": "16",
     "storageExpansionMax": "400GB total via 2 slots",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -9632,7 +9704,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Micro-USB",
-    "batteryLifeHours": "16h",
+    "batteryLifeHours": "16",
     "storageExpansionMax": "400GB total via 2 slots",
     "officialUrl": "https://www.pioneeraudio.com.au/pages/xdp-300r",
     "officialStoreUrl": "",
@@ -9707,7 +9779,7 @@
     ],
     "wifiBands": "",
     "usbPort": "Micro-USB",
-    "batteryLifeHours": "8-10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "256GB official via 2 slots",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -9787,7 +9859,7 @@
     ],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -9797,12 +9869,7 @@
         "url": "https://hifigo.com/products/questyle-qp2r-high-res-lossless-digital-audio-player-portable-dap"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/questyle-qp2r-high-res-lossless-digital-audio-player-portable-dap?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -9875,7 +9942,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "15h",
+    "batteryLifeHours": "15",
     "storageExpansionMax": "2TB",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -9885,12 +9952,7 @@
         "url": "https://hifigo.com/products/hiby-r2-ii"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r2-ii?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -10405,12 +10467,7 @@
         "url": "https://hifigo.com/products/hiby-r6-2020-new-version"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r6-2020-new-version?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -10488,7 +10545,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "USB-C",
-    "batteryLifeHours": "14.5h SE / 10.5h BAL",
+    "batteryLifeHours": "14.5",
     "storageExpansionMax": "",
     "officialUrl": "https://en.shanling.com/article-IntroM1s.html",
     "officialStoreUrl": "",
@@ -10509,7 +10566,7 @@
     "sourceUrl": "https://en.shanling.com/article-IntroM1s.html",
     "sourceType": "Official",
     "verificationStatus": "Partial - Official",
-    "notes": "Partial - Official: Official introduction verifies ES9038Q2M, 2.8in touchscreen and both 3.5mm and 4.4mm outputs. Additional official launch specifications support MTouch, Wi-Fi/Bluetooth, microSD, USB DAC and high-resolution decoding. Power fields are blank because published output values require mode-specific checking.",
+    "notes": "Partial - Official: Official introduction verifies ES9038Q2M, 2.8in touchscreen and both 3.5mm and 4.4mm outputs. Additional official launch specifications support MTouch, Wi-Fi/Bluetooth, microSD, USB DAC and high-resolution decoding. Power fields are blank because published output values require mode-specific checking. | Battery runtime detail from prior data: 14.5h SE / 10.5h BAL.",
     "colors": [],
     "images": [
       {
@@ -10575,7 +10632,7 @@
     ],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": ">13h",
+    "batteryLifeHours": "13",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m6_parameters",
     "officialStoreUrl": "",
@@ -10667,7 +10724,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": ">9.5h SE / >8.5h BAL",
+    "batteryLifeHours": "9.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m11pro_parameters",
     "officialStoreUrl": "",
@@ -10692,7 +10749,7 @@
     "sourceUrl": "https://www.fiio.com/m11pro_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M11 Pro parameter page verifies Exynos 7872, Android 7.0, dual AK4497EQ, 3GB RAM, 64GB storage, theoretical 2TB microSD expansion, 4370mAh battery, 5.15in display, 3.5mm SE plus 2.5mm and 4.4mm balanced outputs, 200mW SE and 550mW balanced at 32 ohms, 2.4GHz / 5GHz Wi-Fi, Bluetooth transmit HWA/LHDC / LDAC / aptX HD / aptX / SBC and receive SBC / LDAC, USB DAC, shared 3.5mm line/coax output, 32-bit/384kHz and DSD256 playback, MQA 8x, USB-C, Black finish, >9.5h SE / >8.5h balanced runtime, 232g weight, and 70.5 x 130 x 16.5 mm dimensions.",
+    "notes": "Verified - Official: FiiO's exact M11 Pro parameter page verifies Exynos 7872, Android 7.0, dual AK4497EQ, 3GB RAM, 64GB storage, theoretical 2TB microSD expansion, 4370mAh battery, 5.15in display, 3.5mm SE plus 2.5mm and 4.4mm balanced outputs, 200mW SE and 550mW balanced at 32 ohms, 2.4GHz / 5GHz Wi-Fi, Bluetooth transmit HWA/LHDC / LDAC / aptX HD / aptX / SBC and receive SBC / LDAC, USB DAC, shared 3.5mm line/coax output, 32-bit/384kHz and DSD256 playback, MQA 8x, USB-C, Black finish, >9.5h SE / >8.5h balanced runtime, 232g weight, and 70.5 x 130 x 16.5 mm dimensions. | Battery runtime detail from prior data: >9.5h SE / >8.5h BAL.",
     "colors": [
       "Black"
     ],
@@ -10753,13 +10810,13 @@
     "dimensions": "55.7 x 97.3 x 10.8 mm",
     "pcmMax": "32-bit/384kHz",
     "dsdMax": "DSD11.2MHz (converted to PCM)",
-    "mqa": false,
+    "mqa": true,
     "streamingServices": [
       "FALSE"
     ],
     "wifiBands": "",
     "usbPort": "WM-PORT",
-    "batteryLifeHours": "45h",
+    "batteryLifeHours": "45",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-a-series/nw-a55/specifications",
     "officialStoreUrl": "",
@@ -10771,7 +10828,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-a-series/nw-a55/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Official Sony specifications verify dimensions and 99g weight; Sony support confirms microSDXC compatibility up to 1TB for the NW-A50 series. This is a non-Android local-file Walkman with Bluetooth and no Wi-Fi/streaming. Color names varied by region; listed colors combine documented regional releases.",
+    "notes": "Verified - Official: Official Sony specifications verify dimensions and 99g weight; Sony support confirms microSDXC compatibility up to 1TB for the NW-A50 series. This is a non-Android local-file Walkman with Bluetooth and no Wi-Fi/streaming. Color names varied by region; listed colors combine documented regional releases. | Official Sony battery rating is highly condition-dependent: approx. 45h MP3 128 kbps with ambient/noise cancel off, 39h FLAC 96 kHz/24-bit with those modes off, 30h FLAC 192 kHz/24-bit with those modes off, 25h DSD 2.8224 MHz with those modes off, and lower over Bluetooth/LDAC or with sound settings active.",
     "colors": [
       "Black",
       "Grayish Black",
@@ -10838,13 +10895,13 @@
     "dimensions": "55.9 x 98.9 x 11 mm",
     "pcmMax": "32-bit/384kHz",
     "dsdMax": "DSD11.2MHz (converted to PCM)",
-    "mqa": false,
+    "mqa": true,
     "streamingServices": [
       "Open Android apps"
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "26h",
+    "batteryLifeHours": "26",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-a-series/nw-a105/specifications",
     "officialStoreUrl": "",
@@ -10856,7 +10913,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-a-series/nw-a105/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Official Sony specifications verify 3.6in display and 35mW per channel at 16Ω. Official support identifies Android 9 and microSDXC support up to 1TB. Storage and colors vary regionally; this row represents the 16GB NW-A105 model, not A106/A107 storage variants.",
+    "notes": "Verified - Official: Official Sony specifications verify 3.6in display and 35mW per channel at 16Ω. Official support identifies Android 9 and microSDXC support up to 1TB. Storage and colors vary regionally; this row represents the 16GB NW-A105 model, not A106/A107 storage variants. | Official battery rating varies by mode/settings: approx. 26h MP3 128 kbps with ambient/noise cancel off, approx. 24h AAC with those modes off, approx. 16h FLAC 192 kHz/24-bit with those modes off, and approx. 11h DSD 2.8224 MHz with those modes off.",
     "colors": [
       "Black",
       "Ash Green",
@@ -10927,7 +10984,7 @@
     ],
     "wifiBands": "",
     "usbPort": "WM-PORT",
-    "batteryLifeHours": "33h MP3 / 30h FLAC 96/24 / 26h FLAC 192/24 / 11h DSD",
+    "batteryLifeHours": "33",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/res/manuals/W001/W0014622M.pdf",
     "officialStoreUrl": "",
@@ -10944,7 +11001,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/res/manuals/W001/W0014622M.pdf",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Official Sony help guide verifies NW-WM1A 128GB storage and shared WM1A/WM1Z specifications. Sony support confirms microSDXC up to 1TB. This non-Android Walkman has 3.5mm and 4.4mm outputs, Bluetooth and no Wi-Fi streaming.",
+    "notes": "Verified - Official: Official Sony help guide verifies NW-WM1A 128GB storage and shared WM1A/WM1Z specifications. Sony support confirms microSDXC up to 1TB. This non-Android Walkman has 3.5mm and 4.4mm outputs, Bluetooth and no Wi-Fi streaming. | Battery runtime detail from prior data: 33h MP3 / 30h FLAC 96/24 / 26h FLAC 192/24 / 11h DSD. | Official battery rating varies by format: approx. 33h MP3 128 kbps, 30h FLAC 96 kHz/24-bit, 26h FLAC 192 kHz/24-bit, and 11h DSD 11.2 MHz.",
     "colors": [
       "Black"
     ],
@@ -11011,7 +11068,7 @@
     ],
     "wifiBands": "",
     "usbPort": "WM-PORT",
-    "batteryLifeHours": "33h MP3 / 30h FLAC 96/24 / 26h FLAC 192/24 / 11h DSD",
+    "batteryLifeHours": "33",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1z/specifications",
     "officialStoreUrl": "",
@@ -11032,7 +11089,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1z/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Official Sony specifications verify dimensions, 16.05oz weight and format-dependent battery life. Official help guide verifies 256GB storage; support confirms microSDXC up to 1TB. No Wi-Fi or native streaming apps.",
+    "notes": "Verified - Official: Official Sony specifications verify dimensions, 16.05oz weight and format-dependent battery life. Official help guide verifies 256GB storage; support confirms microSDXC up to 1TB. No Wi-Fi or native streaming apps. | Battery runtime detail from prior data: 33h MP3 / 30h FLAC 96/24 / 26h FLAC 192/24 / 11h DSD. | Official battery rating varies by format: approx. 33h MP3 128 kbps, 30h FLAC 96 kHz/24-bit, 26h FLAC 192 kHz/24-bit, and 11h DSD 11.2 MHz.",
     "colors": [
       "Gold"
     ],
@@ -11094,7 +11151,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "8h to 10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "256GB",
     "officialUrl": "https://ibasso.com/uploadfiles/download/DX200UserGuide.pdf",
     "officialStoreUrl": "",
@@ -11115,7 +11172,7 @@
     "sourceUrl": "https://ibasso.com/uploadfiles/download/DX200UserGuide.pdf",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Official user guide verifies 4.2in display, 4400mAh battery, dimensions, weight and PCM support. This row is explicitly the stock AMP1 configuration to avoid merging modular amp-card outputs. Secondary exact-model sources verify dual ES9028PRO, 2GB/64GB, DSD512, Wi-Fi/Bluetooth and 8-10h battery life.",
+    "notes": "Verified - Official: Official user guide verifies 4.2in display, 4400mAh battery, dimensions, weight and PCM support. This row is explicitly the stock AMP1 configuration to avoid merging modular amp-card outputs. Secondary exact-model sources verify dual ES9028PRO, 2GB/64GB, DSD512, Wi-Fi/Bluetooth and 8-10h battery life. | Battery runtime detail from prior data: 8h to 10h.",
     "colors": [],
     "images": [
       {
@@ -11397,7 +11454,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "",
     "officialUrl": "https://www.lotoo.cn/english/Hi_Fi_Player/PAW_Pico/Specs/",
     "officialStoreUrl": "",
@@ -11482,12 +11539,7 @@
         "url": "https://hifigo.com/products/luxury-and-precision-lp6-32bit-384khz-hifi-lossless-dsd-music-player"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/luxury-and-precision-lp6-32bit-384khz-hifi-lossless-dsd-music-player?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -11630,7 +11682,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "8h SE / 5h BAL",
+    "batteryLifeHours": "8",
     "storageExpansionMax": "1TB",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -11702,7 +11754,7 @@
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "",
-    "batteryLifeHours": "10h",
+    "batteryLifeHours": "10",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://questyleshop.com/en-ph/pages/qpm-specification",
     "officialStoreUrl": "",
@@ -11780,7 +11832,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "15h",
+    "batteryLifeHours": "15",
     "storageExpansionMax": "2TB",
     "officialUrl": "",
     "officialStoreUrl": "",
@@ -13051,16 +13103,7 @@
         "url": "https://www.linsoul.com/products/hiby-r3-pro-ii"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r3-pro-ii?rfsn=8393475.dcd124"
-      },
-      {
-        "label": "Linsoul",
-        "url": "https://www.linsoul.com/products/hiby-r3-pro-ii?sca_ref=11811544.Nzaze8ARTE"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -13156,12 +13199,7 @@
         "url": "https://hifigo.com/products/hiby-r6-gen-iii"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r6-gen-iii?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -13247,12 +13285,7 @@
         "url": "https://hifigo.com/products/hiby-r6pro-max"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/hiby-r6pro-max?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -13427,12 +13460,7 @@
         "url": "https://hifigo.com/products/ibasso-dx260mk2"
       }
     ],
-    "affiliateLinks": [
-      {
-        "label": "HiFiGo",
-        "url": "https://hifigo.com/products/ibasso-dx260mk2?rfsn=8393475.dcd124"
-      }
-    ],
+    "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -13703,7 +13731,7 @@
     "status": "Discontinued",
     "msrpUsd": null,
     "soc": "",
-    "os": "Android",
+    "os": "Android 4.1",
     "ramGb": null,
     "storageGb": 128,
     "microSd": false,
@@ -13731,17 +13759,17 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "4.0in",
-    "weight": "139",
-    "dimensions": "",
+    "weight": "139g",
+    "dimensions": "60 x 122 x 13 mm",
     "pcmMax": "24-bit/192kHz",
     "dsdMax": "",
     "mqa": null,
     "streamingServices": [],
     "wifiBands": "",
     "usbPort": "WM-PORT",
-    "batteryLifeHours": "",
+    "batteryLifeHours": "32",
     "storageExpansionMax": "",
-    "officialUrl": "https://www.sony.com/electronics/support/res/manuals/W001/W0015222M.pdf",
+    "officialUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nwz-zx1/specifications",
     "officialStoreUrl": "",
     "buyLinks": [],
     "affiliateLinks": [],
@@ -13757,10 +13785,10 @@
       }
     ],
     "reviewNotes": "",
-    "sourceUrl": "https://www.sony.com/electronics/support/res/manuals/W001/W0015222M.pdf",
+    "sourceUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nwz-zx1/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official Sony NWZ-ZX1 Help Guide is the primary provenance source. Sony model is officially NWZ-ZX1 in US support; normalized to NW-ZX1 to match database naming style.",
+    "notes": "Verified - Official: Sony PH NWZ-ZX1 specifications confirm Android 4.1, 128GB storage, 4.0in display, 60 x 122 x 13 mm dimensions, 139g weight, WM-PORT and stereo mini jack terminals, Wi-Fi/Bluetooth/NFC wireless capabilities, USB connection, MP3/WMA/AAC/Linear PCM playback, and 32h MP3 / 16h Hi-Res Audio battery life. Model is officially NWZ-ZX1 in Sony support; normalized to NW-ZX1 to match database naming style. Battery Life Hours uses the highest official local playback figure for filtering.",
     "colors": [],
     "images": [
       {
@@ -13782,7 +13810,7 @@
     "status": "Discontinued",
     "msrpUsd": null,
     "soc": "",
-    "os": "Android",
+    "os": "Android platform",
     "ramGb": null,
     "storageGb": 128,
     "microSd": true,
@@ -13810,15 +13838,15 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "4.0in",
-    "weight": "235",
-    "dimensions": "",
+    "weight": "8.29 oz",
+    "dimensions": "2.56 x 5.16 x 0.71 in",
     "pcmMax": "",
     "dsdMax": "",
     "mqa": null,
     "streamingServices": [],
     "wifiBands": "",
-    "usbPort": "",
-    "batteryLifeHours": "",
+    "usbPort": "WM-PORT",
+    "batteryLifeHours": "60",
     "storageExpansionMax": "",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx2/specifications",
     "officialStoreUrl": "",
@@ -13839,7 +13867,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx2/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official Sony specifications page. Official battery-life values are mode-dependent, so Battery Life Hours is left blank.",
+    "notes": "Verified - Official Sony specifications page confirms Android platform, 128GB storage, microSD, WM-PORT, stereo mini jack, Wi-Fi/Bluetooth/NFC, 4.0in display, 2.56 x 5.16 x 0.71 in dimensions, 8.29 oz weight, and 60h MP3 / 33h Hi-Res Audio battery life. Battery Life Hours uses the highest official local playback figure for filtering; Hi-Res Audio runtime remains in Notes.",
     "colors": [],
     "images": [
       {
@@ -13872,45 +13900,51 @@
     "has35mm": true,
     "has44mm": false,
     "has635mm": null,
-    "sePowerMw": null,
+    "sePowerMw": 15,
     "balPowerMw": null,
     "bluetooth": true,
     "wifi": false,
     "cellular": null,
     "has4g": null,
     "has5g": null,
-    "bluetoothVersion": "",
-    "bluetoothCodecs": [],
+    "bluetoothVersion": "3.0",
+    "bluetoothCodecs": [
+      "LDAC",
+      "aptX",
+      "SBC"
+    ],
     "usbDac": null,
     "lineOut": null,
     "coaxOut": null,
     "opticalOut": null,
     "balancedOutputType": "",
-    "sePowerLoad": "",
+    "sePowerLoad": "16 ohms JEITA",
     "balPowerLoad": "",
-    "displaySize": "",
-    "weight": "",
-    "dimensions": "",
+    "displaySize": "3.0in",
+    "weight": "145g",
+    "dimensions": "53.8 x 119.5 x 14.8 mm",
     "pcmMax": "",
-    "dsdMax": "",
+    "dsdMax": "DSD128",
     "mqa": null,
     "streamingServices": [],
     "wifiBands": "",
-    "usbPort": "",
-    "batteryLifeHours": "",
+    "usbPort": "WM-PORT",
+    "batteryLifeHours": "70",
     "storageExpansionMax": "",
-    "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx100hn",
+    "officialUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx100/specifications",
     "officialStoreUrl": "",
     "buyLinks": [],
     "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [],
     "reviewNotes": "Exact reputable review match not confidently verified; related ZX1/ZX2/ZX300 reviews were rejected.",
-    "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx100hn",
+    "sourceUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx100/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official Sony support identifies NW-ZX100HN as the ZX100 high-resolution Walkman platform. No exact reputable review match was added after rejecting loosely related ZX-series coverage.",
-    "colors": [],
+    "notes": "Verified - Official: Sony PH and Sony Asia NW-ZX100 specifications confirm Silver color, 128GB storage, microSD/microSDHC/microSDXC support, 3.0in TFT QVGA display, 53.8 x 119.5 x 14.8 mm dimensions excluding projecting parts, 145g weight, Hi-Speed USB 2.0 / WM-PORT / stereo mini jack terminals, S-Master HX, 15mW + 15mW headphone output at JEITA 16 ohms/m, Bluetooth 3.0 with A2DP/AVRCP/OPP profiles and LDAC/aptX/SBC codecs, NFC, MP3/WMA/FLAC/Linear PCM/AAC/HE-AAC/AIFF/DSD playback, and 70h MP3 / 24h DSD 5.6448MHz battery life with noise cancellation on. Battery Life Hours uses the highest official local playback figure for filtering. Exact PCM maximum rate is not stated in the available official specs. Original Singapore launch price was S$699, so MSRP USD remains blank. Sony Help Guide also confirms 128GB capacity, 3.0in 400 x 240 display, USB 2.0 / WM-PORT 22-pin interface, microSD/microSDHC/microSDXC support, Bluetooth 3.0 with SBC/aptX/LDAC, 53.8 x 119.5 x 14.8 mm dimensions, and 145g mass.",
+    "colors": [
+      "Silver"
+    ],
     "images": [
       {
         "url": "",
@@ -13950,7 +13984,11 @@
     "has4g": null,
     "has5g": null,
     "bluetoothVersion": "4.2",
-    "bluetoothCodecs": [],
+    "bluetoothCodecs": [
+      "SBC",
+      "LDAC",
+      "aptX"
+    ],
     "usbDac": true,
     "lineOut": null,
     "coaxOut": null,
@@ -13959,8 +13997,8 @@
     "sePowerLoad": "16Ω",
     "balPowerLoad": "16Ω",
     "displaySize": "3.1in",
-    "weight": "",
-    "dimensions": "",
+    "weight": "157g",
+    "dimensions": "57.7 x 120.4 x 14.9 mm",
     "pcmMax": "32-bit/384kHz",
     "dsdMax": "DSD11.2MHz",
     "mqa": null,
@@ -13984,7 +14022,7 @@
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx300/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official Sony specifications. NW-ZX300A is a 16GB regional/storage variant; no separate row added because scope requested NW-ZX300 and the existing variant rules avoid redundant storage-only rows unless specifically needed.",
+    "notes": "Verified - Official Sony specifications. NW-ZX300A is a 16GB regional/storage variant; no separate row added because scope requested NW-ZX300 and the existing variant rules avoid redundant storage-only rows unless specifically needed. | Official source does not list a battery table in the parsed Sony support page; Battery Life Hours remains blank until verified from manual/help guide.",
     "colors": [],
     "images": [
       {
@@ -14024,8 +14062,14 @@
     "cellular": null,
     "has4g": null,
     "has5g": null,
-    "bluetoothVersion": "",
-    "bluetoothCodecs": [],
+    "bluetoothVersion": "5.0",
+    "bluetoothCodecs": [
+      "SBC",
+      "LDAC",
+      "aptX",
+      "aptX HD",
+      "AAC"
+    ],
     "usbDac": null,
     "lineOut": null,
     "coaxOut": null,
@@ -14034,27 +14078,27 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "3.6in",
-    "weight": "",
-    "dimensions": "",
-    "pcmMax": "",
-    "dsdMax": "",
-    "mqa": null,
+    "weight": "164g",
+    "dimensions": "57.9 x 122.6 x 14.8 mm",
+    "pcmMax": "32-bit/384kHz",
+    "dsdMax": "DSD256",
+    "mqa": true,
     "streamingServices": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "",
+    "batteryLifeHours": "20",
     "storageExpansionMax": "",
-    "officialUrl": "https://www.sony.com/electronics/support/res/manuals/5006/d808870c6337fbee4cd7a65265539dfc/50060281M.pdf",
+    "officialUrl": "https://helpguide.sony.net/dmp/nwzx500/v1/en/contents/TP0002432970.html",
     "officialStoreUrl": "",
     "buyLinks": [],
     "affiliateLinks": [],
     "buyNotes": "",
     "reviewLinks": [],
     "reviewNotes": "No exact reputable NW-ZX505 review confidently verified; NW-ZX507 and generic ZX500-series reviews were rejected as variant-ambiguous.",
-    "sourceUrl": "https://www.sony.com/electronics/support/res/manuals/5006/d808870c6337fbee4cd7a65265539dfc/50060281M.pdf",
+    "sourceUrl": "https://helpguide.sony.net/dmp/nwzx500/v1/en/contents/TP0002432970.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official Sony NW-ZX505/ZX507 manual. NW-ZX500 is the series name, not a separate generic model. Added NW-ZX505 as the 16GB model because NW-ZX507 already exists in the CSV and storage differs. Regional availability varies.",
+    "notes": "Verified - Official: Sony NW-ZX505/ZX507 Help Guide confirms NW-ZX505 as the 16GB variant, Android platform series context, 3.6in 1280 x 720 display, USB-C USB 2.0, stereo mini jack, balanced standard jack, microSD/microSDHC/microSDXC, Wi-Fi 2.4/5GHz, Bluetooth 5.0 with SBC/LDAC/aptX/aptX HD/AAC transmission codecs, 164g weight, 57.9 x 122.6 x 14.8 mm dimensions, PCM/WAV up to 32-bit/384kHz, DSD up to 11.2896MHz (DSD256), MQA support, and up to 20h local stereo-mini playback for non-Europe models. Official pages found do not state headphone output power in mW.",
     "colors": [],
     "images": [
       {
@@ -16645,8 +16689,8 @@
     "has35mm": true,
     "has44mm": true,
     "has635mm": false,
-    "sePowerMw": null,
-    "balPowerMw": null,
+    "sePowerMw": 470,
+    "balPowerMw": 1100,
     "bluetooth": true,
     "wifi": true,
     "cellular": false,
@@ -16666,10 +16710,10 @@
     "coaxOut": true,
     "opticalOut": false,
     "balancedOutputType": "4.4mm",
-    "sePowerLoad": "",
-    "balPowerLoad": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
     "displaySize": "5.5in",
-    "weight": "258",
+    "weight": "258g",
     "dimensions": "138.2 x 71.5 x 17 mm",
     "pcmMax": "32-bit/384kHz",
     "dsdMax": "DSD256",
@@ -16691,7 +16735,7 @@
     "sourceUrl": "https://www.fiio.com/M33R2R_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO M33 R2R parameters confirm Snapdragon 680, Android/Pure Music/AirPlay/USB DAC/Bluetooth modes, 8GB RAM, 128GB storage, microSD up to 2TB, proprietary R2R DAC, 3.5mm and 4.4mm outputs with shared line-out, coaxial output, dual-band Wi-Fi, Bluetooth 5.0, MQA, local PCM up to 32-bit/384kHz and native DSD256, 5.5in display, 258g weight and 138.2 x 71.5 x 17 mm dimensions. FiiO's battery FAQ gives 4400mAh and 15.5h 3.5mm playback. Official parameters publish loaded output values for several modes, but output is mode/gain/power-supply dependent; structured power fields are left blank to avoid collapsing multiple modes into one value.",
+    "notes": "Verified - Official: FiiO M33 R2R parameters confirm Snapdragon 680, Android/Pure Music/AirPlay/USB DAC/Bluetooth modes, 8GB RAM, 128GB storage, microSD up to 2TB, proprietary R2R DAC, 3.5mm and 4.4mm outputs with shared line-out, coaxial output, dual-band Wi-Fi, Bluetooth 5.0, MQA, local PCM up to 32-bit/384kHz and native DSD256, 5.5in display, 258g weight and 138.2 x 71.5 x 17 mm dimensions. FiiO's battery FAQ gives 4400mAh and 15.5h 3.5mm playback. Official parameters publish loaded output values for several modes, but output is mode/gain/power-supply dependent; structured power fields are left blank to avoid collapsing multiple modes into one value. | Source audit pass5 FiiO: official output varies by gain/mode; 3.5mm is 300 mW @32 ohms high gain and 470 mW @32 ohms over-ear/Natural mode, balanced is 900 mW @32 ohms high gain and 1100 mW @32 ohms over-ear/Natural mode.",
     "colors": [
       "Retro Gold",
       "Dark Blue",
@@ -16745,7 +16789,7 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "2.0in",
-    "weight": "40",
+    "weight": "40g",
     "dimensions": "74 x 39.7 x 9.1 mm",
     "pcmMax": "24-bit/96kHz",
     "dsdMax": "",
@@ -16825,7 +16869,7 @@
     "sePowerLoad": "32Ω",
     "balPowerLoad": "",
     "displaySize": "2.0in",
-    "weight": "77.5",
+    "weight": "77.5g",
     "dimensions": "90.8 x 44.2 x 12 mm",
     "pcmMax": "32-bit/384kHz",
     "dsdMax": "DSD64",
@@ -16903,7 +16947,7 @@
     "sePowerLoad": "32Ω",
     "balPowerLoad": "",
     "displaySize": "3.46in",
-    "weight": "70",
+    "weight": "70g",
     "dimensions": "95.8 x 45.4 x 10.4 mm",
     "pcmMax": "32-bit/384kHz",
     "dsdMax": "DSD128",
@@ -16990,7 +17034,7 @@
     "sePowerLoad": "32Ω",
     "balPowerLoad": "",
     "displaySize": "1.54in",
-    "weight": "38",
+    "weight": "38g",
     "dimensions": "45.3 x 42 x 13.7 mm",
     "pcmMax": "32-bit/384kHz",
     "dsdMax": "DSD128",
@@ -17073,7 +17117,7 @@
     "sePowerLoad": "32Ω",
     "balPowerLoad": "32Ω",
     "displaySize": "2.39in",
-    "weight": "85",
+    "weight": "85g",
     "dimensions": "85 x 55.5 x 14.3 mm",
     "pcmMax": "24-bit/192kHz",
     "dsdMax": "DSD256",
@@ -17148,7 +17192,7 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "2.0in",
-    "weight": "106",
+    "weight": "106g",
     "dimensions": "96.7 x 57.7 x 14.1 mm",
     "pcmMax": "24-bit/192kHz",
     "dsdMax": "",
@@ -17221,7 +17265,7 @@
     "sePowerLoad": "32Ω",
     "balPowerLoad": "",
     "displaySize": "2.0in",
-    "weight": "102",
+    "weight": "102g",
     "dimensions": "97 x 55.5 x 12 mm",
     "pcmMax": "24-bit/192kHz",
     "dsdMax": "",
@@ -17301,7 +17345,7 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "2.4in",
-    "weight": "122",
+    "weight": "122g",
     "dimensions": "55 x 109 x 16 mm",
     "pcmMax": "24-bit/192kHz",
     "dsdMax": "",
@@ -17382,7 +17426,7 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "2.0in",
-    "weight": "135",
+    "weight": "135g",
     "dimensions": "96.7 x 57.7 x 16.1 mm",
     "pcmMax": "24-bit/192kHz",
     "dsdMax": "DSD128",
@@ -17463,7 +17507,7 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "2.0in",
-    "weight": "126",
+    "weight": "126g",
     "dimensions": "114 x 59 x 12.8 mm",
     "pcmMax": "24-bit/192kHz",
     "dsdMax": "DSD64",
@@ -17541,7 +17585,7 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "2.4in",
-    "weight": "195",
+    "weight": "195g",
     "dimensions": "67.6 x 114 x 15.6 mm",
     "pcmMax": "24-bit/192kHz",
     "dsdMax": "DSD64",
@@ -17618,7 +17662,7 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "2.4in",
-    "weight": "165",
+    "weight": "165g",
     "dimensions": "109 x 63.5 x 15.3 mm",
     "pcmMax": "24-bit/192kHz",
     "dsdMax": "DSD128",
@@ -17699,7 +17743,7 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "4.0in",
-    "weight": "220",
+    "weight": "220g",
     "dimensions": "",
     "pcmMax": "32-bit/384kHz",
     "dsdMax": "DSD128",
@@ -19482,10 +19526,10 @@
     ]
   },
   {
-    "id": "fiio-m27",
+    "id": "fiio-m27-black-aluminum",
     "brand": "FiiO",
     "model": "M27",
-    "variant": "",
+    "variant": "Black Aluminum",
     "releaseYear": 2025,
     "status": "Active",
     "msrpUsd": 1799,
@@ -19501,8 +19545,8 @@
     "has35mm": true,
     "has44mm": true,
     "has635mm": true,
-    "sePowerMw": null,
-    "balPowerMw": null,
+    "sePowerMw": 1800,
+    "balPowerMw": 5000,
     "bluetooth": true,
     "wifi": true,
     "cellular": false,
@@ -19523,10 +19567,10 @@
     "coaxOut": true,
     "opticalOut": true,
     "balancedOutputType": "4.4mm",
-    "sePowerLoad": "",
-    "balPowerLoad": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
     "displaySize": "5.99in",
-    "weight": "",
+    "weight": "556g",
     "dimensions": "157.4 x 85.1 x 28 mm",
     "pcmMax": "32-bit/768kHz",
     "dsdMax": "DSD512",
@@ -19536,7 +19580,7 @@
     ],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
-    "batteryLifeHours": "",
+    "batteryLifeHours": "9",
     "storageExpansionMax": "2 x 2TB",
     "officialUrl": "https://www.fiio.com/m27_parameters",
     "officialStoreUrl": "https://www.aliexpress.com/item/1005010399479832.html",
@@ -19557,16 +19601,106 @@
     "sourceUrl": "https://www.fiio.com/m27_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact M27 parameters page confirms Qualcomm Dragonwing QCS6490, Android modes, 8GB RAM, 256GB storage, dual microSD slots supporting 2TB each, dual ES9039SPRO DACs, 3.5mm/6.35mm single-ended and 4.4mm balanced outputs, line out, coaxial input/output, optical output, USB DAC mode, dual-band Wi-Fi, bidirectional Bluetooth, 5.99in 1080 x 2160 display, 9200mAh removable battery, PCM up to 32-bit/768kHz, DSD512 and MQA. Official dimensions are 157.4 x 85.1 x 28 mm. Official weight varies by chassis: about 556g for Black aluminum and 630g for Titanium Alloy, so Weight is blank. Official battery figures are 9h SE and 8h balanced under stated Super High Gain conditions, so Battery Life Hours is blank and the mode-specific figures remain in Notes. FiiO publishes multiple mode/gain/power-condition output figures; structured power fields are left blank rather than collapsing them into one value. Official release material confirms the model was released in 2025. Aluminum MSRP is $1799.",
+    "notes": "Verified - Official: FiiO's exact M27 parameters page confirms Qualcomm Dragonwing QCS6490, Android modes, 8GB RAM, 256GB storage, dual microSD slots supporting 2TB each, dual ES9039SPRO DACs, 3.5mm/6.35mm single-ended and 4.4mm balanced outputs, line out, coaxial input/output, optical output, USB DAC mode, dual-band Wi-Fi, bidirectional Bluetooth, 5.99in 1080 x 2160 display, 9200mAh removable battery, PCM up to 32-bit/768kHz, DSD512 and MQA. Official dimensions are 157.4 x 85.1 x 28 mm. Official weight for this Black Aluminum variant is about 556g. Official battery figures are 9h SE and 8h balanced under stated Super High Gain conditions. FiiO publishes multiple mode/gain/power-condition output figures; structured power uses the highest clearly labeled 32-ohm values while Notes preserve mode context. Official release material confirms the model was released in 2025. | Source audit pass5 FiiO: official battery is about 9h from 3.5mm and 8h from balanced. Official output varies by gain/power mode; 3.5mm reaches 1800 mW @32 ohms in ultra high gain and balanced reaches 5000 mW @32 ohms in ultra high gain.",
     "colors": [
-      "Black",
+      "Black"
+    ],
+    "images": [
+      {
+        "url": "",
+        "filename": "fiio-m27.webp",
+        "alt": "FiiO M27 Black Aluminum digital audio player",
+        "credit": "",
+        "sourceUrl": "",
+        "type": ""
+      }
+    ]
+  },
+  {
+    "id": "fiio-m27-titanium-alloy",
+    "brand": "FiiO",
+    "model": "M27",
+    "variant": "Titanium Alloy",
+    "releaseYear": 2025,
+    "status": "Active",
+    "msrpUsd": null,
+    "soc": "Qualcomm Dragonwing QCS6490",
+    "os": "Android 13",
+    "ramGb": 8,
+    "storageGb": 256,
+    "microSd": true,
+    "batteryMah": 9200,
+    "dac": "2x ES9039SPRO",
+    "amp": "Fully balanced Hyper Drive amplification",
+    "has25mm": null,
+    "has35mm": true,
+    "has44mm": true,
+    "has635mm": true,
+    "sePowerMw": 1800,
+    "balPowerMw": 5000,
+    "bluetooth": true,
+    "wifi": true,
+    "cellular": false,
+    "has4g": false,
+    "has5g": false,
+    "bluetoothVersion": "5.2 TX / 5.4 RX",
+    "bluetoothCodecs": [
+      "LDAC",
+      "aptX Lossless",
+      "aptX Adaptive",
+      "aptX HD",
+      "aptX",
+      "AAC",
+      "SBC"
+    ],
+    "usbDac": true,
+    "lineOut": true,
+    "coaxOut": true,
+    "opticalOut": true,
+    "balancedOutputType": "4.4mm",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
+    "displaySize": "5.99in",
+    "weight": "630g",
+    "dimensions": "157.4 x 85.1 x 28 mm",
+    "pcmMax": "32-bit/768kHz",
+    "dsdMax": "DSD512",
+    "mqa": true,
+    "streamingServices": [
+      "Android apps"
+    ],
+    "wifiBands": "2.4GHz / 5GHz",
+    "usbPort": "USB-C",
+    "batteryLifeHours": "9",
+    "storageExpansionMax": "2 x 2TB",
+    "officialUrl": "https://www.fiio.com/m27_parameters",
+    "officialStoreUrl": "https://www.aliexpress.com/item/1005010399479832.html",
+    "buyLinks": [],
+    "affiliateLinks": [],
+    "buyNotes": "Official FiiO AliExpress exact M27 listing stored in official_store_url.",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/fiio-m27-review/"
+      },
+      {
+        "label": "Headfonia",
+        "url": "https://www.headfonia.com/fiio-m27-review/"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://www.fiio.com/m27_parameters",
+    "sourceType": "Official",
+    "verificationStatus": "Verified - Official",
+    "notes": "Verified - Official: FiiO's exact M27 parameters page confirms Qualcomm Dragonwing QCS6490, Android modes, 8GB RAM, 256GB storage, dual microSD slots supporting 2TB each, dual ES9039SPRO DACs, 3.5mm/6.35mm single-ended and 4.4mm balanced outputs, line out, coaxial input/output, optical output, USB DAC mode, dual-band Wi-Fi, bidirectional Bluetooth, 5.99in 1080 x 2160 display, 9200mAh removable battery, PCM up to 32-bit/768kHz, DSD512 and MQA. Official dimensions are 157.4 x 85.1 x 28 mm. Official weight for this Titanium Alloy variant is about 630g. Official battery figures are 9h SE and 8h balanced under stated Super High Gain conditions. FiiO publishes multiple mode/gain/power-condition output figures; structured power uses the highest clearly labeled 32-ohm values while Notes preserve mode context. Official release material confirms the model was released in 2025. | Source audit pass5 FiiO: official battery is about 9h from 3.5mm and 8h from balanced. Official output varies by gain/power mode; 3.5mm reaches 1800 mW @32 ohms in ultra high gain and balanced reaches 5000 mW @32 ohms in ultra high gain.",
+    "colors": [
       "Titanium Alloy"
     ],
     "images": [
       {
         "url": "",
         "filename": "fiio-m27.webp",
-        "alt": "FiiO M27 digital audio player",
+        "alt": "FiiO M27 Titanium Alloy digital audio player",
         "credit": "",
         "sourceUrl": "",
         "type": ""
@@ -19582,7 +19716,7 @@
     "status": "Active",
     "msrpUsd": 3300,
     "soc": "Octa-Core",
-    "os": "",
+    "os": "Android 15",
     "ramGb": null,
     "storageGb": 256,
     "microSd": true,
@@ -19616,13 +19750,13 @@
     "sePowerLoad": "",
     "balPowerLoad": "",
     "displaySize": "6.0in",
-    "weight": "565",
+    "weight": "565g",
     "dimensions": "85.7 x 150 x 19.5 mm",
     "pcmMax": "32-bit/768kHz",
     "dsdMax": "DSD512",
     "mqa": null,
     "streamingServices": [],
-    "wifiBands": "2.4GHz / 5GHz",
+    "wifiBands": "802.11 a/b/g/n/ac/ax (2.4/5GHz)",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
     "storageExpansionMax": "1.5TB",
@@ -19641,7 +19775,7 @@
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=177",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Astell&Kern's exact SP4000T product page classifies the SP4000T as a DAP and documents a 6.0in 2160 x 1080 touchscreen, octa-core CPU, dual AK4191EQ plus dual AK4499EX DAC architecture, four RAYTHEON JAN6418 tubes, Triple Tube Mode, Triple AMP Mode, 256GB NAND, microSD up to 1.5TB, 7450mAh battery, about 10h playback, Bluetooth 5.2, dual-band Wi-Fi, 3.5mm unbalanced/optical output, 4.4mm balanced output, USB-C input/USB DAC use, PCM up to 32-bit/768kHz and native DSD512. Official dimensions are 85.7 x 150 x 19.5 mm and official weight is about 565g. Output is published as no-load Vrms, so structured mW fields remain blank. The SP4000T is a distinct tube/amp architecture, not the material-only SP4000 Copper.",
+    "notes": "Verified - Official: Astell&Kern's exact SP4000T product page classifies the SP4000T as a DAP and documents a 6.0in 2160 x 1080 touchscreen, octa-core CPU, dual AK4191EQ plus dual AK4499EX DAC architecture, four RAYTHEON JAN6418 tubes, Triple Tube Mode, Triple AMP Mode, 256GB NAND, microSD up to 1.5TB, 7450mAh battery, about 10h playback, Bluetooth 5.2, dual-band Wi-Fi, 3.5mm unbalanced/optical output, 4.4mm balanced output, USB-C input/USB DAC use, PCM up to 32-bit/768kHz and native DSD512. Official dimensions are 85.7 x 150 x 19.5 mm and official weight is about 565g. Output is published as no-load Vrms, so structured mW fields remain blank. The SP4000T is a distinct tube/amp architecture, not the material-only SP4000 Copper. | Official source says SP4000T runs Android 15 and supports Wi-Fi 802.11 a/b/g/n/ac/ax on 2.4/5GHz.",
     "colors": [
       "Silver",
       "Copper"

@@ -69,9 +69,7 @@ Specs are best-effort and source-backed where possible. Values may vary by regio
 
 AI tools may assist with research, extraction, normalization, and draft notes. Entries are reviewed before being added, but mistakes can still happen. Please report corrections with a source link.
 
-Some buying links may be affiliate links. I may earn a small commission at no extra cost to you. Specs, reviews, and sources stay separate.
-
-See [docs/source-data-notes.md](docs/source-data-notes.md) for verification labels, source rules, review-link separation, review-site credits, buying-link separation, and affiliate-link notes.
+See [docs/source-data-notes.md](docs/source-data-notes.md) for verification labels, source rules, review-link separation, review-site credits, and buying-link separation.
 
 ## License And Attribution
 

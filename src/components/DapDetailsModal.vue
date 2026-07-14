@@ -24,11 +24,10 @@ interface DetailRow {
 
 interface BuyGroup {
   label: string;
-  links: Array<{ label: string; url: string; affiliate?: boolean }>;
+  links: Array<{ label: string; url: string }>;
 }
 
 const referenceLinkRel = 'noopener noreferrer nofollow';
-const affiliateLinkRel = 'noopener noreferrer nofollow sponsored';
 
 function handleKeydown(event: KeyboardEvent) {
   if (event.key === 'Escape' && props.dap) emit('close');
@@ -168,13 +167,6 @@ const buyGroups = computed<BuyGroup[]>(() => {
     groups.push({ label: 'Retailers', links: dap.buyLinks });
   }
 
-  if (dap.affiliateLinks.length) {
-    groups.push({
-      label: 'Support project',
-      links: dap.affiliateLinks.map((link) => ({ ...link, affiliate: true })),
-    });
-  }
-
   return groups;
 });
 
@@ -297,11 +289,10 @@ onBeforeUnmount(() => {
                   <dd class="spec-value">
                     <ul class="buy-link-list">
                       <li v-for="link in group.links" :key="`${group.label}-${link.url}`">
-                        <a class="buy-link" :href="link.url" target="_blank" :rel="link.affiliate ? affiliateLinkRel : referenceLinkRel">
+                        <a class="buy-link" :href="link.url" target="_blank" :rel="referenceLinkRel">
                           <ExternalLink :size="15" aria-hidden="true" />
                           <span>{{ link.label }}</span>
                         </a>
-                        <span v-if="link.affiliate" class="affiliate-badge">Affiliate</span>
                       </li>
                     </ul>
                   </dd>

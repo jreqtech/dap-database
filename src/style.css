@@ -1906,20 +1906,6 @@ dd {
   outline-offset: 2px;
 }
 
-.affiliate-badge {
-  display: inline-flex;
-  align-items: center;
-  min-height: 20px;
-  border: 1px solid #dec889;
-  border-radius: 999px;
-  background: #fff7df;
-  color: #71500a;
-  padding: 0 7px;
-  font-size: 0.72rem;
-  font-weight: 850;
-  line-height: 1;
-}
-
 .buy-notes {
   margin: 0;
   color: #536672;

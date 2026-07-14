@@ -35,7 +35,7 @@ Sources are used for specs, official references, and verification.
 
 Reviews may be used for further reading and subjective impressions. Review links are not treated as source links unless the row's Source URL explicitly uses that review as its verification source.
 
-Buy links are optional official, retailer, or affiliate links for purchasing. These are not used as spec verification sources.
+Buy links are optional official or retailer links for purchasing. These are not used as spec verification sources.
 
 Spec source links, review links, and buying links are intentionally kept separate.
 
@@ -47,10 +47,6 @@ Review links may include Headfonics, Headfonia, and Twister6 where exact model m
 
 Thanks to independent review publications such as Headfonics, Headfonia, and Twister6 for making detailed review archives publicly available.
 
-## Affiliate / Buying Links
-
-Some buying links may be affiliate links. I may earn a small commission if you buy through them, at no extra cost to you.
-
-Affiliate links are optional buying links only. They are not used as spec sources, review references, or verification sources.
+## Buying Links
 
 Spec source links, review links, and buying links are intentionally kept separate.
