@@ -88,18 +88,7 @@ function compareBoolean(a: boolean | null, b: boolean | null, direction: 'asc' |
   return direction === 'asc' ? result : -result;
 }
 
-function statusRank(status: string): number {
-  const normalized = status.toLowerCase();
-  if (normalized === 'active') return 0;
-  if (normalized === 'upcoming') return 1;
-  if (normalized === 'discontinued') return 2;
-  return 3;
-}
-
 function compareDefaultOrder(a: Dap, b: Dap): number {
-  const statusResult = statusRank(a.status) - statusRank(b.status);
-  if (statusResult) return statusResult;
-
   const yearResult = compareMixed(a.releaseYear, b.releaseYear, 'desc');
   if (yearResult) return yearResult;
 

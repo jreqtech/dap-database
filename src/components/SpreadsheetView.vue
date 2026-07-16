@@ -14,6 +14,9 @@ const emit = defineEmits<{
 
 type Density = 'compact' | 'comfortable';
 type SheetSort = { columnIndex: number | null; direction: 'asc' | 'desc' };
+type SheetRow = { cells: string[]; csvIndex: number };
+type Priority = 'High' | 'Medium' | 'Low' | 'OK';
+type Triage = { priority: Priority; missingCount: number; score: number };
 
 const searchTerm = ref('');
 const density = ref<Density>('compact');
@@ -62,6 +65,28 @@ const optionalBlankColumns = new Set([
   'buy_notes',
   'review_links',
   'review_notes',
+]);
+const highValueAuditColumns = new Set([
+  'Release Year',
+  'Status',
+  'Source URL',
+  'SoC',
+  'OS',
+  'RAM GB',
+  'Storage GB',
+  'Battery mAh',
+  'DAC',
+  'Amp',
+  'Colors',
+  'image_filename',
+  'Display Size',
+  'Weight',
+  'Dimensions',
+  'PCM Max',
+  'DSD Max',
+  'USB Port',
+  'Battery Life Hours',
+  'Storage Expansion Max',
 ]);
 
 function parseCsv(csv: string): string[][] {
@@ -112,9 +137,9 @@ function parseCsv(csv: string): string[][] {
 
 const csvRows = computed(() => parseCsv(props.csv.trimEnd()));
 const headers = computed(() => csvRows.value[0] ?? []);
-const dataRows = computed(() => csvRows.value.slice(1).map((cells, index) => ({ cells, csvIndex: index })));
+const dataRows = computed<SheetRow[]>(() => csvRows.value.slice(1).map((cells, index) => ({ cells, csvIndex: index })));
 const normalizedSearch = computed(() => searchTerm.value.trim().toLowerCase());
-const isSorted = computed(() => sortState.value.columnIndex !== null);
+const isSorted = computed(() => sortState.value.columnIndex !== -1);
 
 const filteredRows = computed(() => {
   if (!normalizedSearch.value) return dataRows.value;
@@ -124,7 +149,8 @@ const filteredRows = computed(() => {
 const displayedRows = computed(() => {
   const columnIndex = sortState.value.columnIndex;
   const rows = [...filteredRows.value];
-  if (columnIndex === null) return rows;
+  if (columnIndex === null) return rows.sort(compareTriageRows);
+  if (columnIndex === -1) return rows;
 
   return rows.sort((a, b) => {
     const valueA = a.cells[columnIndex] ?? '';
@@ -156,7 +182,7 @@ function sortColumn(columnIndex: number) {
 }
 
 function restoreCsvOrder() {
-  sortState.value = { columnIndex: null, direction: 'asc' };
+  sortState.value = { columnIndex: -1, direction: 'asc' };
 }
 
 function openRow(csvIndex: number) {
@@ -198,6 +224,13 @@ function cellByHeader(cells: string[], header: string): string {
   return index === -1 ? '' : cells[index] ?? '';
 }
 
+function numberByHeader(cells: string[], header: string): number | null {
+  const value = cellByHeader(cells, header).replace(/[$,]/g, '').trim();
+  if (!value) return null;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
 function blankCellMeansNone(cells: string[], header: string): boolean {
   if (header === 'RAM GB') {
     const os = cellByHeader(cells, 'OS').toLowerCase();
@@ -229,8 +262,53 @@ function cellState(value: string | undefined, columnIndex: number, cells: string
   return 'value';
 }
 
-function isCompleteAuditRow(cells: string[]): boolean {
-  return headers.value.every((_, columnIndex) => cellState(cells[columnIndex], columnIndex, cells) !== 'empty');
+function isActionableMissing(columnIndex: number, cells: string[]): boolean {
+  return cellState(cells[columnIndex], columnIndex, cells) === 'empty';
+}
+
+function triageForCells(cells: string[]): Triage {
+  const year = numberByHeader(cells, 'Release Year') ?? 0;
+  const status = cellByHeader(cells, 'Status').toLowerCase();
+  const missingHeaders = headers.value.filter((_, columnIndex) => isActionableMissing(columnIndex, cells));
+  const highMissing = missingHeaders.filter((header) => highValueAuditColumns.has(header)).length;
+  const recentWeight = year >= 2026 ? 18 : year === 2025 ? 12 : year === 2024 ? 7 : 0;
+  const activeWeight = status === 'active' || status === 'upcoming' ? 6 : 0;
+  const score = recentWeight + activeWeight + highMissing * 3 + missingHeaders.length;
+  const priority: Priority =
+    score >= 44 || (year >= 2025 && highMissing >= 5)
+      ? 'High'
+      : score >= 28 || (year >= 2024 && highMissing >= 3)
+        ? 'Medium'
+        : missingHeaders.length > 0
+          ? 'Low'
+          : 'OK';
+
+  return { priority, missingCount: missingHeaders.length, score };
+}
+
+function compareTriageRows(a: SheetRow, b: SheetRow): number {
+  const priorityRank: Record<Priority, number> = { High: 0, Medium: 1, Low: 2, OK: 3 };
+  const triageA = triageForCells(a.cells);
+  const triageB = triageForCells(b.cells);
+  const priorityResult = priorityRank[triageA.priority] - priorityRank[triageB.priority];
+  if (priorityResult) return priorityResult;
+
+  const yearResult = (numberByHeader(b.cells, 'Release Year') ?? 0) - (numberByHeader(a.cells, 'Release Year') ?? 0);
+  if (yearResult) return yearResult;
+
+  const missingResult = triageB.missingCount - triageA.missingCount;
+  if (missingResult) return missingResult;
+
+  return a.csvIndex - b.csvIndex;
+}
+
+function rowClass(cells: string[]) {
+  const triage = triageForCells(cells);
+  return {
+    'is-complete-row': triage.priority === 'OK',
+    'is-priority-high': triage.priority === 'High',
+    'is-priority-medium': triage.priority === 'Medium',
+  };
 }
 
 function columnStyle(columnIndex: number) {
@@ -312,6 +390,8 @@ function handleSheetScroll(event: Event) {
         <table class="sheet-table sheet-table--pinned" :class="`sheet-table--${density}`">
           <thead>
             <tr>
+              <th class="sheet-meta-column sheet-meta-column--priority" scope="col">Priority</th>
+              <th class="sheet-meta-column sheet-meta-column--missing" scope="col">Missing</th>
               <th
                 v-for="(header, columnIndex) in pinnedHeaders"
                 :key="header"
@@ -335,8 +415,14 @@ function handleSheetScroll(event: Event) {
             <tr
               v-for="(row, rowIndex) in displayedRows"
               :key="row.csvIndex"
-              :class="{ 'is-complete-row': isCompleteAuditRow(row.cells) }"
+              :class="rowClass(row.cells)"
             >
+              <td class="sheet-meta-cell sheet-meta-cell--priority" :class="`sheet-priority--${triageForCells(row.cells).priority.toLowerCase()}`">
+                <span>{{ triageForCells(row.cells).priority }}</span>
+              </td>
+              <td class="sheet-meta-cell sheet-meta-cell--missing">
+                <span>{{ triageForCells(row.cells).missingCount || '' }}</span>
+              </td>
               <td
                 v-for="(header, columnIndex) in pinnedHeaders"
                 :key="`${row.csvIndex}-${header}`"
@@ -392,7 +478,7 @@ function handleSheetScroll(event: Event) {
             <tr
               v-for="(row, rowIndex) in displayedRows"
               :key="row.csvIndex"
-              :class="{ 'is-complete-row': isCompleteAuditRow(row.cells) }"
+              :class="rowClass(row.cells)"
             >
               <td
                 v-for="(header, relativeColumnIndex) in scrollHeaders"
