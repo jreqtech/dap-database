@@ -80,12 +80,13 @@ const optionalBlankColumns = new Set([
   'Wi-Fi Bands',
   'official_store_url',
   'buy_links',
-  'affiliate_links',
+  'last_updated',
+  'last_updated_commit',
   'buy_notes',
   'review_links',
   'review_notes',
 ]);
-const hiddenSheetColumns = new Set(['Variant', 'affiliate_links']);
+const hiddenSheetColumns = new Set(['Variant', 'last_updated_commit']);
 const highValueAuditColumns = new Set([
   'Release Year',
   'Status',
@@ -157,9 +158,18 @@ function parseCsv(csv: string): string[][] {
 
 const csvRows = computed(() => parseCsv(props.csv.trimEnd()));
 const headers = computed(() => csvRows.value[0] ?? []);
-const visibleColumnIndices = computed(() =>
-  headers.value.map((header, index) => ({ header, index })).filter(({ header }) => !hiddenSheetColumns.has(header)).map(({ index }) => index),
-);
+const visibleColumnIndices = computed(() => {
+  const columns = headers.value
+    .map((header, index) => ({ header, index }))
+    .filter(({ header }) => !hiddenSheetColumns.has(header));
+  const lastUpdated = columns.find((column) => column.header === 'last_updated');
+  if (!lastUpdated) return columns.map(({ index }) => index);
+
+  const ordered = columns.filter((column) => column.header !== 'last_updated');
+  const msrpIndex = ordered.findIndex((column) => column.header === 'MSRP USD');
+  ordered.splice(msrpIndex === -1 ? ordered.length : msrpIndex + 1, 0, lastUpdated);
+  return ordered.map(({ index }) => index);
+});
 const dataRows = computed<SheetRow[]>(() => csvRows.value.slice(1).map((cells, index) => ({ cells, csvIndex: index })));
 const csvDataObjects = computed<CsvRow[]>(() => buildRows(headers.value, csvRows.value.slice(1)));
 const normalizedSearch = computed(() => searchTerm.value.trim().toLowerCase());
@@ -180,8 +190,15 @@ const displayedRows = computed(() => {
   if (columnIndex === 'review') return rows.sort(compareReviewRows);
 
   return rows.sort((a, b) => {
+    const header = headers.value[columnIndex] ?? '';
     const valueA = a.cells[columnIndex] ?? '';
     const valueB = b.cells[columnIndex] ?? '';
+    if (header === 'last_updated') {
+      const timeA = timestampValue(valueA);
+      const timeB = timestampValue(valueB);
+      const result = timeA - timeB;
+      return sortState.value.direction === 'asc' ? result : -result;
+    }
     const numericA = Number(valueA.replace(/[$,]/g, ''));
     const numericB = Number(valueB.replace(/[$,]/g, ''));
     const bothNumeric = valueA.trim() !== '' && valueB.trim() !== '' && !Number.isNaN(numericA) && !Number.isNaN(numericB);
@@ -316,6 +333,47 @@ function numberByHeader(cells: string[], header: string): number | null {
 
 function normalizedCell(cells: string[], header: string): string {
   return cellByHeader(cells, header).trim().toLowerCase();
+}
+
+function timestampValue(value: string): number {
+  const parsed = Date.parse(value);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function formatRelativeTime(value: string): string {
+  const timestamp = timestampValue(value);
+  if (!timestamp) return value;
+
+  const diffSeconds = Math.round((timestamp - Date.now()) / 1000);
+  const absSeconds = Math.abs(diffSeconds);
+  const units: Array<{ unit: Intl.RelativeTimeFormatUnit; seconds: number }> = [
+    { unit: 'year', seconds: 31_536_000 },
+    { unit: 'month', seconds: 2_592_000 },
+    { unit: 'week', seconds: 604_800 },
+    { unit: 'day', seconds: 86_400 },
+    { unit: 'hour', seconds: 3_600 },
+    { unit: 'minute', seconds: 60 },
+    { unit: 'second', seconds: 1 },
+  ];
+  const match = units.find((candidate) => absSeconds >= candidate.seconds) ?? units[units.length - 1];
+  const amount = Math.round(diffSeconds / match.seconds);
+  return new Intl.RelativeTimeFormat(undefined, { numeric: 'auto' }).format(amount, match.unit);
+}
+
+function commitUrlForCells(cells: string[]): string {
+  const commit = cellByHeader(cells, 'last_updated_commit').trim();
+  if (!/^[a-f0-9]{40}$/i.test(commit)) return '';
+  return `https://github.com/jreqtech/dap-database/commit/${commit}`;
+}
+
+function cellTitle(value: string | undefined, columnIndex: number, cells: string[]): string {
+  const raw = value ?? '';
+  const header = headers.value[columnIndex] ?? '';
+  if (header === 'last_updated') {
+    const commit = cellByHeader(cells, 'last_updated_commit').trim();
+    return commit ? `${raw} (${commit.slice(0, 7)})` : `${raw} (not committed yet)`;
+  }
+  return raw;
 }
 
 function isTrueCell(cells: string[], header: string): boolean {
@@ -540,6 +598,7 @@ function displayCell(value: string | undefined, columnIndex: number, cells: stri
   if (header === 'Model') {
     return [raw, cellByHeader(cells, 'Variant')].filter(Boolean).join(' ');
   }
+  if (header === 'last_updated') return formatRelativeTime(raw);
   if (raw === '') return displayForState(stateForColumn(columnIndex, cells, csvIndex));
   if (raw.trim() === '0') return 'None';
   if (raw.trim().toUpperCase() === 'FALSE') return 'None';
@@ -904,7 +963,19 @@ function handlePinnedWheel(event: WheelEvent) {
                 >
                   {{ displayCell(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex) }}
                 </button>
-                <span v-else>{{ displayCell(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex) }}</span>
+                <a
+                  v-else-if="headers[columnIndex] === 'last_updated' && commitUrlForCells(row.cells)"
+                  class="sheet-cell-link"
+                  :href="commitUrlForCells(row.cells)"
+                  :title="cellTitle(row.cells[columnIndex], columnIndex, row.cells)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{ displayCell(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex) }}
+                </a>
+                <span v-else :title="cellTitle(row.cells[columnIndex], columnIndex, row.cells)">
+                  {{ displayCell(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex) }}
+                </span>
               </td>
             </tr>
           </tbody>

@@ -2643,6 +2643,24 @@ dd {
   white-space: nowrap;
 }
 
+.sheet-cell-link {
+  display: block;
+  overflow: hidden;
+  color: #0f526a;
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-overflow: ellipsis;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+
+.sheet-cell-link:hover,
+.sheet-cell-link:focus-visible {
+  color: #083746;
+  outline: 0;
+}
+
 .sheet-model-button {
   display: block;
   width: 100%;

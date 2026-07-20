@@ -79,6 +79,8 @@ export interface Dap {
   officialUrl: string;
   officialStoreUrl: string;
   buyLinks: BuyLink[];
+  lastUpdated: string;
+  lastUpdatedCommit: string;
   buyNotes: string;
   reviewLinks: ReviewLink[];
   reviewNotes: string;

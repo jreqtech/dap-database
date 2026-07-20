@@ -79,7 +79,7 @@ const optionalBlankRawFields = new Set([
   'Streaming Services',
   'Wi-Fi Bands',
   'official_store_url',
-  'affiliate_links',
+  'last_updated',
   'buy_notes',
   'review_links',
   'review_notes',

@@ -73,7 +73,7 @@ Rules:
 
 - Use exact model or exact variant matches only.
 - Do not use review links as proof for unrelated specs unless the review is also named in Notes as a secondary source.
-- Keep review links out of source, buy, and affiliate fields.
+- Keep review links out of source and buy fields.
 - Use `Label|URL; Label|URL` format.
 
 ## Variant Rules

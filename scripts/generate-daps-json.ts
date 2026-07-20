@@ -248,6 +248,8 @@ function toDap(row: Record<string, string>): Dap {
     officialUrl: isOfficialSource(sourceUrl, verificationStatus) ? sourceUrl : '',
     officialStoreUrl: isValidHttpUrl(row.official_store_url ?? '') ? row.official_store_url : '',
     buyLinks: parseBuyLinks(row.buy_links ?? ''),
+    lastUpdated: row.last_updated ?? '',
+    lastUpdatedCommit: row.last_updated_commit ?? '',
     buyNotes: row.buy_notes ?? '',
     reviewLinks: parseLabeledLinks(row.review_links ?? ''),
     reviewNotes: row.review_notes ?? '',
