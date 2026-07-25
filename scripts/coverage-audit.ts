@@ -52,18 +52,24 @@ function needsReview(row: CsvRow): boolean {
   const notes = (row.Notes ?? '').toLowerCase();
   const reviewNotes = (row.review_notes ?? '').toLowerCase();
   const sourceUrl = (row['Source URL'] ?? '').trim();
+  const hasPhrase = (text: string, phrase: string) => new RegExp(`\\b${phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(text);
   return (
-    notes.startsWith('partial') ||
     !sourceUrl ||
-    reviewNotes.includes('needs review') ||
-    reviewNotes.includes('unclear') ||
-    reviewNotes.includes('rejected') ||
-    reviewNotes.includes('not added') ||
-    reviewNotes.includes('not kept') ||
-    reviewNotes.includes('no exact') ||
-    notes.includes('needs review') ||
-    notes.includes('pending') ||
-    notes.includes('re-verification')
+    hasPhrase(reviewNotes, 'needs review') ||
+    hasPhrase(reviewNotes, 'unclear') ||
+    hasPhrase(reviewNotes, 'source conflict') ||
+    hasPhrase(reviewNotes, 'conflicting') ||
+    hasPhrase(reviewNotes, 'needs verification') ||
+    hasPhrase(reviewNotes, 'requires verification') ||
+    hasPhrase(reviewNotes, 're-check') ||
+    hasPhrase(reviewNotes, 'pending') ||
+    hasPhrase(notes, 'needs review') ||
+    hasPhrase(notes, 'source conflict') ||
+    hasPhrase(notes, 'conflicting') ||
+    hasPhrase(notes, 'needs verification') ||
+    hasPhrase(notes, 'requires verification') ||
+    hasPhrase(notes, 'pending') ||
+    hasPhrase(notes, 're-verification')
   );
 }
 

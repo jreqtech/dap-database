@@ -722,20 +722,32 @@ function manualReviewReasons(cells: string[]): string[] {
   const notes = cellByHeader(cells, 'Notes').toLowerCase();
   const reviewNotes = cellByHeader(cells, 'review_notes').toLowerCase();
   const sourceUrl = cellByHeader(cells, 'Source URL').trim();
+  const hasPhrase = (text: string, phrase: string) => new RegExp(`\\b${phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(text);
 
-  if (notes.startsWith('partial')) reasons.push('Partial verification');
   if (!sourceUrl) reasons.push('Missing primary source');
   if (
-    reviewNotes.includes('needs review') ||
-    reviewNotes.includes('unclear') ||
-    reviewNotes.includes('rejected') ||
-    reviewNotes.includes('not added') ||
-    reviewNotes.includes('not kept') ||
-    reviewNotes.includes('no exact')
+    hasPhrase(reviewNotes, 'needs review') ||
+    hasPhrase(reviewNotes, 'unclear') ||
+    hasPhrase(reviewNotes, 'source conflict') ||
+    hasPhrase(reviewNotes, 'conflicting') ||
+    hasPhrase(reviewNotes, 'needs verification') ||
+    hasPhrase(reviewNotes, 'requires verification') ||
+    hasPhrase(reviewNotes, 're-check') ||
+    hasPhrase(reviewNotes, 'pending')
   ) {
     reasons.push('Review/source note');
   }
-  if (notes.includes('needs review') || notes.includes('pending') || notes.includes('re-verification')) reasons.push('Needs re-check');
+  if (
+    hasPhrase(notes, 'needs review') ||
+    hasPhrase(notes, 'source conflict') ||
+    hasPhrase(notes, 'conflicting') ||
+    hasPhrase(notes, 'needs verification') ||
+    hasPhrase(notes, 'requires verification') ||
+    hasPhrase(notes, 'pending') ||
+    hasPhrase(notes, 're-verification')
+  ) {
+    reasons.push('Needs re-check');
+  }
 
   return [...new Set(reasons)];
 }
