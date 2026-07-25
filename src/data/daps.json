@@ -10255,7 +10255,7 @@
     "cellular": false,
     "has4g": false,
     "has5g": false,
-    "bluetoothVersion": "",
+    "bluetoothVersion": "4.0",
     "bluetoothCodecs": [],
     "usbDac": true,
     "lineOut": true,
@@ -10282,8 +10282,8 @@
     "officialUrl": "",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T13:47:30+08:00",
-    "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -10297,13 +10297,21 @@
       {
         "label": "Headfonia",
         "url": "https://www.headfonia.com/review-cayin-i5-dap-the-do-it-all/"
+      },
+      {
+        "label": "Head-Fi Cayin i5 reviews",
+        "url": "https://www.head-fi.org/showcase/cayin-i5.21748/reviews"
+      },
+      {
+        "label": "Headfonics DX200 comparison",
+        "url": "https://headfonics.com/the-dx200-by-ibasso/3/"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Bluetooth Version has conflicting secondary evidence: published review/spec references list 4.0, while one Head-Fi reviewer reports Cayin contact guidance of 2.1.",
     "sourceUrl": "https://twister6.com/2017/03/03/cayin-i5/",
     "sourceType": "Review",
     "verificationStatus": "Verified - Review",
-    "notes": "Verified - Review/Archived Official Specs: Period reviews reproducing Cayin official specifications confirm the i5 as an Android 4.4 DAP with quad-core Cortex-A7, 1GB RAM, 32GB storage, microSD up to 256GB, AK4490EQ DAC, 4800mAh battery, 4in display, 3.5mm headphone/line output, Bluetooth, Wi-Fi, USB DAC, coaxial output, PCM 32-bit/384kHz, DSD128, 195g weight, 126 x 64 x 14 mm dimensions, 10h playback, Gunmetal finish, and 190mW output at 32 ohms. Cayin current site no longer exposes a dedicated i5 product page, so the review source is retained as the row Source URL.",
+    "notes": "Verified - Review/Archived Official Specs: Period reviews reproducing Cayin official specifications confirm the i5 as an Android 4.4 DAP with quad-core Cortex-A7, 1GB RAM, 32GB storage, microSD up to 256GB, AK4490EQ DAC, 4800mAh battery, 4in display, 3.5mm headphone/line output, Bluetooth, Wi-Fi, USB DAC, coaxial output, PCM 32-bit/384kHz, DSD128, 195g weight, 126 x 64 x 14 mm dimensions, 10h playback, Gunmetal finish, and 190mW output at 32 ohms. Cayin current site no longer exposes a dedicated i5 product page, so the review source is retained as the row Source URL. Bluetooth Version update: Head-Fi exact-model review and Headfonics comparison coverage list Bluetooth 4.0 for the Cayin i5; one Head-Fi reviewer reports a Cayin contact describing Bluetooth 2.1, so retain the source conflict in review notes.",
     "colors": [
       "Gunmetal"
     ],
@@ -10781,24 +10789,32 @@
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "100",
-    "storageExpansionMax": "",
+    "storageExpansionMax": "128GB",
     "officialUrl": "https://support2.cowon.com/contents/dn2/data/C09/PLENUED/PLENUE_D_Manual_EN.pdf",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T13:47:30+08:00",
-    "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
         "label": "Headfonics",
         "url": "https://headfonics.com/the-plenue-d-dap-by-cowon/"
+      },
+      {
+        "label": "What Hi-Fi review",
+        "url": "https://www.whathifi.com/cowon/plenue-d/review"
+      },
+      {
+        "label": "ManualsLib manual",
+        "url": "https://www.manualslib.com/manual/1244681/Cowon-Plenue-D.html"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Storage Expansion Max added as 128GB from exact-model review/spec listings; official manual confirms microSD support but not a numeric maximum.",
     "sourceUrl": "https://support2.cowon.com/contents/dn2/data/C09/PLENUED/PLENUE_D_Manual_EN.pdf",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official Cowon manual confirms 32GB internal memory, microSD expansion, 3.5mm headphone output, 1Vrms output, 0.5-ohm output impedance, 2.8in touchscreen, 94g, 77.2 x 53.1 x 14.9 mm, PCM up to 24-bit/192kHz, Micro-USB, approximately 100h MP3 / 51h FLAC playback, and proprietary local-playback firmware. Headfonics confirms the exact Plenue D model and $299 launch positioning. The manual does not identify the DAC chip, battery mAh, or a tested expansion ceiling, so these remain blank. No Bluetooth, Wi-Fi, streaming, balanced output, USB DAC, or digital outputs are listed by the official specification; only 4.4mm is set FALSE because the verified output list is explicitly 3.5mm-only.",
+    "notes": "Verified - Official Cowon manual confirms 32GB internal memory, microSD expansion, 3.5mm headphone output, 1Vrms output, 0.5-ohm output impedance, 2.8in touchscreen, 94g, 77.2 x 53.1 x 14.9 mm, PCM up to 24-bit/192kHz, Micro-USB, approximately 100h MP3 / 51h FLAC playback, and proprietary local-playback firmware. Headfonics confirms the exact Plenue D model and $299 launch positioning. The manual does not identify the DAC chip, battery mAh, or a tested expansion ceiling, so these remain blank. No Bluetooth, Wi-Fi, streaming, balanced output, USB DAC, or digital outputs are listed by the official specification; only 4.4mm is set FALSE because the verified output list is explicitly 3.5mm-only. Storage Expansion Max uses 128GB from exact-model review/spec listings; Cowon manual confirms microSD support and FAT32 formatting requirement for 64GB+ cards but does not publish a numeric maximum.",
     "colors": [
       "Silver",
       "Gold",
@@ -12925,8 +12941,8 @@
         "url": "https://www.amazon.com.au/Lotoo-PAW-5000-Resolution-Bluetooth/dp/B011LE25ZQ"
       }
     ],
-    "lastUpdated": "2026-07-23T02:54:05.504Z",
-    "lastUpdatedCommit": "c3a0ed8dad3c5dfcafdd967e730f002af3733021",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "Retail links are used as corroborating spec sources for a discontinued product, not current availability guidance.",
     "reviewLinks": [
       {
@@ -12948,13 +12964,21 @@
       {
         "label": "Head-Fi PAW 5000 review/specs",
         "url": "https://www.head-fi.org/threads/review-lotoo-paw-5000-a-very-versatile-portable-player.792137/"
+      },
+      {
+        "label": "Lotoo CN PAW 5000 specs",
+        "url": "https://www.lotoo.cn/CN/pro/pro2/PAW5000/parameter/"
+      },
+      {
+        "label": "Manualzz PAW 5000 user guide",
+        "url": "https://manualzz.com/doc/7477178/lotoo-paw-5000-user-guide"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "BAL Power mW remains blank: exact original PAW 5000 sources confirm 2.5mm balanced output, but available 75mW/100mW 16-ohm power ratings are general headphone-output specs, not balanced-output-specific ratings.",
     "sourceUrl": "http://m.lotoo.cn/en/PAW-index.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official/Retail: Official Lotoo PAW 5000 mobile specification page confirms ADI Blackfin 514 DSP, 2in color LCD 220 x 176, 1700mAh Li-Polymer battery, TF card storage up to 2TB, Bluetooth A2DP stereo audio, Super Speed USB 3.0, 55 x 98 x 17.5 mm dimensions, 110g weight, DSD64/DSD128 DFF/DSF/ISO playback, PCM sample rates up to 96kHz, broad file support including FLAC, APE, WAV, AAC, ALAC, MP3, WMA, M4A and WavePack, and 100mW + 100mW headphone output at 16 ohms. Penon exact retail listing corroborates DSD64/DFF/DSF/ISO support, Bluetooth, line out, 2.5mm balanced headphone output, optical digital output, USB 3.0 transfer, TF card up to 2TB, 1700mAh battery, 12h battery life, 98 x 55 x 17.5 mm dimensions, 110g weight, 2in display, and 100mW + 100mW @ 16 ohms headphone output. Amazon AU retail listing corroborates Bluetooth, USB, microSD/TF storage, 2in LCD, 110g weight, balanced headphone output, SPDIF digital output, 1700mAh battery and USB 3.0. Retail listings disagree on PCM max, with Penon/official-style text listing PCM 32-96kHz and Amazon listing PCM 32-192kHz; structured PCM Max keeps the conservative 96kHz value. ManualsLib PAW 5000 manual supports treating the original PAW 5000 as Lotoo closed embedded firmware with PMEQ and ATE processing, not Android or a third-party-app platform. RAM remains blank because Lotoo does not publish installed RAM and no reliable teardown confirms it. Phile Web launch coverage quoting Lotoo identifies the original PAW 5000 DAC/audio codec as Texas Instruments TLV320AIC3105; AK4490EN belongs to PAW 5000 MKII and is not used here. MSRP USD uses a contemporary exact-model review specification listing the original PAW 5000 at USD 400. BAL Power mW remains blank because original-model sources confirm a 2.5mm balanced headphone jack but publish headphone output power only as a general rating, with conflicting 75mW or 100mW per-channel 16-ohm figures that are not clearly assigned to the balanced output specifically. Colors records the original black/dark two-tone finish as Black, not multiple separately sold colors. Audiophile ON lists Bluetooth 4.0 for the original PAW 5000.",
+    "notes": "Verified - Official/Retail: Official Lotoo PAW 5000 mobile specification page confirms ADI Blackfin 514 DSP, 2in color LCD 220 x 176, 1700mAh Li-Polymer battery, TF card storage up to 2TB, Bluetooth A2DP stereo audio, Super Speed USB 3.0, 55 x 98 x 17.5 mm dimensions, 110g weight, DSD64/DSD128 DFF/DSF/ISO playback, PCM sample rates up to 96kHz, broad file support including FLAC, APE, WAV, AAC, ALAC, MP3, WMA, M4A and WavePack, and 100mW + 100mW headphone output at 16 ohms. Penon exact retail listing corroborates DSD64/DFF/DSF/ISO support, Bluetooth, line out, 2.5mm balanced headphone output, optical digital output, USB 3.0 transfer, TF card up to 2TB, 1700mAh battery, 12h battery life, 98 x 55 x 17.5 mm dimensions, 110g weight, 2in display, and 100mW + 100mW @ 16 ohms headphone output. Amazon AU retail listing corroborates Bluetooth, USB, microSD/TF storage, 2in LCD, 110g weight, balanced headphone output, SPDIF digital output, 1700mAh battery and USB 3.0. Retail listings disagree on PCM max, with Penon/official-style text listing PCM 32-96kHz and Amazon listing PCM 32-192kHz; structured PCM Max keeps the conservative 96kHz value. ManualsLib PAW 5000 manual supports treating the original PAW 5000 as Lotoo closed embedded firmware with PMEQ and ATE processing, not Android or a third-party-app platform. RAM remains blank because Lotoo does not publish installed RAM and no reliable teardown confirms it. Phile Web launch coverage quoting Lotoo identifies the original PAW 5000 DAC/audio codec as Texas Instruments TLV320AIC3105; AK4490EN belongs to PAW 5000 MKII and is not used here. MSRP USD uses a contemporary exact-model review specification listing the original PAW 5000 at USD 400. BAL Power mW remains blank because original-model sources confirm a 2.5mm balanced headphone jack but do not publish a balanced-output-specific power rating; Lotoo CN lists headphone output as 100mW + 100mW @ 16 ohms, while the English manual mirror lists max output as 75mW @ 16 ohms per channel, and neither assigns the rating specifically to the balanced jack. Colors records the original black/dark two-tone finish as Black, not multiple separately sold colors. Audiophile ON lists Bluetooth 4.0 for the original PAW 5000.",
     "colors": [
       "Black"
     ],
@@ -13829,7 +13853,7 @@
     "variant": "",
     "releaseYear": 2015,
     "status": "Discontinued",
-    "msrpUsd": null,
+    "msrpUsd": 900,
     "soc": "Qualcomm Snapdragon 800 APQ8074",
     "os": "Android 5.1.1",
     "ramGb": 2,
@@ -13893,8 +13917,8 @@
         "url": "https://www.bhphotovideo.com/c/product/1248202-REG/onkyo_dp_x1_high_resolution_digital_audio.html"
       }
     ],
-    "lastUpdated": "2026-07-20T14:58:19+08:00",
-    "lastUpdatedCommit": "56fb06877532db5a91fdee2bcb96fbcc40e8cd80",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -13908,13 +13932,29 @@
       {
         "label": "Phile Web",
         "url": "https://www.phileweb.com/news/d-av/201609/14/39574.html"
+      },
+      {
+        "label": "The Absolute Sound launch press release",
+        "url": "https://www.theabsolutesound.com/articles/onkyos-new-dp-x1-portable-digital-audio-player-now-available/"
+      },
+      {
+        "label": "The Absolute Sound review",
+        "url": "https://www.theabsolutesound.com/articles/onkyo-dp-x1-portable-music-player/"
+      },
+      {
+        "label": "TechHive review",
+        "url": "https://www.techhive.com/article/582525/onkyo-dp-x1-hi-res-digital-audio-player-review-its-a-handful-but-its-also-sweet-sounding-and-featur.html"
+      },
+      {
+        "label": "AV Watch launch coverage",
+        "url": "https://av.watch.impress.co.jp/docs/news/725416.html"
       }
     ],
-    "reviewNotes": "Exact DP-X1 reviews and launch/spec coverage added as secondary context.",
+    "reviewNotes": "MSRP USD added as 900 from Onkyo USA launch MSRP $899.99; exact-model reviews list $899 and Japanese launch coverage listed expected street price around 69,800 yen.",
     "sourceUrl": "https://intl.onkyo.ru/downloads/product_info/pdf/dp-x1_leaflet.pdf",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official leaflet: Onkyo DP-X1 leaflet verifies Android 5.1.1, 32GB internal memory including system area, two microSD SDXC slots supporting up to 200GB per slot, 4.7in 1280 x 720 capacitive touchscreen, Wi-Fi 802.11a/b/g/n/ac with Wi-Fi Direct/WPS, Bluetooth profiles A2DP/AVRCP/HSP/OPP/HID/PAN with SBC and aptX codecs, 3.5mm headphone output with line-out mode, 2.5mm 4-pole balanced headphone output, Micro USB-B / OTG output for power and data transfer, PCM up to 24-bit/384kHz, DSD up to 11.2MHz, MQA via free update, 75mW + 75mW unbalanced at 32 ohms, 150mW + 150mW balanced at 32 ohms, 20Hz-80kHz frequency response, low/normal/high gain, about 16h playback, 129.0 x 75.9 x 12.7 mm dimensions, and 203g weight. Onkyo official brochure additionally specifies 2GB RAM and twin ESS SABRE ES9018K2M DACs with twin SABRE 9601K amplifiers. Additional sourced decisions: Phile Web platform specification identifies the 2.2GHz quad-core APU as Qualcomm Snapdragon 800 APQ8074; DP-X1 and DP-X1A share the same core platform and some reviews incorrectly call it Snapdragon 801. What Hi-Fi reports Onkyo published battery capacity as 1630mAh with about 16h 24-bit/96kHz FLAC playback. Standard DP-X1 color is Black; special collaboration editions are not treated as normal color variants. Bluetooth Version remains blank because Onkyo lists Bluetooth profiles/codecs but not the core version and no strong DP-X1-specific version source was accepted. Streaming Services lists compatible Android/Google Play services, not built-in integrations.",
+    "notes": "Verified - Official leaflet: Onkyo DP-X1 leaflet verifies Android 5.1.1, 32GB internal memory including system area, two microSD SDXC slots supporting up to 200GB per slot, 4.7in 1280 x 720 capacitive touchscreen, Wi-Fi 802.11a/b/g/n/ac with Wi-Fi Direct/WPS, Bluetooth profiles A2DP/AVRCP/HSP/OPP/HID/PAN with SBC and aptX codecs, 3.5mm headphone output with line-out mode, 2.5mm 4-pole balanced headphone output, Micro USB-B / OTG output for power and data transfer, PCM up to 24-bit/384kHz, DSD up to 11.2MHz, MQA via free update, 75mW + 75mW unbalanced at 32 ohms, 150mW + 150mW balanced at 32 ohms, 20Hz-80kHz frequency response, low/normal/high gain, about 16h playback, 129.0 x 75.9 x 12.7 mm dimensions, and 203g weight. Onkyo official brochure additionally specifies 2GB RAM and twin ESS SABRE ES9018K2M DACs with twin SABRE 9601K amplifiers. Additional sourced decisions: Phile Web platform specification identifies the 2.2GHz quad-core APU as Qualcomm Snapdragon 800 APQ8074; DP-X1 and DP-X1A share the same core platform and some reviews incorrectly call it Snapdragon 801. What Hi-Fi reports Onkyo published battery capacity as 1630mAh with about 16h 24-bit/96kHz FLAC playback. Standard DP-X1 color is Black; special collaboration editions are not treated as normal color variants. Bluetooth Version remains blank because Onkyo lists Bluetooth profiles/codecs but not the core version and no strong DP-X1-specific version source was accepted. Streaming Services lists compatible Android/Google Play services, not built-in integrations. MSRP USD uses 900 from Onkyo USA launch press release MSRP $899.99; exact-model reviews list $899, and Japanese launch coverage listed open pricing with expected street price around 69,800 yen.",
     "colors": [
       "Black"
     ],
@@ -14218,7 +14258,7 @@
     "variant": "",
     "releaseYear": 2016,
     "status": "Discontinued",
-    "msrpUsd": null,
+    "msrpUsd": 89,
     "soc": "X1000",
     "os": "",
     "ramGb": null,
@@ -14265,8 +14305,8 @@
     "officialUrl": "https://www.hidizs.net/pages/ap60-specifications",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T13:47:30+08:00",
-    "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -14276,13 +14316,21 @@
       {
         "label": "Headfonics",
         "url": "https://headfonics.com/the-ap60-by-hidizs/"
+      },
+      {
+        "label": "Headfonia AP60 price",
+        "url": "https://www.headfonia.com/review-the-hidizs-ap60-body/3/"
+      },
+      {
+        "label": "Head-Fi AP60 reviews",
+        "url": "https://www.head-fi.org/showcase/hidizs-ap60-hifi-mini-bluetooth-lossless-mp3-portable-music-player-black.21910/reviews"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "MSRP sourced from period review/retailer-era references rather than surviving official Hidizs product pricing.",
     "sourceUrl": "https://www.hidizs.net/pages/ap60-specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: exact Hidizs AP60 specifications page verifies X1000 CPU, AK4452VN DAC, MAX97220A amplifier, microSD expansion to 256GB, Bluetooth 4.0 with aptX, Micro-USB, two-way USB DAC, 2.0in 320x240 display, 3.5mm output at 70mW @ 32 ohms, PCM 24-bit/192kHz, DSD128, about/above 10h playback, 95g weight, 42 x 75 x 14 mm dimensions, and Black / Silver / Blue / Grey / Gold colors.",
+    "notes": "Verified - Official: exact Hidizs AP60 specifications page verifies X1000 CPU, AK4452VN DAC, MAX97220A amplifier, microSD expansion to 256GB, Bluetooth 4.0 with aptX, Micro-USB, two-way USB DAC, 2.0in 320x240 display, 3.5mm output at 70mW @ 32 ohms, PCM 24-bit/192kHz, DSD128, about/above 10h playback, 95g weight, 42 x 75 x 14 mm dimensions, and Black / Silver / Blue / Grey / Gold colors. MSRP update: Headfonia exact-model review states the Hidizs AP60 goes for $89, and Head-Fi/Penon-era review material also cites $89.00.",
     "colors": [
       "Black",
       "Silver",
@@ -14784,7 +14832,7 @@
     "variant": "",
     "releaseYear": 2015,
     "status": "Discontinued",
-    "msrpUsd": null,
+    "msrpUsd": 345,
     "soc": "Ingenic JZ4760B + SA2000",
     "os": "Cayin proprietary OS",
     "ramGb": null,
@@ -14836,8 +14884,8 @@
         "url": "https://www.ebay.com/p/11037702956"
       }
     ],
-    "lastUpdated": "2026-07-20T14:58:19+08:00",
-    "lastUpdatedCommit": "56fb06877532db5a91fdee2bcb96fbcc40e8cd80",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -14855,13 +14903,17 @@
       {
         "label": "Drop",
         "url": "https://drop.com/buy/cayin-n5-digital-audio-player/details"
+      },
+      {
+        "label": "Headfonia review",
+        "url": "https://www.headfonia.com/review-cayin-n5-ribbed-pleasure/"
       }
     ],
-    "reviewNotes": "Original N5 official specifications were not available in the indexed Cayin archive found during this pass; structured fields use exact-model Head-Fi spec listing plus exact Headfonics review coverage.",
+    "reviewNotes": "MSRP USD added as 345 from Headfonics exact-model review price; Headfonia notes Amazon street pricing around 319 USD.",
     "sourceUrl": "https://www.head-fi.org/showcase/cayin-n5-dsd-lossless-music-player.20879/reviews",
     "sourceType": "Review",
     "verificationStatus": "Verified - Review",
-    "notes": "Verified - Review/spec listing: exact Cayin N5 Head-Fi listing verifies 2.5mm balanced phones output at 300mW + 300mW at 32 ohms, 3.5mm single-ended phones output at 200mW + 200mW at 32 ohms, 20Hz-20kHz +/-0.2dB and 5Hz-50kHz +/-1dB frequency response, 0.006% headphone THD+N, 108dB dynamic range and SNR, 0.26 ohm SE output impedance, 2.0V line out at 10k ohms, 0.005% line-out THD+N, 4200mAh 3.7V lithium-polymer battery, about 9h playback, 3h charging with 2A charger, 16-300 ohm recommended headphone impedance, 111 x 64 x 16.4 mm dimensions, 195g net weight, native DSD64/128 for DSF/DFF/SACD ISO, local APE/FLAC/WAV/AIFF up to 24-bit/192kHz, ALAC/WMA/AAC/MP3 support, and USB DAC mode with DoP DSD64 and PCM up to 24-bit/192kHz. N5ii and N5iiS specifications were not merged into this row. Additional sourced decisions: Headfonics identifies the original N5 processing architecture as Ingenic JZ4760B with SA2000 processing, shared broadly with Cayin N6. OS is structured as Cayin proprietary OS because the original N5 uses Cayin upgradeable proprietary player software rather than Android or HiBy OS. RAM remains blank because Cayin did not publish capacity and no reliable teardown was found. AV Watch launch coverage identifies the DAC as AKM AK4490EQ. The original N5 is treated as Gold based on Headfonics comparison with later N5ii finishes; no reliable evidence of multiple original N5 retail colors was found. Headfonics documents a 2.4in 400 x 360 IPS TFT display and USB 3.0 Micro-B port with backward compatibility for ordinary Micro-USB 2.0 cables. Drop listing documents two microSD slots up to 128GB each, so Storage Expansion Max is 256GB total.",
+    "notes": "Verified - Review/spec listing: exact Cayin N5 Head-Fi listing verifies 2.5mm balanced phones output at 300mW + 300mW at 32 ohms, 3.5mm single-ended phones output at 200mW + 200mW at 32 ohms, 20Hz-20kHz +/-0.2dB and 5Hz-50kHz +/-1dB frequency response, 0.006% headphone THD+N, 108dB dynamic range and SNR, 0.26 ohm SE output impedance, 2.0V line out at 10k ohms, 0.005% line-out THD+N, 4200mAh 3.7V lithium-polymer battery, about 9h playback, 3h charging with 2A charger, 16-300 ohm recommended headphone impedance, 111 x 64 x 16.4 mm dimensions, 195g net weight, native DSD64/128 for DSF/DFF/SACD ISO, local APE/FLAC/WAV/AIFF up to 24-bit/192kHz, ALAC/WMA/AAC/MP3 support, and USB DAC mode with DoP DSD64 and PCM up to 24-bit/192kHz. N5ii and N5iiS specifications were not merged into this row. Additional sourced decisions: Headfonics identifies the original N5 processing architecture as Ingenic JZ4760B with SA2000 processing, shared broadly with Cayin N6. OS is structured as Cayin proprietary OS because the original N5 uses Cayin upgradeable proprietary player software rather than Android or HiBy OS. RAM remains blank because Cayin did not publish capacity and no reliable teardown was found. AV Watch launch coverage identifies the DAC as AKM AK4490EQ. The original N5 is treated as Gold based on Headfonics comparison with later N5ii finishes; no reliable evidence of multiple original N5 retail colors was found. Headfonics documents a 2.4in 400 x 360 IPS TFT display and USB 3.0 Micro-B port with backward compatibility for ordinary Micro-USB 2.0 cables. Drop listing documents two microSD slots up to 128GB each, so Storage Expansion Max is 256GB total. MSRP USD uses 345 from Headfonics exact-model review price; Headfonia contemporaneous review notes Amazon availability around 319 USD, treated as street pricing rather than launch MSRP.",
     "colors": [
       "Gold"
     ],
@@ -14883,7 +14935,7 @@
     "variant": "",
     "releaseYear": 2015,
     "status": "Discontinued",
-    "msrpUsd": null,
+    "msrpUsd": 620,
     "soc": "",
     "os": "",
     "ramGb": null,
@@ -14930,20 +14982,32 @@
     "officialUrl": "",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T13:47:30+08:00",
-    "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
         "label": "Headfonics",
         "url": "https://headfonics.com/cayin-n6-review/"
+      },
+      {
+        "label": "Kopek Japan product page",
+        "url": "https://kopek.jp/archives/n6.html"
+      },
+      {
+        "label": "e-earphone product page",
+        "url": "https://www.e-earphone.jp/products/80402"
+      },
+      {
+        "label": "Japanese review",
+        "url": "https://headphonemetal.ldblog.jp/archives/52204544.html"
       }
     ],
-    "reviewNotes": "Exact Headfonics N6 review retained as review coverage; structured fields use the exact product listing plus Cayin support provenance.",
+    "reviewNotes": "MSRP USD added as 620 from Headfonics exact-model $619.99 review price; Japanese distributor listing shows 99,800 yen tax-included.",
     "sourceUrl": "https://avgearshop.com/cayin-n6.html",
-    "sourceType": "Web",
-    "verificationStatus": "Verified - Web",
-    "notes": "Verified - Web/Official support: exact Cayin N6 product listing verifies Sharp 2.4in IPS screen, dual TI PCM1792 DAC chips, TI PGA2311 volume control, three TCXO clocks, USB DAC mode over asynchronous USB 2.0, 3.5mm headphone output, 3.5mm line out, 3.5mm digital coaxial out, 220mW + 220mW maximum output power at 32 ohms, 20Hz-20kHz +/-0.2dB and 5Hz-50kHz +/-1dB frequency response, THD <0.005%, SNR >109dB A-weighted, 110dB dynamic range, 0.26 ohm output impedance, 1.7V line out at 10k ohms, coaxial output at 0.5V into 75 ohms / 1.0V no load, MP3/AAC/APE/WAV/FLAC up to 24-bit/192kHz, native DSD64/128 and SACD ISO hardware decoding, 8GB internal memory, microSD expansion up to 128GB, 5600mAh 3.7V lithium-ion battery, 7-8h battery life, 3h charge time, aircraft-grade aluminum alloy chassis with carbon-fiber backing, 72 x 126 x 19.7 mm dimensions, and 223g weight. Cayin USB Audio Driver support table is retained as official exact-model provenance for USB DAC support: https://en.cayin.cn/drive/9/18/568.html",
+    "sourceType": "Review",
+    "verificationStatus": "Verified - Review",
+    "notes": "Verified - Web/Official support: exact Cayin N6 product listing verifies Sharp 2.4in IPS screen, dual TI PCM1792 DAC chips, TI PGA2311 volume control, three TCXO clocks, USB DAC mode over asynchronous USB 2.0, 3.5mm headphone output, 3.5mm line out, 3.5mm digital coaxial out, 220mW + 220mW maximum output power at 32 ohms, 20Hz-20kHz +/-0.2dB and 5Hz-50kHz +/-1dB frequency response, THD <0.005%, SNR >109dB A-weighted, 110dB dynamic range, 0.26 ohm output impedance, 1.7V line out at 10k ohms, coaxial output at 0.5V into 75 ohms / 1.0V no load, MP3/AAC/APE/WAV/FLAC up to 24-bit/192kHz, native DSD64/128 and SACD ISO hardware decoding, 8GB internal memory, microSD expansion up to 128GB, 5600mAh 3.7V lithium-ion battery, 7-8h battery life, 3h charge time, aircraft-grade aluminum alloy chassis with carbon-fiber backing, 72 x 126 x 19.7 mm dimensions, and 223g weight. Cayin USB Audio Driver support table is retained as official exact-model provenance for USB DAC support: https://en.cayin.cn/drive/9/18/568.html MSRP USD uses 620 from Headfonics exact-model review price of $619.99; Japanese distributor listing shows local launch/list price of 99,800 yen tax-included, and another contemporaneous review noted common sale pricing around $619.",
     "colors": [],
     "images": [
       {
@@ -15939,8 +16003,8 @@
     "officialUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nwz-zx1/specifications",
     "officialStoreUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nwz-zx1/specifications",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T14:58:19+08:00",
-    "lastUpdatedCommit": "56fb06877532db5a91fdee2bcb96fbcc40e8cd80",
+    "lastUpdated": "2026-07-26T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -15962,13 +16026,33 @@
       {
         "label": "YugaTech",
         "url": "https://www.yugatech.com/spec/sony-nwz-zx1-walkman/"
+      },
+      {
+        "label": "Sony Japan press release",
+        "url": "https://www.sony.jp/CorporateCruise/Press/201309/13-0925B/"
+      },
+      {
+        "label": "AV Watch launch coverage",
+        "url": "https://av.watch.impress.co.jp/docs/news/616383.html"
+      },
+      {
+        "label": "ITmedia launch coverage",
+        "url": "https://www.itmedia.co.jp/news/spv/1309/25/news082.html"
+      },
+      {
+        "label": "What Hi-Fi review",
+        "url": "https://www.whathifi.com/sony/nwz-zx1/review"
+      },
+      {
+        "label": "StereoNET review",
+        "url": "https://stereonet.com/reviews/sony-nwz-zx1-walkman"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "MSRP USD left blank: official Sony Japan page lists open price; Japanese launch coverage estimated 75,000 yen, while UK/Australia sources list local prices rather than USD MSRP.",
     "sourceUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nwz-zx1/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Sony PH NWZ-ZX1 specifications confirm Android 4.1, 128GB storage, no memory-card slot listed, 4.0in 854 x 480 FWVGA TFT touchscreen, 60 x 122 x 13 mm dimensions, 139g weight, 3h full charge time, WM-PORT and stereo mini jack terminals, Wi-Fi/Bluetooth/NFC wireless capabilities, USB connection, MP3/WMA/AAC/Linear PCM playback, MPEG4/AVC/WMV9 video playback, JPEG/PNG photo playback, and 32h MP3 / 16h Hi-Res Audio battery life. Model is officially NWZ-ZX1 in Sony support; normalized to NW-ZX1 to match database naming style. Battery Life Hours uses the highest official local playback figure for filtering. No 2.5mm, 4.4mm, 6.35mm, microSD, USB DAC, line out, coax out, optical out, cellular, 4G, 5G, DSD, or MQA support is listed in the official specifications. Additional sourced details: Sony China identifies an OMAP 4 Cortex-A9 1.0GHz dual-core processor; structured SoC uses Texas Instruments OMAP4430 based on device-database identification of that OMAP 4 part. Contemporary ePrice.HK hardware coverage lists 1GB RAM. A cellePhone replacement listing for original battery US453759 specifies 1000mAh; higher 1300mAh third-party replacement listings are treated as upgraded replacement capacity, not original capacity. Sony Hong Kong launch material identifies S-Master HX full-digital amplifier architecture, used here as the DAC/amp architecture rather than a third-party DAC chip. Sony Japan archive specifications list 15 + 15mW headphone output at 16 ohms. Retail model NW-ZX1/S supports Silver color. Sony Help Guide specifies Bluetooth 3.0; Bluetooth codec is kept to SBC because reliable Sony documentation does not confirm aptX/LDAC for NW-ZX1. Darko.Audio testing confirms Google Play Music, Spotify, Pandora, and Qobuz were usable via Android apps. Wi-Fi bands are structured as 2.4GHz / 5GHz based on 802.11a/b/g/n support.",
+    "notes": "Verified - Official: Sony PH NWZ-ZX1 specifications confirm Android 4.1, 128GB storage, no memory-card slot listed, 4.0in 854 x 480 FWVGA TFT touchscreen, 60 x 122 x 13 mm dimensions, 139g weight, 3h full charge time, WM-PORT and stereo mini jack terminals, Wi-Fi/Bluetooth/NFC wireless capabilities, USB connection, MP3/WMA/AAC/Linear PCM playback, MPEG4/AVC/WMV9 video playback, JPEG/PNG photo playback, and 32h MP3 / 16h Hi-Res Audio battery life. Model is officially NWZ-ZX1 in Sony support; normalized to NW-ZX1 to match database naming style. Battery Life Hours uses the highest official local playback figure for filtering. No 2.5mm, 4.4mm, 6.35mm, microSD, USB DAC, line out, coax out, optical out, cellular, 4G, 5G, DSD, or MQA support is listed in the official specifications. Additional sourced details: Sony China identifies an OMAP 4 Cortex-A9 1.0GHz dual-core processor; structured SoC uses Texas Instruments OMAP4430 based on device-database identification of that OMAP 4 part. Contemporary ePrice.HK hardware coverage lists 1GB RAM. A cellePhone replacement listing for original battery US453759 specifies 1000mAh; higher 1300mAh third-party replacement listings are treated as upgraded replacement capacity, not original capacity. Sony Hong Kong launch material identifies S-Master HX full-digital amplifier architecture, used here as the DAC/amp architecture rather than a third-party DAC chip. Sony Japan archive specifications list 15 + 15mW headphone output at 16 ohms. Retail model NW-ZX1/S supports Silver color. Sony Help Guide specifies Bluetooth 3.0; Bluetooth codec is kept to SBC because reliable Sony documentation does not confirm aptX/LDAC for NW-ZX1. Darko.Audio testing confirms Google Play Music, Spotify, Pandora, and Qobuz were usable via Android apps. Wi-Fi bands are structured as 2.4GHz / 5GHz based on 802.11a/b/g/n support. MSRP USD remains blank because Sony Japan listed NW-ZX1 as open price, while contemporary coverage gives expected Japan street pricing around 75,000 yen and UK/Australia review prices rather than a confirmed USD MSRP.",
     "colors": [
       "Silver"
     ],
@@ -16037,7 +16121,7 @@
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "WM-PORT / USB 2.0",
     "batteryLifeHours": "60",
-    "storageExpansionMax": "",
+    "storageExpansionMax": "2TB",
     "officialUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx2/specifications",
     "officialStoreUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx2/specifications",
     "buyLinks": [
@@ -16046,8 +16130,8 @@
         "url": "https://www.bhphotovideo.com/c/product/1126542-REG/sony_nwzx2blk_hi_res_digital_music_walkman_128gb.html"
       }
     ],
-    "lastUpdated": "2026-07-23T02:56:52.909Z",
-    "lastUpdatedCommit": "56fb06877532db5a91fdee2bcb96fbcc40e8cd80",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -16073,13 +16157,29 @@
       {
         "label": "AV Watch US launch price",
         "url": "https://av.watch.impress.co.jp/docs/news/682485.html"
+      },
+      {
+        "label": "Sony NW-ZX2 Help Guide",
+        "url": "https://helpguide.sony.net/dmp/nwzx2/v1/en/contents/TP0000428528.html"
+      },
+      {
+        "label": "Sony Japan specifications",
+        "url": "https://www.sony.jp/walkman/products/NW-ZX2/spec.html"
+      },
+      {
+        "label": "Sony microSD support article",
+        "url": "https://www.sony.co.uk/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx507/articles/00171492"
+      },
+      {
+        "label": "AVForums review",
+        "url": "https://www.avforums.com/reviews/sony-nw-zx2-walkman-review.11967/"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Storage Expansion Max added as 2TB: exact NW-ZX2 Sony specs list microSDXC 64GB and more, and Sony support states Walkman microSDXC theoretical support up to 2TB; 128GB review references are historical card-availability context.",
     "sourceUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx2/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Sony NW-ZX2 specifications confirm Android platform, 128GB memory, microSD slot, WM-PORT 22-pin connection, stereo mini jack, Wi-Fi, Bluetooth, NFC, Hi-Speed USB 2.0 via WM-PORT, 4.0in 854 x 480 FWVGA TFT touchscreen, 6.5 x 13.1 x 1.8 cm dimensions, 235g weight, 4.5h full charge time, 60h MP3 and 33h Hi-Res Audio continuous playback, and audio playback support for MP3, WMA, AAC, HE-AAC, FLAC, ALAC, AIFF, Linear PCM, and DSD. Battery Life Hours uses the highest official local playback figure for filtering; Hi-Res Audio runtime remains in Notes. No balanced output, line out, coax out, optical out, or USB DAC mode is listed in the official terminals/specifications. Additional sourced details: Frandroid exact-model technical review identifies the processor as Texas Instruments OMAP4430 and lists 1GB RAM. Teardown-based reporting from Singapore HiFi identifies an 1860mAh internal battery. B&H retail material identifies Sony S-Master HX digital amplifier architecture and the production color as Black. Enjoy the Music interview context states 15mW per channel, treated as 15mW + 15mW at 16 ohms. Sony Help Guide lists Bluetooth specification version 3.0, SBC and LDAC playback settings, IEEE 802.11a/b/g/n Wi-Fi, and both 2.4GHz and 5GHz Wi-Fi operation. What Hi-Fi confirms Spotify and Tidal Android apps could be installed. Storage Expansion Max is left blank because Sony confirms microSDXC 64GB or more but does not publish a maximum supported capacity. MSRP USD uses contemporary US CES/launch coverage reporting the NW-ZX2 price at $1,199.99. Sony official Help Guide and regional specifications list external memory as microSD up to 2GB, microSDHC up to 32GB, and microSDXC 64GB and more; they do not publish a numerical maximum, so Storage Expansion Max remains blank.",
+    "notes": "Verified - Official: Sony NW-ZX2 specifications confirm Android platform, 128GB memory, microSD slot, WM-PORT 22-pin connection, stereo mini jack, Wi-Fi, Bluetooth, NFC, Hi-Speed USB 2.0 via WM-PORT, 4.0in 854 x 480 FWVGA TFT touchscreen, 6.5 x 13.1 x 1.8 cm dimensions, 235g weight, 4.5h full charge time, 60h MP3 and 33h Hi-Res Audio continuous playback, and audio playback support for MP3, WMA, AAC, HE-AAC, FLAC, ALAC, AIFF, Linear PCM, and DSD. Battery Life Hours uses the highest official local playback figure for filtering; Hi-Res Audio runtime remains in Notes. No balanced output, line out, coax out, optical out, or USB DAC mode is listed in the official terminals/specifications. Additional sourced details: Frandroid exact-model technical review identifies the processor as Texas Instruments OMAP4430 and lists 1GB RAM. Teardown-based reporting from Singapore HiFi identifies an 1860mAh internal battery. B&H retail material identifies Sony S-Master HX digital amplifier architecture and the production color as Black. Enjoy the Music interview context states 15mW per channel, treated as 15mW + 15mW at 16 ohms. Sony Help Guide lists Bluetooth specification version 3.0, SBC and LDAC playback settings, IEEE 802.11a/b/g/n Wi-Fi, and both 2.4GHz and 5GHz Wi-Fi operation. What Hi-Fi confirms Spotify and Tidal Android apps could be installed. MSRP USD uses contemporary US CES/launch coverage reporting the NW-ZX2 price at $1,199.99. Storage Expansion Max uses 2TB because Sony Help Guide and regional specifications list microSDXC 64GB and more for the exact NW-ZX2, and Sony support states Walkman microSDXC support is theoretically up to 2TB; older reviews mentioning 128GB reflect then-current card availability rather than a Sony-published ceiling.",
     "colors": [
       "Black"
     ],
@@ -16101,7 +16201,7 @@
     "variant": "",
     "releaseYear": 2015,
     "status": "Discontinued",
-    "msrpUsd": null,
+    "msrpUsd": 699,
     "soc": "",
     "os": "Sony proprietary OS",
     "ramGb": null,
@@ -16150,8 +16250,8 @@
     "officialUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx100/specifications",
     "officialStoreUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx100/specifications",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T16:58:09+08:00",
-    "lastUpdatedCommit": "c3a0ed8dad3c5dfcafdd967e730f002af3733021",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -16169,13 +16269,33 @@
       {
         "label": "Home Theater Review",
         "url": "https://hometheaterreview.com/sony-nw-zx100hn-portable-player-and-in-ear-headphones-reviewed/"
+      },
+      {
+        "label": "TWICE US launch coverage",
+        "url": "https://www.twice.com/product/sony-go-new-walkman-players-hear-headphones-speakers-60777"
+      },
+      {
+        "label": "Best Buy listing",
+        "url": "https://www.bestbuy.com/site/reviews/sony-walkman-nw-zx100-series-128gb-hi-res-digital-audio-player-silver/5387009"
+      },
+      {
+        "label": "Sony Japan press release",
+        "url": "https://www.sony.jp/CorporateCruise/Press/201509/15-0908B/"
+      },
+      {
+        "label": "AV Watch launch coverage",
+        "url": "https://av.watch.impress.co.jp/docs/news/719785.html"
+      },
+      {
+        "label": "Phile Web launch coverage",
+        "url": "https://www.phileweb.com/news/d-av/201509/08/37364.html"
       }
     ],
-    "reviewNotes": "Exact reputable review match not confidently verified; related ZX1/ZX2/ZX300 reviews were rejected.",
+    "reviewNotes": "MSRP USD added as 699 from US launch coverage for NW-ZX100HN; Japanese body-only NW-ZX100 launch coverage listed expected street price around 67,000 yen.",
     "sourceUrl": "https://www.sony.com.ph/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx100/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Sony PH NW-ZX100 specifications confirm 128GB memory, microSD/microSDHC/microSDXC support, 5.4 x 12 x 1.5 cm dimensions, 145g weight, 5h full charge time, 45h Hi-Res Audio and 70h MP3 continuous playback, WM-PORT 22-pin terminal, stereo mini jack, High-Speed USB 2.0, NFC, Bluetooth, 3.0in / 7.6cm 400 x 240 WQVGA TFT color display with white LED backlight, MP3/WMA/FLAC/Linear PCM/AAC/HE-AAC/AIFF/DSD playback, DSEE HX, ClearAudio+, Clear Bass, Dynamic Normalizer, Clear Phase, digital noise cancellation, and USB cable / start-up guide / instruction manual / spacer box contents. Battery Life Hours uses the highest official local playback figure for filtering. Prior Sony official/help sources additionally identify Bluetooth 3.0 with LDAC/aptX/SBC codecs, 15mW + 15mW headphone output at JEITA 16 ohms, and DSD128 capability. The official page does not list Wi-Fi, cellular, balanced output, USB DAC, line out, coax out, optical out, MQA, RAM, SoC, DAC chip, or battery capacity, so those structured fields remain blank or false as applicable. Sony does not publish the NW-ZX100 processor/SoC model or installed RAM, and no reliable teardown confirms either value. Sony instruction manual supports treating NW-ZX100 as closed Sony Walkman firmware rather than Android or a third-party application platform. Battery mAh remains blank because Sony publishes charging time and playback duration but not battery capacity. Sony identifies the NW-ZX100 as using S-Master HX full-digital amplifier architecture rather than naming a conventional third-party DAC chip. Streaming Services remains blank because NW-ZX100 has no Wi-Fi, Android, or installable applications; Bluetooth playback is not onboard streaming.",
+    "notes": "Verified - Official: Sony PH NW-ZX100 specifications confirm 128GB memory, microSD/microSDHC/microSDXC support, 5.4 x 12 x 1.5 cm dimensions, 145g weight, 5h full charge time, 45h Hi-Res Audio and 70h MP3 continuous playback, WM-PORT 22-pin terminal, stereo mini jack, High-Speed USB 2.0, NFC, Bluetooth, 3.0in / 7.6cm 400 x 240 WQVGA TFT color display with white LED backlight, MP3/WMA/FLAC/Linear PCM/AAC/HE-AAC/AIFF/DSD playback, DSEE HX, ClearAudio+, Clear Bass, Dynamic Normalizer, Clear Phase, digital noise cancellation, and USB cable / start-up guide / instruction manual / spacer box contents. Battery Life Hours uses the highest official local playback figure for filtering. Prior Sony official/help sources additionally identify Bluetooth 3.0 with LDAC/aptX/SBC codecs, 15mW + 15mW headphone output at JEITA 16 ohms, and DSD128 capability. The official page does not list Wi-Fi, cellular, balanced output, USB DAC, line out, coax out, optical out, MQA, RAM, SoC, DAC chip, or battery capacity, so those structured fields remain blank or false as applicable. Sony does not publish the NW-ZX100 processor/SoC model or installed RAM, and no reliable teardown confirms either value. Sony instruction manual supports treating NW-ZX100 as closed Sony Walkman firmware rather than Android or a third-party application platform. Battery mAh remains blank because Sony publishes charging time and playback duration but not battery capacity. Sony identifies the NW-ZX100 as using S-Master HX full-digital amplifier architecture rather than naming a conventional third-party DAC chip. Streaming Services remains blank because NW-ZX100 has no Wi-Fi, Android, or installable applications; Bluetooth playback is not onboard streaming. MSRP USD uses 699 from US launch coverage of the NW-ZX100HN package; Japanese launch coverage for the body-only NW-ZX100 lists open pricing with expected street price around 67,000 yen.",
     "colors": [
       "Silver"
     ],
@@ -18208,8 +18328,8 @@
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=2",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T13:47:30+08:00",
-    "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -18219,13 +18339,17 @@
       {
         "label": "Twister6",
         "url": "https://twister6.com/2018/05/25/ak-aultima-sp1000-ss-cu/"
+      },
+      {
+        "label": "Astell&Kern official SP1000 specs",
+        "url": "https://www.astellnkern.com/en/product/view.php?idx=2"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Weight remains blank because the combined row spans stainless-steel and copper chassis weights.",
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=2",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Astell&Kern SP1000 specifications confirm an octa-core CPU, dual AK4497EQ DACs, 256GB storage, microSD up to 1TB, 3700mAh battery, 5-inch display, 3.5mm headphone/optical and 2.5mm balanced outputs, 2.4GHz Wi-Fi, USB 3.0 Type-C, MQA, Roon Ready support, PCM 32-bit/384kHz, native DSD256, up to 12 hours playback, and 75.8 x 132 x 16.2 mm dimensions. Official weight varies by chassis: 386.6g for Onyx Black/Stainless Steel and 387.9g for Copper, so the numeric Weight field is intentionally blank. Period exact-model review coverage supports a 2017 release. A&K Heritage/archive placement and later SP-series generations support Discontinued status. Official output is specified only as no-load Vrms, so structured mW power fields remain blank.",
+    "notes": "Verified - Official: Astell&Kern SP1000 specifications confirm an octa-core CPU, dual AK4497EQ DACs, 256GB storage, microSD up to 1TB, 3700mAh battery, 5-inch display, 3.5mm headphone/optical and 2.5mm balanced outputs, 2.4GHz Wi-Fi, USB 3.0 Type-C, MQA, Roon Ready support, PCM 32-bit/384kHz, native DSD256, up to 12 hours playback, and 75.8 x 132 x 16.2 mm dimensions. Weight remains blank because official weight varies by chassis: 386.6g for Onyx Black/Stainless Steel and 387.9g for Copper. Do not enter a single numeric weight unless the stainless-steel and copper versions are split into separate rows. Period exact-model review coverage supports a 2017 release. A&K Heritage/archive placement and later SP-series generations support Discontinued status. Official output is specified only as no-load Vrms, so structured mW power fields remain blank.",
     "colors": [
       "Onyx Black",
       "Stainless Steel",
@@ -18385,8 +18509,8 @@
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=16",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T13:47:30+08:00",
-    "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -18396,13 +18520,17 @@
       {
         "label": "Twister6",
         "url": "https://twister6.com/2019/10/26/astell-kern-aultima-sp2000/"
+      },
+      {
+        "label": "Astell&Kern official SP2000 specs",
+        "url": "https://www.astellnkern.com/en/product/view.php?idx=16"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Weight remains blank because the combined row spans stainless-steel and copper chassis weights.",
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=16",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Astell&Kern SP2000 specifications confirm an octa-core CPU, dual AK4499EQ DACs, 512GB storage, microSD up to 1TB, 3700mAh battery, 5-inch display, 3.5mm headphone/optical and 2.5mm balanced outputs, dual-band Wi-Fi, USB 3.0 Type-C, MQA, PCM 32-bit/768kHz, native DSD512, up to 8 hours playback, and 76.3 x 132 x 15.7 mm dimensions. Official weight varies by chassis: 410.8g for Vegas Gold/Onyx Black/Stainless Steel and 432.4g for Copper, so the numeric Weight field is intentionally blank. Period exact-model review coverage supports a 2019 release. Later SP generations and official A&K lineup history support Discontinued status. Official output is specified only as no-load Vrms, so structured mW power fields remain blank.",
+    "notes": "Verified - Official: Astell&Kern SP2000 specifications confirm an octa-core CPU, dual AK4499EQ DACs, 512GB storage, microSD up to 1TB, 3700mAh battery, 5-inch display, 3.5mm headphone/optical and 2.5mm balanced outputs, dual-band Wi-Fi, USB 3.0 Type-C, MQA, PCM 32-bit/768kHz, native DSD512, up to 8 hours playback, and 76.3 x 132 x 15.7 mm dimensions. Weight remains blank because official weight varies by chassis: 410.8g for Vegas Gold/Onyx Black/Stainless Steel and 432.4g for Copper. Do not enter a single numeric weight unless the stainless-steel and copper versions are split into separate rows. Period exact-model review coverage supports a 2019 release. Later SP generations and official A&K lineup history support Discontinued status. Official output is specified only as no-load Vrms, so structured mW power fields remain blank.",
     "colors": [
       "Vegas Gold",
       "Onyx Black",
@@ -18478,20 +18606,24 @@
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=20",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T13:47:30+08:00",
-    "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
         "label": "Headfonia",
         "url": "https://www.headfonia.com/astell-kern-sp2000t-review/"
+      },
+      {
+        "label": "Astell&Kern official SP2000T specs",
+        "url": "https://www.astellnkern.com/en/product/view.php?idx=20"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Weight remains blank because the combined row spans aluminum and Copper Nickel chassis weights.",
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=20",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Astell&Kern SP2000T specifications confirm a quad-core CPU, four ES9068AS DACs, KORG Nutube 6P1 and triple OP AMP/TUBE/Hybrid amplification modes, 256GB storage, microSD up to 1TB, 4200mAh battery, 5-inch FHD display, 3.5mm headphone/optical plus 2.5mm and 4.4mm balanced outputs, Bluetooth 5.0 with aptX HD/LDAC, dual-band Wi-Fi, USB Type-C, MQA, Roon Ready support, PCM 32-bit/384kHz, native DSD512, about 9 hours playback, and 78.1 x 141.1 x 17.5 mm dimensions. Official weight varies by chassis: 309g aluminum and 503g Copper Nickel, so the numeric Weight field is intentionally blank. Period launch/review coverage supports a 2021 release. Later SP-series generations support Discontinued status. Official output is specified only as no-load Vrms, so structured mW power fields remain blank. Base official price was $2400 for Onyx Black; Copper Nickel was $2700.",
+    "notes": "Verified - Official: Astell&Kern SP2000T specifications confirm a quad-core CPU, four ES9068AS DACs, KORG Nutube 6P1 and triple OP AMP/TUBE/Hybrid amplification modes, 256GB storage, microSD up to 1TB, 4200mAh battery, 5-inch FHD display, 3.5mm headphone/optical plus 2.5mm and 4.4mm balanced outputs, Bluetooth 5.0 with aptX HD/LDAC, dual-band Wi-Fi, USB Type-C, MQA, Roon Ready support, PCM 32-bit/384kHz, native DSD512, about 9 hours playback, and 78.1 x 141.1 x 17.5 mm dimensions. Weight remains blank because official weight varies by chassis: 309g aluminum and 503g Copper Nickel. Do not enter a single numeric weight unless the aluminum and Copper Nickel versions are split into separate rows. Period launch/review coverage supports a 2021 release. Later SP-series generations support Discontinued status. Official output is specified only as no-load Vrms, so structured mW power fields remain blank. Base official price was $2400 for Onyx Black; Copper Nickel was $2700.",
     "colors": [
       "Onyx Black",
       "Copper Nickel"
@@ -19226,8 +19358,8 @@
     "officialUrl": "",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-23T02:45:00.736Z",
-    "lastUpdatedCommit": "",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -19243,7 +19375,7 @@
         "url": "https://drop.com/buy/xduoo-x10t-digital-audio-player/talk"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Headphone Outputs confirmed as None; original X10T is a digital transport with AES, coaxial, and optical digital outputs only.",
     "sourceUrl": "https://www.headfonia.com/review-xduoo-x10t/2/",
     "sourceType": "Review",
     "verificationStatus": "Verified - Review",
@@ -19316,8 +19448,8 @@
     "officialUrl": "",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-23T02:42:06.180Z",
-    "lastUpdatedCommit": "",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -19333,7 +19465,7 @@
         "url": "https://www.soundphilereview.com/reviews/xduoo-x10t-ii-review-3313/"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Headphone Outputs confirmed as None; X10T II is a digital transport and its 3.5mm jack is coaxial/optical digital output only.",
     "sourceUrl": "https://www.headfonia.com/xduoo-x10tii-review/",
     "sourceType": "Review",
     "verificationStatus": "Verified - Review",
@@ -20994,7 +21126,7 @@
     "variant": "",
     "releaseYear": 2016,
     "status": "Discontinued",
-    "msrpUsd": null,
+    "msrpUsd": 899,
     "soc": "ARM Cortex-A9 1.2GHz Dual-Core",
     "os": "Embedded Linux",
     "ramGb": null,
@@ -21039,8 +21171,8 @@
     "officialUrl": "https://support2.cowon.com/contents/dn2/data/C09/PLENUEM2/PLENUE_M2_1.1_EN_manual.pdf",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T16:58:09+08:00",
-    "lastUpdatedCommit": "c3a0ed8dad3c5dfcafdd967e730f002af3733021",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -21050,13 +21182,33 @@
       {
         "label": "Cowon manual",
         "url": "https://support2.cowon.com/contents/dn2/data/C09/PLENUEM2/PLENUE_M2_1.1_EN_manual.pdf"
+      },
+      {
+        "label": "Cowon Korea refurbished listing",
+        "url": "https://cowon.com/goods/goods_view.php?goodsNo=1000000294"
+      },
+      {
+        "label": "Danawa PLENUE M2 listing",
+        "url": "https://prod.danawa.com/info/?pcode=4232741"
+      },
+      {
+        "label": "AV Watch launch coverage",
+        "url": "https://av.watch.impress.co.jp/docs/news/1010496.html"
+      },
+      {
+        "label": "ITmedia launch coverage",
+        "url": "https://www.itmedia.co.jp/lifestyle/articles/1607/15/news143.html"
+      },
+      {
+        "label": "Phile Web launch coverage",
+        "url": "https://www.phileweb.com/sp/news/d-av/201607/15/39181.html"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "MSRP USD added as approximate 899 from Korean list price of 899,000 KRW; exact Japanese launch coverage listed direct-store price 84,780 yen tax-included.",
     "sourceUrl": "https://support2.cowon.com/contents/dn2/data/C09/PLENUEM2/PLENUE_M2_1.1_EN_manual.pdf",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official/Review: Cowon's exact Plenue M2 manual is the primary provenance source. Exact Twister6 coverage and manual-derived specifications document the M2 as the successor to Plenue M with 128GB internal storage, microSD expansion, ARM Cortex-A9 1.2GHz dual-core CPU, PCM1795 DAC, 3.7in AMOLED display, 3000mAh battery, approximately 9h playback, 3.5mm headphone/optical output and USB DAC use. Cowon advertised microSD up to 200GB for this model. Release Year 2016 follows its July 2016 launch/public availability. Status is Discontinued. Twister6 describes Plenue M2 as using Cowon closed customized Linux/Unix-based player software rather than Android. RAM remains blank because Cowon does not publish installed RAM and no reliable Plenue M2 teardown confirms it. SE Power mW remains blank because Cowon specifies 2Vrms output and 1 ohm output impedance but no power rating at a stated headphone load; converting Vrms would require unsupported assumptions. Cowon manual lists 188g weight and 69 x 117.3 x 13.4 mm dimensions. Streaming Services remains blank because Plenue M2 has no Wi-Fi, Bluetooth, Android, or installable app platform.",
+    "notes": "Verified - Official/Review: Cowon's exact Plenue M2 manual is the primary provenance source. Exact Twister6 coverage and manual-derived specifications document the M2 as the successor to Plenue M with 128GB internal storage, microSD expansion, ARM Cortex-A9 1.2GHz dual-core CPU, PCM1795 DAC, 3.7in AMOLED display, 3000mAh battery, approximately 9h playback, 3.5mm headphone/optical output and USB DAC use. Cowon advertised microSD up to 200GB for this model. Release Year 2016 follows its July 2016 launch/public availability. Status is Discontinued. Twister6 describes Plenue M2 as using Cowon closed customized Linux/Unix-based player software rather than Android. RAM remains blank because Cowon does not publish installed RAM and no reliable Plenue M2 teardown confirms it. SE Power mW remains blank because Cowon specifies 2Vrms output and 1 ohm output impedance but no power rating at a stated headphone load; converting Vrms would require unsupported assumptions. Cowon manual lists 188g weight and 69 x 117.3 x 13.4 mm dimensions. Streaming Services remains blank because Plenue M2 has no Wi-Fi, Bluetooth, Android, or installable app platform. MSRP USD uses 899 as an approximate USD-style entry from Cowon's Korean list price of 899,000 KRW for the exact PLENUE M2 128GB model; Japanese launch coverage listed a direct-store price of 84,780 yen tax-included.",
     "colors": [
       "Silver",
       "Brown"
@@ -21353,7 +21505,7 @@
     "variant": "",
     "releaseYear": 2016,
     "status": "Discontinued",
-    "msrpUsd": null,
+    "msrpUsd": 2190,
     "soc": "",
     "os": "Cowon proprietary OS",
     "ramGb": null,
@@ -21398,8 +21550,8 @@
     "officialUrl": "https://support2.cowon.com/contents/dn2/data/C09/PLENUES/PLENUE_S_1.1_EN_manual.pdf",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T14:58:19+08:00",
-    "lastUpdatedCommit": "56fb06877532db5a91fdee2bcb96fbcc40e8cd80",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -21413,13 +21565,25 @@
       {
         "label": "Fnac",
         "url": "https://leclaireur.fnac.com/article/cp29308-cowon-devoile-le-plenue-s-son-lecteur-nomade-le-plus-ambitieux/"
+      },
+      {
+        "label": "Cowon Korea DAP listing",
+        "url": "https://www.cowon.com/goods/goods_list.php?cateCd=001"
+      },
+      {
+        "label": "ITmedia prelaunch coverage",
+        "url": "https://www.itmedia.co.jp/lifestyle/articles/1512/20/news011.html"
+      },
+      {
+        "label": "Kakaku PLENUE S listing",
+        "url": "https://review.kakaku.com/review/K0000858677/"
       }
     ],
-    "reviewNotes": "Headfonia's Plenue S Picture Sunday explicitly says it was not an official review, so it was not added.",
+    "reviewNotes": "MSRP USD added as approximate 2190 from Cowon Korea listed price of 2,190,000 KRW; Japanese prelaunch coverage listed expected pricing around 240,000 yen.",
     "sourceUrl": "https://support2.cowon.com/contents/dn2/data/C09/PLENUES/PLENUE_S_1.1_EN_manual.pdf",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Cowon's exact Plenue S manual is the primary provenance source and documents 64.5 x 118.9 x 17.4 mm dimensions, 204g weight and the standalone Plenue player platform. Contemporary exact-model documentation identifies 128GB internal storage, microSD expansion, PCM1792A DAC, 4400mAh battery, 3.5mm headphone/optical output and USB DAC use. Release Year 2016 follows public availability and first review evidence. Status is Discontinued. No exact accepted full review from the preferred source set was verified; a Headfonia Picture Sunday feature was rejected because it explicitly says it is not an official review. Conservative manual-based cleanup: SoC and RAM remain blank because Cowon does not identify processor/SoC or RAM and no reliable Plenue S teardown confirms them. OS is Cowon proprietary OS because Plenue S uses Cowon closed embedded player firmware with JetEffect rather than Android or installable apps. SE Power mW remains blank because Cowon/secondary specifications publish maximum output level as 3Vrms but no load-rated mW value; converting to mW would require unsupported assumptions. Streaming Services remains blank because Plenue S has no Wi-Fi, Android, or installable applications. Kakaku lists approximately 8.5h playback, used as structured Battery Life Hours. Contemporary Plenue S specifications list microSDXC expansion up to 128GB, used as Storage Expansion Max.",
+    "notes": "Verified - Official: Cowon's exact Plenue S manual is the primary provenance source and documents 64.5 x 118.9 x 17.4 mm dimensions, 204g weight and the standalone Plenue player platform. Contemporary exact-model documentation identifies 128GB internal storage, microSD expansion, PCM1792A DAC, 4400mAh battery, 3.5mm headphone/optical output and USB DAC use. Release Year 2016 follows public availability and first review evidence. Status is Discontinued. No exact accepted full review from the preferred source set was verified; a Headfonia Picture Sunday feature was rejected because it explicitly says it is not an official review. Conservative manual-based cleanup: SoC and RAM remain blank because Cowon does not identify processor/SoC or RAM and no reliable Plenue S teardown confirms them. OS is Cowon proprietary OS because Plenue S uses Cowon closed embedded player firmware with JetEffect rather than Android or installable apps. SE Power mW remains blank because Cowon/secondary specifications publish maximum output level as 3Vrms but no load-rated mW value; converting to mW would require unsupported assumptions. Streaming Services remains blank because Plenue S has no Wi-Fi, Android, or installable applications. Kakaku lists approximately 8.5h playback, used as structured Battery Life Hours. Contemporary Plenue S specifications list microSDXC expansion up to 128GB, used as Storage Expansion Max. MSRP USD uses 2190 as an approximate USD-style entry from Cowon's Korean list price of 2,190,000 KRW for the exact PLENUE S 128GB model; Japanese prelaunch coverage listed expected pricing around 240,000 yen.",
     "colors": [
       "Prestige Silver"
     ],
@@ -21605,7 +21769,7 @@
     "variant": "",
     "releaseYear": 2016,
     "status": "Discontinued",
-    "msrpUsd": null,
+    "msrpUsd": 150,
     "soc": "",
     "os": "HiBy OS",
     "ramGb": null,
@@ -21652,8 +21816,8 @@
     "officialUrl": "https://en.shanling.com/product/223",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T16:58:09+08:00",
-    "lastUpdatedCommit": "c3a0ed8dad3c5dfcafdd967e730f002af3733021",
+    "lastUpdated": "2026-07-25T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -21663,13 +21827,29 @@
       {
         "label": "Shanling M1 Chinese product",
         "url": "https://www.shanling.com/product/4311"
+      },
+      {
+        "label": "Head pie review",
+        "url": "https://www.headpie.net/2017/01/shanling-m1-review-very-functional.html"
+      },
+      {
+        "label": "ITmedia launch coverage",
+        "url": "https://www.itmedia.co.jp/lifestyle/articles/1611/18/news096.html"
+      },
+      {
+        "label": "AV Watch launch coverage",
+        "url": "https://av.watch.impress.co.jp/docs/news/1030698.html"
+      },
+      {
+        "label": "Phile Web launch coverage",
+        "url": "https://www.phileweb.com/news/d-av/201611/18/39998.html"
       }
     ],
-    "reviewNotes": "No exact Headfonics, Headfonia, or Twister6 full-review match verified.",
+    "reviewNotes": "MSRP USD added as 150 from exact-model coverage listing USD 149.99 Amazon availability; Japanese launch coverage listed 14,800 yen tax-included online pricing.",
     "sourceUrl": "https://en.shanling.com/product/223",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: exact Shanling M1 Portable Player page confirms a 2.35in display, 60 x 50 x 12.8 mm chassis, 60g weight, Bluetooth 4.0 with aptX, AK4452 DAC, MAX97220 amplifier, 35mW at 32Ω output, 950mAh battery, about 9-10h playback, microSD up to 256GB, DSD128 and USB DAC support up to 24-bit/192kHz. Release Year 2016 follows the original M1 launch cycle. Status is Discontinued; M1 is a legacy product and is not sold in Shanling's current store. | SoC remains blank because Shanling publishes audio hardware but not the main processor, and no reliable teardown confirms the chipset. | OS identified as customized HiBy OS embedded player firmware rather than Android or later Shanling MTouch OS; HiBy Link is supported but third-party apps are not. | RAM remains blank because Shanling does not publish installed RAM. | Colors are Black, Red, and Blue from Shanling official Chinese product specifications. | Streaming Services remains blank because M1 has no Wi-Fi, Android application support, or onboard streaming platform; Bluetooth playback and HiBy Link control are not onboard streaming.",
+    "notes": "Verified - Official: exact Shanling M1 Portable Player page confirms a 2.35in display, 60 x 50 x 12.8 mm chassis, 60g weight, Bluetooth 4.0 with aptX, AK4452 DAC, MAX97220 amplifier, 35mW at 32Ω output, 950mAh battery, about 9-10h playback, microSD up to 256GB, DSD128 and USB DAC support up to 24-bit/192kHz. Release Year 2016 follows the original M1 launch cycle. Status is Discontinued; M1 is a legacy product and is not sold in Shanling's current store. | SoC remains blank because Shanling publishes audio hardware but not the main processor, and no reliable teardown confirms the chipset. | OS identified as customized HiBy OS embedded player firmware rather than Android or later Shanling MTouch OS; HiBy Link is supported but third-party apps are not. | RAM remains blank because Shanling does not publish installed RAM. | Colors are Black, Red, and Blue from Shanling official Chinese product specifications. | Streaming Services remains blank because M1 has no Wi-Fi, Android application support, or onboard streaming platform; Bluetooth playback and HiBy Link control are not onboard streaming. | MSRP USD uses 150 from contemporaneous exact-model coverage listing Amazon availability at USD 149.99; Japanese launch coverage listed 14,800 yen tax-included online pricing.",
     "colors": [
       "Black",
       "Red",
@@ -21693,7 +21873,7 @@
     "variant": "",
     "releaseYear": 2015,
     "status": "Discontinued",
-    "msrpUsd": null,
+    "msrpUsd": 249,
     "soc": "",
     "os": "",
     "ramGb": null,
@@ -21738,8 +21918,8 @@
     "officialUrl": "",
     "officialStoreUrl": "",
     "buyLinks": [],
-    "lastUpdated": "2026-07-20T13:47:30+08:00",
-    "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
+    "lastUpdated": "2026-07-26T00:00:00+08:00",
+    "lastUpdatedCommit": "bf3b98620f2d6108b10d707cb130ef65ef24fcde",
     "buyNotes": "",
     "reviewLinks": [
       {
@@ -21749,13 +21929,29 @@
       {
         "label": "Amazon JP",
         "url": "https://www.amazon.co.jp/-/en/SHANLING/dp/B01N1GN0NU"
+      },
+      {
+        "label": "Penon Audio listing",
+        "url": "https://penonaudio.com/shanling-m2"
+      },
+      {
+        "label": "ITmedia launch coverage",
+        "url": "https://www.itmedia.co.jp/lifestyle/articles/1608/12/news094.html"
+      },
+      {
+        "label": "Phile Web launch coverage",
+        "url": "https://www.phileweb.com/amp/news/audio/201608/12/17602.html"
+      },
+      {
+        "label": "Kakaku listing",
+        "url": "https://review.kakaku.com/review/K0000926862/"
       }
     ],
-    "reviewNotes": "Exact-model Head-Fi showcase and Amazon JP specifications cross-check Penon values; treated as secondary provenance, not official manufacturer verification.",
+    "reviewNotes": "MSRP USD added as 249 from exact-model Penon USD listing; Japanese launch coverage listed 29,800 yen tax-included.",
     "sourceUrl": "https://penonaudio.com/shanling-m2.html",
     "sourceType": "Retail/Web",
     "verificationStatus": "Verified - Retail/Web",
-    "notes": "Verified - Retail/Web: exact-model Penon listing, Head-Fi showcase specifications, and Amazon JP listing identify the original Shanling M2 as a portable lossless DAP with Cirrus Logic CS4398 DAC, JRC MUSES8920 low-pass filtering, TPA6120A2 amplification, 2.35in 360 x 400 TFT display, 3.5mm headphone output, shared 3.5mm line/coax output, USB Micro-B for data/charging and USB DAC/digital decoder use, TF/microSD storage up to 128GB, 2200mAh battery, about 9h playback, 52.5 x 13.8 x 110 mm dimensions, about 115g weight, PCM up to 32-bit/192kHz, and DSF/DIFF DSD file support. No Bluetooth, Wi-Fi, cellular, balanced output, optical output, or MQA support is documented. Official legacy Shanling product material is not exposed in the current catalog, so exact-model retailer/community specifications are retained as provenance.",
+    "notes": "Verified - Retail/Web: exact-model Penon listing, Head-Fi showcase specifications, and Amazon JP listing identify the original Shanling M2 as a portable lossless DAP with Cirrus Logic CS4398 DAC, JRC MUSES8920 low-pass filtering, TPA6120A2 amplification, 2.35in 360 x 400 TFT display, 3.5mm headphone output, shared 3.5mm line/coax output, USB Micro-B for data/charging and USB DAC/digital decoder use, TF/microSD storage up to 128GB, 2200mAh battery, about 9h playback, 52.5 x 13.8 x 110 mm dimensions, about 115g weight, PCM up to 32-bit/192kHz, and DSF/DIFF DSD file support. No Bluetooth, Wi-Fi, cellular, balanced output, optical output, or MQA support is documented. Official legacy Shanling product material is not exposed in the current catalog, so exact-model retailer/community specifications are retained as provenance. MSRP USD uses 249 from exact-model Penon USD listing; Japanese launch coverage listed official domestic sale price of 29,800 yen tax-included.",
     "colors": [
       "Black"
     ],

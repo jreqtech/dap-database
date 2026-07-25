@@ -2363,7 +2363,7 @@ dd {
 
 .sheet-page {
   display: grid;
-  grid-template-rows: auto auto auto minmax(0, 1fr);
+  grid-template-rows: auto auto auto auto minmax(0, 1fr);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -2466,8 +2466,49 @@ dd {
   font-weight: 750;
 }
 
+.sheet-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  border-right: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+  border-top: 1px solid #ece8df;
+  background: #fbfaf7;
+  padding: 8px 12px;
+  color: #68737b;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.sheet-filter-chip {
+  border: 1px solid #d7e2e6;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #0f526a;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 6px 9px;
+}
+
+.sheet-filter-chip:hover,
+.sheet-filter-chip:focus-visible,
+.sheet-filter-chip.is-active {
+  border-color: #0f526a;
+  background: #eaf4f7;
+  outline: 0;
+}
+
 .sheet-coverage-summary span {
   white-space: nowrap;
+}
+
+.sheet-coverage-summary .sheet-coverage-context {
+  flex-basis: 100%;
+  white-space: normal;
 }
 
 .sheet-coverage-summary strong {
@@ -2480,7 +2521,23 @@ dd {
   border: 1px solid #e5e1d8;
   border-radius: 9px;
   background: var(--color-surface);
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
   padding: 10px 11px;
+  text-align: left;
+}
+
+.sheet-metric-card:disabled {
+  cursor: default;
+}
+
+.sheet-metric-card:not(:disabled):hover,
+.sheet-metric-card:not(:disabled):focus-visible,
+.sheet-metric-card.is-active {
+  border-color: #0f526a;
+  background: #f3fafc;
+  outline: 0;
 }
 
 .sheet-metric-card span,
@@ -2514,7 +2571,7 @@ dd {
 
 .sheet-frame {
   display: grid;
-  grid-template-columns: 700px minmax(0, 1fr);
+  grid-template-columns: 716px minmax(0, 1fr);
   min-height: 0;
   overflow: hidden;
   border: 1px solid var(--color-border);
@@ -2548,8 +2605,8 @@ dd {
 }
 
 .sheet-table--pinned {
-  width: 700px;
-  min-width: 700px;
+  width: 716px;
+  min-width: 716px;
 }
 
 .sheet-table th,
@@ -2715,8 +2772,8 @@ dd {
 
 .sheet-table th.sheet-meta-column--priority,
 .sheet-table td.sheet-meta-cell--priority {
-  min-width: 94px;
-  max-width: 108px;
+  min-width: 110px;
+  max-width: 116px;
 }
 
 .sheet-table th.sheet-meta-column--review,

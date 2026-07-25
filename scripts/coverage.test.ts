@@ -2,9 +2,13 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {
   calculateCoverage,
+  calculateClassificationAudit,
   coreFieldDefinitions,
   resolveFieldState,
+  rowMatchesDashboardFilter,
+  rowMatchesStateFilter,
   rowCoverage,
+  stateTooltip,
   technicalFieldDefinitions,
   type CsvRow,
 } from '../src/utils/coverage';
@@ -133,4 +137,114 @@ test('row order identities can use brand model and variant without model-only co
   assert.equal(summary.rows[0].row.Variant, '4G');
   assert.equal(summary.rows[0].actionableMissing.includes('DAC'), true);
   assert.equal(summary.rows[1].row.Variant, 'WiFi');
+});
+
+test('dashboard core incomplete filter matches rows with actionable gaps and toggled clear can show all', () => {
+  const complete = rowCoverage(baseRow());
+  const incomplete = rowCoverage(baseRow({ DAC: '' }));
+  const needsReview = () => false;
+
+  assert.equal(rowMatchesDashboardFilter(complete, 'core_incomplete', needsReview, 'DAC'), false);
+  assert.equal(rowMatchesDashboardFilter(incomplete, 'core_incomplete', needsReview, 'DAC'), true);
+  assert.equal(rowMatchesDashboardFilter(complete, null, needsReview, 'DAC'), true);
+  assert.equal(rowMatchesDashboardFilter(incomplete, null, needsReview, 'DAC'), true);
+});
+
+test('dashboard current models incomplete filter requires active or upcoming gaps', () => {
+  const activeGap = rowCoverage(baseRow({ Status: 'Active', DAC: '' }));
+  const upcomingGap = rowCoverage(baseRow({ Status: 'Upcoming', DAC: '' }));
+  const discontinuedGap = rowCoverage(baseRow({ Status: 'Discontinued', DAC: '' }));
+  const needsReview = () => false;
+
+  assert.equal(rowMatchesDashboardFilter(activeGap, 'current_models_incomplete', needsReview, 'DAC'), true);
+  assert.equal(rowMatchesDashboardFilter(upcomingGap, 'current_models_incomplete', needsReview, 'DAC'), true);
+  assert.equal(rowMatchesDashboardFilter(discontinuedGap, 'current_models_incomplete', needsReview, 'DAC'), false);
+});
+
+test('dashboard needs review filter uses the existing review predicate', () => {
+  const flagged = rowCoverage(baseRow({ review_notes: 'needs review: source conflict' }));
+  const clean = rowCoverage(baseRow());
+  const needsReview = (row: CsvRow) => row.review_notes.includes('needs review');
+
+  assert.equal(rowMatchesDashboardFilter(flagged, 'needs_review', needsReview, 'DAC'), true);
+  assert.equal(rowMatchesDashboardFilter(clean, 'needs_review', needsReview, 'DAC'), false);
+});
+
+test('top actionable missing dashboard filter matches the displayed field only', () => {
+  const dacGap = rowCoverage(baseRow({ DAC: '' }));
+  const msrpGap = rowCoverage(baseRow({ 'MSRP USD': '' }));
+  const needsReview = () => false;
+
+  assert.equal(rowMatchesDashboardFilter(dacGap, 'top_actionable_missing', needsReview, 'DAC'), true);
+  assert.equal(rowMatchesDashboardFilter(msrpGap, 'top_actionable_missing', needsReview, 'DAC'), false);
+});
+
+test('text search result sets can be narrowed by dashboard filters', () => {
+  const rows = [
+    baseRow({ Brand: 'Sony', Model: 'SearchHit', DAC: '' }),
+    baseRow({ Brand: 'Sony', Model: 'SearchHit Complete' }),
+    baseRow({ Brand: 'FiiO', Model: 'Other', DAC: '' }),
+  ];
+  const searched = rows.filter((row) => Object.values(row).some((cell) => cell.toLowerCase().includes('searchhit')));
+  const filtered = searched.filter((row) => rowMatchesDashboardFilter(rowCoverage(row), 'core_incomplete', () => false, 'DAC'));
+
+  assert.equal(searched.length, 2);
+  assert.equal(filtered.length, 1);
+  assert.equal(filtered[0].Model, 'SearchHit');
+});
+
+test('undisclosed and not applicable state filters match rows containing those states', () => {
+  const undisclosed = rowCoverage(baseRow({ DAC: '', Notes: 'DAC remains blank because no reliable teardown confirms it.' }));
+  const notApplicable = rowCoverage(baseRow({ microSD: 'FALSE', 'Storage Expansion Max': '' }));
+  const clean = rowCoverage(baseRow());
+
+  assert.equal(rowMatchesStateFilter(undisclosed, 'undisclosed', () => false), true);
+  assert.equal(rowMatchesStateFilter(notApplicable, 'not_applicable', () => false), true);
+  assert.equal(rowMatchesStateFilter(clean, 'undisclosed', () => false), false);
+});
+
+test('generated blank states have explanatory tooltip text', () => {
+  assert.match(stateTooltip('missing', 'DAC'), /Applicable core field/);
+  assert.match(stateTooltip('undisclosed', 'SoC'), /no defensible public value/);
+  assert.match(stateTooltip('not_applicable', 'BAL Power mW'), /does not apply/);
+  assert.match(stateTooltip('needs_verification', 'MSRP USD'), /manual review/);
+});
+
+test('priority labels remain readable values', () => {
+  assert.equal(rowCoverage(baseRow()).priority, 'Complete');
+  assert.equal(rowCoverage(baseRow({ DAC: '' })).priority, 'High');
+  assert.equal(rowCoverage(baseRow({ Status: 'Discontinued', 'Release Year': '2021', DAC: '' })).priority, 'Medium');
+  assert.equal(rowCoverage(baseRow({ Status: 'Discontinued', 'Release Year': '2015', DAC: '' })).priority, 'Low');
+});
+
+test('coverage context numbers come from calculated statistics', () => {
+  const summary = calculateCoverage([
+    baseRow(),
+    baseRow({ DAC: '' }),
+    baseRow({ Brand: 'Sony', DAC: '', Notes: 'DAC remains blank because no reliable teardown confirms it.' }),
+    baseRow({ microSD: 'FALSE', 'Storage Expansion Max': '' }),
+  ], () => false);
+  const excludedBlanks = summary.undisclosedFields + summary.notApplicableFields;
+
+  assert.equal(summary.coreCompleteRows, 3);
+  assert.equal(summary.totalRows, 4);
+  assert.equal(summary.actionableMissingFields, 1);
+  assert.equal(excludedBlanks, 2);
+});
+
+test('classification audit reports top field counts and current row groups', () => {
+  const audit = calculateClassificationAudit([
+    baseRow({ Model: 'CompleteActive' }),
+    baseRow({ Model: 'GapActive', DAC: '' }),
+    baseRow({ Model: 'GapOld', Status: 'Discontinued', 'Release Year': '2015', 'MSRP USD': '' }),
+    baseRow({ Model: 'Undisclosed', DAC: '', Notes: 'DAC remains blank because no reliable teardown confirms it.' }),
+    baseRow({ Model: 'NoMicroSD', microSD: 'FALSE', 'Storage Expansion Max': '' }),
+  ], () => false);
+
+  assert.equal(audit.totalActionableMissingCoreFields, 2);
+  assert.equal(audit.topActionableMissingFields[0].field, 'DAC');
+  assert.equal(audit.topUndisclosedFields[0].field, 'DAC');
+  assert.equal(audit.topNotApplicableFields[0].field, 'Storage Expansion Max');
+  assert.deepEqual(audit.currentCoreIncompleteRows, ['Example GapActive']);
+  assert.ok(audit.currentCoreCompleteRows.includes('Example CompleteActive'));
 });

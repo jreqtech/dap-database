@@ -15,6 +15,7 @@
     "discover:daps:dedupe": "tsx scripts/discovery/dedupe-issues.ts",
     "test": "tsx --test scripts/discovery/discovery.test.ts scripts/coverage.test.ts",
     "test:discovery": "tsx --test scripts/discovery/discovery.test.ts",
+    "audit:coverage": "tsx scripts/coverage-audit.ts",
     "audit:console": "node tools/audit-console/server.mjs"
   },
   "dependencies": {

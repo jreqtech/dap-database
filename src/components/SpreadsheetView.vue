@@ -7,12 +7,17 @@ import {
   calculateCoverage,
   coreFieldDefinitions,
   displayForState,
+  rowMatchesDashboardFilter,
+  rowMatchesStateFilter,
   resolveFieldState,
   rowCoverage,
+  stateTooltip,
   technicalFieldDefinitions,
   type CsvRow,
+  type DashboardFilter,
   type FieldState,
   type Priority,
+  type RowStateFilter,
 } from '../utils/coverage';
 
 const props = defineProps<{
@@ -29,12 +34,15 @@ type SheetSortKey = number | 'priority' | 'missing' | 'review' | null;
 type SheetSort = { columnIndex: SheetSortKey; direction: 'asc' | 'desc' };
 type SheetRow = { cells: string[]; csvIndex: number };
 type Triage = { priority: Priority; missingCount: number; score: number };
-type SheetMetric = { label: string; value: string | number; detail: string };
+type SheetMetric = { label: string; value: string | number; detail: string; filter: DashboardFilter | null };
 type SecondaryMetric = { label: string; value: string | number };
 
 const searchTerm = ref('');
 const density = ref<Density>('comfortable');
 const sortState = ref<SheetSort>({ columnIndex: 'missing', direction: 'desc' });
+const rowStateFilter = ref<RowStateFilter>('all');
+const dashboardFilter = ref<DashboardFilter | null>(null);
+const topActionableFilterField = ref('');
 const columnWidths = ref<Record<number, number>>({});
 const resizingColumn = ref<{ index: number; startX: number; startWidth: number } | null>(null);
 const sheetScrollPane = ref<HTMLElement | null>(null);
@@ -174,11 +182,45 @@ const dataRows = computed<SheetRow[]>(() => csvRows.value.slice(1).map((cells, i
 const csvDataObjects = computed<CsvRow[]>(() => buildRows(headers.value, csvRows.value.slice(1)));
 const normalizedSearch = computed(() => searchTerm.value.trim().toLowerCase());
 const isSorted = computed(() => sortState.value.columnIndex !== -1);
+const stateFilterOptions: Array<{ value: RowStateFilter; label: string }> = [
+  { value: 'all', label: 'All' },
+  { value: 'core_incomplete', label: 'Core incomplete' },
+  { value: 'current_gaps', label: 'Current gaps' },
+  { value: 'needs_review', label: 'Needs review' },
+  { value: 'undisclosed', label: 'Undisclosed' },
+  { value: 'not_applicable', label: 'Not applicable' },
+];
 
-const filteredRows = computed(() => {
+const searchedRows = computed(() => {
   if (!normalizedSearch.value) return dataRows.value;
   return dataRows.value.filter((row) => row.cells.some((cell) => cell.toLowerCase().includes(normalizedSearch.value)));
 });
+
+const stateFilteredRows = computed(() =>
+  searchedRows.value.filter((row) =>
+    rowMatchesStateFilter(rowCoverage(rowObject(row.cells, row.csvIndex)), rowStateFilter.value, needsManualReviewObject)
+  )
+);
+
+const preDashboardCoverage = computed(() =>
+  calculateCoverage(
+    stateFilteredRows.value.map((row) => rowObject(row.cells, row.csvIndex)),
+    needsManualReviewObject,
+  ),
+);
+
+const activeTopActionableField = computed(() => topActionableFilterField.value || preDashboardCoverage.value.topActionableMissing.field);
+
+const filteredRows = computed(() =>
+  stateFilteredRows.value.filter((row) =>
+    rowMatchesDashboardFilter(
+      rowCoverage(rowObject(row.cells, row.csvIndex)),
+      dashboardFilter.value,
+      needsManualReviewObject,
+      activeTopActionableField.value,
+    )
+  )
+);
 
 const displayedRows = computed(() => {
   const columnIndex = sortState.value.columnIndex;
@@ -226,22 +268,28 @@ const sheetMetrics = computed<SheetMetric[]>(() => {
   const coverage = filteredCoverage.value;
 
   return [
-    { label: 'Total rows', value: coverage.totalRows, detail: `${coverage.totalRows} CSV rows shown` },
-    { label: 'Core complete', value: coverage.coreCompleteRows, detail: `${Math.round((coverage.coreCompleteRows / totalRows) * 100)}% of current rows` },
-    { label: 'Core incomplete', value: coverage.coreIncompleteRows, detail: `${Math.round((coverage.coreIncompleteRows / totalRows) * 100)}% with actionable gaps` },
-    { label: 'Actionable missing', value: coverage.actionableMissingFields, detail: 'Applicable blank core fields' },
-    { label: 'Current models incomplete', value: coverage.currentModelsIncomplete, detail: 'Active or upcoming with core gaps' },
-    { label: 'Needs review', value: coverage.needsReviewRows, detail: 'Source or note flags' },
-    { label: 'Top actionable missing', value: coverage.topActionableMissing.field, detail: coverage.topActionableMissing.count ? `${coverage.topActionableMissing.count} rows` : 'No actionable blanks' },
+    { label: 'Total rows', value: coverage.totalRows, detail: `${coverage.totalRows} CSV rows shown`, filter: null },
+    { label: 'Core complete', value: coverage.coreCompleteRows, detail: `${Math.round((coverage.coreCompleteRows / totalRows) * 100)}% of current rows`, filter: 'core_complete' },
+    { label: 'Core incomplete', value: coverage.coreIncompleteRows, detail: `${Math.round((coverage.coreIncompleteRows / totalRows) * 100)}% with actionable gaps`, filter: 'core_incomplete' },
+    { label: 'Actionable missing', value: coverage.actionableMissingFields, detail: 'Applicable blank core fields', filter: 'actionable_missing' },
+    { label: 'Current models incomplete', value: coverage.currentModelsIncomplete, detail: 'Active or upcoming with core gaps', filter: 'current_models_incomplete' },
+    { label: 'Needs review', value: coverage.needsReviewRows, detail: 'Source or note flags', filter: 'needs_review' },
+    { label: 'Top actionable missing', value: coverage.topActionableMissing.field, detail: coverage.topActionableMissing.count ? `${coverage.topActionableMissing.count} rows` : 'No actionable blanks', filter: 'top_actionable_missing' },
   ];
 });
 
 const secondaryMetrics = computed<SecondaryMetric[]>(() => [
-  { label: 'Applicable field coverage', value: `${filteredCoverage.value.applicableCoveragePct}%` },
+  { label: 'Core applicable-field coverage', value: `${filteredCoverage.value.applicableCoveragePct}%` },
   { label: 'Undisclosed fields', value: filteredCoverage.value.undisclosedFields },
   { label: 'Not applicable fields', value: filteredCoverage.value.notApplicableFields },
   { label: 'Needs verification fields', value: filteredCoverage.value.needsVerificationFields },
 ]);
+
+const coverageContext = computed(() => {
+  const coverage = filteredCoverage.value;
+  const excludedBlanks = coverage.undisclosedFields + coverage.notApplicableFields;
+  return `${coverage.coreCompleteRows} of ${coverage.totalRows} rows are core complete. ${coverage.actionableMissingFields} actionable core gaps remain. ${excludedBlanks} blank fields are excluded as undisclosed or not applicable.`;
+});
 
 const pinnedColumnCount = 2;
 const pinnedColumnIndices = computed(() => visibleColumnIndices.value.slice(0, pinnedColumnCount));
@@ -273,6 +321,37 @@ function sortMetaColumn(columnIndex: 'priority' | 'missing' | 'review') {
 
 function restoreCsvOrder() {
   sortState.value = { columnIndex: -1, direction: 'asc' };
+  expandedMissingCsvIndex.value = null;
+}
+
+function setRowStateFilter(filter: RowStateFilter) {
+  rowStateFilter.value = filter;
+  dashboardFilter.value = null;
+  topActionableFilterField.value = '';
+  expandedMissingCsvIndex.value = null;
+}
+
+function toggleDashboardFilter(filter: DashboardFilter | null) {
+  if (!filter) {
+    dashboardFilter.value = null;
+    topActionableFilterField.value = '';
+    rowStateFilter.value = 'all';
+    return;
+  }
+
+  if (dashboardFilter.value === filter) {
+    dashboardFilter.value = null;
+    topActionableFilterField.value = '';
+    rowStateFilter.value = 'all';
+    return;
+  }
+
+  dashboardFilter.value = filter;
+  topActionableFilterField.value = filter === 'top_actionable_missing' ? preDashboardCoverage.value.topActionableMissing.field : '';
+  if (filter === 'core_incomplete' || filter === 'actionable_missing') rowStateFilter.value = 'core_incomplete';
+  else if (filter === 'current_models_incomplete') rowStateFilter.value = 'current_gaps';
+  else if (filter === 'needs_review') rowStateFilter.value = 'needs_review';
+  else rowStateFilter.value = 'all';
   expandedMissingCsvIndex.value = null;
 }
 
@@ -374,6 +453,18 @@ function cellTitle(value: string | undefined, columnIndex: number, cells: string
     return commit ? `${raw} (${commit.slice(0, 7)})` : `${raw} (not committed yet)`;
   }
   return raw;
+}
+
+function resolvedCellTitle(value: string | undefined, columnIndex: number, cells: string[], csvIndex: number): string {
+  const state = cellState(value, columnIndex, cells, csvIndex);
+  if (state === 'known') return cellTitle(value, columnIndex, cells);
+  const field = headers.value[columnIndex] ?? '';
+  return stateTooltip(state, field);
+}
+
+function priorityLabel(priority: Priority): string {
+  if (density.value === 'compact' && priority === 'Medium') return 'Med';
+  return priority;
 }
 
 function isTrueCell(cells: string[], header: string): boolean {
@@ -852,11 +943,19 @@ function handlePinnedWheel(event: WheelEvent) {
     </header>
 
     <section class="sheet-metrics" aria-label="Spreadsheet audit metrics">
-      <article v-for="metric in sheetMetrics" :key="metric.label" class="sheet-metric-card">
+      <button
+        v-for="metric in sheetMetrics"
+        :key="metric.label"
+        class="sheet-metric-card"
+        :class="{ 'is-active': metric.filter && dashboardFilter === metric.filter }"
+        type="button"
+        :disabled="!metric.filter"
+        @click="toggleDashboardFilter(metric.filter)"
+      >
         <span>{{ metric.label }}</span>
         <strong>{{ metric.value }}</strong>
         <small>{{ metric.detail }}</small>
-      </article>
+      </button>
     </section>
 
     <section class="sheet-coverage-summary" aria-label="Coverage state summary">
@@ -864,6 +963,24 @@ function handlePinnedWheel(event: WheelEvent) {
         <strong>{{ metric.value }}</strong>
         {{ metric.label }}
       </span>
+      <span class="sheet-coverage-context">{{ coverageContext }}</span>
+    </section>
+
+    <section class="sheet-filter-bar" aria-label="Spreadsheet row state filters">
+      <span>Rows</span>
+      <button
+        v-for="option in stateFilterOptions"
+        :key="option.value"
+        class="sheet-filter-chip"
+        :class="{ 'is-active': rowStateFilter === option.value && !dashboardFilter }"
+        type="button"
+        @click="setRowStateFilter(option.value)"
+      >
+        {{ option.label }}
+      </button>
+      <button v-if="dashboardFilter" class="sheet-filter-chip is-active" type="button" @click="toggleDashboardFilter(dashboardFilter)">
+        {{ sheetMetrics.find((metric) => metric.filter === dashboardFilter)?.label }} ×
+      </button>
     </section>
 
     <section class="sheet-frame" aria-label="Raw CSV spreadsheet">
@@ -918,7 +1035,7 @@ function handlePinnedWheel(event: WheelEvent) {
               :class="rowClass(row)"
             >
               <td class="sheet-meta-cell sheet-meta-cell--priority" :class="`sheet-priority--${triageForCells(row.cells, row.csvIndex).priority.toLowerCase()}`">
-                <span>{{ triageForCells(row.cells, row.csvIndex).priority }}</span>
+                <span>{{ priorityLabel(triageForCells(row.cells, row.csvIndex).priority) }}</span>
               </td>
               <td class="sheet-meta-cell sheet-meta-cell--missing">
                 <button
@@ -967,13 +1084,13 @@ function handlePinnedWheel(event: WheelEvent) {
                   v-else-if="headers[columnIndex] === 'last_updated' && commitUrlForCells(row.cells)"
                   class="sheet-cell-link"
                   :href="commitUrlForCells(row.cells)"
-                  :title="cellTitle(row.cells[columnIndex], columnIndex, row.cells)"
+                  :title="resolvedCellTitle(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex)"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {{ displayCell(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex) }}
                 </a>
-                <span v-else :title="cellTitle(row.cells[columnIndex], columnIndex, row.cells)">
+                <span v-else :title="resolvedCellTitle(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex)">
                   {{ displayCell(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex) }}
                 </span>
               </td>
@@ -1022,7 +1139,9 @@ function handlePinnedWheel(event: WheelEvent) {
                 tabindex="0"
                 @keydown="handleCellKeydown($event, rowIndex, columnIndex)"
               >
-                <span>{{ displayCell(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex) }}</span>
+                <span :title="resolvedCellTitle(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex)">
+                  {{ displayCell(row.cells[columnIndex], columnIndex, row.cells, row.csvIndex) }}
+                </span>
               </td>
             </tr>
           </tbody>

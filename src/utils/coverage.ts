@@ -1,5 +1,7 @@
 export type FieldState = 'known' | 'missing' | 'undisclosed' | 'not_applicable' | 'needs_verification';
 export type Priority = 'High' | 'Medium' | 'Low' | 'Complete';
+export type RowStateFilter = 'all' | 'core_incomplete' | 'current_gaps' | 'needs_review' | 'undisclosed' | 'not_applicable';
+export type DashboardFilter = 'core_complete' | 'core_incomplete' | 'actionable_missing' | 'current_models_incomplete' | 'needs_review' | 'top_actionable_missing';
 
 export type CsvRow = Record<string, string>;
 
@@ -49,6 +51,20 @@ export interface CoverageSummary {
   notApplicableFields: number;
   needsVerificationFields: number;
   rows: RowCoverage[];
+}
+
+export interface ClassificationAudit {
+  totalKnownCoreFields: number;
+  totalActionableMissingCoreFields: number;
+  totalUndisclosedFields: number;
+  totalNotApplicableFields: number;
+  totalNeedsVerificationFields: number;
+  rowsContaining: Record<FieldState, number>;
+  topActionableMissingFields: { field: string; count: number }[];
+  topUndisclosedFields: { field: string; count: number }[];
+  topNotApplicableFields: { field: string; count: number }[];
+  currentCoreCompleteRows: string[];
+  currentCoreIncompleteRows: string[];
 }
 
 const knownFalse = new Set(['false', '0', 'no', 'none']);
@@ -208,6 +224,79 @@ export function calculateCoverage(rows: CsvRow[], needsReview: (row: CsvRow) => 
     notApplicableFields,
     needsVerificationFields,
     rows: rowSummaries,
+  };
+}
+
+export function isCurrentRow(row: CsvRow): boolean {
+  return currentStatuses.has(value(row, 'Status').toLowerCase());
+}
+
+export function rowMatchesStateFilter(summary: RowCoverage, filter: RowStateFilter, needsReview: (row: CsvRow) => boolean): boolean {
+  if (filter === 'all') return true;
+  if (filter === 'core_incomplete') return summary.actionableMissing.length > 0;
+  if (filter === 'current_gaps') return isCurrentRow(summary.row) && summary.actionableMissing.length > 0;
+  if (filter === 'needs_review') return needsReview(summary.row);
+  if (filter === 'undisclosed') return summary.undisclosed.length > 0;
+  if (filter === 'not_applicable') return summary.notApplicable.length > 0;
+  return true;
+}
+
+export function rowMatchesDashboardFilter(
+  summary: RowCoverage,
+  filter: DashboardFilter | null,
+  needsReview: (row: CsvRow) => boolean,
+  topActionableField: string,
+): boolean {
+  if (!filter) return true;
+  if (filter === 'core_complete') return summary.actionableMissing.length === 0;
+  if (filter === 'core_incomplete' || filter === 'actionable_missing') return summary.actionableMissing.length > 0;
+  if (filter === 'current_models_incomplete') return isCurrentRow(summary.row) && summary.actionableMissing.length > 0;
+  if (filter === 'needs_review') return needsReview(summary.row);
+  if (filter === 'top_actionable_missing') return topActionableField !== 'None' && summary.actionableMissing.includes(topActionableField);
+  return true;
+}
+
+export function stateTooltip(state: FieldState, field?: string): string {
+  const suffix = field ? ` (${field})` : '';
+  if (state === 'missing') return `Applicable core field with no documented value yet.${suffix}`;
+  if (state === 'undisclosed') return `The field applies, but no defensible public value is currently available.${suffix}`;
+  if (state === 'not_applicable') return `This field does not apply to this device.${suffix}`;
+  if (state === 'needs_verification') return `The value or source requires manual review.${suffix}`;
+  return '';
+}
+
+export function calculateClassificationAudit(rows: CsvRow[], needsReview: (row: CsvRow) => boolean): ClassificationAudit {
+  const summaries = rows.map((row) => rowCoverage(row));
+  const countFields = (selector: (summary: RowCoverage) => string[]) => {
+    const counts = new Map<string, number>();
+    for (const summary of summaries) {
+      for (const field of selector(summary)) counts.set(field, (counts.get(field) ?? 0) + 1);
+    }
+    return [...counts.entries()]
+      .map(([field, count]) => ({ field, count }))
+      .sort((a, b) => b.count - a.count || a.field.localeCompare(b.field));
+  };
+
+  const rowName = (row: CsvRow) => [value(row, 'Brand'), value(row, 'Model'), value(row, 'Variant')].filter(Boolean).join(' ');
+
+  return {
+    totalKnownCoreFields: summaries.reduce((total, summary) => total + summary.knownApplicable, 0),
+    totalActionableMissingCoreFields: summaries.reduce((total, summary) => total + summary.actionableMissing.length, 0),
+    totalUndisclosedFields: summaries.reduce((total, summary) => total + summary.undisclosed.length, 0),
+    totalNotApplicableFields: summaries.reduce((total, summary) => total + summary.notApplicable.length, 0),
+    totalNeedsVerificationFields: summaries.reduce((total, summary) => total + summary.needsVerification.length, 0),
+    rowsContaining: {
+      known: summaries.filter((summary) => summary.knownApplicable > 0).length,
+      missing: summaries.filter((summary) => summary.actionableMissing.length > 0).length,
+      undisclosed: summaries.filter((summary) => summary.undisclosed.length > 0).length,
+      not_applicable: summaries.filter((summary) => summary.notApplicable.length > 0).length,
+      needs_verification: summaries.filter((summary) => summary.needsVerification.length > 0 || needsReview(summary.row)).length,
+    },
+    topActionableMissingFields: countFields((summary) => summary.actionableMissing).slice(0, 10),
+    topUndisclosedFields: countFields((summary) => summary.undisclosed).slice(0, 10),
+    topNotApplicableFields: countFields((summary) => summary.notApplicable).slice(0, 10),
+    currentCoreCompleteRows: summaries.filter((summary) => isCurrentRow(summary.row) && summary.isCoreComplete).map((summary) => rowName(summary.row)),
+    currentCoreIncompleteRows: summaries.filter((summary) => isCurrentRow(summary.row) && !summary.isCoreComplete).map((summary) => rowName(summary.row)),
   };
 }
 
