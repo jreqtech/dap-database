@@ -3416,6 +3416,15 @@ dd {
   background: #fbfbfb;
 }
 
+.compare-table tbody tr:hover th,
+.compare-table tbody tr:hover td {
+  background: #eef6f8;
+}
+
+.compare-table tbody tr:hover > th[scope="row"] {
+  background: #e5f0f3;
+}
+
 .compare-table tbody > tr > th[scope="row"] {
   background: #f7f7f7;
   color: #3f4a50;

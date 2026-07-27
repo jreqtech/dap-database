@@ -1319,19 +1319,11 @@
         "url": "https://www.headfonia.com/fiio-m11-plus-ltd-review/"
       },
       {
-        "label": "The Headphone List launch",
-        "url": "https://theheadphonelist.com/product-launch-fiio-m11-plus/"
-      },
-      {
         "label": "Soundnews review price",
         "url": "https://soundnews.net/sources/daps/fiio-m11-plus-ltd-review-a-worthy-successor/"
-      },
-      {
-        "label": "FiiO China launch price",
-        "url": "https://www.fiio.com/newsinfo/532526.html"
       }
     ],
-    "reviewNotes": "MSRP USD added from contemporary M11 Plus LTD launch/review coverage; FiiO China launch material corroborates stainless-steel premium pricing in yuan.",
+    "reviewNotes": "Removed launch/price pages from review_links because they are not reviews; independent reviews remain.",
     "sourceUrl": "https://www.fiio.com/m11plusltd_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -2076,17 +2068,9 @@
       {
         "label": "Moonstar Reviews",
         "url": "https://moonstarreviews.net/fiio-m23-review/"
-      },
-      {
-        "label": "FiiO China M23 launch",
-        "url": "https://www.fiio.com/newsinfo/906998.html"
-      },
-      {
-        "label": "FiiO Japan M23",
-        "url": "https://www.fiio.jp/products/m23/"
       }
     ],
-    "reviewNotes": "Stainless Steel MSRP USD added from exact-model USD review/availability source; official China/Japan regional prices retained as corroboration.",
+    "reviewNotes": "Removed FiiO launch/product pages from review_links because they are not reviews; independent reviews remain.",
     "sourceUrl": "https://www.fiio.com/m23_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -2841,10 +2825,15 @@
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.hiby.com/products/hiby-digital-m500",
     "officialStoreUrl": "https://store.hiby.com/products/hiby-digital-m500",
-    "buyLinks": [],
+    "buyLinks": [
+      {
+        "label": "HiBy Store",
+        "url": "https://store.hiby.com/products/hiby-digital-m500"
+      }
+    ],
     "lastUpdated": "2026-07-17T19:21:45+08:00",
     "lastUpdatedCommit": "56029576bc4cf698dff22a75cadd950ac8ad5e77",
-    "buyNotes": "",
+    "buyNotes": "Official HiBy store page sells both M500 Wi-Fi and 4G options; WiFi option selected on product page.",
     "reviewLinks": [
       {
         "label": "Mobile Audiophile",
@@ -3884,10 +3873,15 @@
     "storageExpansionMax": "4TB total across 2 slots",
     "officialUrl": "https://store.hiby.com/products/hiby-rs2",
     "officialStoreUrl": "https://store.hiby.com/products/hiby-rs2",
-    "buyLinks": [],
+    "buyLinks": [
+      {
+        "label": "HiBy Store",
+        "url": "https://store.hiby.com/products/hiby-rs2"
+      }
+    ],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Official HiBy store product page added as buy link.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -8462,11 +8456,20 @@
     "batteryLifeHours": "10",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.astellnkern.com/cn/product/view.php?idx=159",
-    "officialStoreUrl": "",
-    "buyLinks": [],
+    "officialStoreUrl": "https://astellnkern.co.uk/products/a-ultima-sp4000",
+    "buyLinks": [
+      {
+        "label": "Astell&Kern UK",
+        "url": "https://astellnkern.co.uk/products/a-ultima-sp4000"
+      },
+      {
+        "label": "Moon Audio",
+        "url": "https://www.moon-audio.com/products/astell-kern-a-ultima-sp4000-dap-music-player"
+      }
+    ],
     "lastUpdated": "2026-07-23T03:14:41.656Z",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Official Astell&Kern UK store page added; page offers Silver, Black, and Copper colour options.",
     "reviewLinks": [
       {
         "label": "Twister6",
@@ -8563,11 +8566,20 @@
     "batteryLifeHours": "10",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.astellnkern.com/cn/product/view.php?idx=159",
-    "officialStoreUrl": "",
-    "buyLinks": [],
+    "officialStoreUrl": "https://astellnkern.co.uk/products/a-ultima-sp4000",
+    "buyLinks": [
+      {
+        "label": "Astell&Kern UK",
+        "url": "https://astellnkern.co.uk/products/a-ultima-sp4000"
+      },
+      {
+        "label": "Moon Audio",
+        "url": "https://www.moon-audio.com/products/astell-kern-a-ultima-sp4000-dap-music-player"
+      }
+    ],
     "lastUpdated": "2026-07-23T03:15:52.363Z",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Official Astell&Kern UK store page added; page offers Silver, Black, and Copper colour options.",
     "reviewLinks": [
       {
         "label": "Twister6",
@@ -8656,11 +8668,20 @@
     "batteryLifeHours": "15",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.astellnkern.com/cn/product/view.php?idx=162",
-    "officialStoreUrl": "",
-    "buyLinks": [],
+    "officialStoreUrl": "https://astellnkern.co.uk/products/pd10",
+    "buyLinks": [
+      {
+        "label": "Astell&Kern UK",
+        "url": "https://astellnkern.co.uk/products/pd10"
+      },
+      {
+        "label": "Moon Audio",
+        "url": "https://www.moon-audio.com/products/astell-and-kern-pd10-digital-audio-player-docking-cradle"
+      }
+    ],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Official Astell&Kern UK store page added.",
     "reviewLinks": [
       {
         "label": "Headfonia",
@@ -8752,16 +8773,20 @@
     "batteryLifeHours": "14",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=171",
-    "officialStoreUrl": "https://www.astellnkern.com/en/product/view.php?idx=171",
+    "officialStoreUrl": "https://astellnkern.co.uk/products/pd20",
     "buyLinks": [
       {
         "label": "Moon Audio",
         "url": "https://www.moon-audio.com/products/pd20-quad-dac-hi-res-audio-dap"
+      },
+      {
+        "label": "Astell&Kern UK",
+        "url": "https://astellnkern.co.uk/products/pd20"
       }
     ],
     "lastUpdated": "2026-07-20T09:40:18.367Z",
     "lastUpdatedCommit": "089c7b0f71b01dbd6211f339442c8327b925230e",
-    "buyNotes": "",
+    "buyNotes": "Official Astell&Kern UK store page added.",
     "reviewLinks": [
       {
         "label": "Headfonia",
@@ -8770,13 +8795,9 @@
       {
         "label": "Head-Fi Showcase",
         "url": "https://www.head-fi.org/showcase/astell-kern-pd20-%E2%80%93-personal-sound-in-your-pocket.29084/"
-      },
-      {
-        "label": "Astell&Kern PD20 official product page",
-        "url": "https://www.astellnkern.com/product/product_detail.jsp?productNo=180"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Removed Astell&Kern official product page from review_links because it is not a review.",
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=171",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
