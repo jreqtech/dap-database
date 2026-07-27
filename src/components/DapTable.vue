@@ -117,8 +117,16 @@ function tableStatusLabel(status: string): string {
 
 function formatMemorySpec(value: Dap['ramGb'] | Dap['storageGb']): string {
   if (value === null || value === undefined || value === '') return '?';
-  if (typeof value === 'number') return `${value}GB`;
-  return String(value);
+  if (typeof value === 'number') {
+    if (value > 0 && value < 1) return `${(value * 1000).toLocaleString('en-US')} MB`;
+    return `${value.toLocaleString('en-US')} GB`;
+  }
+  const raw = String(value).trim();
+  const numericValue = Number(raw);
+  if (Number.isFinite(numericValue) && numericValue > 0 && numericValue < 1) {
+    return `${(numericValue * 1000).toLocaleString('en-US')} MB`;
+  }
+  return raw;
 }
 
 function formatStorageSpec(value: Dap['storageGb']): string {

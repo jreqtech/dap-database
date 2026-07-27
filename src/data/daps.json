@@ -69,7 +69,7 @@
     "batteryLifeHours": "20",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=138",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://astellnkern.co.uk/products/astell-kern-sr35",
     "buyLinks": [
       {
         "label": "Amazon US",
@@ -78,22 +78,14 @@
     ],
     "lastUpdated": "2026-07-23T15:02:00+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Official Astell&Kern UK store product page added.",
     "reviewLinks": [
       {
         "label": "Headfonia",
         "url": "https://www.headfonia.com/astell-kern-sr35-review/"
-      },
-      {
-        "label": "Astell&Kern Open APP compatibility",
-        "url": "https://www.astellnkern.com/support/faq.jsp?page=1&pageSize=10&searchKeyword=Open+APP+Service"
-      },
-      {
-        "label": "Astell&Kern SR35 firmware",
-        "url": "https://www.astellnkern.com/en/support/download.php?boardid=Download_en&category=&idx=24&mode=view&offset=20&sk=&sw="
       }
     ],
-    "reviewNotes": "Streaming services updated from official Astell&Kern Open APP compatibility list; SR35 firmware v1.140 specifically added Open APP Service for Roon ARC.",
+    "reviewNotes": "Removed Astell&Kern support/firmware pages from review_links because they are not reviews.",
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=138",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -182,11 +174,16 @@
     "batteryLifeHours": "10",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=133",
-    "officialStoreUrl": "",
-    "buyLinks": [],
+    "officialStoreUrl": "https://astellnkern.co.uk/products/sp3000",
+    "buyLinks": [
+      {
+        "label": "Bloom Audio",
+        "url": "https://bloomaudio.com/products/astell-kern-sp3000"
+      }
+    ],
     "lastUpdated": "2026-07-23T15:38:00+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Bloom Audio authorized-retailer product page added; official Astell&Kern UK store remains in official_store_url.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -199,13 +196,9 @@
       {
         "label": "Twister6",
         "url": "https://twister6.com/2022/09/12/astell-kern-ak-sp3000/"
-      },
-      {
-        "label": "Astell&Kern Open APP compatibility",
-        "url": "https://www.astellnkern.com/support/faq.jsp?page=1&pageSize=10&searchKeyword=Open+APP+Service"
       }
     ],
-    "reviewNotes": "Streaming services updated from official Astell&Kern Open APP compatibility list for the SP3000/SP3000T/SP3000M group.",
+    "reviewNotes": "Removed Astell&Kern Open APP compatibility page from review_links because it is support documentation, not a review.",
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=133",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -299,22 +292,23 @@
     "batteryLifeHours": "10",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=153",
-    "officialStoreUrl": "",
-    "buyLinks": [],
+    "officialStoreUrl": "https://astellnkern.co.uk/products/a-ultima-sp3000m",
+    "buyLinks": [
+      {
+        "label": "Moon Audio",
+        "url": "https://www.moon-audio.com/products/a-ultima-sp3000m-dap-music-player"
+      }
+    ],
     "lastUpdated": "2026-07-23T14:02:00+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Official Astell&Kern UK store product page added.",
     "reviewLinks": [
       {
         "label": "Twister6",
         "url": "https://twister6.com/2024/12/29/astell-kern-ak-sp3000m/"
-      },
-      {
-        "label": "Astell&Kern Open APP compatibility",
-        "url": "https://www.astellnkern.com/support/faq.jsp?page=1&pageSize=10&searchKeyword=Open+APP+Service"
       }
     ],
-    "reviewNotes": "Streaming services updated from official Astell&Kern SP3000M product text and Open APP compatibility list.",
+    "reviewNotes": "Removed Astell&Kern Open APP compatibility page from review_links because it is support documentation, not a review.",
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=153",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -403,22 +397,23 @@
     "batteryLifeHours": "13",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=128",
-    "officialStoreUrl": "",
-    "buyLinks": [],
+    "officialStoreUrl": "https://astellnkern.co.uk/products/kann-max",
+    "buyLinks": [
+      {
+        "label": "Bloom Audio",
+        "url": "https://bloomaudio.com/products/astell-kern-kann-max"
+      }
+    ],
     "lastUpdated": "2026-07-23T15:43:00+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Bloom Audio authorized-retailer product page added; official Astell&Kern UK store remains in official_store_url.",
     "reviewLinks": [
       {
         "label": "Headfonia",
         "url": "https://www.headfonia.com/astell-kern-kann-max-review/"
-      },
-      {
-        "label": "Astell&Kern Open APP compatibility",
-        "url": "https://www.astellnkern.com/support/faq.jsp?page=1&pageSize=10&searchKeyword=Open+APP+Service"
       }
     ],
-    "reviewNotes": "Streaming services updated from official Astell&Kern Open APP compatibility list; Roon ARC is excluded because the list marks it for SE300 and SR35 only in this group.",
+    "reviewNotes": "Removed Astell&Kern Open APP compatibility page from review_links because it is support documentation, not a review.",
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=128",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -523,17 +518,9 @@
       {
         "label": "Bloom Audio",
         "url": "https://bloomaudio.com/blogs/articles/ultimate-portable-audio-astell-kern-kann-ultra-review"
-      },
-      {
-        "label": "Astell&Kern Open APP compatibility",
-        "url": "https://www.astellnkern.com/support/faq.jsp?page=1&pageSize=10&searchKeyword=Open+APP+Service"
-      },
-      {
-        "label": "KANN ULTRA firmware",
-        "url": "https://www.astellnkern.com/support/download_detail.jsp?bbsNo=392"
       }
     ],
-    "reviewNotes": "Streaming services updated from official Astell&Kern Open APP compatibility list; KANN ULTRA product page confirms Roon ARC through Open Service and firmware v1.260 added Apple Music Classical support.",
+    "reviewNotes": "Removed Astell&Kern support/firmware pages from review_links because they are not reviews.",
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=145",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -621,7 +608,7 @@
     "batteryLifeHours": "16",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/jm21_parameters",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://www.aliexpress.us/item/3256810241821659.html",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -630,9 +617,14 @@
     ],
     "lastUpdated": "2026-07-23T03:09:02.153Z",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
-    "reviewLinks": [],
-    "reviewNotes": "",
+    "buyNotes": "FiiO release post identifies this as the JM21 4GB/64GB AliExpress Official Store link.",
+    "reviewLinks": [
+      {
+        "label": "Mobile Audiophile",
+        "url": "https://mobileaudiophile.com/in-ear-earphones-iem-iems-reviews/fiio-jm21-464-version-review-a-great-budget-dap/"
+      }
+    ],
+    "reviewNotes": "Mobile Audiophile review is for the 4GB/64GB refresh version.",
     "sourceUrl": "https://www.fiio.com/jm21_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -721,7 +713,7 @@
     "batteryLifeHours": "12.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/jm21_parameters",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://www.aliexpress.com/item/3256808131579992.html",
     "buyLinks": [
       {
         "label": "Amazon US",
@@ -730,7 +722,7 @@
     ],
     "lastUpdated": "2026-07-23T03:10:02.451Z",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "FiiO Head-Fi sponsor post identifies this as the JM21 AliExpress official-store listing for the original version.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -1630,7 +1622,7 @@
     "batteryLifeHours": "10.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m15s_parameters",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://www.aliexpress.com/item/1005001651566947.html",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -1643,7 +1635,7 @@
     ],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "FiiO release post identifies this as the M15S AliExpress Official Store link.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -1848,7 +1840,7 @@
     "batteryLifeHours": "15",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m21_parameters",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://www.aliexpress.com/item/1005008919392903.html",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -1861,7 +1853,7 @@
     ],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "FiiO Head-Fi sponsor post identifies this as the M21 AliExpress official-store listing.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -1958,7 +1950,7 @@
     "batteryLifeHours": "10.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m23_parameters",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://www.aliexpress.com/item/3256806585212542.html",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -1967,7 +1959,7 @@
     ],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "FiiO release post identifies this as the M23 AliExpress Official Store link.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -2062,7 +2054,7 @@
     "batteryLifeHours": "10.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/m23_parameters",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://www.aliexpress.com/item/3256806585212542.html",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -2071,7 +2063,7 @@
     ],
     "lastUpdated": "2026-07-23T14:09:00+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "FiiO release post identifies this as the M23 AliExpress Official Store link for both M23 material versions.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -2169,7 +2161,7 @@
     "batteryLifeHours": "12",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/DISC_parameters",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://ko.aliexpress.com/item/1005011630884152.html",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -2182,7 +2174,7 @@
     ],
     "lastUpdated": "2026-07-20T09:38:07.583Z",
     "lastUpdatedCommit": "089c7b0f71b01dbd6211f339442c8327b925230e",
-    "buyNotes": "",
+    "buyNotes": "FiiO/SNOWSKY release post identifies this as the DISC AliExpress Official Store link.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -2191,17 +2183,9 @@
       {
         "label": "Headfonia",
         "url": "https://www.headfonia.com/fiio-snowsky-disc-review/"
-      },
-      {
-        "label": "FiiO SNOWSKY DISC official release",
-        "url": "https://www.fiio.com/newsinfo/1116375.html"
-      },
-      {
-        "label": "FiiO SNOWSKY DISC Bluetooth transmitter codecs",
-        "url": "https://www.fiio.com/newsinfo/1111812.html"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Removed FiiO official release/support pages from review_links because they are not reviews.",
     "sourceUrl": "https://www.fiio.com/DISC_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -2660,11 +2644,20 @@
     "batteryLifeHours": "29",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://wiki.hiby.com/en/docs/products/audio_player/hibydigital_m300/guide",
-    "officialStoreUrl": "",
-    "buyLinks": [],
+    "officialStoreUrl": "https://store.hiby.com/products/hiby-digital-m300",
+    "buyLinks": [
+      {
+        "label": "Amazon Store",
+        "url": "https://www.amazon.com/stores/HiBy/HiBy/page/D8ADD03D-2210-486E-929B-ECC04BB251EC"
+      },
+      {
+        "label": "HiBy AliExpress",
+        "url": "https://hiby.aliexpress.com/store/1101305825"
+      }
+    ],
     "lastUpdated": "2026-07-23T14:20:00+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Official HiBy store page added from current HiBy product listing. Amazon Store and HiBy AliExpress links are brand-store purchase links surfaced by Headfonics for the M300 review; no affiliate notes are included.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -2755,12 +2748,22 @@
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.hiby.com/products/hiby-digital-m500",
     "officialStoreUrl": "https://store.hiby.com/products/hiby-digital-m500",
-    "buyLinks": [],
+    "buyLinks": [
+      {
+        "label": "MusicTeck",
+        "url": "https://shop.musicteck.com/"
+      }
+    ],
     "lastUpdated": "2026-07-17T19:21:45+08:00",
     "lastUpdatedCommit": "56029576bc4cf698dff22a75cadd950ac8ad5e77",
-    "buyNotes": "",
-    "reviewLinks": [],
-    "reviewNotes": "",
+    "buyNotes": "HiBy official store kept in official_store_url. Headfonics M500 4G review lists MusicTeck USA as a purchase option; only the retailer landing page was resolvable during this update.",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/hiby-digital-m500-x-hatsune-miku-4g-review/"
+      }
+    ],
+    "reviewNotes": "Exact HiBy Digital M500 x Hatsune Miku 4G review added from Headfonics.",
     "sourceUrl": "https://store.hiby.com/products/hiby-digital-m500",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -2842,8 +2845,13 @@
     "lastUpdated": "2026-07-17T19:21:45+08:00",
     "lastUpdatedCommit": "56029576bc4cf698dff22a75cadd950ac8ad5e77",
     "buyNotes": "",
-    "reviewLinks": [],
-    "reviewNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Mobile Audiophile",
+        "url": "https://mobileaudiophile.com/daps/hiby-digital-m500-x-hatsune-miku-review/"
+      }
+    ],
+    "reviewNotes": "Mobile Audiophile review explicitly covers the M500 WiFi Hatsune Miku version.",
     "sourceUrl": "https://store.hiby.com/products/hiby-digital-m500",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -3454,7 +3462,7 @@
     "batteryLifeHours": "35",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.hiby.com/products/hiby-r5-gen-2",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://store.hiby.com/products/hiby-r5-gen-2",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -3463,7 +3471,7 @@
     ],
     "lastUpdated": "2026-07-20T16:58:09+08:00",
     "lastUpdatedCommit": "c3a0ed8dad3c5dfcafdd967e730f002af3733021",
-    "buyNotes": "",
+    "buyNotes": "Official HiBy store product page added; existing HiFiGo buy link kept.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -3661,7 +3669,7 @@
     "batteryLifeHours": "8",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.hiby.com/products/r6-pro-ii-gen-2",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://store.hiby.com/products/r6-pro-ii-gen-2",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -3674,7 +3682,7 @@
     ],
     "lastUpdated": "2026-07-22T09:05:13.074Z",
     "lastUpdatedCommit": "",
-    "buyNotes": "",
+    "buyNotes": "Official HiBy store product page added; existing retailer buy links kept.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -3683,13 +3691,9 @@
       {
         "label": "Headfonia",
         "url": "https://www.headfonia.com/hiby-r6-pro-ii-review/"
-      },
-      {
-        "label": "HiBy R6 Pro II product parameters",
-        "url": "https://store.hiby.com/en-cn/blogs/r6-pro-ii-review/r6-pro-ii-review"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Removed HiBy product-parameters page from review_links because it is not a review.",
     "sourceUrl": "https://store.hiby.com/products/r6-pro-ii-gen-2",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -4061,11 +4065,16 @@
     "batteryLifeHours": "12",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.hiby.com/products/hiby-rs8",
-    "officialStoreUrl": "",
-    "buyLinks": [],
+    "officialStoreUrl": "https://store.hiby.com/products/hiby-rs8",
+    "buyLinks": [
+      {
+        "label": "HiBy Store",
+        "url": "https://store.hiby.com/products/hiby-rs8"
+      }
+    ],
     "lastUpdated": "2026-07-22T13:19:17.394Z",
     "lastUpdatedCommit": "",
-    "buyNotes": "",
+    "buyNotes": "Official HiBy store product page added.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -4078,13 +4087,9 @@
       {
         "label": "Headfonia",
         "url": "https://www.headfonia.com/hiby-rs8-review/"
-      },
-      {
-        "label": "HiBy RS8 official specs",
-        "url": "https://store.hiby.com/products/hiby-rs8"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Removed HiBy official specs page from review_links because it is not a review.",
     "sourceUrl": "https://store.hiby.com/products/hiby-rs8",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -4155,18 +4160,23 @@
     "batteryLifeHours": "12",
     "storageExpansionMax": "256GB",
     "officialUrl": "https://www.hidizs.net/products/hidizs-ap30-music-boy-the-truly-wearable-palm-sized-hi-res-music-player",
-    "officialStoreUrl": "",
-    "buyLinks": [],
-    "lastUpdated": "2026-07-20T09:40:18.367Z",
-    "lastUpdatedCommit": "089c7b0f71b01dbd6211f339442c8327b925230e",
-    "buyNotes": "",
-    "reviewLinks": [
+    "officialStoreUrl": "https://www.hidizs.com/products/hidizs-ap30-music-boy-the-truly-wearable-palm-sized-hi-res-music-player",
+    "buyLinks": [
       {
-        "label": "Hidizs AP30 official product page",
-        "url": "https://www.hidizs.net/products/hidizs-ap30-music-boy-the-truly-wearable-palm-sized-hi-res-music-player"
+        "label": "Hidizs Store",
+        "url": "https://www.hidizs.com/products/hidizs-ap30-music-boy-the-truly-wearable-palm-sized-hi-res-music-player"
       }
     ],
-    "reviewNotes": "",
+    "lastUpdated": "2026-07-20T09:40:18.367Z",
+    "lastUpdatedCommit": "089c7b0f71b01dbd6211f339442c8327b925230e",
+    "buyNotes": "Official Hidizs AP30 store/product page added; Kickstarter URL was not kept because the exact campaign URL was not exposed in the page text.",
+    "reviewLinks": [
+      {
+        "label": "Soundphile Review",
+        "url": "https://www.soundphilereview.com/reviews/hidizs-ap30-music-boy-review-52353/"
+      }
+    ],
+    "reviewNotes": "Soundphile Review exact AP30 Music Boy review added.",
     "sourceUrl": "https://www.hidizs.net/products/hidizs-ap30-music-boy-the-truly-wearable-palm-sized-hi-res-music-player",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -4437,7 +4447,12 @@
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.hidizs.net/products/hidizs-ap80-pro-max-all-in-one-hi-res-streaming-music-player",
     "officialStoreUrl": "",
-    "buyLinks": [],
+    "buyLinks": [
+      {
+        "label": "Linsoul",
+        "url": "https://www.linsoul.com/products/hidizs-x-linsoul-ap80pro-max"
+      }
+    ],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
     "buyNotes": "",
@@ -4626,7 +4641,7 @@
     "batteryLifeHours": "10",
     "storageExpansionMax": "512GB",
     "officialUrl": "https://hifiwalker.com/products/h2",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://hifiwalker.com/products/h2",
     "buyLinks": [
       {
         "label": "Amazon US",
@@ -4635,9 +4650,14 @@
     ],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
-    "reviewLinks": [],
-    "reviewNotes": "",
+    "buyNotes": "Official HIFI WALKER store product page added; Amazon US remains as a buy link.",
+    "reviewLinks": [
+      {
+        "label": "TechRadar",
+        "url": "https://www.techradar.com/audio/portable-media-players/hifi-walker-h2-review"
+      }
+    ],
+    "reviewNotes": "TechRadar exact HIFI WALKER H2 review added.",
     "sourceUrl": "https://hifiwalker.com/products/h2",
     "sourceType": "Official",
     "verificationStatus": "Partial - Official",
@@ -4709,7 +4729,7 @@
     "batteryLifeHours": "10",
     "storageExpansionMax": "512GB",
     "officialUrl": "https://hifiwalker.com/products/h2-touch",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://hifiwalker.com/products/h2-touch",
     "buyLinks": [
       {
         "label": "Amazon US",
@@ -4718,9 +4738,14 @@
     ],
     "lastUpdated": "2026-07-23T14:29:00+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
-    "reviewLinks": [],
-    "reviewNotes": "SE output power added from official product page: 112mW at 32 ohms.",
+    "buyNotes": "Official HIFI WALKER store product page added; Amazon US remains as a buy link.",
+    "reviewLinks": [
+      {
+        "label": "Audiophile Heaven",
+        "url": "https://www.audiophile-heaven.com/2023/02/hifi-walker-h2-touch-revised-and-upgraded.html"
+      }
+    ],
+    "reviewNotes": "Audiophile Heaven exact HIFI WALKER H2 Touch review added.",
     "sourceUrl": "https://hifiwalker.com/products/h2-touch",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -4998,7 +5023,7 @@
     "batteryLifeHours": "30",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://ibasso.com/product/dx180/",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://ibasso.com/product/dx180/",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -5007,7 +5032,7 @@
     ],
     "lastUpdated": "2026-07-23T14:34:00+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Official iBasso store product page added; existing HiFiGo buy link kept.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -5424,7 +5449,7 @@
     "batteryLifeHours": "10",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://ibasso.com/product/dx320/",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://ibasso.com/product/dx320/",
     "buyLinks": [
       {
         "label": "The HiFi Cat",
@@ -5437,7 +5462,7 @@
     ],
     "lastUpdated": "2026-07-20T14:58:19+08:00",
     "lastUpdatedCommit": "56fb06877532db5a91fdee2bcb96fbcc40e8cd80",
-    "buyNotes": "",
+    "buyNotes": "Official iBasso store product page added; existing retailer buy links kept.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -5525,7 +5550,7 @@
     "batteryLifeHours": "11",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://ibasso.com/uploadfiles/download/DX340userguide.pdf",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://ibasso.com/product/dx340/",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -5534,7 +5559,7 @@
     ],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Official iBasso store product page added; existing HiFiGo buy link kept.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -7144,7 +7169,7 @@
     "batteryLifeHours": "36",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-a-series/nw-a306/specifications",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://electronics.sony.com/audio/walkman-digital-recorders/walkman-mp3-players/p/nwa306-b?locale=en_US",
     "buyLinks": [
       {
         "label": "Amazon US",
@@ -7153,9 +7178,22 @@
     ],
     "lastUpdated": "2026-07-23T15:12:00+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
-    "reviewLinks": [],
-    "reviewNotes": "SE output power added from Sony USA/EU capped specification: 0.4-1.1mW at 32 ohms; Sony Japan/Korea list uncapped output as 35mW + 35mW at 16 ohms.",
+    "buyNotes": "Official Sony US store product page added; existing Amazon US buy link kept.",
+    "reviewLinks": [
+      {
+        "label": "What Hi-Fi",
+        "url": "https://www.whathifi.com/reviews/sony-nw-a306"
+      },
+      {
+        "label": "TechRadar",
+        "url": "https://www.techradar.com/reviews/sony-nw-a306-review"
+      },
+      {
+        "label": "HiFi Oasis",
+        "url": "https://www.hifioasis.com/reviews/sony-nw-a306-review/"
+      }
+    ],
+    "reviewNotes": "Exact Sony NW-A306 reviews added.",
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-a-series/nw-a306/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -7319,7 +7357,7 @@
     "batteryLifeHours": "40",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1am2/specifications",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://electronics.sony.com/audio/audio-components/hi-res-audio/p/nwwm1am2",
     "buyLinks": [
       {
         "label": "Amazon US",
@@ -7328,14 +7366,14 @@
     ],
     "lastUpdated": "2026-07-22T13:22:56.419Z",
     "lastUpdatedCommit": "",
-    "buyNotes": "",
+    "buyNotes": "Official Sony US store product page added; existing Amazon US buy link kept.",
     "reviewLinks": [
       {
-        "label": "Sony Asia NW-WM1AM2 specs",
-        "url": "https://www.sony-asia.com/electronics/walkman/nw-wm1am2/specifications"
+        "label": "HiFi Oasis",
+        "url": "https://www.hifioasis.com/reviews/sony-nw-wm1am2-review"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Replaced Sony specs page with exact HiFi Oasis NW-WM1AM2 review.",
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1am2/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -7412,7 +7450,7 @@
     "batteryLifeHours": "40",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1zm2/specifications",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://electronics.sony.com/audio/audio-components/hi-res-audio/p/nwwm1zm2?sku=nwwm1zm2",
     "buyLinks": [
       {
         "label": "Amazon US",
@@ -7429,18 +7467,14 @@
     ],
     "lastUpdated": "2026-07-20T16:58:09+08:00",
     "lastUpdatedCommit": "c3a0ed8dad3c5dfcafdd967e730f002af3733021",
-    "buyNotes": "Exact non-affiliate NW-WM1ZM2 retailer listings. Audio46 specifically describes its unit as a USA uncapped version. No eBay links included.",
+    "buyNotes": "Official Sony US store product page added; existing retailer buy links kept.",
     "reviewLinks": [
       {
-        "label": "Sony Asia support",
-        "url": "https://www.sony-asia.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1zm2/specifications"
-      },
-      {
-        "label": "Sony Asia full specs",
-        "url": "https://www.sony-asia.com/electronics/walkman/nw-wm1zm2/specifications"
+        "label": "What Hi-Fi",
+        "url": "https://www.whathifi.com/reviews/sony-nw-wm1zm2"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Replaced Sony specs/support pages with exact What Hi-Fi NW-WM1ZM2 review.",
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-wm-series/nw-wm1zm2/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -7623,7 +7657,7 @@
     "batteryLifeHours": "25",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx707/specifications",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://electronics.sony.com/audio/walkman-digital-recorders/all-walkman-digital-recorders/p/nwzx707-b?locale=en_US",
     "buyLinks": [
       {
         "label": "Amazon US",
@@ -7636,18 +7670,14 @@
     ],
     "lastUpdated": "2026-07-20T16:58:09+08:00",
     "lastUpdatedCommit": "c3a0ed8dad3c5dfcafdd967e730f002af3733021",
-    "buyNotes": "Exact non-affiliate NW-ZX707 listings. These appear to be North American units, which have restricted headphone output compared with High Gain-enabled Asian and Japanese units; no eBay links included.",
+    "buyNotes": "Official Sony US store product page added; existing retailer buy links kept.",
     "reviewLinks": [
       {
-        "label": "Sony Asia Pacific",
-        "url": "https://www.sony-asia.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx707/specifications"
-      },
-      {
-        "label": "Sony Philippines",
-        "url": "https://www.sony.com.ph/walkman/products/nw-zx707"
+        "label": "HiFi Oasis",
+        "url": "https://www.hifioasis.com/reviews/sony-nw-zx707-review/"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Replaced Sony specs/product pages with exact HiFi Oasis NW-ZX707 review.",
     "sourceUrl": "https://www.sony.com/electronics/support/digital-music-players-nw-nwz-zx-series/nw-zx707/specifications",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -7826,7 +7856,12 @@
     "lastUpdated": "2026-07-23T14:42:00+08:00",
     "lastUpdatedCommit": "ddab136263dba071d21714f41a94f08f96042b84",
     "buyNotes": "",
-    "reviewLinks": [],
+    "reviewLinks": [
+      {
+        "label": "HiFi Oasis",
+        "url": "https://www.hifioasis.com/reviews/surfans-f28-review/"
+      }
+    ],
     "reviewNotes": "Bluetooth Version added from official product page: Bluetooth 5.2.",
     "sourceUrl": "https://www.surfans.net/products/surfans-f28",
     "sourceType": "Official",
@@ -8208,7 +8243,7 @@
     "batteryLifeHours": "20",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.activostyle.com/p1",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://activostyle.co.uk/products/activo-p1-hi-res-mp3-player",
     "buyLinks": [],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
@@ -8217,6 +8252,18 @@
       {
         "label": "Headfonia",
         "url": "https://www.headfonia.com/activo-p1-review/"
+      },
+      {
+        "label": "TechRadar",
+        "url": "https://www.techradar.com/audio/portable-media-players/activo-p1-music-player-review"
+      },
+      {
+        "label": "Android Central",
+        "url": "https://www.androidcentral.com/accessories/audio/review-astell-and-kern-activo-p1"
+      },
+      {
+        "label": "WIRED",
+        "url": "https://www.wired.com/review/activo-p1/"
       }
     ],
     "reviewNotes": "",
@@ -8309,11 +8356,16 @@
     "batteryLifeHours": "10",
     "storageExpansionMax": "1.5TB",
     "officialUrl": "https://www.astellnkern.com/en/product/view.php?idx=150",
-    "officialStoreUrl": "",
-    "buyLinks": [],
+    "officialStoreUrl": "https://astellnkern.co.uk/products/a-ultima-sp3000t",
+    "buyLinks": [
+      {
+        "label": "Moon Audio",
+        "url": "https://www.moon-audio.com/products/a-ultima-sp3000t-dap-music-player"
+      }
+    ],
     "lastUpdated": "2026-07-23T14:47:00+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
-    "buyNotes": "",
+    "buyNotes": "Official Astell&Kern UK store product page added.",
     "reviewLinks": [
       {
         "label": "Headfonia",
@@ -8322,13 +8374,9 @@
       {
         "label": "Twister6",
         "url": "https://twister6.com/2024/05/19/astell-kern-ak-sp3000t/"
-      },
-      {
-        "label": "Astell&Kern Open APP compatibility",
-        "url": "https://www.astellnkern.com/support/faq.jsp?page=1&pageSize=10&searchKeyword=Open+APP+Service"
       }
     ],
-    "reviewNotes": "Streaming services updated from official Astell&Kern SP3000T product text and Open APP compatibility list.",
+    "reviewNotes": "Removed Astell&Kern Open APP compatibility page from review_links because it is support documentation, not a review.",
     "sourceUrl": "https://www.astellnkern.com/en/product/view.php?idx=150",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -8915,7 +8963,12 @@
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.hiby.com/products/hiby-rs8-ii",
     "officialStoreUrl": "https://store.hiby.com/products/hiby-rs8-ii",
-    "buyLinks": [],
+    "buyLinks": [
+      {
+        "label": "Linsoul",
+        "url": "https://www.linsoul.com/products/hiby-rs8-ii"
+      }
+    ],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
     "buyNotes": "",
@@ -9012,7 +9065,7 @@
     "batteryLifeHours": "13.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://ibasso.com/uploadfiles/download/DX270UserManual.pdf",
-    "officialStoreUrl": "",
+    "officialStoreUrl": "https://ibasso.com/product/dx270/",
     "buyLinks": [
       {
         "label": "HiFiGo",
@@ -9021,7 +9074,7 @@
     ],
     "lastUpdated": "2026-07-20T09:40:18.367Z",
     "lastUpdatedCommit": "089c7b0f71b01dbd6211f339442c8327b925230e",
-    "buyNotes": "",
+    "buyNotes": "Official iBasso store product page added; existing HiFiGo buy link kept.",
     "reviewLinks": [
       {
         "label": "Headfonics",
@@ -10197,7 +10250,12 @@
     "storageExpansionMax": "2TB",
     "officialUrl": "https://en.cayin.cn/parameter/7/15/737.html",
     "officialStoreUrl": "",
-    "buyLinks": [],
+    "buyLinks": [
+      {
+        "label": "MusicTeck",
+        "url": "https://shop.musicteck.com/products/cayin-n8iii"
+      }
+    ],
     "lastUpdated": "2026-07-20T09:40:18.367Z",
     "lastUpdatedCommit": "089c7b0f71b01dbd6211f339442c8327b925230e",
     "buyNotes": "",
@@ -10205,13 +10263,9 @@
       {
         "label": "Twister6",
         "url": "https://twister6.com/2026/05/06/cayin-n8iii/"
-      },
-      {
-        "label": "Cayin N8iii official product page",
-        "url": "https://en.cayin.cn/features/7/15/737.html"
       }
     ],
-    "reviewNotes": "",
+    "reviewNotes": "Removed official Cayin product page from review_links; Twister6 remains as the exact review.",
     "sourceUrl": "https://en.cayin.cn/parameter/7/15/737.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -19543,18 +19597,18 @@
     "batteryLifeHours": "15.5",
     "storageExpansionMax": "2TB",
     "officialUrl": "https://www.fiio.com/M33R2R_parameters",
-    "officialStoreUrl": "https://www.fiio.com/m33r2r",
-    "buyLinks": [],
-    "lastUpdated": "2026-07-20T09:40:18.367Z",
-    "lastUpdatedCommit": "089c7b0f71b01dbd6211f339442c8327b925230e",
-    "buyNotes": "Generic FiiO.eu homepage was not kept as a buy link; no exact current retailer URL was verified in this merge.",
-    "reviewLinks": [
+    "officialStoreUrl": "",
+    "buyLinks": [
       {
-        "label": "FiiO M33 R2R official product page",
-        "url": "https://www.fiio.com/m33r2r"
+        "label": "Linsoul",
+        "url": "https://www.linsoul.com/products/fiio-m33-r2r"
       }
     ],
-    "reviewNotes": "No exact accepted Headfonics, Headfonia, or Twister6 review match verified in this pass.",
+    "lastUpdated": "2026-07-20T09:40:18.367Z",
+    "lastUpdatedCommit": "089c7b0f71b01dbd6211f339442c8327b925230e",
+    "buyNotes": "Linsoul exact product page added. Removed FiiO product/spec page from official_store_url because it is not an official storefront.",
+    "reviewLinks": [],
+    "reviewNotes": "Removed FiiO official product page from review_links; no exact accepted review verified in this pass.",
     "sourceUrl": "https://www.fiio.com/M33R2R_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -22794,12 +22848,17 @@
     "storageExpansionMax": "2TB",
     "officialUrl": "https://store.shanling.com/M30-Pro-pd792465188.html",
     "officialStoreUrl": "https://store.shanling.com/M30-Pro-pd792465188.html",
-    "buyLinks": [],
+    "buyLinks": [
+      {
+        "label": "Linsoul",
+        "url": "https://www.linsoul.com/products/shanling-m30-pro"
+      }
+    ],
     "lastUpdated": "2026-07-20T13:47:30+08:00",
     "lastUpdatedCommit": "43ec4695c444866b7a20731ab85adfe5b916ad31",
     "buyNotes": "",
     "reviewLinks": [],
-    "reviewNotes": "Official store specification screenshot provided by maintainer. Prior Shanling announcement source: https://en.shanling.com/article-M30665Module.html. No exact Headfonics, Headfonia, or Twister6 M30 Pro review verified; M30 reviews were rejected as a different configuration.",
+    "reviewNotes": "No exact M30 Pro review verified in this pass; original M30 reviews were not used.",
     "sourceUrl": "https://store.shanling.com/M30-Pro-pd792465188.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -23256,7 +23315,7 @@
     "batteryLifeHours": "13",
     "storageExpansionMax": "1TB",
     "officialUrl": "https://en.cayin.cn/features/7/15/717.html",
-    "officialStoreUrl": "https://en.cayin.cn/features/7/15/717.html",
+    "officialStoreUrl": "",
     "buyLinks": [
       {
         "label": "MusicTeck",
@@ -23270,8 +23329,13 @@
     "lastUpdated": "2026-07-14T16:27:11+08:00",
     "lastUpdatedCommit": "950b2a3dfba8ba0d0a0ac8ca3e7a56d05e9ab704",
     "buyNotes": "Exact current N7+ normal-retail product pages.",
-    "reviewLinks": [],
-    "reviewNotes": "No exact Headfonics, Headfonia, or Twister6 N7+ review was verified; original N7 reviews were rejected.",
+    "reviewLinks": [
+      {
+        "label": "Bloom Audio",
+        "url": "https://bloomaudio.com/blogs/articles/flagship-performance-the-wont-break-the-bank-cayin-n7-review"
+      }
+    ],
+    "reviewNotes": "Bloom Audio exact N7+ review added. Removed Cayin product page from official_store_url because it is not an official storefront.",
     "sourceUrl": "https://en.cayin.cn/features/7/15/717.html",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",

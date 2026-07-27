@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import { ChevronLeft, ChevronRight, ExternalLink, X } from 'lucide-vue-next';
-import type { Dap, MixedSpecValue } from '../types/dap';
-import { formatBattery, formatColors, formatCompactPrice, formatPower, formatValue, hasValue } from '../utils/formatters';
+import type { Dap } from '../types/dap';
+import { formatValue, hasValue } from '../utils/formatters';
 import { getStatusBadgeMeta, getVerificationBadgeMeta } from '../utils/dapDisplay';
-import { formatStorageExpansion } from '../utils/storageDisplay';
+import { dapDisplayName, getAudioRows, getConnectivityRows, getHardwareRows, getSummaryRows } from '../utils/dapSpecs';
 import DapPhoto from './DapPhoto.vue';
 
 const props = defineProps<{
@@ -19,12 +19,6 @@ const emit = defineEmits<{
   close: [];
   navigate: [dap: Dap];
 }>();
-
-interface DetailRow {
-  label: string;
-  value: string;
-  wide?: boolean;
-}
 
 interface BuyGroup {
   label: string;
@@ -97,57 +91,6 @@ function handleKeydown(event: KeyboardEvent) {
   if (event.key === 'ArrowRight' && props.nextDap) emit('navigate', props.nextDap);
 }
 
-function textValue(value: MixedSpecValue | boolean | undefined): string {
-  if (!hasValue(value)) return '';
-  return formatValue(value);
-}
-
-function listValue(values: string[] | null | undefined): string {
-  return values?.length ? formatColors(values) : '';
-}
-
-function gbValue(value: MixedSpecValue | undefined): string {
-  if (!hasValue(value)) return '';
-  if (typeof value === 'number') return `${value.toLocaleString('en-US')} GB`;
-  const raw = String(value).trim();
-  const spaced = raw.replace(/(\d)\s*(GB|TB)\b/gi, '$1 $2');
-  return /(?:gb|tb)$/i.test(spaced) ? spaced : `${spaced} GB`;
-}
-
-function hoursValue(value: MixedSpecValue | undefined): string {
-  if (!hasValue(value)) return '';
-  const raw = String(value).trim();
-  if (/hours?|hrs?/i.test(raw)) return raw;
-  return `${raw} hours`;
-}
-
-function displaySizeValue(value: MixedSpecValue | undefined): string {
-  const raw = textValue(value);
-  return raw.replace(/\b(\d+(?:\.\d+)?)\s*in\b/i, '$1 inches');
-}
-
-function weightValue(value: MixedSpecValue | undefined): string {
-  const raw = textValue(value);
-  return raw.replace(/\b(\d+(?:\.\d+)?)\s*g\b/i, '$1 g');
-}
-
-function powerValue(power: MixedSpecValue | undefined, load: string): string {
-  if (!hasValue(power)) return '';
-  if (!hasValue(load)) return '';
-  const formattedPower = formatPower(power);
-  return `${formattedPower} @ ${load}`;
-}
-
-function impedanceValue(value: string): string {
-  if (!hasValue(value)) return '';
-  const raw = value.trim();
-  return /(?:ohm|\u03a9)$/i.test(raw) ? raw : `${raw} ohm`;
-}
-
-function addRow(rows: DetailRow[], label: string, value: string, wide = false) {
-  if (value) rows.push({ label, value, wide });
-}
-
 function rawFieldValue(fields: Array<{ label: string; value: string }>, label: string): string {
   return fields.find((field) => field.label === label)?.value ?? '';
 }
@@ -191,88 +134,10 @@ const rawSourceFields = computed(() => rawDetailFields.value.filter((field) => (
   || field.displayValue.toLowerCase().includes('https://')
 )));
 
-const summaryRows = computed<DetailRow[]>(() => {
-  if (!props.dap) return [];
-  const dap = props.dap;
-  const rows: DetailRow[] = [];
-  addRow(rows, 'Year', textValue(dap.releaseYear));
-  addRow(rows, 'MSRP', hasValue(dap.msrpUsd) ? formatCompactPrice(dap.msrpUsd) : '');
-  addRow(rows, 'Source status', hasValue(dap.verificationStatus) ? getVerificationBadgeMeta(dap.verificationStatus).label : '');
-  return rows;
-});
-
-const outputSummary = computed(() => {
-  if (!props.dap) return '';
-  const dap = props.dap;
-  const balancedType = dap.balancedOutputType.toLowerCase();
-  const outputs: string[] = [];
-  if (dap.has35mm) outputs.push('3.5mm');
-  if (dap.has25mm) outputs.push(balancedType.includes('2.5') ? '2.5mm balanced' : '2.5mm');
-  if (dap.has44mm) outputs.push(balancedType.includes('4.4') ? '4.4mm balanced' : '4.4mm');
-  if (dap.has635mm) outputs.push('6.35mm');
-  if (dap.lineOut) outputs.push('line out');
-  if (dap.coaxOut) outputs.push('coax');
-  if (dap.opticalOut) outputs.push('optical');
-  return outputs.join(', ');
-});
-
-const audioRows = computed<DetailRow[]>(() => {
-  if (!props.dap) return [];
-  const dap = props.dap;
-  const rows: DetailRow[] = [];
-  addRow(rows, 'DAC', textValue(dap.dac), true);
-  addRow(rows, 'Amplifier', textValue(dap.amp), true);
-  addRow(rows, 'Outputs', outputSummary.value, true);
-  addRow(rows, 'Balanced output', textValue(dap.balancedOutputType));
-  addRow(rows, 'SE Power', powerValue(dap.sePowerMw, dap.sePowerLoad));
-  addRow(rows, 'Balanced power', powerValue(dap.balPowerMw, dap.balPowerLoad));
-  addRow(rows, 'SE output impedance', impedanceValue(dap.seOutputImpedanceOhm));
-  addRow(rows, 'Balanced output impedance', impedanceValue(dap.balOutputImpedanceOhm));
-  return rows;
-});
-
-const hardwareRows = computed<DetailRow[]>(() => {
-  if (!props.dap) return [];
-  const dap = props.dap;
-  const rows: DetailRow[] = [];
-  addRow(rows, 'SoC', textValue(dap.soc));
-  addRow(rows, 'RAM', gbValue(dap.ramGb));
-  addRow(rows, 'OS', textValue(dap.os));
-  addRow(rows, 'Battery', hasValue(dap.batteryMah) ? formatBattery(dap.batteryMah) : '');
-  addRow(rows, 'Battery life', hoursValue(dap.batteryLifeHours));
-  addRow(rows, 'Display', displaySizeValue(dap.displaySize));
-  addRow(rows, 'Weight', weightValue(dap.weight));
-  addRow(rows, 'Dimensions', textValue(dap.dimensions), true);
-  addRow(rows, 'Storage', gbValue(dap.storageGb));
-  addRow(rows, 'Storage expansion', formatStorageExpansion(dap, { showNone: true, showUnknown: true }));
-  addRow(rows, 'Colors', listValue(dap.colors), true);
-  return rows;
-});
-
-const connectivityRows = computed<DetailRow[]>(() => {
-  if (!props.dap) return [];
-  const dap = props.dap;
-  const rows: DetailRow[] = [];
-  if (dap.bluetooth === true) addRow(rows, 'Bluetooth', textValue(dap.bluetoothVersion) || 'Yes');
-  addRow(rows, 'Codecs', listValue(dap.bluetoothCodecs), true);
-  if (dap.wifi === true) addRow(rows, 'Wi-Fi', textValue(dap.wifiBands) || 'Yes');
-  if (dap.cellular === true) addRow(rows, 'Cellular', 'Yes');
-  if (dap.has4g === true) addRow(rows, '4G', 'Yes');
-  if (dap.has5g === true) addRow(rows, '5G', 'Yes');
-
-  const usbParts = [textValue(dap.usbPort)];
-  if (dap.usbDac === true) usbParts.push('USB DAC');
-  addRow(rows, 'USB', usbParts.filter(Boolean).join(', '), true);
-
-  const formats = [];
-  if (hasValue(dap.pcmMax)) formats.push(`PCM ${dap.pcmMax}`);
-  if (hasValue(dap.dsdMax)) formats.push(String(dap.dsdMax));
-  addRow(rows, 'Formats', formats.join(', '));
-
-  if (dap.mqa === true) addRow(rows, 'MQA', 'Yes');
-  addRow(rows, 'Streaming', listValue(dap.streamingServices), true);
-  return rows;
-});
+const summaryRows = computed(() => (props.dap ? getSummaryRows(props.dap) : []));
+const audioRows = computed(() => (props.dap ? getAudioRows(props.dap) : []));
+const hardwareRows = computed(() => (props.dap ? getHardwareRows(props.dap) : []));
+const connectivityRows = computed(() => (props.dap ? getConnectivityRows(props.dap) : []));
 
 const sourceStatusLabel = computed(() => {
   if (!props.dap) return '';
@@ -320,8 +185,7 @@ const hasReviewInfo = computed(() => {
 });
 
 function compactDapName(dap: Dap | null | undefined): string {
-  if (!dap) return '';
-  return [dap.brand, dap.model, dap.variant].filter(Boolean).join(' ');
+  return dap ? dapDisplayName(dap) : '';
 }
 
 onMounted(() => {

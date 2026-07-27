@@ -17,6 +17,7 @@ import DapDetailsModal from './components/DapDetailsModal.vue';
 import DapFilters from './components/DapFilters.vue';
 import DapTable from './components/DapTable.vue';
 import SpreadsheetView from './components/SpreadsheetView.vue';
+import CompareView from './views/CompareView.vue';
 import jreqTechLogo from './assets/images/jreq-tech-logo.png';
 import SortControl from './components/SortControl.vue';
 import type { Dap, DapFilters as DapFiltersType, SortKey, SortState } from './types/dap';
@@ -24,6 +25,7 @@ import { isAndroidBased } from './utils/dapDisplay';
 import { filterDaps, numberFromMixed, sortDaps, uniqueSorted } from './utils/filters';
 import { storageExpansionState } from './utils/storageDisplay';
 import { dapSlug } from './utils/slugs';
+import { dapDisplayName } from './utils/dapSpecs';
 
 type ViewMode = 'cards' | 'table';
 type ActiveFilterChip = { key: keyof DapFiltersType; label: string; value?: string };
@@ -32,6 +34,7 @@ const daps = rawDaps as Dap[];
 const viewStorageKey = 'dap-database-view-mode-v2';
 const detailHashPrefix = '#/dap/';
 const sheetHash = '#/sheet';
+const compareHashPrefix = '#/compare';
 const defaultDocumentTitle = 'DAP Database - Digital Audio Player Specs and Sources';
 const defaultMetaDescription = 'A searchable database of digital audio players with specs, source links, verification status, and filters.';
 const fallbackGridColumns = 4;
@@ -191,6 +194,7 @@ const storageBounds = computed(() => {
 });
 const visibleDaps = computed(() => sortDaps(filterDaps(daps, filters.value), sortState.value));
 const isSheetRoute = computed(() => currentHash.value === sheetHash);
+const isCompareRoute = computed(() => currentHash.value.startsWith(compareHashPrefix));
 const rawCsvRows = computed(() => parseCsv(rawDapsCsv.trimEnd()));
 const rawCsvHeaders = computed(() => rawCsvRows.value[0] ?? []);
 const selectedRawFields = computed(() => {
@@ -458,10 +462,6 @@ function openSheetDapDetails(dap: Dap) {
   selectedDap.value = dap;
 }
 
-function dapDisplayName(dap: Dap): string {
-  return [dap.brand, dap.model, dap.variant].filter(Boolean).join(' ');
-}
-
 function updatePageMeta(dap: Dap | null) {
   document.title = dap ? `${dapDisplayName(dap)} Specs - DAP Database` : defaultDocumentTitle;
   const metaDescription = document.querySelector<HTMLMetaElement>('meta[name="description"]');
@@ -567,8 +567,13 @@ watch(hasMoreCardDaps, (hasMore) => {
 </script>
 
 <template>
+  <CompareView
+    v-if="isCompareRoute"
+    :daps="daps"
+  />
+
   <SpreadsheetView
-    v-if="isSheetRoute"
+    v-else-if="isSheetRoute"
     :csv="rawDapsCsv"
     :daps="daps"
     @open-dap="openSheetDapDetails"
@@ -667,6 +672,7 @@ watch(hasMoreCardDaps, (hasMore) => {
               >
                 Report a correction
               </a>
+              <a class="btn btn-secondary" href="#/compare">Compare</a>
             </nav>
           </div>
             <dl class="stats-grid">
@@ -778,7 +784,7 @@ watch(hasMoreCardDaps, (hasMore) => {
     @navigate="openDapDetails"
   />
 
-  <footer v-if="!isSheetRoute" class="site-footer">
+  <footer v-if="!isSheetRoute && !isCompareRoute" class="site-footer">
     <div class="footer-copy">
       <p class="footer-disclaimer">
         Specs are best-effort and source-backed where possible. Values may vary by region, firmware, revision, gain

@@ -5,9 +5,17 @@ export type StorageExpansionState = 'expandable' | 'none' | 'unknown';
 
 function gbValue(value: MixedSpecValue | undefined): string {
   if (!hasValue(value)) return '';
-  if (typeof value === 'number') return `${value.toLocaleString('en-US')}GB`;
+  if (typeof value === 'number') {
+    if (value > 0 && value < 1) return `${(value * 1000).toLocaleString('en-US')} MB`;
+    return `${value.toLocaleString('en-US')} GB`;
+  }
   const raw = String(value).trim();
-  return /(?:gb|tb)$/i.test(raw) ? raw : `${raw}GB`;
+  const numericValue = Number(raw);
+  if (Number.isFinite(numericValue) && numericValue > 0 && numericValue < 1) {
+    return `${(numericValue * 1000).toLocaleString('en-US')} MB`;
+  }
+  const spaced = raw.replace(/(\d)\s*(GB|TB)\b/gi, '$1 $2');
+  return /(?:gb|tb)$/i.test(spaced) ? spaced : `${spaced} GB`;
 }
 
 function expansionMedium(dap: Dap): string {
@@ -40,7 +48,7 @@ export function formatStorageSummary(dap: Dap): string {
   const internal = gbValue(dap.storageGb);
   const expansion = formatStorageExpansion(dap);
 
-  if (internal && internal !== '0GB') parts.push(`${internal} internal`);
+  if (internal && internal !== '0 GB') parts.push(`${internal} internal`);
   if (expansion) parts.push(expansion);
 
   return parts.join(' • ');
