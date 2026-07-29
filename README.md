@@ -22,6 +22,7 @@ DAP Database focuses on dedicated audiophile and hi-res digital audio players. G
 - Search by brand, model, variant, DAC, SoC, OS, or colors.
 - Filter by brand, status, source quality, Android-based devices, 4.4mm output, price, year, audio features, and connectivity.
 - Open linkable detail views with specs, source links, review links, notes, and photos.
+- Compare two or three DAPs with a linkable side-by-side comparison view. Mobile comparison uses compact spec rows, section dividers, aligned product columns, and sticky DAP names after the header scrolls away.
 - Request missing DAPs or report corrections through GitHub issues.
 
 ## Data
@@ -39,6 +40,18 @@ npm run generate:data
 Commit both `src/data/daps.csv` and `src/data/daps.json` so GitHub Pages builds predictably.
 
 For detailed CSV fields, review-link handling, buying-link fields, and image workflow, see [docs/data-workflow.md](docs/data-workflow.md).
+
+## Discovery
+
+DAP Discovery Watch checks curated manufacturer and retailer pages for possible new DAP models without editing the database automatically. It is intentionally conservative and filters out accessories, IEMs, dongle DACs, desktop players, transports, and other non-DAP products where the source wording is ambiguous.
+
+Run a local dry run:
+
+```bash
+npm run discover:daps:dry-run
+```
+
+For the source list, classifications, duplicate GitHub issue suppression, and source-adding rules, see [docs/dap-discovery.md](docs/dap-discovery.md).
 
 ## Local Development
 

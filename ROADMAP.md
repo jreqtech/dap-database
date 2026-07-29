@@ -29,12 +29,20 @@ Audio-focused phones such as the Moondrop MIAD 01 and general consumer MP3 playe
 
 ## Current Data Status
 
-As of 2026-07-13, `src/data/daps.csv` contains 236 source-backed DAP rows, and every row has a local optimized image referenced through `image_filename`.
+As of 2026-07-29, `src/data/daps.csv` contains 244 source-backed DAP rows, and every row has a local optimized image referenced through `image_filename`.
 
 Latest local checks:
 
 - `npm run generate:data`
 - `npm run build`
+- `npm test`
+- `npm run discover:daps:dry-run`
+
+Latest discovery status:
+
+- The weekly discovery watcher is producing a clean report with one current likely-new official candidate: Cowon Plenue D3.
+- Sony currently returns HTTP 403 to scripted fetches, and Lotoo may fail depending on network/site behavior. These failures are reported but do not create candidates by themselves.
+- Recent false-positive cleanup removed non-DAP matches such as QLS digital transports, Shanling M30 desktop player, Cowon PLENUE X30/X40 IEM-category links, and duplicate Astell&Kern/Cowon catalog names.
 
 ## Source Rules
 
@@ -154,12 +162,10 @@ Confirm whether hyphenated and non-hyphenated names are aliases before adding. D
 ### QLS / Quloos
 
 - QLS QA660
-- QLS QA390
-- QLS QA390LE / MOD / QA390V2
 
-Variant note:
+Scope note:
 
-Investigate QA390LE, QA390 MOD, and QA390V2 before adding rows. QLS groups these names closely, so confirm whether each has meaningful hardware/spec differences or should be represented as one row with aliases/notes.
+Discovery deliberately excludes QLS desktop, bridge, turntable, and transport-style products such as QA390, QA390LE/MOD/QA390V2, QA661, QA662, and QA860. Only add QLS rows when sources clearly identify a standalone portable DAP with local playback, not a computer bridge, digital transport, or movable desktop player.
 
 ### Other Modern / Relevant DAPs
 
@@ -177,16 +183,18 @@ Investigate QA390LE, QA390 MOD, and QA390V2 before adding rows. QLS groups these
 - Colorfly U8
 - Colorfly U6
 - ONIX Overture XM5
-- ONIX Waltz XM10 LTD
 - Oriolus DPS-L2
 - YinLvMei W1s
 - F.AUDIO FA4
+- Cowon Plenue D3
 
 Scope note:
 
-Some Colorfly, TempoTec, ONIX, Oriolus, YinLvMei, and F.AUDIO models may need extra source checking because product categories can blur the line between standalone DAPs, transports, and desktop/portable source devices.
+Some Colorfly, TempoTec, ONIX, Oriolus, YinLvMei, Cowon, and F.AUDIO models may need extra source checking because product categories can blur the line between standalone DAPs, transports, IEMs, and desktop/portable source devices.
 
 TempoTec V3 Blaze appears to overlap with existing `V3` coverage unless sources prove meaningful hardware/spec differences. Do not add bundle rows such as V3 Blaze+IM01 unless the DAP itself differs.
+
+ONIX Waltz XM10 LTD is already represented in the database; do not add duplicate rows from Shanling co-branded retailer listings.
 
 ### Budget / AliExpress-Style DAPs
 

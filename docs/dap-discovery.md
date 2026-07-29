@@ -8,6 +8,7 @@ It never edits `src/data/daps.csv`, never creates DAP rows, never guesses specif
 
 Configured official sources:
 
+- Astell&Kern: `https://astellnkern.co.uk/pages/media-players`
 - FiiO: `https://www.fiio.com/category`
 - Shanling: `https://en.shanling.com/category/237`
 - iBasso: `https://ibasso.com/product-category/dap/`
@@ -15,6 +16,9 @@ Configured official sources:
 - HiBy: `https://store.hiby.com/collections/music-player`
 - Hidizs: `https://www.hidizs.net/collections/portable-music-player`
 - QLS/Quloos: `https://www.qlshifi.com/en/?cate=2`
+- Sony: `https://electronics.sony.com/audio/walkman-digital-recorders/c/walkman-mp3-players`
+- Lotoo: `https://www.lotoo.cn/`
+- Cowon: `https://www.cowon.com/goods/goods_list.php?cateCd=001`
 
 Configured retailer-sighting sources:
 
@@ -22,6 +26,8 @@ Configured retailer-sighting sources:
 - Linsoul: `https://www.linsoul.com/collections/digital-audio-players`
 
 Official sources use brand-specific extractors in `scripts/discovery/extractors/`. Retailer sources use the shared retailer extractor and are filtered by known DAP brands plus DAP/music-player wording.
+
+Extractors should prefer exact DAP catalogs and reject non-DAP portable audio products. Current filters explicitly avoid common false positives such as cases, bundles, IEMs, dongle DACs, Bluetooth receivers, desktop players, digital bridges, digital turntables, and transport-only devices.
 
 ## Commands
 
@@ -64,7 +70,14 @@ Each actionable candidate gets a deterministic fingerprint based on:
 - classification
 - official product URL
 
-The workflow checks open `[DAP Discovery]` issues for those fingerprints. If every current actionable fingerprint is already present in an open discovery issue, it does not create a duplicate issue.
+Each actionable candidate also gets a normalized identity marker based on brand and model identity. Reports include both hidden markers:
+
+```text
+<!-- dap-discovery-fingerprint:... -->
+<!-- dap-discovery-identity:brand|normalized model -->
+```
+
+The workflow checks open and closed `[DAP Discovery]` issues for those markers. If every current actionable candidate already appears by fingerprint or normalized identity, it does not create a duplicate issue. This suppresses repeat issues even when a source URL or classification detail changes later.
 
 ## Weekly Workflow
 
@@ -75,7 +88,7 @@ The workflow:
 1. Installs dependencies with `npm ci`.
 2. Runs discovery with `--no-exit-code` so candidates do not fail the job.
 3. Uploads the Markdown and JSON reports as artifacts.
-4. Checks open discovery issues for duplicate fingerprints.
+4. Checks recent open and closed discovery issues for duplicate fingerprints and normalized identities.
 5. Creates one issue only when there are new actionable candidates.
 
 ## Adding a Source
