@@ -1,5 +1,6 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
+import { candidateIdentity } from './dedupe-issues';
 import type { Candidate, CandidateClassification, DiscoveryResult } from './types';
 
 const sections: Array<[CandidateClassification, string]> = [
@@ -60,6 +61,7 @@ function renderCandidate(candidate: Candidate): string {
     `### ${candidate.detectedName}`,
     '',
     `<!-- dap-discovery-fingerprint:${candidate.fingerprint} -->`,
+    `<!-- dap-discovery-identity:${candidateIdentity(candidate)} -->`,
     '',
     `- Brand: ${candidate.brand}`,
     `- Detected name: ${candidate.detectedName}`,

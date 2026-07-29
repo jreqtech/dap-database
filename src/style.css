@@ -3441,6 +3441,14 @@ dd {
   vertical-align: top;
 }
 
+.compare-table__mobile-section {
+  display: none;
+}
+
+.compare-table__mobile-sticky-head {
+  display: none;
+}
+
 .compare-column-card__remove {
   position: absolute;
   top: 8px;
@@ -3826,17 +3834,18 @@ dd {
   }
 
   .compare-columns {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 112px repeat(2, minmax(0, 1fr));
   }
 
   .compare-sheet {
     width: 100%;
     min-width: 0;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .compare-side-blank {
-    display: none;
+    display: block;
+    min-height: 100%;
   }
 
   .compare-column-card:nth-child(4),
@@ -3851,6 +3860,84 @@ dd {
 
   .compare-product .dap-photo {
     height: 100px;
+  }
+
+  .compare-table {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .compare-table-panel {
+    width: 100%;
+    min-width: 0;
+    overflow: visible;
+  }
+
+  .compare-table__spec-col {
+    width: 112px;
+  }
+
+  .compare-table__dap-col {
+    width: calc((100% - 112px) / 2);
+  }
+
+  .compare-table-scroll {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: visible;
+  }
+
+  .compare-table th,
+  .compare-table td {
+    padding: 7px 8px;
+    font-size: 0.76rem;
+    line-height: 1.35;
+  }
+
+  .compare-table__mobile-section {
+    display: table-row;
+  }
+
+  .compare-table__mobile-sticky-head {
+    display: table-header-group;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+
+  .compare-table__mobile-sticky-head th {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    border-right: 1px solid #dedede;
+    border-bottom: 2px solid #cfcfcf;
+    background: #ffffff;
+    color: #000000;
+    padding: 8px 9px;
+    font-size: 0.75rem;
+    font-weight: 850;
+    line-height: 1.15;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .compare-table__mobile-section th {
+    padding: 8px 9px;
+    border-top: 3px solid #e1e5e6;
+    border-right: 1px solid #ece9e2;
+    border-bottom: 1px solid #ece9e2;
+    background: #f5f6f4;
+    color: #3f4a50;
+    font-size: 0.76rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .compare-table__section-start > th,
+  .compare-table__section-start > td {
+    border-top: 0;
   }
 }
 
@@ -4087,12 +4174,17 @@ dd {
 
   .compare-columns {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 110px repeat(2, minmax(0, 1fr));
     overflow: visible;
   }
 
   .compare-column-card {
     padding: 10px;
+  }
+
+  .compare-side-blank {
+    display: block;
+    min-height: 100%;
   }
 
   .compare-search__results {
@@ -4135,26 +4227,22 @@ dd {
   }
 
   .compare-table {
-    width: 750px;
-    min-width: 750px;
+    width: 100%;
+    min-width: 0;
   }
 
   .compare-table-panel {
     width: 100%;
     min-width: 0;
-    overflow: hidden;
-  }
-
-  .compare-table__group-col {
-    width: 58px;
+    overflow: visible;
   }
 
   .compare-table__spec-col {
-    width: 92px;
+    width: 110px;
   }
 
   .compare-table__dap-col {
-    width: 300px;
+    width: calc((100% - 110px) / 2);
   }
 
   .compare-table-scroll {
@@ -4162,14 +4250,58 @@ dd {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    overflow-x: auto;
-    overflow-y: visible;
+    overflow: visible;
   }
 
   .compare-table th,
   .compare-table td {
-    padding: 8px 9px;
-    font-size: 0.8rem;
+    padding: 6px 8px;
+    font-size: 0.74rem;
+    line-height: 1.35;
+  }
+
+  .compare-table__mobile-section {
+    display: table-row;
+  }
+
+  .compare-table__mobile-sticky-head {
+    display: table-header-group;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+
+  .compare-table__mobile-sticky-head th {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    border-right: 1px solid #dedede;
+    border-bottom: 2px solid #cfcfcf;
+    background: #ffffff;
+    color: #000000;
+    padding: 7px 8px;
+    font-size: 0.72rem;
+    font-weight: 850;
+    line-height: 1.15;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .compare-table__mobile-section th {
+    padding: 7px 8px;
+    border-top: 3px solid #e1e5e6;
+    border-right: 1px solid #ece9e2;
+    border-bottom: 1px solid #ece9e2;
+    background: #f5f6f4;
+    color: #3f4a50;
+    font-size: 0.72rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .compare-table__section-start > th,
+  .compare-table__section-start > td {
+    border-top: 0;
   }
 }
 

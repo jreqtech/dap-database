@@ -23,6 +23,20 @@ export function uniqueByNameAndUrl<T extends { detectedName: string; productUrl:
   return output;
 }
 
+export function uniqueByName<T extends { detectedName: string }>(items: T[]): T[] {
+  const seen = new Set<string>();
+  const output: T[] = [];
+
+  for (const item of items) {
+    const key = item.detectedName.trim().toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    output.push(item);
+  }
+
+  return output;
+}
+
 export function anchorMatches(html: string): Array<{ href: string; inner: string }> {
   return [...html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)].map((match) => ({
     href: match[1] ?? '',

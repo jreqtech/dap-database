@@ -4,7 +4,19 @@ export type DiscoverySource = {
   brand: string;
   type: SourceType;
   url: string;
-  extractor: 'fiio' | 'shanling' | 'ibasso' | 'cayin' | 'hiby' | 'hidizs' | 'qls' | 'retailer';
+  extractor:
+    | 'astellkern'
+    | 'cowon'
+    | 'fiio'
+    | 'shanling'
+    | 'ibasso'
+    | 'cayin'
+    | 'hiby'
+    | 'hidizs'
+    | 'lotoo'
+    | 'qls'
+    | 'retailer'
+    | 'sony';
   enabled: boolean;
 };
 

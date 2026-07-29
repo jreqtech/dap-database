@@ -1,13 +1,15 @@
 import { anchorMatches, resolveUrl, stripTags, uniqueByNameAndUrl } from '../html';
 import type { DiscoveredProduct, DiscoverySource } from '../types';
 
-const acceptedModels = new Set(['QA360', 'QA361', 'QA390', 'QA390LE/MOD(QA390V2)', 'QA661', 'QA662', 'QA860']);
+const acceptedModels = new Set(['QA360', 'QA361']);
+const nonDapProductTerms = /\b(?:digital\s+turntable|transport|desktop|movable\s+desktop)\b/i;
 
 export function extractQls(html: string, source: DiscoverySource): DiscoveredProduct[] {
   const products: DiscoveredProduct[] = [];
 
   for (const anchor of anchorMatches(html)) {
     const text = stripTags(anchor.inner).replace(/\s+/g, ' ').trim();
+    if (nonDapProductTerms.test(text)) continue;
     const model = modelFromText(text);
     if (!model) continue;
 

@@ -46,16 +46,16 @@ jobs:
             tmp/dap-discovery-report.md
             tmp/dap-discovery-result.json
 
-      - name: Read open discovery issues
+      - name: Read previous discovery issues
         if: steps.discover.outputs.has_candidates == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: >
           gh issue list
-          --state open
+          --state all
           --search '"[DAP Discovery]" in:title repo:${{ github.repository }}'
           --json number,title,body
-          --limit 50
+          --limit 200
           > tmp/dap-discovery-open-issues.json
 
       - name: Check discovery issue dedupe

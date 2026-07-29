@@ -24,14 +24,17 @@ export function normalizeText(value: string): string {
 export function normalizeModelForComparison(brand: string, model: string, variant = ''): string {
   const normalizedBrand = normalizeBrand(brand);
   let value = normalizeText([model, variant].filter(Boolean).join(' '));
+  value = value.replace(/&/g, ' ');
   value = value.replace(/\bmo pura\b/g, 'm0 pura');
   value = value.replace(new RegExp(`^${escapeRegExp(normalizedBrand)}\\s+`, 'i'), '');
   value = value.replace(/([a-z]\d+)\((\d+)\)/g, '$1 $2');
   value = value.replace(/\b(dx\d+)(max|mk2)\b/g, '$1 $2');
+  value = value.replace(/\bmk\s+ii\b/g, 'mkii');
+  value = value.replace(/\bmkii\b/g, 'mkii');
   value = value.replace(/\((\d+)\)/g, ' $1 ');
   value = value.replace(/\s*-\s*/g, '-');
   value = value.replace(/(\d)-(?=pro\b)/g, '$1');
-  value = value.replace(/-(?=(ti|titanium|brass|black|aluminum|alloy|stainless|steel)\b)/g, ' ');
+  value = value.replace(/-(?=(master|ti|titanium|brass|black|aluminum|alloy|stainless|steel)\b)/g, ' ');
   value = value.replace(/\s+/g, ' ').trim();
   return value;
 }

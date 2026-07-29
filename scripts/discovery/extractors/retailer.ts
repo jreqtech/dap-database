@@ -15,6 +15,7 @@ const knownBrands = [
   ['Luxury & Precision', /\bLuxury\s*&\s*Precision\b/i],
   ['Moondrop', /\bMoondrop\b/i],
   ['Muse HiFi', /\bMuse\s+HiFi\b/i],
+  ['ONIX', /\bONIX\b/i],
   ['Oriolus', /\bOriolus\b/i],
   ['QLS', /\b(?:QLS|Quloos)\b/i],
   ['Questyle', /\bQuestyle\b/i],
@@ -27,7 +28,7 @@ const knownBrands = [
 
 const productKeywords = /\b(?:dap|digital audio player|audio player|music player|mp3 player|portable player|lossless player)\b/i;
 const rejectKeywords =
-  /\b(?:adapter|amplifier|amp\b|dac\b|dongle|earbud|earphone|headphone|iem\b|cable|case|cover|screen protector|bundle|stack|eartips?|tips?|open box)\b/i;
+  /\b(?:adapter|amplifier|amp\b|dac\b|dongle|earbud|earphone|headphone|iem\b|cable|case|cover|screen protector|bundle|stack|eartips?|tips?|open box|digital\s+transport|digital\s+turntable|desktop\s+player|movable\s+desktop)\b/i;
 const modelStopWords =
   /\b(?:cs\d{4,}|ak\d{4,}|es\d{4,}|dual|quad|octa|android|bluetooth|portable|digital|audio|music|mp3|lossless|hifi|hi-fi|player|dap|dac|amp|amplifier|balanced|streaming|mqa|dsd|pcm|snapdragon|class|way|master|quality|high[- ]?resolution|pre[- ]?order|sale|new)\b/i;
 

@@ -4843,7 +4843,7 @@
     "sourceUrl": "https://ibasso.com/product/dx160/",
     "sourceType": "Official Screenshot",
     "verificationStatus": "Verified - Official Screenshot",
-    "notes": "Verified - Official Screenshot: iBasso DX160 official specifications screenshot confirms Android 8.1, dual CS43198 DACs, 3.5mm PO/LO/coax plus 4.4mm BAL and USB output, 5.0in 1080p screen, PCM 8kHz-384kHz 8/16/24/32bit, native DSD64/128/256, octa-core CPU, 2GB RAM, 32GB ROM, microSD SDHC/SDXC up to 2TB, Wi-Fi 802.11 b/g/n/ac 2.4/5GHz, USB DAC function, MQA and common file format support, 166g weight, and 12h 2020 / 13h 2019 average play time. Battery mAh and mW output not shown in screenshot, so those fields are left blank.\n| Source audit pass9 iBasso: official DX160 manual lists 3200mAh battery and 13h play time. Current row may combine 2019/2020 DX160 revision details, so physical fields such as weight/dimensions should be manually checked before further edits. Headfonics notes iBasso specifies up to 3.2Vrms SE and 6.4Vrms balanced but does not publish confirmed mW ratings at a specific load; simple voltage-to-power extrapolation is not valid for the DX160 buffer design, so SE Power mW and BAL Power mW remain blank. iBasso official product page lists Black, Blue, Red, and Silver selectable finishes. Headfonia lists dimensions as 113 x 69 x 15 mm and directly tested Spotify, TIDAL, and Qobuz on DX160; Apple Music is not listed because compatibility varied by firmware/Google certification. Official iBasso DX160 manual confirms USB Type-C for charging, file transfer, USB DAC operation, and USB digital audio output.",
+    "notes": "Verified - Official Screenshot: iBasso DX160 official specifications screenshot confirms Android 8.1, dual CS43198 DACs, 3.5mm PO/LO/coax plus 4.4mm BAL and USB output, 5.0in 1080p screen, PCM 8kHz-384kHz 8/16/24/32bit, native DSD64/128/256, octa-core CPU, 2GB RAM, 32GB ROM, microSD SDHC/SDXC up to 2TB, Wi-Fi 802.11 b/g/n/ac 2.4/5GHz, USB DAC function, MQA and common file format support, 166g weight, and 12h 2020 / 13h 2019 average play time. Battery mAh and mW output not shown in screenshot, so those fields are left blank.\r\n| Source audit pass9 iBasso: official DX160 manual lists 3200mAh battery and 13h play time. Current row may combine 2019/2020 DX160 revision details, so physical fields such as weight/dimensions should be manually checked before further edits. Headfonics notes iBasso specifies up to 3.2Vrms SE and 6.4Vrms balanced but does not publish confirmed mW ratings at a specific load; simple voltage-to-power extrapolation is not valid for the DX160 buffer design, so SE Power mW and BAL Power mW remain blank. iBasso official product page lists Black, Blue, Red, and Silver selectable finishes. Headfonia lists dimensions as 113 x 69 x 15 mm and directly tested Spotify, TIDAL, and Qobuz on DX160; Apple Music is not listed because compatibility varied by firmware/Google certification. Official iBasso DX160 manual confirms USB Type-C for charging, file transfer, USB DAC operation, and USB digital audio output.",
     "colors": [
       "Black, Blue, Red, Silver"
     ],
@@ -4944,7 +4944,7 @@
     "sourceUrl": "https://ibasso.com/product/dx170/",
     "sourceType": "Official Screenshot",
     "verificationStatus": "Verified - Official Screenshot",
-    "notes": "Verified - Official Screenshot: iBasso DX170 official specifications screenshot confirms Android 11, dual CS43131 DACs, 3.5mm phone/line/coax out, 4.4mm balanced phone out, USB output, 5.0in Sharp 1080x1920 on-cell capacitive touch panel, PCM 8kHz-384kHz 8/16/24/32bit, native DSD64/128/256, RK3566 SoC, 2GB RAM, 32GB ROM, microSD SDHC/SDXC up to 2TB, Wi-Fi 802.11 b/g/n/ac 2.4/5GHz, Bluetooth 5.0, USB DAC function, broad format support, 165g weight, 11h play time, 4.4mm 6.4Vrms, 3.5mm 3.2Vrms, and line out 3.2Vrms. Battery mAh and mW output not shown in screenshot, so those fields are left blank.\n| Source audit pass9 iBasso: official DX170 manual confirms 3200mAh battery, 11h play time, MQA format support, 5GHz Wi-Fi and Bluetooth 5.0; exact Bluetooth codecs remain unfilled because they were not exposed in accessible official text. USB Port: official DX170 user guide identifies the USB C port and states it is used for charging, file transfer/card-reader operation, OTG storage playback, and USB DAC operation. Streaming Services: the DX170 runs Android 11 and supports installing third-party apps through APKPure or downloaded APK files; iBasso firmware V1.06 added Google Play and Apple Music 4.7 support, while earlier firmware improved online streaming-app compatibility. Store structured services as compatible Android apps rather than built-in integrations.",
+    "notes": "Verified - Official Screenshot: iBasso DX170 official specifications screenshot confirms Android 11, dual CS43131 DACs, 3.5mm phone/line/coax out, 4.4mm balanced phone out, USB output, 5.0in Sharp 1080x1920 on-cell capacitive touch panel, PCM 8kHz-384kHz 8/16/24/32bit, native DSD64/128/256, RK3566 SoC, 2GB RAM, 32GB ROM, microSD SDHC/SDXC up to 2TB, Wi-Fi 802.11 b/g/n/ac 2.4/5GHz, Bluetooth 5.0, USB DAC function, broad format support, 165g weight, 11h play time, 4.4mm 6.4Vrms, 3.5mm 3.2Vrms, and line out 3.2Vrms. Battery mAh and mW output not shown in screenshot, so those fields are left blank.\r\n| Source audit pass9 iBasso: official DX170 manual confirms 3200mAh battery, 11h play time, MQA format support, 5GHz Wi-Fi and Bluetooth 5.0; exact Bluetooth codecs remain unfilled because they were not exposed in accessible official text. USB Port: official DX170 user guide identifies the USB C port and states it is used for charging, file transfer/card-reader operation, OTG storage playback, and USB DAC operation. Streaming Services: the DX170 runs Android 11 and supports installing third-party apps through APKPure or downloaded APK files; iBasso firmware V1.06 added Google Play and Apple Music 4.7 support, while earlier firmware improved online streaming-app compatibility. Store structured services as compatible Android apps rather than built-in integrations.",
     "colors": [],
     "images": [
       {
@@ -5165,7 +5165,7 @@
     "sourceUrl": "https://ibasso.com/product/dx240/",
     "sourceType": "Official Screenshot",
     "verificationStatus": "Verified - Official Screenshot",
-    "notes": "Verified - Official Screenshot: iBasso DX240 official specifications screenshot with AMP1 MK3 confirms black/green colors, 5.0in Sharp 1080x1920 on-cell capacitive touch panel, MQA and common audio formats, USB-C 3.1, 2.5mm balanced phone out, 3.5mm single-ended phone out, 3.5mm line out, 3.5mm coaxial out, USB OTG output, Wi-Fi 802.11 b/g/n/ac 2.4/5GHz, Bluetooth 5.0, 4GB LPDDR4X RAM, 64GB ROM, 4400mAh 3.8V Li-polymer battery, 2.5h charging, 11h average play time, 124x71.5x19.4mm size, 205g weight, AMP1 MK3 module, not 4.4mm. Earlier public power figures were replaced with load-matched official manual values.\n| Source audit pass9 iBasso: official DX240 user manual lists 878mW at 32 ohms in the balanced output section. SE output is now filled from the official manual table at 281mW at 32 ohms. | Manual cleanup: official DX240 user manual also lists 281mW at 32 ohms for the single-ended output. DX240 supports two-way Bluetooth 5.0; LDAC, aptX, AAC, and SBC are available for transmit, while Bluetooth DAC receiver mode is limited to AAC and SBC. aptX HD and aptX Adaptive are not added without stronger model-specific documentation. PCM Max uses bit-for-bit local playback up to 32-bit/768kHz; the lower 32-bit/384kHz figure applies to USB DAC input and does not replace local decoding maximum. DSD Max uses native local DSD512 playback; USB digital output is limited to native DSD256 and USB DAC/coax paths have lower DoP limits. Streaming Services lists compatible Android apps installable through APKPure, CoolAPK, web browser, or manual APK; Google Play was not included out of the box on original firmware. Storage Expansion Max is 2TB from the DX240 manual SDHC/SDXC microSD support.",
+    "notes": "Verified - Official Screenshot: iBasso DX240 official specifications screenshot with AMP1 MK3 confirms black/green colors, 5.0in Sharp 1080x1920 on-cell capacitive touch panel, MQA and common audio formats, USB-C 3.1, 2.5mm balanced phone out, 3.5mm single-ended phone out, 3.5mm line out, 3.5mm coaxial out, USB OTG output, Wi-Fi 802.11 b/g/n/ac 2.4/5GHz, Bluetooth 5.0, 4GB LPDDR4X RAM, 64GB ROM, 4400mAh 3.8V Li-polymer battery, 2.5h charging, 11h average play time, 124x71.5x19.4mm size, 205g weight, AMP1 MK3 module, not 4.4mm. Earlier public power figures were replaced with load-matched official manual values.\r\n| Source audit pass9 iBasso: official DX240 user manual lists 878mW at 32 ohms in the balanced output section. SE output is now filled from the official manual table at 281mW at 32 ohms. | Manual cleanup: official DX240 user manual also lists 281mW at 32 ohms for the single-ended output. DX240 supports two-way Bluetooth 5.0; LDAC, aptX, AAC, and SBC are available for transmit, while Bluetooth DAC receiver mode is limited to AAC and SBC. aptX HD and aptX Adaptive are not added without stronger model-specific documentation. PCM Max uses bit-for-bit local playback up to 32-bit/768kHz; the lower 32-bit/384kHz figure applies to USB DAC input and does not replace local decoding maximum. DSD Max uses native local DSD512 playback; USB digital output is limited to native DSD256 and USB DAC/coax paths have lower DoP limits. Streaming Services lists compatible Android apps installable through APKPure, CoolAPK, web browser, or manual APK; Google Play was not included out of the box on original firmware. Storage Expansion Max is 2TB from the DX240 manual SDHC/SDXC microSD support.",
     "colors": [
       "Black",
       "Green"
@@ -9114,7 +9114,7 @@
     "sourceUrl": "https://ibasso.com/uploadfiles/download/DX270UserManual.pdf",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: iBasso's DX270 user manual verifies the 8-channel discrete R2R Ultra DAC, FPGA-Master 3.0, 5.5in 1080 x 2160 display, Snapdragon 665, 4GB RAM, 128GB storage, Android 13 plus Mango OS, microSD up to 2TB, Bluetooth 5.0, 5GHz Wi-Fi, USB 3.1 over USB-C, USB DAC, mini coaxial output, 3.5mm SE phone/line out, 4.4mm balanced phone/line out, PCM 32-bit/768kHz, native DSD512, and 13.5h average playback. The manual documents 416mW SE at 32 ohms with 12V DC-IN; structured SE power uses this maximum published value, while battery mode is 3Vrms, equivalent to approximately 281mW into 32 ohms. The manual documents 1050mW balanced at 32 ohms on battery power, which remains in the structured BAL power fields. The higher 1575mW balanced 12V DC-IN figure is documented but not used as the generic structured balanced value.\n| Source audit pass9 iBasso: exact-model retailer technical listing gives 265g weight and 136 x 73.5 x 19 mm dimensions. These should be replaced by official manual values if the accessible official PDF text exposes the same physical table later. Streaming Services reflects non-SRC Android 13 with compatible third-party Android applications; Mango OS itself is for local playback and does not run Android streaming apps.",
+    "notes": "Verified - Official: iBasso's DX270 user manual verifies the 8-channel discrete R2R Ultra DAC, FPGA-Master 3.0, 5.5in 1080 x 2160 display, Snapdragon 665, 4GB RAM, 128GB storage, Android 13 plus Mango OS, microSD up to 2TB, Bluetooth 5.0, 5GHz Wi-Fi, USB 3.1 over USB-C, USB DAC, mini coaxial output, 3.5mm SE phone/line out, 4.4mm balanced phone/line out, PCM 32-bit/768kHz, native DSD512, and 13.5h average playback. The manual documents 416mW SE at 32 ohms with 12V DC-IN; structured SE power uses this maximum published value, while battery mode is 3Vrms, equivalent to approximately 281mW into 32 ohms. The manual documents 1050mW balanced at 32 ohms on battery power, which remains in the structured BAL power fields. The higher 1575mW balanced 12V DC-IN figure is documented but not used as the generic structured balanced value.\r\n| Source audit pass9 iBasso: exact-model retailer technical listing gives 265g weight and 136 x 73.5 x 19 mm dimensions. These should be replaced by official manual values if the accessible official PDF text exposes the same physical table later. Streaming Services reflects non-SRC Android 13 with compatible third-party Android applications; Mango OS itself is for local playback and does not run Android streaming apps.",
     "colors": [
       "Grey",
       "Silver"
@@ -12938,7 +12938,7 @@
     "sourceUrl": "https://ibasso.com/product/dx220/",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: Official iBasso product page identifies DX220, $899 and discontinued status. This row is explicitly the stock AMP1 MKII configuration to avoid mixing modular amp-card specifications. Secondary exact-model documentation verifies Android 8, dual ES9028PRO, 4GB/64GB, 5.0in display, 4400mAh, Bluetooth 5, dual-band Wi-Fi and dimensions. The official DX220 user guide additionally verifies a shared mini optical/coaxial digital output port.\n| Source audit pass9 iBasso: exact-model DX220 review/spec context lists about 8-10h rated runtime for the stock AMP1 MKII setup; structured Battery Life Hours uses 10 while the range remains in Notes. AMP1 MKII power update: AudioKey reproduces AMP1 MKII output levels of 3.1Vrms from the 3.5mm headphone output and 6.2Vrms from the 2.5mm balanced headphone output. Headfonics states these translate roughly to 320mW per channel into 32Ω single-ended and 1.2W per channel into 32Ω balanced. Structured power fields therefore use calculated 32Ω values for the stock AMP1 MKII card; do not apply them to other DX220 amp modules.",
+    "notes": "Verified - Official: Official iBasso product page identifies DX220, $899 and discontinued status. This row is explicitly the stock AMP1 MKII configuration to avoid mixing modular amp-card specifications. Secondary exact-model documentation verifies Android 8, dual ES9028PRO, 4GB/64GB, 5.0in display, 4400mAh, Bluetooth 5, dual-band Wi-Fi and dimensions. The official DX220 user guide additionally verifies a shared mini optical/coaxial digital output port.\r\n| Source audit pass9 iBasso: exact-model DX220 review/spec context lists about 8-10h rated runtime for the stock AMP1 MKII setup; structured Battery Life Hours uses 10 while the range remains in Notes. AMP1 MKII power update: AudioKey reproduces AMP1 MKII output levels of 3.1Vrms from the 3.5mm headphone output and 6.2Vrms from the 2.5mm balanced headphone output. Headfonics states these translate roughly to 320mW per channel into 32Ω single-ended and 1.2W per channel into 32Ω balanced. Structured power fields therefore use calculated 32Ω values for the stock AMP1 MKII card; do not apply them to other DX220 amp modules.",
     "colors": [],
     "images": [
       {
@@ -22415,6 +22415,103 @@
         "credit": "",
         "sourceUrl": "",
         "type": ""
+      }
+    ]
+  },
+  {
+    "id": "shanling-q2",
+    "brand": "Shanling",
+    "model": "Q2",
+    "variant": "",
+    "releaseYear": 2026,
+    "status": "Upcoming",
+    "msrpUsd": 206.5,
+    "soc": "Ingenic X2000",
+    "os": "MTouch OS",
+    "ramGb": null,
+    "storageGb": null,
+    "microSd": true,
+    "batteryMah": 2000,
+    "dac": "4x CS43131",
+    "amp": "",
+    "has25mm": false,
+    "has35mm": true,
+    "has44mm": true,
+    "has635mm": false,
+    "sePowerMw": 120,
+    "balPowerMw": 425,
+    "bluetooth": true,
+    "wifi": true,
+    "cellular": false,
+    "has4g": false,
+    "has5g": false,
+    "bluetoothVersion": "5.2",
+    "bluetoothCodecs": [
+      "TX",
+      "RX: LDAC",
+      "aptX HD",
+      "aptX",
+      "AAC",
+      "SBC"
+    ],
+    "usbDac": true,
+    "lineOut": false,
+    "coaxOut": false,
+    "opticalOut": false,
+    "balancedOutputType": "4.4mm",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
+    "seOutputImpedanceOhm": "<1.4",
+    "balOutputImpedanceOhm": "<1.8",
+    "displaySize": "2.09in",
+    "weight": "83g",
+    "dimensions": "80 x 50 x 13.5 mm",
+    "pcmMax": "32-bit/768kHz",
+    "dsdMax": "DSD512",
+    "mqa": false,
+    "streamingServices": [
+      "DLNA",
+      "AirPlay",
+      "QPlay"
+    ],
+    "wifiBands": "2.4GHz / 5GHz",
+    "usbPort": "USB-C",
+    "batteryLifeHours": "13.5",
+    "storageExpansionMax": "2TB",
+    "officialUrl": "",
+    "officialStoreUrl": "",
+    "buyLinks": [],
+    "lastUpdated": "2026-07-29T22:00:00+08:00",
+    "lastUpdatedCommit": "",
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "HiFiHub",
+        "url": "https://www.hifihub.com.br/en/spoilers/shanling-q2-ipod-inspired-dap-gets-price-and-specifications"
+      },
+      {
+        "label": "X post",
+        "url": "https://x.com/LeoUila/status/2080504883413934135"
+      }
+    ],
+    "reviewNotes": "Exact launch/review coverage not yet available; row is based on supplied Shanling promotional/spec screenshots plus current web reporting.",
+    "sourceUrl": "https://www.hifihub.com.br/en/spoilers/shanling-q2-ipod-inspired-dap-gets-price-and-specifications",
+    "sourceType": "Web",
+    "verificationStatus": "Verified - Web",
+    "notes": "Verified - Web/Screenshot: maintainer-supplied Shanling Q2 promotional/specification screenshots identify Q2 as a lossless portable player and verify 80 x 50 x 13.5 mm dimensions, aluminum-alloy chassis with glass back panel, 83g weight, 2.09in 375 x 320 touchscreen, X2000 processor, MTouch OS, four CS43131 DAC chips, 2000mAh battery, 13.5h maximum battery life through 3.5mm SE, 12.5h through 4.4mm balanced, and 16.5h Bluetooth LDAC playback, 3.5mm single-ended and 4.4mm balanced headphone outputs, Bluetooth 5.2, dual-band Wi-Fi with DLNA / AirPlay / QPlay, bidirectional USB Audio / USB DAC capability, microSD/TF expansion up to 2TB with NTFS/FAT32/exFAT support, PCM 32-bit/768kHz and DSD512 support, gain settings Low / High, and Black / Silver / Orange colors. Supplied specification screenshot lists Bluetooth transmit and receive codec support for LDAC / aptX HD / aptX / AAC / SBC. Structured output power uses official high-gain 32-ohm values: 120mW single-ended and 425mW balanced. Official output impedance is below 1.4 ohms SE and below 1.8 ohms balanced. HiFiHub reports mainland China availability from August 4 to August 11 at CNY1398, approximately US$206.50, with no current international release date or official USD pricing. Supplied Chinese presale image shows JD Shanling official flagship-store presale opening July 29 at 20:00 and an introductory launch price of CNY1258; MSRP USD remains blank because no official USD MSRP was supplied.",
+    "colors": [
+      "Black",
+      "Silver",
+      "Orange"
+    ],
+    "images": [
+      {
+        "url": "",
+        "filename": "shanling-q2.webp",
+        "alt": "Shanling Q2 digital audio player",
+        "credit": "",
+        "sourceUrl": "",
+        "type": "product"
       }
     ]
   },

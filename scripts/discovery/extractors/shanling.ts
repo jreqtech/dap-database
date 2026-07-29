@@ -14,6 +14,7 @@ export function extractShanling(html: string, source: DiscoverySource): Discover
       .replace(/\s+/g, ' ')
       .trim();
     if (!name) continue;
+    if (/^M30$/i.test(name)) continue;
 
     products.push({
       brand: source.brand,

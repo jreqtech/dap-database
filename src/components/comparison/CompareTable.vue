@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 import type { Dap } from '../../types/dap';
 import { comparisonSpecGroups, dapDisplayName } from '../../utils/dapSpecs';
 
@@ -16,12 +16,16 @@ interface LinkRow {
 
 const props = defineProps<{
   daps: Array<Dap | null>;
+  showMobileStickyNames?: boolean;
 }>();
 
 const expandedNotes = ref(new Set<number>());
 const expandedLinkCells = ref(new Set<string>());
+const isCompactCompare = ref(false);
+let compactMediaQuery: MediaQueryList | null = null;
 
 const selectedDaps = computed(() => props.daps.filter((dap): dap is Dap => Boolean(dap)));
+const tableDaps = computed(() => (isCompactCompare.value ? props.daps.slice(0, 2) : props.daps));
 
 const linkRowDefinitions: LinkRow[] = [
   {
@@ -106,6 +110,20 @@ function hiddenLinkCount(row: LinkRow, dap: Dap, index: number): number {
 function expandLinks(rowKey: string, index: number) {
   expandedLinkCells.value = new Set(expandedLinkCells.value).add(linkCellKey(rowKey, index));
 }
+
+function syncCompactCompare(event?: MediaQueryListEvent) {
+  isCompactCompare.value = event?.matches ?? Boolean(compactMediaQuery?.matches);
+}
+
+onMounted(() => {
+  compactMediaQuery = window.matchMedia('(max-width: 760px)');
+  syncCompactCompare();
+  compactMediaQuery.addEventListener('change', syncCompactCompare);
+});
+
+onBeforeUnmount(() => {
+  compactMediaQuery?.removeEventListener('change', syncCompactCompare);
+});
 </script>
 
 <template>
@@ -113,15 +131,26 @@ function expandLinks(rowKey: string, index: number) {
     <div class="compare-table-scroll">
       <table class="compare-table">
         <colgroup>
-          <col class="compare-table__group-col" />
+          <col v-if="!isCompactCompare" class="compare-table__group-col" />
           <col class="compare-table__spec-col" />
-          <col v-for="(_, index) in daps" :key="`dap-col-${index}`" class="compare-table__dap-col" />
+          <col v-for="(_, index) in tableDaps" :key="`dap-col-${index}`" class="compare-table__dap-col" />
         </colgroup>
+        <thead v-if="isCompactCompare && props.showMobileStickyNames" class="compare-table__mobile-sticky-head">
+          <tr>
+            <th scope="col" aria-label="Specification"></th>
+            <th v-for="(dap, index) in tableDaps" :key="`mobile-head-${index}`" scope="col">
+              {{ dap ? dapDisplayName(dap) : 'Select DAP' }}
+            </th>
+          </tr>
+        </thead>
         <tbody>
           <template v-for="group in comparisonSpecGroups" :key="group.key">
+            <tr v-if="isCompactCompare" class="compare-table__mobile-section">
+              <th :colspan="tableDaps.length + 1" scope="colgroup">{{ group.label }}</th>
+            </tr>
             <tr v-for="(row, rowIndex) in group.rows" :key="`${group.key}-${row.key}`">
               <th
-                v-if="rowIndex === 0"
+                v-if="!isCompactCompare && rowIndex === 0"
                 class="compare-table__group-cell"
                 :rowspan="group.rows.length"
                 scope="rowgroup"
@@ -129,17 +158,20 @@ function expandLinks(rowKey: string, index: number) {
                 {{ group.label }}
               </th>
               <th scope="row">{{ row.label }}</th>
-              <td v-for="(dap, index) in daps" :key="`${row.key}-${index}`">
+              <td v-for="(dap, index) in tableDaps" :key="`${row.key}-${index}`">
                 <span :class="{ 'compare-muted-value': !dap || !row.value(dap).trim() }">
                   {{ dap ? displayValue(row.value(dap)) : '' }}
                 </span>
               </td>
             </tr>
           </template>
+          <tr v-if="isCompactCompare" class="compare-table__mobile-section">
+            <th :colspan="tableDaps.length + 1" scope="colgroup">Notes</th>
+          </tr>
           <tr class="compare-table__section-start">
-            <th class="compare-table__group-cell" scope="rowgroup">Notes</th>
+            <th v-if="!isCompactCompare" class="compare-table__group-cell" scope="rowgroup">Notes</th>
             <th scope="row">Notes</th>
-            <td v-for="(dap, index) in daps" :key="`notes-${index}`">
+            <td v-for="(dap, index) in tableDaps" :key="`notes-${index}`">
               <div class="compare-note" :class="{ 'is-collapsed': isLongNote(dap) && !isNoteExpanded(index) }">
                 {{ noteValue(dap) }}
               </div>
@@ -154,13 +186,16 @@ function expandLinks(rowKey: string, index: number) {
             </td>
           </tr>
           <template v-if="visibleLinkRows.length">
+            <tr v-if="isCompactCompare" class="compare-table__mobile-section">
+              <th :colspan="tableDaps.length + 1" scope="colgroup">Links</th>
+            </tr>
             <tr
               v-for="(row, rowIndex) in visibleLinkRows"
               :key="`links-${row.key}`"
               :class="{ 'compare-table__section-start': rowIndex === 0 }"
             >
               <th
-                v-if="rowIndex === 0"
+                v-if="!isCompactCompare && rowIndex === 0"
                 class="compare-table__group-cell"
                 :rowspan="visibleLinkRows.length"
                 scope="rowgroup"
@@ -168,7 +203,7 @@ function expandLinks(rowKey: string, index: number) {
                 Links
               </th>
               <th scope="row">{{ row.label }}</th>
-              <td v-for="(dap, index) in daps" :key="`${row.key}-${index}`">
+              <td v-for="(dap, index) in tableDaps" :key="`${row.key}-${index}`">
                 <div v-if="dap && row.links(dap).length" class="compare-link-list">
                   <a
                     v-for="link in visibleLinks(row, dap, index)"

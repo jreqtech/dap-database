@@ -17,6 +17,9 @@ const dapBySlug = computed(() => new Map(props.daps.map((dap) => [dapSlug(dap), 
 const selectedDaps = computed(() => selectedIds.value.map((id) => props.daps.find((dap) => dap.id === id) ?? null));
 const selectedDapIds = computed(() => selectedDaps.value.filter((dap): dap is Dap => Boolean(dap)).map((dap) => dap.id));
 const selectedCount = computed(() => selectedDapIds.value.length);
+const compareColumnsRef = ref<HTMLElement | null>(null);
+const showMobileStickyNames = ref(false);
+let compactMediaQuery: MediaQueryList | null = null;
 
 function parseCompareSlugs(hash: string): string[] {
   const queryStart = hash.indexOf('?');
@@ -90,16 +93,33 @@ function handleHashChange() {
   if (window.location.hash.startsWith('#/compare')) syncFromHash();
 }
 
+function syncMobileStickyNames() {
+  const isCompact = Boolean(compactMediaQuery?.matches);
+  const headerBottom = compareColumnsRef.value?.getBoundingClientRect().bottom ?? Number.POSITIVE_INFINITY;
+  showMobileStickyNames.value = isCompact && headerBottom <= 0;
+}
+
 onMounted(() => {
   syncFromHash();
+  compactMediaQuery = window.matchMedia('(max-width: 760px)');
+  syncMobileStickyNames();
   window.addEventListener('hashchange', handleHashChange);
+  window.addEventListener('scroll', syncMobileStickyNames, { passive: true });
+  window.addEventListener('resize', syncMobileStickyNames);
+  compactMediaQuery.addEventListener('change', syncMobileStickyNames);
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener('hashchange', handleHashChange);
+  window.removeEventListener('scroll', syncMobileStickyNames);
+  window.removeEventListener('resize', syncMobileStickyNames);
+  compactMediaQuery?.removeEventListener('change', syncMobileStickyNames);
 });
 
-watch(() => props.daps, syncFromHash);
+watch(() => props.daps, () => {
+  syncFromHash();
+  syncMobileStickyNames();
+});
 </script>
 
 <template>
@@ -116,7 +136,7 @@ watch(() => props.daps, syncFromHash);
     </header>
 
     <div class="compare-sheet">
-      <div class="compare-columns">
+      <div ref="compareColumnsRef" class="compare-columns">
         <div class="compare-side-blank" aria-hidden="true"></div>
         <CompareProductHeader
           v-for="(dap, index) in selectedDaps"
@@ -132,7 +152,7 @@ watch(() => props.daps, syncFromHash);
         />
       </div>
 
-      <CompareTable v-if="selectedCount >= 1" :daps="selectedDaps" />
+      <CompareTable v-if="selectedCount >= 1" :daps="selectedDaps" :show-mobile-sticky-names="showMobileStickyNames" />
     </div>
   </main>
 </template>
