@@ -14,7 +14,7 @@ Do not add rows for:
 
 - USB dongle DAC/amps
 - desktop DACs or amps
-- AC-powered desktop transports, music servers, or digital bridges
+- digital transports, music servers, digital bridges, or SD-card transport players
 - Bluetooth receivers without standalone playback
 - accessories, docks, cables, or modules by themselves
 - smartphones or audio-focused phones
@@ -64,7 +64,7 @@ If only one secondary source is available, the row may be added as Partial or Un
 
 Do not guess specs from memory.
 
-Digital transport DAPs are in scope when they are standalone portable library players, but they must be clearly identified in Notes. Do not mark digital-output jacks as analog headphone outputs, and leave DAC, amp, and analog power fields blank unless an internal analog stage is verified.
+Transport-style source devices are out of scope even when they are portable or play from local storage. A roadmap candidate should be a standalone DAP with normal onboard playback and usable headphone or line-level audio output, not only a digital output path to another DAC.
 
 ## Review Link Rules
 
@@ -161,11 +161,11 @@ Confirm whether hyphenated and non-hyphenated names are aliases before adding. D
 
 ### QLS / Quloos
 
-- QLS QA660
+No current QLS/Quloos roadmap candidates.
 
 Scope note:
 
-Discovery deliberately excludes QLS desktop, bridge, turntable, and transport-style products such as QA390, QA390LE/MOD/QA390V2, QA661, QA662, and QA860. Only add QLS rows when sources clearly identify a standalone portable DAP with local playback, not a computer bridge, digital transport, or movable desktop player.
+Discovery deliberately excludes QLS desktop, bridge, turntable, SD-card player, and transport-style products such as QA390, QA390LE/MOD/QA390V2, QA660, QA661, QA662, and QA860. Only add QLS rows when sources clearly identify a standalone portable DAP with local playback and onboard analog audio output, not a computer bridge, digital transport, or movable desktop player.
 
 ### Other Modern / Relevant DAPs
 
