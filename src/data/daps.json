@@ -64,6 +64,7 @@
       "AWA",
       "Yandex Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "20",
@@ -169,6 +170,7 @@
       "AWA",
       "Yandex Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -287,6 +289,7 @@
       "AWA",
       "Yandex Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -392,6 +395,7 @@
       "AWA",
       "Yandex Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "13",
@@ -499,6 +503,7 @@
       "AWA",
       "Yandex Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "11",
@@ -603,6 +608,7 @@
       "YouTube Music",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "16",
@@ -708,6 +714,7 @@
       "YouTube Music",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12.5",
@@ -806,6 +813,7 @@
     "dsdMax": "DSD64",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "20",
@@ -905,6 +913,7 @@
       "AirPlay",
       "DLNA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -1002,6 +1011,7 @@
       "AirPlay",
       "DLNA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "13",
@@ -1101,6 +1111,7 @@
       "DLNA",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "14",
@@ -1200,6 +1211,7 @@
       "DLNA",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "11.5",
@@ -1299,6 +1311,7 @@
       "DLNA",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "11.5",
@@ -1402,6 +1415,7 @@
       "DLNA",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "14",
@@ -1506,6 +1520,7 @@
       "AirPlay",
       "DLNA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "15",
@@ -1609,6 +1624,7 @@
       "DLNA",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10.5",
@@ -1720,6 +1736,7 @@
       "AirPlay",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Dual USB-C",
     "batteryLifeHours": "10",
@@ -1827,6 +1844,7 @@
       "AirPlay",
       "DLNA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.0 data/charging + USB-C power input",
     "batteryLifeHours": "15",
@@ -1937,6 +1955,7 @@
       "DLNA",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Dual USB-C: USB 3.0 data/charging + dedicated power input",
     "batteryLifeHours": "10.5",
@@ -2041,6 +2060,7 @@
       "DLNA",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Dual USB-C: USB 3.0 data/charging + dedicated power input",
     "batteryLifeHours": "10.5",
@@ -2140,6 +2160,12 @@
     "streamingServices": [
       "AirPlay"
     ],
+    "playerFeatures": [
+      {
+        "label": "Lyrics Support",
+        "supported": true
+      }
+    ],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -2173,7 +2199,7 @@
     "sourceUrl": "https://www.fiio.com/DISC_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO DISC parameters page confirms X2000 SoC, dual CS43131 DACs, Pure Music / USB DAC / USB Audio / Storage modes, Black / Blue / Pink colors, about 77.2g weight, about 68 x 68 x 12.9 mm dimensions, 1.8in 360 x 360 LCD, microSD up to 2TB, 3.5mm single-ended output, 4.4mm balanced output, 3.5mm coaxial output shared with PO, 2.4GHz Wi-Fi with AirPlay, Bluetooth transmission with AAC / SBC / LDAC, USB-C USB 2.0 charging/data, USB DAC / local DAC / USB Audio up to 32-bit/384kHz, local DSD128, coaxial output up to 24-bit/192kHz and DSD64 DoP, 12h battery life for both 3.5mm and 4.4mm test conditions, and high-gain loaded power of 125mW+125mW SE and 280mW+280mW balanced at 32 ohms. Battery capacity remains from prior official/product evidence. Exact SNOWSKY DISC official release identifies Bluetooth 5.4; FiiO separately confirms Bluetooth transmitter support for LDAC, AAC, and SBC.",
+    "notes": "Verified - Official: FiiO DISC parameters page confirms X2000 SoC, dual CS43131 DACs, Pure Music / USB DAC / USB Audio / Storage modes, Black / Blue / Pink colors, about 77.2g weight, about 68 x 68 x 12.9 mm dimensions, 1.8in 360 x 360 LCD, microSD up to 2TB, 3.5mm single-ended output, 4.4mm balanced output, 3.5mm coaxial output shared with PO, 2.4GHz Wi-Fi with AirPlay, Bluetooth transmission with AAC / SBC / LDAC, USB-C USB 2.0 charging/data, USB DAC / local DAC / USB Audio up to 32-bit/384kHz, local DSD128, coaxial output up to 24-bit/192kHz and DSD64 DoP, 12h battery life for both 3.5mm and 4.4mm test conditions, and high-gain loaded power of 125mW+125mW SE and 280mW+280mW balanced at 32 ohms. Battery capacity remains from prior official/product evidence. Exact SNOWSKY DISC official release identifies Bluetooth 5.4; FiiO separately confirms Bluetooth transmitter support for LDAC, AAC, and SBC. | Player Features: FiiO DISC product page confirms lyrics display and states that LRC lyrics are supported.",
     "colors": [
       "Black",
       "Blue",
@@ -2237,6 +2263,12 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [
+      {
+        "label": "Lyrics Support",
+        "supported": true
+      }
+    ],
     "wifiBands": "",
     "usbPort": "Type-C charging/data",
     "batteryLifeHours": "15",
@@ -2270,7 +2302,7 @@
     "sourceUrl": "https://www.fiio.com/echomini_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO ECHO MINI product and parameter pages confirm RTOS, dual CS43131 DACs, 512MB/8GB internal storage configurations, 1.99in 170 x 320 IPS full-view HD color display, Black / Sky Blue (Cyan) / Pink / Titanium Gold colors, 80 x 54.5 x 14.5 mm dimensions, 55g weight, 1100mAh lithium battery, 15h battery life at 40mV output amplitude, Type-C charging/data, microSD up to 256GB, 3.5mm single-ended and 4.4mm balanced outputs, Bluetooth 5.3 with SBC transmission, firmware upgrade over USB, PCM/WAV/FLAC/APE up to 24-bit/192kHz, DSD64/128/256 support, and no SACD/DTS support. Structured output power uses official 32-ohm values: 100mW + 100mW SE and 250mW + 250mW balanced. Storage GB records the higher documented 8GB internal configuration; the 512MB configuration is retained in Notes rather than split into a storage-only row. The official parameter page does not publish SoC or RAM, so those structured fields remain blank.",
+    "notes": "Verified - Official: FiiO ECHO MINI product and parameter pages confirm RTOS, dual CS43131 DACs, 512MB/8GB internal storage configurations, 1.99in 170 x 320 IPS full-view HD color display, Black / Sky Blue (Cyan) / Pink / Titanium Gold colors, 80 x 54.5 x 14.5 mm dimensions, 55g weight, 1100mAh lithium battery, 15h battery life at 40mV output amplitude, Type-C charging/data, microSD up to 256GB, 3.5mm single-ended and 4.4mm balanced outputs, Bluetooth 5.3 with SBC transmission, firmware upgrade over USB, PCM/WAV/FLAC/APE up to 24-bit/192kHz, DSD64/128/256 support, and no SACD/DTS support. Structured output power uses official 32-ohm values: 100mW + 100mW SE and 250mW + 250mW balanced. Storage GB records the higher documented 8GB internal configuration; the 512MB configuration is retained in Notes rather than split into a storage-only row. The official parameter page does not publish SoC or RAM, so those structured fields remain blank. | Player Features: FiiO ECHO MINI product page confirms album-cover and lyrics display and states that LRC lyrics are supported.",
     "colors": [
       "Black",
       "Sky Blue (Cyan)",
@@ -2333,6 +2365,12 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [
+      {
+        "label": "Lyrics Support",
+        "supported": true
+      }
+    ],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "7",
@@ -2366,7 +2404,7 @@
     "sourceUrl": "https://www.fiio.com/ECHONANO_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO ECHO NANO page and parameter/source screenshots confirm Echo Nano has Black / Titanium / Green / White / Pink / Sky blue / Purple colors, 33.5g weight, 83.5 x 23 x 14 mm dimensions, 0.91-inch OLED, CS43131 DAC, microSD up to 256GB with exFAT/FAT32 support, DSD/WAV/FLAC/APE/MP3/M4A/WMA/OGG format support, local DSD64/128/256 and PCM-family file support up to 24-bit/192kHz, USB DAC support at PCM 16-bit/48kHz, 3.5mm single-ended output, at least 120mW + 120mW output at 32 ohms under THD+N < 1%, 360mAh battery, and about 7h battery life. No 4.4mm listed on official material. FiiO ECHONANO_parameters currently exposes unrelated UTWS5 2025 text in the crawled HTML, so structured Echo Nano values are retained from the official ECHO NANO page and screenshots rather than the bad embedded table. FiiO.eu exact Echo Nano listing shows EUR 59.99 for the Black variant; MSRP USD is taken from the international US-dollar FiiO official AliExpress availability rather than converting the European price. HiFiCat exact retail/spec listing confirms CS43131 DAC, 0.91-inch OLED, 3.5mm SE output, at least 120mW + 120mW at 32 ohms under THD+N <1%, SNR at least 127dB A-weighted at 32 ohms, 0.0006% THD+N, 0.7uV noise floor, PCM 24-bit/192kHz plus DSD64/128/256 native decoding, USB DAC PCM 16-bit/48kHz, TF card up to 256GB, 360mAh battery, about 7h battery life, 81 x 20 x 11 mm dimensions, about 33.5g weight, CNC-machined 6-series aluminum-magnesium alloy shell, and Black / White / Sky Blue / Orange / Titanium / Green / Pink colors. MSRP USD uses the international US$52.56 price reported for FiiO official AliExpress availability; FiiO China separately launched the Echo Nano at an official domestic price of CNY 299.",
+    "notes": "Verified - Official: FiiO ECHO NANO page and parameter/source screenshots confirm Echo Nano has Black / Titanium / Green / White / Pink / Sky blue / Purple colors, 33.5g weight, 83.5 x 23 x 14 mm dimensions, 0.91-inch OLED, CS43131 DAC, microSD up to 256GB with exFAT/FAT32 support, DSD/WAV/FLAC/APE/MP3/M4A/WMA/OGG format support, local DSD64/128/256 and PCM-family file support up to 24-bit/192kHz, USB DAC support at PCM 16-bit/48kHz, 3.5mm single-ended output, at least 120mW + 120mW output at 32 ohms under THD+N < 1%, 360mAh battery, and about 7h battery life. No 4.4mm listed on official material. FiiO ECHONANO_parameters currently exposes unrelated UTWS5 2025 text in the crawled HTML, so structured Echo Nano values are retained from the official ECHO NANO page and screenshots rather than the bad embedded table. FiiO.eu exact Echo Nano listing shows EUR 59.99 for the Black variant; MSRP USD is taken from the international US-dollar FiiO official AliExpress availability rather than converting the European price. HiFiCat exact retail/spec listing confirms CS43131 DAC, 0.91-inch OLED, 3.5mm SE output, at least 120mW + 120mW at 32 ohms under THD+N <1%, SNR at least 127dB A-weighted at 32 ohms, 0.0006% THD+N, 0.7uV noise floor, PCM 24-bit/192kHz plus DSD64/128/256 native decoding, USB DAC PCM 16-bit/48kHz, TF card up to 256GB, 360mAh battery, about 7h battery life, 81 x 20 x 11 mm dimensions, about 33.5g weight, CNC-machined 6-series aluminum-magnesium alloy shell, and Black / White / Sky Blue / Orange / Titanium / Green / Pink colors. MSRP USD uses the international US$52.56 price reported for FiiO official AliExpress availability; FiiO China separately launched the Echo Nano at an official domestic price of CNY 299. | Player Features: FiiO ECHO NANO product page confirms that the OLED display shows track info and lyrics.",
     "colors": [
       "Black",
       "White",
@@ -2436,6 +2474,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz 802.11 b/g/n",
     "usbPort": "Micro-USB 2.0",
     "batteryLifeHours": "10",
@@ -2530,6 +2569,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "8",
@@ -2623,6 +2663,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "29",
@@ -2726,6 +2767,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C / USB 3.2 Gen 2x1",
     "batteryLifeHours": "26",
@@ -2819,6 +2861,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C / USB 3.2 Gen 2x1",
     "batteryLifeHours": "26",
@@ -2917,6 +2960,7 @@
       "AirPlay",
       "HiByLink"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C / USB 2.0",
     "batteryLifeHours": "15",
@@ -3035,6 +3079,36 @@
       "AirPlay",
       "HiByLink"
     ],
+    "playerFeatures": [
+      {
+        "label": "Gapless Playback",
+        "supported": true
+      },
+      {
+        "label": "ReplayGain",
+        "supported": true
+      },
+      {
+        "label": "CUE Sheets",
+        "supported": true
+      },
+      {
+        "label": "Folder Browsing",
+        "supported": true
+      },
+      {
+        "label": "Resume Playback",
+        "supported": true
+      },
+      {
+        "label": "Sleep Timer",
+        "supported": true
+      },
+      {
+        "label": "Lyrics Support",
+        "supported": true
+      }
+    ],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C / USB 2.0",
     "batteryLifeHours": "19",
@@ -3068,7 +3142,7 @@
     "sourceUrl": "https://guide.hiby.com/en/docs/products/audio_player/hiby_r3ii_2025/spec",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: HiBy R3II 2025 guide/spec page confirms Ingenic X1600E master control, 64MB memory, 1Gbit onboard storage, 2.4GHz Wi-Fi, Bluetooth 5.0, 360 x 480 RGB LCD, one TF/microSD slot up to 2TB, RGB + white LED, 1150mAh battery, AXP2101 PMU, 5V/1A charging, USB 2.0 Type-C, power/up/down/volume knob/playback-pause controls, dual CS43198 DACs, 3.5mm phone output, 4.4mm balanced output, HiBy OS Linux 4.4.94, FAT32/exFAT/NTFS and MBR/GPT support, HiByLink, EQ, MSEB, DLNA, AirPlay, Wi-Fi music import, Internet Radio, Tidal, Qobuz, Bluetooth transmit SBC/AAC/aptX/LDAC/UAT, USB Audio output support for PCM 48kHz-768kHz and DSD64-DSD256, USB output up to PCM 384kHz and DSD256 DoP/native, analog output up to PCM 384kHz and DSD256, MQA 4x, and file support including DSD64/128/256, WAV/FLAC/AIFF/ALAC to 384kHz/32-bit, WMA Lossless to 96kHz/24-bit, APE variants, DXD 352.8kHz/24-bit, and common lossy formats. Store page context confirms $179 regular price, 19h playback, 118g weight, 86.9 x 60.6 x 14.5 mm dimensions, and Black / Red / Silver colors; the guide is primary for structured specs. Official guide does not list line out, coax out, optical out, cellular, 4G, or 5G, so those are false. Exact 2025 power ratings: 3.5mm phone output is listed as 112mW in the exact-model manual reproduction; HiBy official store headline lists 340mW@32Ω high output power and the exact-model manual reproduction also lists 340mW from the 4.4mm balanced output. Structured power fields use 112mW SE and 340mW balanced at 32Ω; do not use the older non-2025 R3 II 380mW balanced figure for this revision.",
+    "notes": "Verified - Official: HiBy R3II 2025 guide/spec page confirms Ingenic X1600E master control, 64MB memory, 1Gbit onboard storage, 2.4GHz Wi-Fi, Bluetooth 5.0, 360 x 480 RGB LCD, one TF/microSD slot up to 2TB, RGB + white LED, 1150mAh battery, AXP2101 PMU, 5V/1A charging, USB 2.0 Type-C, power/up/down/volume knob/playback-pause controls, dual CS43198 DACs, 3.5mm phone output, 4.4mm balanced output, HiBy OS Linux 4.4.94, FAT32/exFAT/NTFS and MBR/GPT support, HiByLink, EQ, MSEB, DLNA, AirPlay, Wi-Fi music import, Internet Radio, Tidal, Qobuz, Bluetooth transmit SBC/AAC/aptX/LDAC/UAT, USB Audio output support for PCM 48kHz-768kHz and DSD64-DSD256, USB output up to PCM 384kHz and DSD256 DoP/native, analog output up to PCM 384kHz and DSD256, MQA 4x, and file support including DSD64/128/256, WAV/FLAC/AIFF/ALAC to 384kHz/32-bit, WMA Lossless to 96kHz/24-bit, APE variants, DXD 352.8kHz/24-bit, and common lossy formats. Store page context confirms $179 regular price, 19h playback, 118g weight, 86.9 x 60.6 x 14.5 mm dimensions, and Black / Red / Silver colors; the guide is primary for structured specs. Official guide does not list line out, coax out, optical out, cellular, 4G, or 5G, so those are false. Exact 2025 power ratings: 3.5mm phone output is listed as 112mW in the exact-model manual reproduction; HiBy official store headline lists 340mW@32Ω high output power and the exact-model manual reproduction also lists 340mW from the 4.4mm balanced output. Structured power fields use 112mW SE and 340mW balanced at 32Ω; do not use the older non-2025 R3 II 380mW balanced figure for this revision. | Player Features: HiBy R3II(2025) manual documents gapless playback, ReplayGain, power-off memory playback, sleep shutdown, folder-based music navigation/play-through-folders, and LRC/embedded lyrics support. HiBy official R3 II usage guidance lists CUE among supported playback formats.",
     "colors": [
       "Black",
       "Red",
@@ -3147,6 +3221,7 @@
       "AirPlay",
       "HiByLink"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C / USB 2.0",
     "batteryLifeHours": "20",
@@ -3250,6 +3325,7 @@
       "AirPlay",
       "HiByLink"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C / USB 2.0",
     "batteryLifeHours": "19",
@@ -3341,6 +3417,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB 2.0 / USB 3.2 Gen1",
     "batteryLifeHours": "11",
@@ -3446,6 +3523,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "35",
@@ -3550,6 +3628,7 @@
       "DLNA",
       "HiByLink"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C USB 2.0 / USB 3.2 Gen 1",
     "batteryLifeHours": "13",
@@ -3653,6 +3732,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "8",
@@ -3760,6 +3840,7 @@
       "Roon ARC",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.2 Gen 2",
     "batteryLifeHours": "21",
@@ -3867,6 +3948,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB 2.0",
     "batteryLifeHours": "10",
@@ -3960,6 +4042,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB 3.1",
     "batteryLifeHours": "8.5",
@@ -4054,6 +4137,7 @@
     "dsdMax": "DSD1024",
     "mqa": true,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -4149,6 +4233,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Type-C USB 2.0",
     "batteryLifeHours": "12",
@@ -4242,6 +4327,7 @@
     "dsdMax": "DSD128",
     "mqa": true,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "15",
@@ -4333,6 +4419,7 @@
     "dsdMax": "DSD256",
     "mqa": true,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -4435,6 +4522,7 @@
       "DLNA",
       "AirPlay"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -4532,6 +4620,7 @@
     "dsdMax": "DSD256",
     "mqa": true,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "11",
@@ -4630,6 +4719,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -4718,6 +4808,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -4757,6 +4848,393 @@
         "type": ""
       }
     ]
+  },
+  {
+    "id": "ibasso-dx50",
+    "brand": "iBasso",
+    "model": "DX50",
+    "variant": "",
+    "releaseYear": 2013,
+    "status": "Discontinued",
+    "msrpUsd": 239,
+    "soc": "",
+    "os": "iBasso proprietary player OS",
+    "ramGb": null,
+    "storageGb": 8,
+    "microSd": true,
+    "batteryMah": null,
+    "dac": "Wolfson WM8740",
+    "amp": "9V voltage-swing headphone amp",
+    "has25mm": false,
+    "has35mm": true,
+    "has44mm": false,
+    "has635mm": false,
+    "sePowerMw": 300,
+    "balPowerMw": null,
+    "bluetooth": false,
+    "wifi": false,
+    "cellular": false,
+    "has4g": false,
+    "has5g": false,
+    "bluetoothVersion": "",
+    "bluetoothCodecs": [],
+    "usbDac": false,
+    "lineOut": true,
+    "coaxOut": true,
+    "opticalOut": false,
+    "balancedOutputType": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "",
+    "seOutputImpedanceOhm": "0.5",
+    "balOutputImpedanceOhm": "",
+    "displaySize": "2.4in",
+    "weight": "146g",
+    "dimensions": "64 x 100 x 17 mm",
+    "pcmMax": "24-bit/192kHz",
+    "dsdMax": "",
+    "mqa": false,
+    "streamingServices": [
+      "None"
+    ],
+    "playerFeatures": [],
+    "wifiBands": "",
+    "usbPort": "Micro-USB",
+    "batteryLifeHours": "14",
+    "storageExpansionMax": "2TB",
+    "officialUrl": "https://ibasso.cn/product/dx50",
+    "officialStoreUrl": "",
+    "buyLinks": [],
+    "lastUpdated": "2026-08-04T00:00:00+08:00",
+    "lastUpdatedCommit": "d396a2d",
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/the-dx50-dap-by-ibasso/"
+      },
+      {
+        "label": "Manualzz DX50 manual",
+        "url": "https://manualzz.com/doc/4121740/ibasso-dx50-portable-audio-player-user-guide"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://ibasso.cn/product/dx50",
+    "sourceType": "Official",
+    "verificationStatus": "Verified - Official",
+    "notes": "Verified - Official/Review: iBasso's exact DX50 product page identifies DX50 as a digital lossless music player and verifies WM8740 DAC, built-in 9V headphone amplifier, 2.4in 320 x 240 IPS capacitive touchscreen, 3.5mm headphone output, 3.5mm line out, coaxial output up to 24-bit/192kHz, 8GB internal storage, microSD SDHC/SDXC support up to 2TB, APE/FLAC/WAV/WMA/AAC/ALAC/OGG/MP3 playback, replaceable battery compatibility with Samsung S3 batteries, 14h playback, and three gain settings. Exact manual mirrors corroborate 64 x 100 x 17 mm dimensions, 146g weight, output impedance below 0.5 ohm, and the same storage/format/output feature set. Headfonics exact-model coverage lists DX50 at $239. Structured SE Power mW is calculated from iBasso's official high-gain 3.1Vrms output level into the database's 32-ohm comparison load, yielding about 300mW; iBasso does not publish a direct mW rating. Bluetooth, Wi-Fi, streaming, USB DAC, balanced output, and optical output are not documented in the verified source set.",
+    "colors": [],
+    "images": []
+  },
+  {
+    "id": "ibasso-dx80",
+    "brand": "iBasso",
+    "model": "DX80",
+    "variant": "",
+    "releaseYear": 2015,
+    "status": "Discontinued",
+    "msrpUsd": 359,
+    "soc": "",
+    "os": "iBasso proprietary player OS",
+    "ramGb": null,
+    "storageGb": null,
+    "microSd": true,
+    "batteryMah": 3600,
+    "dac": "Dual Cirrus Logic CS4398",
+    "amp": "",
+    "has25mm": false,
+    "has35mm": true,
+    "has44mm": false,
+    "has635mm": false,
+    "sePowerMw": 260,
+    "balPowerMw": null,
+    "bluetooth": false,
+    "wifi": false,
+    "cellular": false,
+    "has4g": false,
+    "has5g": false,
+    "bluetoothVersion": "",
+    "bluetoothCodecs": [],
+    "usbDac": true,
+    "lineOut": true,
+    "coaxOut": true,
+    "opticalOut": false,
+    "balancedOutputType": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "",
+    "seOutputImpedanceOhm": "",
+    "balOutputImpedanceOhm": "",
+    "displaySize": "3.2in",
+    "weight": "178g",
+    "dimensions": "63 x 17 x 120 mm",
+    "pcmMax": "",
+    "dsdMax": "DSD128",
+    "mqa": false,
+    "streamingServices": [
+      "None"
+    ],
+    "playerFeatures": [],
+    "wifiBands": "",
+    "usbPort": "Micro-B USB",
+    "batteryLifeHours": "13",
+    "storageExpansionMax": "2TB total across two slots",
+    "officialUrl": "https://www.hibino-intersound.co.jp/information/4798.html",
+    "officialStoreUrl": "",
+    "buyLinks": [],
+    "lastUpdated": "2026-08-04T00:00:00+08:00",
+    "lastUpdatedCommit": "d396a2d",
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/the-dx80-by-ibasso/"
+      },
+      {
+        "label": "Headfonia",
+        "url": "https://www.headfonia.com/review-ibasso-dx80/"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://www.hibino-intersound.co.jp/information/4798.html",
+    "sourceType": "Official",
+    "verificationStatus": "Verified - Official",
+    "notes": "Verified - Official Distributor/Review: Hibino's exact iBasso DX80 launch/specification page identifies DX80 as a high-resolution music player and verifies dual CS4398 DACs in mono mode, XMOS USB receiver for USB DAC operation, two microSDHC/microSDXC slots, 3.2in 480 x 800 IPS touchscreen, 150-step digital volume, 3600mAh battery, approximately 13h playback, 3.5mm headphone output, line output, coaxial output, Micro-B USB, 63 x 17 x 120 mm dimensions, 178g weight, FLAC/WAV/DSD/DFF/DSF/DXD/APE/WMA/AAC/ALAC/AIFF/OGG/MP3 playback, and 260mW + 260mW output at 32 ohms. Exact Headfonics and Headfonia coverage support 2015 release timing, standalone DAP identity, $359 launch pricing, DSD128 playback, and lack of wireless streaming. No Bluetooth, Wi-Fi, balanced output, cellular, or installable streaming platform is documented.",
+    "colors": [],
+    "images": []
+  },
+  {
+    "id": "ibasso-dx90",
+    "brand": "iBasso",
+    "model": "DX90",
+    "variant": "",
+    "releaseYear": 2014,
+    "status": "Discontinued",
+    "msrpUsd": 419,
+    "soc": "",
+    "os": "iBasso proprietary player OS",
+    "ramGb": null,
+    "storageGb": 8,
+    "microSd": true,
+    "batteryMah": null,
+    "dac": "Dual ESS ES9018K2M",
+    "amp": "OPA1611 + BUF634",
+    "has25mm": false,
+    "has35mm": true,
+    "has44mm": false,
+    "has635mm": false,
+    "sePowerMw": 275,
+    "balPowerMw": null,
+    "bluetooth": false,
+    "wifi": false,
+    "cellular": false,
+    "has4g": false,
+    "has5g": false,
+    "bluetoothVersion": "",
+    "bluetoothCodecs": [],
+    "usbDac": false,
+    "lineOut": true,
+    "coaxOut": true,
+    "opticalOut": false,
+    "balancedOutputType": "",
+    "sePowerLoad": "16 ohms",
+    "balPowerLoad": "",
+    "seOutputImpedanceOhm": "0.1",
+    "balOutputImpedanceOhm": "",
+    "displaySize": "2.4in",
+    "weight": "140g",
+    "dimensions": "64 x 100 x 17 mm",
+    "pcmMax": "24-bit/192kHz",
+    "dsdMax": "DSD",
+    "mqa": false,
+    "streamingServices": [
+      "None"
+    ],
+    "playerFeatures": [],
+    "wifiBands": "",
+    "usbPort": "Micro-USB",
+    "batteryLifeHours": "8.5",
+    "storageExpansionMax": "2TB",
+    "officialUrl": "https://ibasso.cn/product/dx90",
+    "officialStoreUrl": "",
+    "buyLinks": [],
+    "lastUpdated": "2026-08-04T00:00:00+08:00",
+    "lastUpdatedCommit": "d396a2d",
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/the-dx90-by-ibasso/"
+      },
+      {
+        "label": "Audioholics",
+        "url": "https://www.audioholics.com/gadget-reviews/ibasso-dx90"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://ibasso.cn/product/dx90",
+    "sourceType": "Official",
+    "verificationStatus": "Verified - Official",
+    "notes": "Verified - Official/Review: iBasso's exact DX90 product page identifies DX90 as a digital lossless music player and verifies dual ES9018-K2M DAC chips in parallel, a built-in 10V headphone amplifier, 2.4in 320 x 240 IPS capacitive touchscreen, 3.5mm headphone output, 3.5mm line output, coaxial output up to 24-bit/192kHz, 8GB internal storage, microSD SDHC/SDXC support up to 2TB, DSD/APE/FLAC/WAV/WMA/AAC/ALAC/OGG/MP3 playback, M3U playlist support, Samsung S3-compatible replaceable battery, 8.5h playback, and three gain settings. Audioholics exact-model review lists MSRP at USD 419 and publishes iBasso's headphone-output measurements including 2.8Vrms high gain, output impedance below 0.1 ohm, and the same 8.5h battery life. Japanese launch coverage identifies the amp stage as OPA1611 + BUF634 and lists 275mW + 275mW output into 16 ohms. No Bluetooth, Wi-Fi, USB DAC, balanced output, cellular, optical output, or onboard streaming is documented in the verified source set.",
+    "colors": [
+      "Black"
+    ],
+    "images": []
+  },
+  {
+    "id": "ibasso-dx100",
+    "brand": "iBasso",
+    "model": "DX100",
+    "variant": "",
+    "releaseYear": 2012,
+    "status": "Discontinued",
+    "msrpUsd": null,
+    "soc": "",
+    "os": "Android 2.3",
+    "ramGb": null,
+    "storageGb": 64,
+    "microSd": true,
+    "batteryMah": 2000,
+    "dac": "ESS ES9018",
+    "amp": "+/-8.5V headphone amplifier",
+    "has25mm": false,
+    "has35mm": true,
+    "has44mm": false,
+    "has635mm": true,
+    "sePowerMw": 245,
+    "balPowerMw": null,
+    "bluetooth": true,
+    "wifi": true,
+    "cellular": false,
+    "has4g": false,
+    "has5g": false,
+    "bluetoothVersion": "",
+    "bluetoothCodecs": [],
+    "usbDac": false,
+    "lineOut": true,
+    "coaxOut": true,
+    "opticalOut": true,
+    "balancedOutputType": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "",
+    "seOutputImpedanceOhm": "",
+    "balOutputImpedanceOhm": "",
+    "displaySize": "3.75in",
+    "weight": "265g",
+    "dimensions": "71.8 x 118 x 27.5 mm",
+    "pcmMax": "24-bit/192kHz",
+    "dsdMax": "",
+    "mqa": false,
+    "streamingServices": [
+      "None"
+    ],
+    "playerFeatures": [],
+    "wifiBands": "",
+    "usbPort": "Micro-USB",
+    "batteryLifeHours": "7",
+    "storageExpansionMax": "32GB",
+    "officialUrl": "https://ibasso.cn/product/dx100",
+    "officialStoreUrl": "",
+    "buyLinks": [],
+    "lastUpdated": "2026-08-04T00:00:00+08:00",
+    "lastUpdatedCommit": "d396a2d",
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/ibasso-dx100-the-last-word-in-daps/"
+      },
+      {
+        "label": "Headfonia",
+        "url": "https://www.headfonia.com/audiophile-dap-2-0-ibassos-dx100/"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://ibasso.cn/product/dx100",
+    "sourceType": "Official",
+    "verificationStatus": "Verified - Official",
+    "notes": "Verified - Official/Review: iBasso's exact DX100 product page identifies DX100 as a digital lossless music player and verifies custom audio playback software on Android 2.3, 24-bit/192kHz decoding, 32-bit ES9018 DAC, built-in +/-8.5V headphone amplifier, 3.75in capacitive touchscreen, 24/192 optical/coaxial output, 3.5mm and 6.3mm headphone outputs, line output, 256-step digital volume, 64GB internal flash, external storage up to 32GB, three gain settings, SRC and digital-filter options, Wi-Fi, Bluetooth, and common lossless/lossy file support. Exact Headfonics review reproduces the specification table with 2000mAh 8.4V Li-polymer battery, 7h music playback, 71.8 x 118 x 27.5 mm dimensions, 265g weight, recommended 8-600 ohm headphone impedance, and high-gain output levels of 125mW at 32 ohms for 2Vrms, 245mW at 32 ohms for 2.8Vrms, and 83mW at 300 ohms for 5Vrms. MSRP USD is left blank because the source set only gives broad 500-1000 USD review category context rather than a precise launch price. No balanced output, cellular, 4G, 5G, USB DAC, or onboard streaming app platform is documented in the verified source set.",
+    "colors": [],
+    "images": []
+  },
+  {
+    "id": "ibasso-dx150",
+    "brand": "iBasso",
+    "model": "DX150",
+    "variant": "",
+    "releaseYear": 2018,
+    "status": "Discontinued",
+    "msrpUsd": 499,
+    "soc": "64-bit 8-core ARM Cortex-A53",
+    "os": "Android 6.0",
+    "ramGb": 2,
+    "storageGb": 32,
+    "microSd": true,
+    "batteryMah": 4400,
+    "dac": "Dual AK4490EQ",
+    "amp": "AMP6 replaceable amp card",
+    "has25mm": true,
+    "has35mm": true,
+    "has44mm": false,
+    "has635mm": false,
+    "sePowerMw": 185,
+    "balPowerMw": 425,
+    "bluetooth": true,
+    "wifi": true,
+    "cellular": false,
+    "has4g": false,
+    "has5g": false,
+    "bluetoothVersion": "4.1",
+    "bluetoothCodecs": [],
+    "usbDac": true,
+    "lineOut": true,
+    "coaxOut": true,
+    "opticalOut": false,
+    "balancedOutputType": "2.5mm",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "32 ohms",
+    "seOutputImpedanceOhm": "",
+    "balOutputImpedanceOhm": "",
+    "displaySize": "4.2in",
+    "weight": "245g",
+    "dimensions": "128.5 x 69 x 19.5 mm",
+    "pcmMax": "32-bit/384kHz",
+    "dsdMax": "DSD256",
+    "mqa": false,
+    "streamingServices": [
+      "Open Android apps"
+    ],
+    "playerFeatures": [],
+    "wifiBands": "2.4GHz / 5GHz",
+    "usbPort": "USB-C",
+    "batteryLifeHours": "10.5",
+    "storageExpansionMax": "2TB",
+    "officialUrl": "",
+    "officialStoreUrl": "",
+    "buyLinks": [
+      {
+        "label": "B&H",
+        "url": "https://www.bhphotovideo.com/c/product/1501083-REG/ibasso_dx150_high_performance_portable.html"
+      }
+    ],
+    "lastUpdated": "2026-08-04T00:00:00+08:00",
+    "lastUpdatedCommit": "d396a2d",
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/dx150/"
+      },
+      {
+        "label": "Headfonics specs",
+        "url": "https://headfonics.com/dx150/3/"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://headfonics.com/dx150/3/",
+    "sourceType": "Review",
+    "verificationStatus": "Verified - Review",
+    "notes": "Verified - Review/Retail: Exact Headfonics DX150 technical specifications verify Android 6.0, 64-bit eight-core A53 CPU, 2GB LPDDR3 RAM, 32GB eMMC storage, dual AK4490EQ DACs, XMOS XU208 USB DAC function, Wi-Fi 802.11 b/g/n/ac on 2.4GHz/5GHz, Bluetooth 4.1, 4400mAh battery, 128.5 x 69 x 19.5 mm dimensions, 245g weight, average 10.5h playback, PCM up to 32-bit/384kHz, DSD256, and stock AMP6 output ratings of 185mW SE and 425mW balanced into 32 ohms. B&H exact retail specifications corroborate 32GB storage, 2GB RAM, microSD/microSDHC/microSDXC support up to 2TB, USB DAC use, 4400mAh battery, USB-C charging, and the included AMP6 amp card. Structured fields describe the stock AMP6 configuration; other replaceable iBasso AMP cards are not separate rows unless their hardware changes are explicitly added later.",
+    "colors": [],
+    "images": []
   },
   {
     "id": "ibasso-dx160",
@@ -4807,6 +5285,7 @@
       "TIDAL",
       "Qobuz"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "USB Type-C",
     "batteryLifeHours": "13",
@@ -4843,7 +5322,7 @@
     "sourceUrl": "https://ibasso.com/product/dx160/",
     "sourceType": "Official Screenshot",
     "verificationStatus": "Verified - Official Screenshot",
-    "notes": "Verified - Official Screenshot: iBasso DX160 official specifications screenshot confirms Android 8.1, dual CS43198 DACs, 3.5mm PO/LO/coax plus 4.4mm BAL and USB output, 5.0in 1080p screen, PCM 8kHz-384kHz 8/16/24/32bit, native DSD64/128/256, octa-core CPU, 2GB RAM, 32GB ROM, microSD SDHC/SDXC up to 2TB, Wi-Fi 802.11 b/g/n/ac 2.4/5GHz, USB DAC function, MQA and common file format support, 166g weight, and 12h 2020 / 13h 2019 average play time. Battery mAh and mW output not shown in screenshot, so those fields are left blank.\r\n| Source audit pass9 iBasso: official DX160 manual lists 3200mAh battery and 13h play time. Current row may combine 2019/2020 DX160 revision details, so physical fields such as weight/dimensions should be manually checked before further edits. Headfonics notes iBasso specifies up to 3.2Vrms SE and 6.4Vrms balanced but does not publish confirmed mW ratings at a specific load; simple voltage-to-power extrapolation is not valid for the DX160 buffer design, so SE Power mW and BAL Power mW remain blank. iBasso official product page lists Black, Blue, Red, and Silver selectable finishes. Headfonia lists dimensions as 113 x 69 x 15 mm and directly tested Spotify, TIDAL, and Qobuz on DX160; Apple Music is not listed because compatibility varied by firmware/Google certification. Official iBasso DX160 manual confirms USB Type-C for charging, file transfer, USB DAC operation, and USB digital audio output.",
+    "notes": "Verified - Official Screenshot: iBasso DX160 official specifications screenshot confirms Android 8.1, dual CS43198 DACs, 3.5mm PO/LO/coax plus 4.4mm BAL and USB output, 5.0in 1080p screen, PCM 8kHz-384kHz 8/16/24/32bit, native DSD64/128/256, octa-core CPU, 2GB RAM, 32GB ROM, microSD SDHC/SDXC up to 2TB, Wi-Fi 802.11 b/g/n/ac 2.4/5GHz, USB DAC function, MQA and common file format support, 166g weight, and 12h 2020 / 13h 2019 average play time. Battery mAh and mW output not shown in screenshot, so those fields are left blank.\n| Source audit pass9 iBasso: official DX160 manual lists 3200mAh battery and 13h play time. Current row may combine 2019/2020 DX160 revision details, so physical fields such as weight/dimensions should be manually checked before further edits. Headfonics notes iBasso specifies up to 3.2Vrms SE and 6.4Vrms balanced but does not publish confirmed mW ratings at a specific load; simple voltage-to-power extrapolation is not valid for the DX160 buffer design, so SE Power mW and BAL Power mW remain blank. iBasso official product page lists Black, Blue, Red, and Silver selectable finishes. Headfonia lists dimensions as 113 x 69 x 15 mm and directly tested Spotify, TIDAL, and Qobuz on DX160; Apple Music is not listed because compatibility varied by firmware/Google certification. Official iBasso DX160 manual confirms USB Type-C for charging, file transfer, USB DAC operation, and USB digital audio output.",
     "colors": [
       "Black, Blue, Red, Silver"
     ],
@@ -4912,6 +5391,7 @@
       "YouTube Music",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "USB Type-C",
     "batteryLifeHours": "11",
@@ -5012,6 +5492,7 @@
       "Roon ARC",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.1",
     "batteryLifeHours": "30",
@@ -5129,6 +5610,7 @@
       "YouTube Music",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "USB-C 3.1",
     "batteryLifeHours": "11",
@@ -5235,6 +5717,7 @@
       "YouTube Music",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.1",
     "batteryLifeHours": "26",
@@ -5331,6 +5814,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C / USB 3.1",
     "batteryLifeHours": "15",
@@ -5438,6 +5922,7 @@
       "Deezer",
       "YouTube Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.1",
     "batteryLifeHours": "10",
@@ -5539,6 +6024,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "11",
@@ -5636,6 +6122,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "14.5",
@@ -5735,6 +6222,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "9.5",
@@ -5831,6 +6319,7 @@
     "dsdMax": "DSD512",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12.5",
@@ -5933,6 +6422,7 @@
     "streamingServices": [
       "TIDAL"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB Type-C",
     "batteryLifeHours": "10.5",
@@ -6040,6 +6530,7 @@
     "dsdMax": "DSD512",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "14",
@@ -6148,6 +6639,7 @@
       "Roon ARC",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB Type-C",
     "batteryLifeHours": "20.5",
@@ -6262,6 +6754,7 @@
       "Android apps",
       "streaming supported via open Android"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "23",
@@ -6353,6 +6846,7 @@
     "streamingServices": [
       "TIDAL"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C (XMOS XU316)",
     "batteryLifeHours": "11",
@@ -6456,6 +6950,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -6552,6 +7047,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C QC3.0",
     "batteryLifeHours": "13",
@@ -6650,6 +7146,7 @@
       "AirPlay",
       "DLNA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB Type-C",
     "batteryLifeHours": "13.5",
@@ -6753,6 +7250,7 @@
       "AirPlay",
       "DLNA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB Type-C",
     "batteryLifeHours": "10",
@@ -6865,6 +7363,7 @@
       "AirPlay",
       "DLNA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C QC3.0",
     "batteryLifeHours": "14",
@@ -6959,6 +7458,7 @@
       "Google Play",
       "AirPlay"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "15.5",
@@ -7056,6 +7556,7 @@
       "AirPlay",
       "DLNA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "18",
@@ -7158,6 +7659,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.2 Gen 1",
     "batteryLifeHours": "36",
@@ -7261,6 +7763,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.2 Gen 1",
     "batteryLifeHours": "36",
@@ -7346,6 +7849,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "USB-C 3.2 Gen 1",
     "batteryLifeHours": "40",
@@ -7439,6 +7943,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz, 5GHz",
     "usbPort": "USB-C 3.2 Gen 1",
     "batteryLifeHours": "40",
@@ -7546,6 +8051,7 @@
       "YouTube Music",
       "Deezer"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "20",
@@ -7646,6 +8152,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.2 Gen 1",
     "batteryLifeHours": "25",
@@ -7739,6 +8246,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB Type-C",
     "batteryLifeHours": "12",
@@ -7835,6 +8343,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C / USB 2.0",
     "batteryLifeHours": "12",
@@ -7923,6 +8432,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C USB 2.0 charging/data/USB DAC",
     "batteryLifeHours": "10",
@@ -8019,6 +8529,7 @@
       "DLNA",
       "HiByLink"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -8129,6 +8640,7 @@
     "streamingServices": [
       "Streaming apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "9",
@@ -8232,6 +8744,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "20",
@@ -8345,6 +8858,7 @@
       "AWA",
       "Yandex Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -8451,6 +8965,7 @@
       "Roon ARC",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -8561,6 +9076,7 @@
       "Roon ARC",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -8663,6 +9179,7 @@
       "Open App Service",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "15",
@@ -8768,6 +9285,7 @@
       "YouTube Music",
       "Roon"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "14",
@@ -8868,6 +9386,7 @@
       "streaming support",
       "HiByLink"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "20",
@@ -8978,6 +9497,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "Wi-Fi 7 MIMO (802.11be)",
     "usbPort": "USB-C; USB 2 / USB 3 / USB 3.2 Gen2",
     "batteryLifeHours": "20.7",
@@ -9081,6 +9601,7 @@
       "YouTube Music",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "13.5",
@@ -9183,6 +9704,7 @@
     "streamingServices": [
       "TIDAL"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "8.5",
@@ -9278,6 +9800,7 @@
     "streamingServices": [
       "DLNA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB 3.1 Gen2 Type-C OTG",
     "batteryLifeHours": "10",
@@ -9375,6 +9898,7 @@
     "dsdMax": "DSD512",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "11.8",
@@ -9480,6 +10004,7 @@
       "TIDAL",
       "Qobuz"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "11",
@@ -9580,6 +10105,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -9671,6 +10197,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -9761,6 +10288,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "",
@@ -9860,6 +10388,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "14.2",
@@ -9969,6 +10498,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -10068,6 +10598,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "9.5",
@@ -10170,6 +10701,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz 802.11 a/b/g/n/ac",
     "usbPort": "USB-C 3.0 OTG/QC3.0/digital audio",
     "batteryLifeHours": "11",
@@ -10265,6 +10797,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz 802.11 a/b/g/n/ac",
     "usbPort": "USB-C; Mini HDMI I2S",
     "batteryLifeHours": "13.5",
@@ -10350,6 +10883,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -10450,6 +10984,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -10550,6 +11085,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB 3.1 Type-C",
     "batteryLifeHours": "16",
@@ -10657,6 +11193,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "15",
@@ -10756,6 +11293,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "15",
@@ -10861,6 +11399,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "100",
@@ -10953,6 +11492,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "45",
@@ -10990,6 +11530,96 @@
         "credit": "",
         "sourceUrl": "",
         "type": ""
+      }
+    ]
+  },
+  {
+    "id": "cowon-plenue-d3",
+    "brand": "Cowon",
+    "model": "Plenue D3",
+    "variant": "",
+    "releaseYear": 2020,
+    "status": "Active",
+    "msrpUsd": 450,
+    "soc": "",
+    "os": "Cowon proprietary OS",
+    "ramGb": null,
+    "storageGb": 64,
+    "microSd": true,
+    "batteryMah": null,
+    "dac": "Dual Cirrus Logic CS43131",
+    "amp": "",
+    "has25mm": true,
+    "has35mm": true,
+    "has44mm": false,
+    "has635mm": false,
+    "sePowerMw": null,
+    "balPowerMw": null,
+    "bluetooth": true,
+    "wifi": false,
+    "cellular": false,
+    "has4g": false,
+    "has5g": false,
+    "bluetoothVersion": "3.0",
+    "bluetoothCodecs": [
+      "SBC",
+      "aptX"
+    ],
+    "usbDac": false,
+    "lineOut": false,
+    "coaxOut": false,
+    "opticalOut": false,
+    "balancedOutputType": "2.5mm",
+    "sePowerLoad": "",
+    "balPowerLoad": "",
+    "seOutputImpedanceOhm": "",
+    "balOutputImpedanceOhm": "",
+    "displaySize": "2.8in",
+    "weight": "103g",
+    "dimensions": "80 x 53.1 x 16.4 mm",
+    "pcmMax": "",
+    "dsdMax": "DSD128",
+    "mqa": false,
+    "streamingServices": [
+      "None"
+    ],
+    "playerFeatures": [],
+    "wifiBands": "",
+    "usbPort": "USB-C",
+    "batteryLifeHours": "45",
+    "storageExpansionMax": "128GB",
+    "officialUrl": "https://www.cowon.com/goods/goods_view.php?goodsNo=1000000169",
+    "officialStoreUrl": "https://www.cowon.com/goods/goods_view.php?goodsNo=1000000169",
+    "buyLinks": [],
+    "lastUpdated": "2026-08-04T00:00:00+08:00",
+    "lastUpdatedCommit": "d396a2d",
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/cowon-plenue-d3-review/"
+      },
+      {
+        "label": "What Hi-Fi",
+        "url": "https://www.whathifi.com/reviews/cowon-plenue-d3"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://www.cowon.com/goods/goods_view.php?goodsNo=1000000169",
+    "sourceType": "Official",
+    "verificationStatus": "Verified - Official",
+    "notes": "Verified - Official/Review: Cowon's exact PLENUE D3 64GB DAP shop page places the product in the DAP category and verifies 64GB internal storage, high-resolution sound, dual DAC architecture, JetEffect 5 / BBE+, 126dB SNR, 0.004% THD+N, Korean list pricing of 450,000 won, current sale pricing of 399,000 won, and official product imagery. Cowon's exact catalog data identifies the model as released in 2020.09 and lists DSD/DFF/DSF/ISO/FLAC/WAV/AIFF/ALAC/APE/MP3/WMA/OGG playback, microSD expansion, USB-C, 80 x 53.1 x 16.4 mm dimensions, and 103g weight. Exact Headfonics coverage identifies dual CS43131 DACs, 3.5mm single-ended and 2.5mm balanced outputs, Bluetooth 3.0 with SBC and aptX, 2Vrms SE and 4Vrms balanced output levels, DSD128 support, microSD up to 128GB, and official 45h playback. What Hi-Fi corroborates Bluetooth aptX, 45h battery life, 103g weight, 8 x 5.3 x 1.6 cm dimensions, black and gold finishes, and launch pricing around $360. Structured power remains blank because Cowon publishes Vrms without load-rated mW values. Wi-Fi, streaming, USB DAC, line out, coax, and optical are left false/blank because the verified source set does not document them.",
+    "colors": [
+      "Black",
+      "Gold"
+    ],
+    "images": [
+      {
+        "url": "https://godomall-storage.cdn-nhncommerce.com/db6240e1bd2c83c7153b1bcbf0294bd2/goods/1000000169/image/magnify/1000000169_magnify_037.png",
+        "alt": "Cowon Plenue D3 digital audio player",
+        "credit": "Cowon",
+        "sourceUrl": "",
+        "type": "official"
       }
     ]
   },
@@ -11044,6 +11674,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "16",
@@ -11138,6 +11769,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "16",
@@ -11221,6 +11853,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "10",
@@ -11304,6 +11937,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -11402,6 +12036,7 @@
       "AirPlay",
       "HiByLink"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C / USB 2.0",
     "batteryLifeHours": "15",
@@ -11502,6 +12137,7 @@
     "streamingServices": [
       "TIDAL"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C / USB 2.0",
     "batteryLifeHours": "11",
@@ -11595,6 +12231,7 @@
     "streamingServices": [
       "Open Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "18",
@@ -11707,6 +12344,7 @@
       "Google Play",
       "HiByLink"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C / USB 2.0",
     "batteryLifeHours": "18",
@@ -11802,6 +12440,7 @@
     "streamingServices": [
       "Open Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -11915,6 +12554,7 @@
       "Apple Music",
       "Amazon Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C / USB 3.1",
     "batteryLifeHours": "12",
@@ -12022,6 +12662,7 @@
       "HiByLink",
       "MSEB"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C / USB 3.1",
     "batteryLifeHours": "10",
@@ -12126,6 +12767,7 @@
       "DLNA",
       "OTA updates"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "14.5",
@@ -12224,6 +12866,7 @@
     "streamingServices": [
       "Whitelisted Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "13",
@@ -12319,6 +12962,7 @@
     "streamingServices": [
       "Whitelisted Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "9.5",
@@ -12414,6 +13058,7 @@
     "streamingServices": [
       "FALSE"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "WM-PORT",
     "batteryLifeHours": "45",
@@ -12519,6 +13164,7 @@
     "streamingServices": [
       "Open Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "26",
@@ -12614,6 +13260,7 @@
     "streamingServices": [
       "FALSE"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "WM-PORT",
     "batteryLifeHours": "33",
@@ -12713,6 +13360,7 @@
     "streamingServices": [
       "FALSE"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "WM-PORT",
     "batteryLifeHours": "33",
@@ -12804,6 +13452,7 @@
     "streamingServices": [
       "Open Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -12906,6 +13555,7 @@
     "streamingServices": [
       "Open Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -13000,6 +13650,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB 3.0",
     "batteryLifeHours": "12",
@@ -13115,6 +13766,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB 3.0",
     "batteryLifeHours": "6",
@@ -13204,6 +13856,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB 2.0",
     "batteryLifeHours": "10",
@@ -13299,6 +13952,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "9",
@@ -13394,6 +14048,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "9",
@@ -13474,6 +14129,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB Type-C",
     "batteryLifeHours": "8",
@@ -13579,6 +14235,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB Type-C",
     "batteryLifeHours": "10",
@@ -13673,6 +14330,7 @@
     "streamingServices": [
       "TIDAL"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "15",
@@ -13766,6 +14424,7 @@
       "TIDAL",
       "TuneIn"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "15",
@@ -13865,6 +14524,7 @@
       "TuneIn",
       "Deezer HiFi"
     ],
+    "playerFeatures": [],
     "wifiBands": "IEEE 802.11 a/b/g/n",
     "usbPort": "Micro-USB Type-B",
     "batteryLifeHours": "15",
@@ -13976,6 +14636,7 @@
       "TuneIn",
       "YouTube"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Micro USB-B",
     "batteryLifeHours": "16",
@@ -14094,6 +14755,7 @@
       "TIDAL",
       "TuneIn"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "15",
@@ -14181,6 +14843,7 @@
       "Google Play",
       "OnkyoMusic"
     ],
+    "playerFeatures": [],
     "wifiBands": "802.11 b/g/n/ac",
     "usbPort": "Micro USB-B / OTG",
     "batteryLifeHours": "16",
@@ -14286,6 +14949,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "10",
@@ -14373,6 +15037,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "10",
@@ -14471,6 +15136,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro USB",
     "batteryLifeHours": "10",
@@ -14559,6 +15225,7 @@
     "dsdMax": "",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro USB / USB 2.0",
     "batteryLifeHours": "10",
@@ -14652,6 +15319,7 @@
       "Dropbox",
       "HiBy Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -14753,6 +15421,7 @@
       "Dropbox",
       "HiBy Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -14851,6 +15520,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -14947,6 +15617,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB 3.0 Micro-B",
     "batteryLifeHours": "9",
@@ -15050,6 +15721,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB 2.0",
     "batteryLifeHours": "8",
@@ -15143,6 +15815,7 @@
       "Tidal",
       "Groovers"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro-B USB 2.0",
     "batteryLifeHours": "10",
@@ -15235,6 +15908,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C / USB 2.0",
     "batteryLifeHours": "21",
@@ -15344,6 +16018,7 @@
     "streamingServices": [
       "Third-party Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.2",
     "batteryLifeHours": "15",
@@ -15453,6 +16128,7 @@
       "YouTube Music",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -15558,6 +16234,7 @@
       "DLNA",
       "AirPlay"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C / USB 3.1",
     "batteryLifeHours": "14",
@@ -15668,6 +16345,7 @@
       "YouTube Music",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.1",
     "batteryLifeHours": "26",
@@ -15766,6 +16444,7 @@
       "TIDAL",
       "Apple Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "14",
@@ -15871,6 +16550,7 @@
       "Deezer",
       "YouTube Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C 3.1",
     "batteryLifeHours": "16",
@@ -15975,6 +16655,7 @@
       "YouTube Music",
       "Roon ARC"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "17",
@@ -16071,6 +16752,7 @@
       "Pandora",
       "Qobuz"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "WM-PORT / USB",
     "batteryLifeHours": "32",
@@ -16193,6 +16875,7 @@
       "Spotify",
       "Tidal"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "WM-PORT / USB 2.0",
     "batteryLifeHours": "60",
@@ -16318,6 +17001,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "WM-PORT / USB 2.0",
     "batteryLifeHours": "70",
@@ -16434,6 +17118,7 @@
     "dsdMax": "DSD11.2MHz",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "WM-PORT / USB 2.0",
     "batteryLifeHours": "30",
@@ -16529,6 +17214,7 @@
       "Deezer",
       "nugs.net"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C / USB 2.0",
     "batteryLifeHours": "20",
@@ -16631,6 +17317,7 @@
       "YouTube Music",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -16736,6 +17423,7 @@
       "YouTube Music",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -16833,6 +17521,7 @@
     "dsdMax": "None",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro USB Type-B / USB 2.0",
     "batteryLifeHours": "16",
@@ -16916,6 +17605,7 @@
     "dsdMax": "DSD64",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro USB Type-B / USB 2.0",
     "batteryLifeHours": "14",
@@ -16998,6 +17688,7 @@
     "streamingServices": [
       "TIDAL"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro USB Type-B",
     "batteryLifeHours": "11",
@@ -17088,6 +17779,7 @@
     "streamingServices": [
       "TIDAL"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro USB Type-B",
     "batteryLifeHours": "10",
@@ -17186,6 +17878,7 @@
     "streamingServices": [
       "TIDAL"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro USB Type-B",
     "batteryLifeHours": "10",
@@ -17271,6 +17964,7 @@
       "Groovers+",
       "MOOV"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro USB Type-B",
     "batteryLifeHours": "10",
@@ -17368,6 +18062,7 @@
       "Groovers+",
       "MOOV"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro USB Type-B",
     "batteryLifeHours": "10",
@@ -17466,6 +18161,7 @@
     "streamingServices": [
       "TIDAL"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro USB Type-B",
     "batteryLifeHours": "10",
@@ -17555,6 +18251,7 @@
     "dsdMax": "DSD64",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro USB Type-B",
     "batteryLifeHours": "8",
@@ -17646,6 +18343,7 @@
       "TIDAL",
       "Groovers+"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro USB Type-B",
     "batteryLifeHours": "10",
@@ -17748,6 +18446,7 @@
     "streamingServices": [
       "TIDAL"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro USB Type-B",
     "batteryLifeHours": "10",
@@ -17841,6 +18540,7 @@
       "Tidal Masters",
       "Open APP Service"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB Type-C",
     "batteryLifeHours": "8.5",
@@ -17938,6 +18638,7 @@
       "KKBOX",
       "AWA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro USB Type-B",
     "batteryLifeHours": "11",
@@ -18040,6 +18741,7 @@
       "Tidal Masters",
       "Open APP Service"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "21",
@@ -18130,6 +18832,7 @@
     "streamingServices": [
       "Open APP Service"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "20",
@@ -18223,6 +18926,7 @@
       "Qobuz",
       "AWA"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "11",
@@ -18312,6 +19016,7 @@
       "Tidal Masters",
       "Open APP Service"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "14",
@@ -18396,6 +19101,7 @@
       "Open APP Service",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -18489,6 +19195,7 @@
       "Open APP Service",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -18577,6 +19284,7 @@
       "Tidal Masters",
       "Open APP Service"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "8",
@@ -18674,6 +19382,7 @@
       "Open APP Service",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "9",
@@ -18763,6 +19472,7 @@
       "MOOV",
       "Groovers+"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C / Micro USB",
     "batteryLifeHours": "15",
@@ -18851,6 +19561,7 @@
       "Tidal Masters",
       "Open APP Service"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "9",
@@ -18937,6 +19648,7 @@
       "Open APP Service",
       "Roon Ready"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "14.5",
@@ -19030,6 +19742,7 @@
       "Tidal Masters",
       "Open APP Service"
     ],
+    "playerFeatures": [],
     "wifiBands": "802.11 b/g/n (2.4GHz)",
     "usbPort": "USB-C",
     "batteryLifeHours": "10.5",
@@ -19134,6 +19847,7 @@
       "AWA",
       "Yandex Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -19235,6 +19949,7 @@
       "TIDAL",
       "Qobuz"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12.5",
@@ -19337,6 +20052,7 @@
       "TIDAL",
       "Qobuz"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -19426,6 +20142,7 @@
     "dsdMax": "DSD64",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "8",
@@ -19516,6 +20233,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "15",
@@ -19613,6 +20331,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "15.5",
@@ -19695,6 +20414,7 @@
     "dsdMax": "Not Supported",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "24",
@@ -19790,6 +20510,12 @@
     "dsdMax": "DSD64",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [
+      {
+        "label": "Gapless Playback",
+        "supported": true
+      }
+    ],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "24",
@@ -19804,13 +20530,17 @@
       {
         "label": "Headfonics",
         "url": "https://headfonics.com/fiio-m3k-review/"
+      },
+      {
+        "label": "M3K manual mirror",
+        "url": "https://manualzz.com/doc/54697542/fiio-m3k-mp3-player-user-manual"
       }
     ],
     "reviewNotes": "",
     "sourceUrl": "https://www.fiio.com/m3k_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO M3K parameters confirm Linux, Ingenic X1000/E, AK4376A, 64MB RAM, microSD up to 2TB, no Wi-Fi or Bluetooth, Micro-USB with USB DAC/OTG, 2.0in display, 1100mAh battery, over 24h playback, 77.5g weight, and 90.8 x 44.2 x 12 mm dimensions. Official output is at least 25mW into 32Ω; the matching loaded value is entered. Official format tables support WAV up to 32-bit/384kHz and DSD64.",
+    "notes": "Verified - Official: FiiO M3K parameters confirm Linux, Ingenic X1000/E, AK4376A, 64MB RAM, microSD up to 2TB, no Wi-Fi or Bluetooth, Micro-USB with USB DAC/OTG, 2.0in display, 1100mAh battery, over 24h playback, 77.5g weight, and 90.8 x 44.2 x 12 mm dimensions. Official output is at least 25mW into 32Ω; the matching loaded value is entered. Official format tables support WAV up to 32-bit/384kHz and DSD64. | Player Features: M3K manual documents Playback gap/Gapless mode for same format, sample rate, and bit depth; some formats such as MP3 may be excepted.",
     "colors": [
       "Silver",
       "Black"
@@ -19871,6 +20601,12 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [
+      {
+        "label": "Gapless Playback",
+        "supported": true
+      }
+    ],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "15",
@@ -19889,13 +20625,17 @@
       {
         "label": "Headfonia",
         "url": "https://www.headfonia.com/fiio-m3-pro-review/"
+      },
+      {
+        "label": "M3 Pro manual mirror",
+        "url": "https://manuals.plus/m/7fb807f4548d43a14f96deb5b3f9984633d0be4d3b0b1826dd7b935b5676cd1d_pdf"
       }
     ],
     "reviewNotes": "",
     "sourceUrl": "https://www.fiio.com/m3pro_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO M3 Pro parameters confirm Linux, Ingenic X1000E, ES9218P, 64MB RAM, microSD up to 2TB, USB-C, USB DAC and USB Audio, 3.46in display, 1000mAh battery, over 15h playback, 70g weight and 95.8 x 45.4 x 10.4 mm dimensions. Official headphone output is at least 75mW into 32Ω. PCM up to 32-bit/384kHz and DSD128 are officially supported.",
+    "notes": "Verified - Official: FiiO M3 Pro parameters confirm Linux, Ingenic X1000E, ES9218P, 64MB RAM, microSD up to 2TB, USB-C, USB DAC and USB Audio, 3.46in display, 1000mAh battery, over 15h playback, 70g weight and 95.8 x 45.4 x 10.4 mm dimensions. Official headphone output is at least 75mW into 32Ω. PCM up to 32-bit/384kHz and DSD128 are officially supported. | Player Features: M3 Pro manual documents Playback Gap/Gapless mode for same format, sampling rate, and bit depth; MP3 may be an exception.",
     "colors": [
       "Black"
     ],
@@ -19961,6 +20701,12 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [
+      {
+        "label": "Gapless Playback",
+        "supported": true
+      }
+    ],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "10.5",
@@ -19975,13 +20721,17 @@
       {
         "label": "Headfonics",
         "url": "https://headfonics.com/fiio-m5-review/"
+      },
+      {
+        "label": "Porta Fi",
+        "url": "https://porta.fi/fiio-m5-player-review-take-your-music-everywhere/"
       }
     ],
     "reviewNotes": "Headfonia coverage found was a first-look article rather than a full exact-model review, so it was not added.",
     "sourceUrl": "https://www.fiio.com/m5_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO M5 parameters identify the M5 as a Linux-based miniature DAP with Ingenic X1000E, AK4377, CSR8675 Bluetooth, 64MB RAM, microSD up to 2TB, Bluetooth 4.2 transmit/receive, USB DAC/USB Audio, shared 3.5mm PO/LO/SPDIF, 1.54in touchscreen, 550mAh battery, over 10.5h wired playback, 38g weight and 45.3 x 42 x 13.7 mm dimensions. Official 32Ω headphone output is at least 24mW. PCM 32-bit/384kHz and DSD128 are supported.",
+    "notes": "Verified - Official: FiiO M5 parameters identify the M5 as a Linux-based miniature DAP with Ingenic X1000E, AK4377, CSR8675 Bluetooth, 64MB RAM, microSD up to 2TB, Bluetooth 4.2 transmit/receive, USB DAC/USB Audio, shared 3.5mm PO/LO/SPDIF, 1.54in touchscreen, 550mAh battery, over 10.5h wired playback, 38g weight and 45.3 x 42 x 13.7 mm dimensions. Official 32Ω headphone output is at least 24mW. PCM 32-bit/384kHz and DSD128 are supported. | Player Features: Porta Fi review documents gapless under M5 playback settings.",
     "colors": [
       "Black",
       "Red",
@@ -20047,6 +20797,12 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [
+      {
+        "label": "Lyrics Support",
+        "supported": true
+      }
+    ],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "14",
@@ -20076,7 +20832,7 @@
     "sourceUrl": "https://www.fiio.com/echo_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO's exact ECHO parameters page documents model ECHO with dual CS43198 DACs, 4GB/8GB internal-memory configurations, microSD up to 256GB, 3.5mm single-ended and 4.4mm balanced outputs, SBC Bluetooth transmission, USB-C charging/data and UAC/USB DAC functionality, 1100mAh battery, 14h endurance, 2.39in display, 85g weight and 85 x 55.5 x 14.3 mm dimensions. Official output is at least 120mW into 32Ω single-ended and 260mW into 32Ω balanced. PCM/file support reaches 24-bit/192kHz and DSD256. This is a distinct SNOWSKY ECHO model and is not ECHO MINI or ECHO NANO. Storage GB records the lower documented internal configuration; the 8GB configuration is retained in Notes rather than split into a storage-only row. Additional full-size ECHO cleanup: SoC and RAM remain blank because FiiO official ECHO specifications identify dual CS43198 DACs but do not disclose the main processor/SoC or installed RAM, and no reliable ECHO-specific teardown confirms them. OS is FiiO proprietary OS because the full-size ECHO uses FiiO/SNOWSKY closed firmware-upgradable player software rather than Android or installable apps. Bluetooth Version is set to 5.3 from exact full-size SNOWSKY ECHO FiiO Europe listing, not ECHO MINI. Streaming Services remains blank because ECHO has no Wi-Fi or installable apps; Bluetooth is for transmitting local playback to wireless headphones/speakers, not onboard streaming. Buy links are exact full-size SNOWSKY ECHO retailer pages for the dual CS43198 model, not the dual CS43131 ECHO MINI. MSRP USD uses the full-size SNOWSKY ECHO launch retail price of $149; this is not the cheaper ECHO MINI or ECHO NANO.",
+    "notes": "Verified - Official: FiiO's exact ECHO parameters page documents model ECHO with dual CS43198 DACs, 4GB/8GB internal-memory configurations, microSD up to 256GB, 3.5mm single-ended and 4.4mm balanced outputs, SBC Bluetooth transmission, USB-C charging/data and UAC/USB DAC functionality, 1100mAh battery, 14h endurance, 2.39in display, 85g weight and 85 x 55.5 x 14.3 mm dimensions. Official output is at least 120mW into 32Ω single-ended and 260mW into 32Ω balanced. PCM/file support reaches 24-bit/192kHz and DSD256. This is a distinct SNOWSKY ECHO model and is not ECHO MINI or ECHO NANO. Storage GB records the lower documented internal configuration; the 8GB configuration is retained in Notes rather than split into a storage-only row. Additional full-size ECHO cleanup: SoC and RAM remain blank because FiiO official ECHO specifications identify dual CS43198 DACs but do not disclose the main processor/SoC or installed RAM, and no reliable ECHO-specific teardown confirms them. OS is FiiO proprietary OS because the full-size ECHO uses FiiO/SNOWSKY closed firmware-upgradable player software rather than Android or installable apps. Bluetooth Version is set to 5.3 from exact full-size SNOWSKY ECHO FiiO Europe listing, not ECHO MINI. Streaming Services remains blank because ECHO has no Wi-Fi or installable apps; Bluetooth is for transmitting local playback to wireless headphones/speakers, not onboard streaming. Buy links are exact full-size SNOWSKY ECHO retailer pages for the dual CS43198 model, not the dual CS43131 ECHO MINI. MSRP USD uses the full-size SNOWSKY ECHO launch retail price of $149; this is not the cheaper ECHO MINI or ECHO NANO. | Player Features: FiiO ECHO product page confirms cover/lyrics display and LRC lyric support; FiiO playback FAQ says lyrics require matching LRC files.",
     "colors": [
       "Black",
       "Sky Blue",
@@ -20139,6 +20895,12 @@
     "dsdMax": "Not Supported",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [
+      {
+        "label": "Gapless Playback",
+        "supported": true
+      }
+    ],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "11",
@@ -20171,7 +20933,7 @@
     "sourceUrl": "https://www.fiio.com/x1",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO maintains an exact legacy X1 product page. FiiO's official X-series comparison documents the original X1 as a 2.0in TFT player with 96.7 x 57.7 x 14.1 mm dimensions, 106g weight and 3.5mm headphone output. FiiO's later X1 II lifecycle/review material explicitly compares the first generation's 1700mAh battery and roughly 11h playback. Legacy FiiO specifications identify PCM5142 and high-resolution PCM playback up to 24-bit/192kHz. This row is the original X1, not X1 II. FiiO official comparison identifies original first-generation X1 as using Ingenic JZ4760BS; X1 2nd Gen uses related JZ4760B and is kept separate. Original X1 runs FiiO closed player firmware rather than Android; manual documents fixed music interface and firmware-update process with no third-party app platform. RAM remains blank because FiiO publishes SoC, DAC, and other hardware components but not installed RAM, and no reliable teardown confirms it. FiiO rates original X1 output above 100mW into 16 ohms, above 65mW into 32 ohms, and above 8mW into 300 ohms; structured SE Power mW uses 100 with 16 ohm load. DSD Max is Not Supported because FiiO comparison material lists no DSD support for original X1 or X1 II; original X1 supports PCM-based formats up to 24-bit/192kHz. Streaming Services remains blank because original X1 has no Wi-Fi, Android app support, or onboard streaming platform.",
+    "notes": "Verified - Official: FiiO maintains an exact legacy X1 product page. FiiO's official X-series comparison documents the original X1 as a 2.0in TFT player with 96.7 x 57.7 x 14.1 mm dimensions, 106g weight and 3.5mm headphone output. FiiO's later X1 II lifecycle/review material explicitly compares the first generation's 1700mAh battery and roughly 11h playback. Legacy FiiO specifications identify PCM5142 and high-resolution PCM playback up to 24-bit/192kHz. This row is the original X1, not X1 II. FiiO official comparison identifies original first-generation X1 as using Ingenic JZ4760BS; X1 2nd Gen uses related JZ4760B and is kept separate. Original X1 runs FiiO closed player firmware rather than Android; manual documents fixed music interface and firmware-update process with no third-party app platform. RAM remains blank because FiiO publishes SoC, DAC, and other hardware components but not installed RAM, and no reliable teardown confirms it. FiiO rates original X1 output above 100mW into 16 ohms, above 65mW into 32 ohms, and above 8mW into 300 ohms; structured SE Power mW uses 100 with 16 ohm load. DSD Max is Not Supported because FiiO comparison material lists no DSD support for original X1 or X1 II; original X1 supports PCM-based formats up to 24-bit/192kHz. Streaming Services remains blank because original X1 has no Wi-Fi, Android app support, or onboard streaming platform. | Player Features: FiiO X1 manual documents gapless playback and says it is not supported in shuffle or loop-single-song modes.",
     "colors": [
       "Silver",
       "Gold"
@@ -20234,6 +20996,12 @@
     "dsdMax": "None",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [
+      {
+        "label": "Gapless Playback",
+        "supported": true
+      }
+    ],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "12",
@@ -20248,13 +21016,17 @@
       {
         "label": "Headfonics",
         "url": "https://headfonics.com/the-x1-2nd-gen-dap-by-fiio/"
+      },
+      {
+        "label": "Head-Fi review",
+        "url": "https://www.head-fi.org/showcase/fiio-x1-ii-high-resolution-lossless-music-player-2nd-generation-silver.21852/reviews"
       }
     ],
     "reviewNotes": "",
     "sourceUrl": "https://www.fiio.com/x1ii_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official: FiiO X1 II parameters identify model X1 2nd gen / FX1221 with JZ4760B, PCM5242 DAC, OPA2322 LPF, ISL28291 output stage, 3.5mm headphone/shared line output, no USB DAC, 97 x 55.5 x 12 mm dimensions and 102g weight. Official output is at least 70mW into 32Ω. Exact Headfonics coverage documents the 1800mAh battery and rated 12h playback. FiiO later stated the X1 II lifecycle and maintenance were ended. Additional sourced decisions: OS is FiiO proprietary OS because X1 2nd Gen uses closed embedded player firmware rather than Android or installable apps. RAM remains blank because FiiO does not publish installed RAM and no reliable X1 2nd Gen teardown confirms it. FiiO states dual-mode Bluetooth 4.0 based on the F1C81 chipset; Bluetooth codec is kept to SBC because FiiO does not document aptX, AAC, or LDAC support for this model. DSD Max is None because FiiO-hosted comparison material explicitly lists DSD support as No. Streaming Services remains blank because the player has no Wi-Fi, Android, or installable apps; Bluetooth output is not onboard streaming support. Storage Expansion Max is set to 256GB from FiiO official SD-card support guidance.",
+    "notes": "Verified - Official: FiiO X1 II parameters identify model X1 2nd gen / FX1221 with JZ4760B, PCM5242 DAC, OPA2322 LPF, ISL28291 output stage, 3.5mm headphone/shared line output, no USB DAC, 97 x 55.5 x 12 mm dimensions and 102g weight. Official output is at least 70mW into 32Ω. Exact Headfonics coverage documents the 1800mAh battery and rated 12h playback. FiiO later stated the X1 II lifecycle and maintenance were ended. Additional sourced decisions: OS is FiiO proprietary OS because X1 2nd Gen uses closed embedded player firmware rather than Android or installable apps. RAM remains blank because FiiO does not publish installed RAM and no reliable X1 2nd Gen teardown confirms it. FiiO states dual-mode Bluetooth 4.0 based on the F1C81 chipset; Bluetooth codec is kept to SBC because FiiO does not document aptX, AAC, or LDAC support for this model. DSD Max is None because FiiO-hosted comparison material explicitly lists DSD support as No. Streaming Services remains blank because the player has no Wi-Fi, Android, or installable apps; Bluetooth output is not onboard streaming support. Storage Expansion Max is set to 256GB from FiiO official SD-card support guidance. | Player Features: Head-Fi exact-model review documents a gapless function that works for FLAC but has a small micro-gap for AAC, so support is marked true with limitations.",
     "colors": [
       "Silver",
       "Black",
@@ -20317,6 +21089,7 @@
     "dsdMax": "DSD64",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "10",
@@ -20413,6 +21186,12 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [
+      {
+        "label": "Gapless Playback",
+        "supported": true
+      }
+    ],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "11",
@@ -20437,6 +21216,10 @@
         "url": "https://www.fiio.com/newsinfo/63542.html"
       },
       {
+        "label": "X3 II manual mirror",
+        "url": "https://manualmachine.com/fiio/x3ii/5937000-user-manual/"
+      },
+      {
         "label": "B&H specs",
         "url": "https://www.bhphotovideo.com/c/product/1246601-REG/fiio_x3_ii_gold_x3_2nd_gen_portable.html/overview"
       }
@@ -20445,7 +21228,7 @@
     "sourceUrl": "https://www.fiio.com/x3ii",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
-    "notes": "Verified - Official/Review: FiiO's exact X3 II legacy page and official X-series comparison document the second-generation player as 96.7 x 57.7 x 16.1 mm, 135g and 2.0in. Exact Headfonia coverage identifies a 2600mAh battery and roughly 10-11h playback. Exact technical reviews identify CS4398 with OPA1642/LMH6643 amplification, 3.5mm headphone output plus line/coax digital output, USB DAC functionality, PCM to 24-bit/192kHz and native DSD64/128 support. The player has no internal storage and uses microSD. FiiO's official X3 2nd gen comparison lists headphone output above 224mW into 16 ohms, above 200mW into 32 ohms, and above 24mW into 300 ohms; structured SE Power mW uses the maximum published value of 224 with 16 ohm load.",
+    "notes": "Verified - Official/Review: FiiO's exact X3 II legacy page and official X-series comparison document the second-generation player as 96.7 x 57.7 x 16.1 mm, 135g and 2.0in. Exact Headfonia coverage identifies a 2600mAh battery and roughly 10-11h playback. Exact technical reviews identify CS4398 with OPA1642/LMH6643 amplification, 3.5mm headphone output plus line/coax digital output, USB DAC functionality, PCM to 24-bit/192kHz and native DSD64/128 support. The player has no internal storage and uses microSD. FiiO's official X3 2nd gen comparison lists headphone output above 224mW into 16 ohms, above 200mW into 32 ohms, and above 24mW into 300 ohms; structured SE Power mW uses the maximum published value of 224 with 16 ohm load. | Player Features: X3 II manual documents a Gapless playback setting under Play settings.",
     "colors": [
       "Titanium"
     ],
@@ -20505,6 +21288,12 @@
     "dsdMax": "DSD64",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [
+      {
+        "label": "Gapless Playback",
+        "supported": true
+      }
+    ],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "10",
@@ -20519,9 +21308,13 @@
       {
         "label": "Headfonics",
         "url": "https://headfonics.com/fiio-x3-mark-iii-review/3/"
+      },
+      {
+        "label": "Tech Merit via FiiO",
+        "url": "https://www.fiio.com/newsinfo/46556.html"
       }
     ],
-    "reviewNotes": "Official FiiO parameter screenshots provided by maintainer; Headfonics retained only for secondary exact-model context.",
+    "reviewNotes": "Official FiiO parameter screenshots provided by maintainer; Headfonics retained only for secondary exact-model context. Player Features: Headfonics X3 Mark III review confirms gapless among supported features",
     "sourceUrl": "https://www.fiio.com/x3mkiii_parameters",
     "sourceType": "Official",
     "verificationStatus": "Verified - Official",
@@ -20586,6 +21379,7 @@
     "dsdMax": "DSD64",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "10",
@@ -20670,6 +21464,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "10",
@@ -20764,6 +21559,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "10",
@@ -20856,6 +21652,7 @@
     "dsdMax": "",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "53",
@@ -20944,6 +21741,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "17",
@@ -21047,6 +21845,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "20",
@@ -21155,6 +21954,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "10",
@@ -21239,6 +22039,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "9",
@@ -21344,6 +22145,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "8.5",
@@ -21434,6 +22236,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "9",
@@ -21526,6 +22329,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "10.5",
@@ -21618,6 +22422,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "8.5",
@@ -21718,6 +22523,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "9",
@@ -21806,6 +22612,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro-USB",
     "batteryLifeHours": "41",
@@ -21884,6 +22691,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -21986,6 +22794,7 @@
     "dsdMax": "DSD",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB Micro-B",
     "batteryLifeHours": "9",
@@ -22088,6 +22897,7 @@
     "dsdMax": "DSD256",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -22133,6 +22943,84 @@
         "type": ""
       }
     ]
+  },
+  {
+    "id": "shanling-m3",
+    "brand": "Shanling",
+    "model": "M3",
+    "variant": "",
+    "releaseYear": 2015,
+    "status": "Discontinued",
+    "msrpUsd": 350,
+    "soc": "",
+    "os": "Proprietary",
+    "ramGb": null,
+    "storageGb": 8,
+    "microSd": true,
+    "batteryMah": 3600,
+    "dac": "Cirrus Logic CS4398",
+    "amp": "AD8610 + BUF634 per channel",
+    "has25mm": false,
+    "has35mm": true,
+    "has44mm": false,
+    "has635mm": false,
+    "sePowerMw": 250,
+    "balPowerMw": null,
+    "bluetooth": false,
+    "wifi": false,
+    "cellular": false,
+    "has4g": false,
+    "has5g": false,
+    "bluetoothVersion": "",
+    "bluetoothCodecs": [],
+    "usbDac": true,
+    "lineOut": true,
+    "coaxOut": false,
+    "opticalOut": true,
+    "balancedOutputType": "",
+    "sePowerLoad": "32 ohms",
+    "balPowerLoad": "",
+    "seOutputImpedanceOhm": "",
+    "balOutputImpedanceOhm": "",
+    "displaySize": "2.4in",
+    "weight": "220g",
+    "dimensions": "69 x 21 x 125.5 mm",
+    "pcmMax": "24-bit/192kHz",
+    "dsdMax": "DSD64",
+    "mqa": false,
+    "streamingServices": [
+      "None"
+    ],
+    "playerFeatures": [],
+    "wifiBands": "",
+    "usbPort": "Micro-USB",
+    "batteryLifeHours": "10",
+    "storageExpansionMax": "64GB",
+    "officialUrl": "",
+    "officialStoreUrl": "",
+    "buyLinks": [],
+    "lastUpdated": "2026-08-04T00:00:00+08:00",
+    "lastUpdatedCommit": "d396a2d",
+    "buyNotes": "",
+    "reviewLinks": [
+      {
+        "label": "Headfonics",
+        "url": "https://headfonics.com/the-m3-dap-by-shanling-audio/"
+      },
+      {
+        "label": "Headfonics specs",
+        "url": "https://headfonics.com/the-m3-dap-by-shanling-audio/3"
+      }
+    ],
+    "reviewNotes": "",
+    "sourceUrl": "https://headfonics.com/the-m3-dap-by-shanling-audio/3",
+    "sourceType": "Review",
+    "verificationStatus": "Verified - Review",
+    "notes": "Verified - Review/Web: exact Headfonics Shanling M3 technical specifications identify M3 as a DAP and verify USD 350 pricing, Cirrus Logic CS4398 DAC, CS8422 upsampling, AD8610 and BUF634 per-channel amplification, ES2664 low-pass stage, 2.4in TFT display, 8GB built-in storage, TF/microSD expansion up to 64GB, 3600mAh battery, more than 10h playback, 69 x 21 x 125.5 mm dimensions, about 220g weight, 250mW output into 32 ohms, recommended 16-300 ohm impedance, 3.5mm headphone output, line/optical I/O, Micro-USB power/data, and 24-bit/192kHz PCM support. Kakaku's exact-model specification page corroborates CS4398, 2.4in 240 x 320 TFT display, Micro-USB, 3.5mm headphone output, 3.5mm line/optical input and output, 10h playback, PCM 24-bit/192kHz, and DSD64 file support. Official legacy Shanling product material is not exposed in the current English catalog, so exact-model review/spec listings are retained as provenance. No Bluetooth, Wi-Fi, balanced output, cellular, coaxial output, MQA, or onboard streaming is documented.",
+    "colors": [
+      "Silver"
+    ],
+    "images": []
   },
   {
     "id": "shanling-m5",
@@ -22181,6 +23069,7 @@
     "streamingServices": [
       "None"
     ],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "Micro USB-B",
     "batteryLifeHours": "10",
@@ -22280,6 +23169,7 @@
       "DLNA",
       "AirPlay"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "17",
@@ -22367,6 +23257,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "21",
@@ -22474,6 +23365,7 @@
       "AirPlay",
       "QPlay"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "13.5",
@@ -22568,6 +23460,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12",
@@ -22672,6 +23565,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "16",
@@ -22765,6 +23659,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "14.5",
@@ -22864,6 +23759,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "18",
@@ -22960,6 +23856,7 @@
       "Deezer",
       "QQ Music"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-A / USB-B / USB-C",
     "batteryLifeHours": "17.5",
@@ -23048,6 +23945,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "9",
@@ -23142,6 +24040,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "9",
@@ -23242,6 +24141,7 @@
       "Roon ARC",
       "other Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "802.11 a/b/g/n/ac/ax (2.4/5GHz)",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -23336,6 +24236,7 @@
       "Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "10.6",
@@ -23428,6 +24329,7 @@
       "Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "13",
@@ -23515,6 +24417,7 @@
     "dsdMax": "DSD64",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "None",
     "batteryLifeHours": "",
@@ -23590,6 +24493,7 @@
     "dsdMax": "DSD128",
     "mqa": false,
     "streamingServices": [],
+    "playerFeatures": [],
     "wifiBands": "",
     "usbPort": "USB-C",
     "batteryLifeHours": "10",
@@ -23680,6 +24584,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "14.5",
@@ -23776,6 +24681,7 @@
       "Third-party Android apps",
       "Google Play"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "12.5",
@@ -23874,6 +24780,7 @@
     "streamingServices": [
       "Android apps"
     ],
+    "playerFeatures": [],
     "wifiBands": "2.4GHz / 5GHz",
     "usbPort": "USB-C",
     "batteryLifeHours": "9",

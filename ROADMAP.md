@@ -29,7 +29,7 @@ Audio-focused phones such as the Moondrop MIAD 01 and general consumer MP3 playe
 
 ## Current Data Status
 
-As of 2026-07-29, `src/data/daps.csv` contains 244 source-backed DAP rows, and every row has a local optimized image referenced through `image_filename`.
+As of 2026-08-04, `src/data/daps.csv` contains 251 source-backed DAP rows. Most rows have local optimized images referenced through `image_filename`; a small number of newly added roadmap rows still need local image processing.
 
 Latest local checks:
 
@@ -40,7 +40,7 @@ Latest local checks:
 
 Latest discovery status:
 
-- The weekly discovery watcher is producing a clean report with one current likely-new official candidate: Cowon Plenue D3.
+- The weekly discovery watcher is producing a clean report with no current actionable candidates.
 - Sony currently returns HTTP 403 to scripted fetches, and Lotoo may fail depending on network/site behavior. These failures are reported but do not create candidates by themselves.
 - Recent false-positive cleanup removed non-DAP matches such as QLS digital transports, Shanling M30 desktop player, Cowon PLENUE X30/X40 IEM-category links, and duplicate Astell&Kern/Cowon catalog names.
 
@@ -173,12 +173,6 @@ Discovery deliberately excludes QLS desktop, bridge, turntable, SD-card player, 
 - Acoustic Research AR-M20
 - Acoustic Research AR-M200
 - PonoMusic PonoPlayer
-- iBasso DX100
-- iBasso DX150
-- iBasso DX90
-- iBasso DX80
-- iBasso DX50
-- Shanling M3
 - Colorfly C4
 - Colorfly U8
 - Colorfly U6
@@ -186,7 +180,6 @@ Discovery deliberately excludes QLS desktop, bridge, turntable, SD-card player, 
 - Oriolus DPS-L2
 - YinLvMei W1s
 - F.AUDIO FA4
-- Cowon Plenue D3
 
 Scope note:
 
