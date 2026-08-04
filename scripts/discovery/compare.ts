@@ -1,6 +1,8 @@
 import { fingerprint, normalizeBaseModel, normalizeBrand, normalizeModelForComparison, similarity, tokenize } from './normalize';
 import type { Candidate, DatabaseProduct, DiscoveredProduct } from './types';
 
+const trackedRoadmapIdentities = new Set(['cowon|plenue d3']);
+
 export function classifyProducts(discovered: DiscoveredProduct[], database: DatabaseProduct[]): Candidate[] {
   return discovered.map((product) => classifyProduct(product, database));
 }
@@ -56,6 +58,12 @@ export function classifyProduct(product: DiscoveredProduct, database: DatabasePr
     classification = 'retail-sighting';
     reason =
       `Retailer listing from ${product.sourceUrl} mentions this DAP-like product, but it still needs official or stronger source verification before becoming a database row.`;
+  }
+
+  if (classification === 'likely-new' && trackedRoadmapIdentities.has(`${normalizedBrand}|${normalizedName}`)) {
+    classification = 'tracked-roadmap';
+    reason =
+      'Official source contains this product, but it is already triaged in ROADMAP.md and should not create repeat discovery issues.';
   }
 
   const candidate: Candidate = {

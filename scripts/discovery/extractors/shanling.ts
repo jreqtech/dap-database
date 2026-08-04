@@ -9,6 +9,7 @@ export function extractShanling(html: string, source: DiscoverySource): Discover
     const href = match[1] ?? '';
     const rawName = stripTags(match[2] ?? '');
     const name = rawName
+      .replace(/\bPortable\s+Hi-?Res\s+Music\s+Player\b/gi, '')
       .replace(/\bPortable Player\b/gi, '')
       .replace(/^MO Pura$/i, 'M0 Pura')
       .replace(/\s+/g, ' ')

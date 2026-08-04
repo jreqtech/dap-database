@@ -30,7 +30,7 @@ const productKeywords = /\b(?:dap|digital audio player|audio player|music player
 const rejectKeywords =
   /\b(?:adapter|amplifier|amp\b|dac\b|dongle|earbud|earphone|headphone|iem\b|cable|case|cover|screen protector|bundle|stack|eartips?|tips?|open box|digital\s+transport|digital\s+turntable|desktop\s+player|movable\s+desktop)\b/i;
 const modelStopWords =
-  /\b(?:cs\d{4,}|ak\d{4,}|es\d{4,}|dual|quad|octa|android|bluetooth|portable|digital|audio|music|mp3|lossless|hifi|hi-fi|player|dap|dac|amp|amplifier|balanced|streaming|mqa|dsd|pcm|snapdragon|class|way|master|quality|high[- ]?resolution|pre[- ]?order|sale|new)\b/i;
+  /\b(?:cs\d{4,}|ak\d{4,}|es\d{4,}|dual|quad|octa|android|bluetooth|portable|digital|audio|music|mp3|lossless|hifi|hi-fi|player|dap|dac|amp|amplifier|balanced|streaming|mqa|dsd|pcm|snapdragon|class|way|master|quality|inch|pure|high[- ]?resolution|pre[- ]?order|sale|new)\b/i;
 
 export function extractRetailer(html: string, source: DiscoverySource): DiscoveredProduct[] {
   const products: DiscoveredProduct[] = [];
@@ -81,10 +81,12 @@ function normalizeModelText(value: string): string {
     .split(' ');
   const modelWords: string[] = [];
 
-  for (const word of words) {
+  for (let index = 0; index < words.length; index += 1) {
+    const word = words[index] ?? '';
     const cleaned = word.replace(/^[^A-Za-z0-9+.-]+|[^A-Za-z0-9+.-]+$/g, '');
     if (!cleaned) continue;
     if (/^(?:ak|cs|es)\d/i.test(cleaned)) break;
+    if (/^\d+(?:\.\d+)?$/i.test(cleaned) && /^in(?:ch|ches)?$/i.test(words[index + 1] ?? '')) break;
     if (modelStopWords.test(cleaned)) break;
     if (/^\d+(?:gb|tb|mah|pcs)$/i.test(cleaned)) break;
     modelWords.push(cleaned);

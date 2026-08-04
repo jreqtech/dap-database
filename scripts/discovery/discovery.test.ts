@@ -106,6 +106,36 @@ test('retailer-only unmatched products are retail sightings', () => {
   assert.equal(candidate.isActionable, true);
 });
 
+test('roadmap-tracked official candidates are hidden from actionable discovery', () => {
+  const candidate = classifyProduct({ ...product('Cowon Plenue D3'), brand: 'Cowon' }, [db('Cowon', 'Plenue D')]);
+  assert.equal(candidate.classification, 'tracked-roadmap');
+  assert.equal(candidate.isActionable, false);
+});
+
+test('retailer marketing suffixes are trimmed before duplicate comparison', () => {
+  assert.equal(
+    classifyProduct(
+      { ...product('FiiO M15S 5 Inch'), brand: 'FiiO', sourceType: 'retailer' },
+      [db('FiiO', 'M15S')],
+    ).classification,
+    'possible-duplicate',
+  );
+  assert.equal(
+    classifyProduct(
+      { ...product('FiiO M15S 5'), brand: 'FiiO', sourceType: 'retailer' },
+      [db('FiiO', 'M15S')],
+    ).classification,
+    'possible-duplicate',
+  );
+  assert.equal(
+    classifyProduct(
+      { ...product('Cayin N7 Pure 1-Bit'), brand: 'Cayin', sourceType: 'retailer' },
+      [db('Cayin', 'N7')],
+    ).classification,
+    'possible-duplicate',
+  );
+});
+
 test('retailer extractor prefers ONIX identity in Shanling ONIX co-branded listings', () => {
   const source = sourceFor('HiFiGo', 'https://hifigo.com/collections/portable-music-player', 'retailer');
   const html = `
@@ -131,6 +161,13 @@ test('Shanling extractor removes generic Portable Player suffix', () => {
   const source = sourceFor('Shanling', 'https://en.shanling.com/category/237', 'shanling');
   const products = extractShanling(readFileSync(resolve(fixtureRoot, 'shanling.html'), 'utf8'), source);
   assert.deepEqual(products.map((item) => item.detectedName), ['Shanling M7T', 'Shanling M7']);
+});
+
+test('Shanling extractor removes full portable hi-res marketing suffix', () => {
+  const source = sourceFor('Shanling', 'https://en.shanling.com/category/237', 'shanling');
+  const html = '<div class="product-ani"><a href="/product/244"><h3>M6 Portable Hi-Res Music Player</h3></a></div>';
+  const products = extractShanling(html, source);
+  assert.deepEqual(products.map((item) => item.detectedName), ['Shanling M6']);
 });
 
 test('Shanling extractor skips base M30 desktop player', () => {

@@ -51,7 +51,9 @@ export function renderReport(result: DiscoveryResult): string {
   }
 
   const duplicateCount = result.candidates.filter((candidate) => candidate.classification === 'possible-duplicate').length;
+  const trackedCount = result.candidates.filter((candidate) => candidate.classification === 'tracked-roadmap').length;
   lines.push('## Known duplicates', '', `${duplicateCount} existing catalog matches hidden from this report.`, '');
+  lines.push('## Already tracked', '', `${trackedCount} roadmap candidates hidden from actionable sections.`, '');
 
   return `${lines.join('\n').trim()}\n`;
 }

@@ -27,6 +27,10 @@ export function normalizeModelForComparison(brand: string, model: string, varian
   value = value.replace(/&/g, ' ');
   value = value.replace(/\bmo pura\b/g, 'm0 pura');
   value = value.replace(new RegExp(`^${escapeRegExp(normalizedBrand)}\\s+`, 'i'), '');
+  value = value.replace(/\bportable\s+hi-?res\s+music\s+player\b/g, '');
+  value = value.replace(/\b\d+(?:\.\d+)?\s*inch\b/g, '');
+  value = value.replace(/\bm15s\s+5\b/g, 'm15s');
+  value = value.replace(/\bpure\s+1-bit\b/g, '');
   value = value.replace(/([a-z]\d+)\((\d+)\)/g, '$1 $2');
   value = value.replace(/\b(dx\d+)(max|mk2)\b/g, '$1 $2');
   value = value.replace(/\bmk\s+ii\b/g, 'mkii');
