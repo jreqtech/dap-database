@@ -4923,7 +4923,16 @@
     "verificationStatus": "Verified - Official",
     "notes": "Verified - Official/Review: iBasso's exact DX50 product page identifies DX50 as a digital lossless music player and verifies WM8740 DAC, built-in 9V headphone amplifier, 2.4in 320 x 240 IPS capacitive touchscreen, 3.5mm headphone output, 3.5mm line out, coaxial output up to 24-bit/192kHz, 8GB internal storage, microSD SDHC/SDXC support up to 2TB, APE/FLAC/WAV/WMA/AAC/ALAC/OGG/MP3 playback, replaceable battery compatibility with Samsung S3 batteries, 14h playback, and three gain settings. Exact manual mirrors corroborate 64 x 100 x 17 mm dimensions, 146g weight, output impedance below 0.5 ohm, and the same storage/format/output feature set. Headfonics exact-model coverage lists DX50 at $239. Structured SE Power mW is calculated from iBasso's official high-gain 3.1Vrms output level into the database's 32-ohm comparison load, yielding about 300mW; iBasso does not publish a direct mW rating. Bluetooth, Wi-Fi, streaming, USB DAC, balanced output, and optical output are not documented in the verified source set.",
     "colors": [],
-    "images": []
+    "images": [
+      {
+        "url": "",
+        "filename": "ibasso-dx50.webp",
+        "alt": "iBasso DX50 digital audio player",
+        "credit": "",
+        "sourceUrl": "",
+        "type": ""
+      }
+    ]
   },
   {
     "id": "ibasso-dx80",
@@ -4999,7 +5008,16 @@
     "verificationStatus": "Verified - Official",
     "notes": "Verified - Official Distributor/Review: Hibino's exact iBasso DX80 launch/specification page identifies DX80 as a high-resolution music player and verifies dual CS4398 DACs in mono mode, XMOS USB receiver for USB DAC operation, two microSDHC/microSDXC slots, 3.2in 480 x 800 IPS touchscreen, 150-step digital volume, 3600mAh battery, approximately 13h playback, 3.5mm headphone output, line output, coaxial output, Micro-B USB, 63 x 17 x 120 mm dimensions, 178g weight, FLAC/WAV/DSD/DFF/DSF/DXD/APE/WMA/AAC/ALAC/AIFF/OGG/MP3 playback, and 260mW + 260mW output at 32 ohms. Exact Headfonics and Headfonia coverage support 2015 release timing, standalone DAP identity, $359 launch pricing, DSD128 playback, and lack of wireless streaming. No Bluetooth, Wi-Fi, balanced output, cellular, or installable streaming platform is documented.",
     "colors": [],
-    "images": []
+    "images": [
+      {
+        "url": "",
+        "filename": "ibasso-dx80.webp",
+        "alt": "iBasso DX80 digital audio player",
+        "credit": "",
+        "sourceUrl": "",
+        "type": ""
+      }
+    ]
   },
   {
     "id": "ibasso-dx90",
@@ -5077,7 +5095,16 @@
     "colors": [
       "Black"
     ],
-    "images": []
+    "images": [
+      {
+        "url": "",
+        "filename": "ibasso-dx90.webp",
+        "alt": "iBasso DX90 digital audio player",
+        "credit": "",
+        "sourceUrl": "",
+        "type": ""
+      }
+    ]
   },
   {
     "id": "ibasso-dx100",
@@ -5153,7 +5180,16 @@
     "verificationStatus": "Verified - Official",
     "notes": "Verified - Official/Review: iBasso's exact DX100 product page identifies DX100 as a digital lossless music player and verifies custom audio playback software on Android 2.3, 24-bit/192kHz decoding, 32-bit ES9018 DAC, built-in +/-8.5V headphone amplifier, 3.75in capacitive touchscreen, 24/192 optical/coaxial output, 3.5mm and 6.3mm headphone outputs, line output, 256-step digital volume, 64GB internal flash, external storage up to 32GB, three gain settings, SRC and digital-filter options, Wi-Fi, Bluetooth, and common lossless/lossy file support. Exact Headfonics review reproduces the specification table with 2000mAh 8.4V Li-polymer battery, 7h music playback, 71.8 x 118 x 27.5 mm dimensions, 265g weight, recommended 8-600 ohm headphone impedance, and high-gain output levels of 125mW at 32 ohms for 2Vrms, 245mW at 32 ohms for 2.8Vrms, and 83mW at 300 ohms for 5Vrms. MSRP USD is left blank because the source set only gives broad 500-1000 USD review category context rather than a precise launch price. No balanced output, cellular, 4G, 5G, USB DAC, or onboard streaming app platform is documented in the verified source set.",
     "colors": [],
-    "images": []
+    "images": [
+      {
+        "url": "",
+        "filename": "ibasso-dx100.webp",
+        "alt": "iBasso DX100 digital audio player",
+        "credit": "",
+        "sourceUrl": "",
+        "type": ""
+      }
+    ]
   },
   {
     "id": "ibasso-dx150",
@@ -5234,7 +5270,16 @@
     "verificationStatus": "Verified - Review",
     "notes": "Verified - Review/Retail: Exact Headfonics DX150 technical specifications verify Android 6.0, 64-bit eight-core A53 CPU, 2GB LPDDR3 RAM, 32GB eMMC storage, dual AK4490EQ DACs, XMOS XU208 USB DAC function, Wi-Fi 802.11 b/g/n/ac on 2.4GHz/5GHz, Bluetooth 4.1, 4400mAh battery, 128.5 x 69 x 19.5 mm dimensions, 245g weight, average 10.5h playback, PCM up to 32-bit/384kHz, DSD256, and stock AMP6 output ratings of 185mW SE and 425mW balanced into 32 ohms. B&H exact retail specifications corroborate 32GB storage, 2GB RAM, microSD/microSDHC/microSDXC support up to 2TB, USB DAC use, 4400mAh battery, USB-C charging, and the included AMP6 amp card. Structured fields describe the stock AMP6 configuration; other replaceable iBasso AMP cards are not separate rows unless their hardware changes are explicitly added later.",
     "colors": [],
-    "images": []
+    "images": [
+      {
+        "url": "",
+        "filename": "ibasso-dx150.webp",
+        "alt": "iBasso DX150 digital audio player",
+        "credit": "",
+        "sourceUrl": "",
+        "type": ""
+      }
+    ]
   },
   {
     "id": "ibasso-dx160",
@@ -11616,6 +11661,7 @@
     "images": [
       {
         "url": "https://godomall-storage.cdn-nhncommerce.com/db6240e1bd2c83c7153b1bcbf0294bd2/goods/1000000169/image/magnify/1000000169_magnify_037.png",
+        "filename": "cowon-plenue-d3.webp",
         "alt": "Cowon Plenue D3 digital audio player",
         "credit": "Cowon",
         "sourceUrl": "",
@@ -23020,7 +23066,16 @@
     "colors": [
       "Silver"
     ],
-    "images": []
+    "images": [
+      {
+        "url": "",
+        "filename": "shanling-m3.webp",
+        "alt": "Shanling M3 digital audio player",
+        "credit": "",
+        "sourceUrl": "",
+        "type": ""
+      }
+    ]
   },
   {
     "id": "shanling-m5",
