@@ -85,6 +85,7 @@ const optionalBlankColumns = new Set([
   'SE Power Load',
   'BAL Power Load',
   'Streaming Services',
+  'Player Features',
   'Wi-Fi Bands',
   'official_store_url',
   'buy_links',

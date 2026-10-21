@@ -2126,6 +2126,42 @@ dd {
   vertical-align: middle;
 }
 
+.player-feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.player-feature-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  border: 1px solid var(--color-neutral-border);
+  border-radius: 999px;
+  background: var(--color-neutral-bg);
+  color: var(--color-neutral-text);
+  padding: 4px 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.player-feature-chip--supported {
+  border-color: var(--color-success-border);
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
+}
+
+.player-feature-chip--unsupported {
+  border-color: var(--color-danger-border);
+  background: var(--color-danger-bg);
+  color: var(--color-danger-text);
+}
+
 .summary-review-section {
   display: grid;
   gap: 8px;

@@ -83,6 +83,22 @@ test('device without balanced output does not count blank BAL Power mW as missin
   assert.equal(rowCoverage(row).actionableMissing.includes('BAL Power mW'), false);
 });
 
+test('documented no headphone outputs resolves as known', () => {
+  const row = baseRow({
+    '3.5mm': 'FALSE',
+    '4.4mm': 'FALSE',
+    '2.5mm': 'FALSE',
+    '6.35mm': 'FALSE',
+    'Headphone Outputs': 'None',
+    'SE Power mW': '',
+    'BAL Power mW': '',
+    Notes: 'Digital transport only; no analog headphone output.',
+  });
+
+  assert.equal(resolveFieldState(row, core('Headphone Outputs')).state, 'known');
+  assert.equal(rowCoverage(row).actionableMissing.includes('Headphone Outputs'), false);
+});
+
 test('device without microSD does not count Storage Expansion Max as missing', () => {
   const row = baseRow({ microSD: 'FALSE', 'Storage Expansion Max': '' });
   assert.equal(resolveFieldState(row, core('Storage Expansion Max')).state, 'not_applicable');

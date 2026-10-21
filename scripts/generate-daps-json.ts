@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { BuyLink, Dap, MixedSpecValue } from '../src/types/dap';
+import { parsePlayerFeatures } from '../src/utils/playerFeatures';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const csvPath = resolve(projectRoot, 'src/data/daps.csv');
@@ -197,6 +198,10 @@ function toDap(row: Record<string, string>): Dap {
   const imageAlt = valueFromAny(row, ['image_alt']) || [brand, model, variant, 'digital audio player'].filter(Boolean).join(' ');
   const imageCredit = row['Image Credit'] || valueFromAny(row, ['image_credit']);
   const colors = splitColors(row.Colors || valueFromAny(row, ['color_variants']));
+  const playerFeatureResult = parsePlayerFeatures(row['Player Features'] ?? '');
+  if (playerFeatureResult.warnings.length) {
+    console.warn(`WARNING:\n${[brand, model, variant].filter(Boolean).join(' ')}\n${playerFeatureResult.warnings.join('\n')}`);
+  }
 
   return {
     id: slugify([brand, model, variant]),
@@ -243,6 +248,7 @@ function toDap(row: Record<string, string>): Dap {
     dsdMax: row['DSD Max'] ?? '',
     mqa: parseBoolean(row.MQA ?? ''),
     streamingServices: splitList(row['Streaming Services'] ?? ''),
+    playerFeatures: playerFeatureResult.features,
     wifiBands: row['Wi-Fi Bands'] ?? '',
     usbPort: row['USB Port'] ?? '',
     batteryLifeHours: row['Battery Life Hours'] ?? '',

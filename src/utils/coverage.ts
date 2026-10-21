@@ -145,6 +145,7 @@ export function buildRows(headers: string[], rows: string[][]): CsvRow[] {
 
 export function resolveFieldState(row: CsvRow, definition: FieldDefinition, rules = defaultFieldRules): FieldResolution {
   if (definition.field === 'Headphone Outputs') {
+    if (value(row, definition.field) !== '') return { field: definition.field, state: reviewStateForValue(row, definition.field) ?? 'known' };
     return { field: definition.field, state: definition.blankState?.(row) ?? 'missing' };
   }
   if (definition.field === 'Balanced Output') {

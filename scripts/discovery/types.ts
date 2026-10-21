@@ -44,7 +44,6 @@ export type CandidateClassification =
   | 'likely-new'
   | 'possible-variant'
   | 'possible-duplicate'
-  | 'tracked-roadmap'
   | 'retail-sighting'
   | 'needs-classification';
 

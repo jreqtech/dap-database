@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue';
-import { ChevronLeft, ChevronRight, ExternalLink, X } from 'lucide-vue-next';
+import { Check, ChevronLeft, ChevronRight, ExternalLink, X } from 'lucide-vue-next';
 import type { Dap } from '../types/dap';
 import { formatValue, hasValue } from '../utils/formatters';
 import { getStatusBadgeMeta, getVerificationBadgeMeta } from '../utils/dapDisplay';
@@ -73,6 +73,7 @@ const optionalBlankRawFields = new Set([
   'SE Output Impedance Ohm',
   'BAL Output Impedance Ohm',
   'Streaming Services',
+  'Player Features',
   'Wi-Fi Bands',
   'official_store_url',
   'last_updated',
@@ -138,6 +139,7 @@ const summaryRows = computed(() => (props.dap ? getSummaryRows(props.dap) : []))
 const audioRows = computed(() => (props.dap ? getAudioRows(props.dap) : []));
 const hardwareRows = computed(() => (props.dap ? getHardwareRows(props.dap) : []));
 const connectivityRows = computed(() => (props.dap ? getConnectivityRows(props.dap) : []));
+const playerFeatures = computed(() => props.dap?.playerFeatures ?? []);
 
 const sourceStatusLabel = computed(() => {
   if (!props.dap) return '';
@@ -345,6 +347,22 @@ watch(() => props.dap, (dap) => {
                   <dd class="spec-value">{{ row.value }}</dd>
                 </div>
               </dl>
+            </section>
+
+            <section v-if="playerFeatures.length" class="details-section">
+              <h3>Player Features</h3>
+              <ul class="player-feature-list">
+                <li
+                  v-for="feature in playerFeatures"
+                  :key="feature.label"
+                  class="player-feature-chip"
+                  :class="feature.supported ? 'player-feature-chip--supported' : 'player-feature-chip--unsupported'"
+                >
+                  <Check v-if="feature.supported" :size="14" aria-hidden="true" />
+                  <X v-else :size="14" aria-hidden="true" />
+                  <span>{{ feature.label }}</span>
+                </li>
+              </ul>
             </section>
 
             <section v-if="hasBuyInfo" class="details-section buy-section">

@@ -29,20 +29,28 @@ Audio-focused phones such as the Moondrop MIAD 01 and general consumer MP3 playe
 
 ## Current Data Status
 
-As of 2026-08-04, `src/data/daps.csv` contains 251 source-backed DAP rows. Most rows have local optimized images referenced through `image_filename`; a small number of newly added roadmap rows still need local image processing.
+As of 2026-10-21, `src/data/daps.csv` contains 260 source-backed DAP rows. Most rows have local optimized images referenced through `image_filename`.
 
 Latest local checks:
 
 - `npm run generate:data`
-- `npm run build`
 - `npm test`
-- `npm run discover:daps:dry-run`
 
 Latest discovery status:
 
 - The weekly discovery watcher is producing a clean report with no current actionable candidates.
 - Sony currently returns HTTP 403 to scripted fetches, and Lotoo may fail depending on network/site behavior. These failures are reported but do not create candidates by themselves.
 - Recent false-positive cleanup removed non-DAP matches such as QLS digital transports, Shanling M30 desktop player, Cowon PLENUE X30/X40 IEM-category links, and duplicate Astell&Kern/Cowon catalog names.
+
+Recent maintenance:
+
+- Fosi Audio DAP Neo was added from the official product page with its supplied local image; 16GB and 64GB are included memory-card options for one model.
+- Shanling Q2 was updated from the official product page with Active status, USD 259 MSRP, 1850mAh battery, 3.5mm and 4.4mm line-out support, and current official notes.
+- xDuoo X2, X2S, X3, X3 II, X5, X10, X20, and Nano D3 were added in the latest xDuoo pass.
+- xDuoo X5 weight and dimensions were filled from exact-model sources.
+- xDuoo X10 MSRP USD was filled as 180 from exact-model review context.
+- Local optimized images are linked for X2, X2S, X3, X3 II, X5, X10, X20, Nano D3, X10T, and X10T II.
+- `last_updated` timestamps for the new/edited xDuoo rows and Shanling Q2 were corrected from midnight placeholders to actual edit-time stamps.
 
 ## Source Rules
 
@@ -149,14 +157,13 @@ Confirm whether hyphenated and non-hyphenated names are aliases before adding. D
 
 ### xDuoo
 
-- xDuoo X2
-- xDuoo X2S
-- xDuoo X3
-- xDuoo X3 II
-- xDuoo X5
-- xDuoo X10
-- xDuoo X20
-- xDuoo Nano D3
+No current xDuoo roadmap candidates.
+
+Recent data pass added X2, X2S, X3, X3 II, X5, X10, X20, and Nano D3. Existing X10T and X10T II rows are transport-style players retained with explicit no-analog-output notes.
+
+Image status:
+
+All current xDuoo rows have local `image_filename` assets. Record image source URLs and credits where available.
 
 
 ### QLS / Quloos
@@ -191,6 +198,11 @@ ONIX Waltz XM10 LTD is already represented in the database; do not add duplicate
 
 ### Budget / AliExpress-Style DAPs
 
+- Innioasis G1
+- Innioasis G3
+- Innioasis G5
+- Innioasis Y1
+- Innioasis Y2
 - Ruizu A55
 - Ruizu A58
 - Ruizu X02
@@ -207,3 +219,7 @@ ONIX Waltz XM10 LTD is already represented in the database; do not add duplicate
 Variant note:
 
 Budget DAPs often have inconsistent listings, relabels, and silent revisions. Add only when sources are clear enough. Avoid duplicate rows for obvious rebrands unless there is enough evidence that they are sold as meaningfully different models.
+
+Innioasis note:
+
+Innioasis appears to sell standalone Android and non-Android music players, but the brand overlaps heavily with general MP3/MP4 players, kid-focused players, and TIMMKOO/OEM-style listings. Treat Innioasis rows as candidates only until exact official product pages or reliable store/manual specs prove standalone local playback, storage, audio outputs, and model identity. Do not add TIMMKOO-branded devices under Innioasis unless sources clearly establish the brand relationship and the database intentionally tracks that identity.

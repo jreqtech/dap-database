@@ -13,7 +13,7 @@
     "discover:daps:ci": "tsx scripts/discovery/discover.ts --no-exit-code",
     "discover:daps:dry-run": "tsx scripts/discovery/discover.ts --dry-run",
     "discover:daps:dedupe": "tsx scripts/discovery/dedupe-issues.ts",
-    "test": "tsx --test scripts/discovery/discovery.test.ts scripts/coverage.test.ts",
+    "test": "tsx --test scripts/discovery/discovery.test.ts scripts/coverage.test.ts scripts/player-features.test.ts",
     "test:discovery": "tsx --test scripts/discovery/discovery.test.ts",
     "audit:coverage": "tsx scripts/coverage-audit.ts",
     "audit:console": "node tools/audit-console/server.mjs"

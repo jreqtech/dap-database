@@ -29,6 +29,11 @@ export interface BuyLink {
 
 export type ReviewLink = BuyLink;
 
+export interface PlayerFeature {
+  label: string;
+  supported: boolean;
+}
+
 export interface Dap {
   id: string;
   brand: string;
@@ -74,6 +79,7 @@ export interface Dap {
   dsdMax: string;
   mqa: boolean | null;
   streamingServices: string[];
+  playerFeatures: PlayerFeature[];
   wifiBands: string;
   usbPort: string;
   batteryLifeHours: string;

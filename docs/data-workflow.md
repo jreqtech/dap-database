@@ -68,6 +68,29 @@ Label|URL; Label|URL
 
 Do not use buy links as spec sources.
 
+## Optional Player Features
+
+`Player Features` is a sparse optional field for player-specific software capabilities, especially on non-Android or proprietary-OS DAPs.
+
+Use semicolon-separated feature entries:
+
+```text
+Feature Label|TRUE; Feature Label|FALSE
+```
+
+Supported labels:
+
+- Gapless Playback
+- ReplayGain
+- M3U Playlists
+- CUE Sheets
+- Folder Browsing
+- Resume Playback
+- Sleep Timer
+- Lyrics Support
+
+`TRUE` means confirmed supported. `FALSE` means confirmed unsupported. Missing features are unknown, not unsupported. Keep limitations and details in `Notes`.
+
 ## Media and Image Usage
 
 Image fields are optional.
