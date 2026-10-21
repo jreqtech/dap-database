@@ -29,7 +29,7 @@ Audio-focused phones such as the Moondrop MIAD 01 and general consumer MP3 playe
 
 ## Current Data Status
 
-As of 2026-10-21, `src/data/daps.csv` contains 260 source-backed DAP rows. Most rows have local optimized images referenced through `image_filename`.
+As of 2026-10-21, `src/data/daps.csv` contains 261 source-backed DAP rows. Most rows have local optimized images referenced through `image_filename`.
 
 Latest local checks:
 
@@ -44,6 +44,7 @@ Latest discovery status:
 
 Recent maintenance:
 
+- HiBy RS2 II was added from HiBy's official specification charts and launch release, with its supplied local image. The green aluminum and limited gold brass versions share one model row; their different weights and prices are recorded in its notes.
 - Fosi Audio DAP Neo was added from the official product page with its supplied local image; 16GB and 64GB are included memory-card options for one model.
 - Shanling Q2 was updated from the official product page with Active status, USD 259 MSRP, 1850mAh battery, 3.5mm and 4.4mm line-out support, and current official notes.
 - xDuoo X2, X2S, X3, X3 II, X5, X10, X20, and Nano D3 were added in the latest xDuoo pass.
