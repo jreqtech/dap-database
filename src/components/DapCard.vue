@@ -38,16 +38,13 @@ const shouldShowStatus = (status: string) => status.trim().toLowerCase() !== 'ac
         <span class="dap-card__title-line">
           <span class="brand" :title="dap.brand">{{ dap.brand }}</span>
           <span class="dap-card__title">{{ dap.model }}</span>
-          <span v-if="hasValue(dap.variant)" class="variant-text">{{ dap.variant }}</span>
+          <span class="variant-text">{{ hasValue(dap.variant) ? dap.variant : '' }}</span>
           <span v-if="hasValue(dap.msrpUsd)" class="catalog-price">{{ formatCompactPrice(dap.msrpUsd) }}</span>
         </span>
 
-        <span class="chip-row catalog-badges">
+        <span class="dap-card__storage">
           <span class="badge badge-neutral">{{ isAndroidBased(dap) ? 'Android' : 'Non-Android' }}</span>
-        </span>
-
-        <span v-if="formatStorageSummary(dap)" class="dap-card__storage">
-          {{ formatStorageSummary(dap) }}
+          <span v-if="formatStorageSummary(dap)" class="dap-card__storage-text">{{ formatStorageSummary(dap) }}</span>
         </span>
       </span>
     </a>

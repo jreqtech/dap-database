@@ -1546,7 +1546,7 @@ th.is-brand .sort-button {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 340px));
   gap: 16px;
   align-items: stretch;
 }
@@ -1754,6 +1754,7 @@ th.is-brand .sort-button {
 
 .dap-card .variant-text {
   min-width: 0;
+  height: 1.2em;
   margin: 0;
   color: var(--color-muted);
   font-size: 0.9rem;
@@ -1777,10 +1778,22 @@ th.is-brand .sort-button {
 }
 
 .dap-card__storage {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 24px;
   color: var(--color-muted);
   font-size: 0.82rem;
   font-weight: 650;
   line-height: 1.25;
+}
+
+.dap-card__storage .badge {
+  flex: none;
+}
+
+.dap-card__storage-text {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -3784,7 +3797,7 @@ dd {
   }
 
   .card-grid {
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(270px, 340px));
   }
 
   .dap-card__media {
