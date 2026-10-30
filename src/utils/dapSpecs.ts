@@ -123,6 +123,13 @@ function addRow(rows: DetailRow[], label: string, value: string, wide = false) {
   if (value) rows.push({ label, value, wide });
 }
 
+function addPair(rows: DetailRow[], firstLabel: string, firstValue: string, secondLabel: string, secondValue: string) {
+  if (firstValue || secondValue) {
+    rows.push({ label: firstLabel, value: firstValue });
+    rows.push({ label: secondLabel, value: secondValue });
+  }
+}
+
 export function getSummaryRows(dap: Dap): DetailRow[] {
   const rows: DetailRow[] = [];
   addRow(rows, 'Year', textValue(dap.releaseYear));
@@ -136,11 +143,9 @@ export function getAudioRows(dap: Dap): DetailRow[] {
   addRow(rows, 'DAC', textValue(dap.dac), true);
   addRow(rows, 'Amplifier', textValue(dap.amp), true);
   addRow(rows, 'Outputs', outputSummary(dap), true);
-  addRow(rows, 'Balanced output', textValue(dap.balancedOutputType));
-  addRow(rows, 'SE Power', powerValue(dap.sePowerMw, dap.sePowerLoad));
-  addRow(rows, 'Balanced power', powerValue(dap.balPowerMw, dap.balPowerLoad));
-  addRow(rows, 'SE output impedance', impedanceValue(dap.seOutputImpedanceOhm));
-  addRow(rows, 'Balanced output impedance', impedanceValue(dap.balOutputImpedanceOhm));
+  addRow(rows, 'Balanced output', textValue(dap.balancedOutputType), true);
+  addPair(rows, 'SE Power', powerValue(dap.sePowerMw, dap.sePowerLoad), 'Balanced power', powerValue(dap.balPowerMw, dap.balPowerLoad));
+  addPair(rows, 'SE output impedance', impedanceValue(dap.seOutputImpedanceOhm), 'Balanced output impedance', impedanceValue(dap.balOutputImpedanceOhm));
   return rows;
 }
 
@@ -148,14 +153,12 @@ export function getHardwareRows(dap: Dap): DetailRow[] {
   const rows: DetailRow[] = [];
   addRow(rows, 'SoC', textValue(dap.soc));
   addRow(rows, 'RAM', gbValue(dap.ramGb));
-  addRow(rows, 'OS', textValue(dap.os));
-  addRow(rows, 'Battery', hasValue(dap.batteryMah) ? formatBattery(dap.batteryMah) : '');
-  addRow(rows, 'Battery life', hoursValue(dap.batteryLifeHours));
+  addRow(rows, 'OS', textValue(dap.os), true);
+  addPair(rows, 'Battery', hasValue(dap.batteryMah) ? formatBattery(dap.batteryMah) : '', 'Battery life', hoursValue(dap.batteryLifeHours));
   addRow(rows, 'Display', displaySizeValue(dap.displaySize));
   addRow(rows, 'Weight', weightValue(dap.weight));
   addRow(rows, 'Dimensions', textValue(dap.dimensions), true);
-  addRow(rows, 'Storage', gbValue(dap.storageGb));
-  addRow(rows, 'Storage expansion', formatStorageExpansion(dap, { showNone: true, showUnknown: true }));
+  addPair(rows, 'Storage', gbValue(dap.storageGb), 'Storage expansion', formatStorageExpansion(dap, { showNone: true, showUnknown: true }));
   addRow(rows, 'Colors', listValue(dap.colors), true);
   return rows;
 }
