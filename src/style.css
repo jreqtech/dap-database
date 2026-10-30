@@ -1012,10 +1012,11 @@ h1 {
 }
 
 .table-wrap {
+  max-height: min(72vh, 860px);
+  overflow: auto;
   border-top: 1px solid var(--color-border);
 }
 
-.table-wrap,
 .comparison-scroll {
   overflow-x: auto;
 }
@@ -1149,6 +1150,8 @@ h1 {
 
 .dap-table {
   min-width: 1366px;
+  border-collapse: separate;
+  border-spacing: 0;
   table-layout: fixed;
 }
 
@@ -1217,6 +1220,12 @@ h1 {
   font-weight: 850;
   text-transform: none;
   white-space: nowrap;
+}
+
+.dap-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .dap-table th,
