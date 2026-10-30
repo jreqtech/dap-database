@@ -17,6 +17,7 @@ interface LinkRow {
 const props = defineProps<{
   daps: Array<Dap | null>;
   showMobileStickyNames?: boolean;
+  highlightDifferences?: boolean;
 }>();
 
 const expandedNotes = ref(new Set<number>());
@@ -26,6 +27,10 @@ let compactMediaQuery: MediaQueryList | null = null;
 
 const selectedDaps = computed(() => props.daps.filter((dap): dap is Dap => Boolean(dap)));
 const tableDaps = computed(() => (isCompactCompare.value ? props.daps.slice(0, 2) : props.daps));
+
+function isDifferent(values: string[]): boolean {
+  return props.highlightDifferences && values.length > 1 && new Set(values.map((value) => displayValue(value).toLowerCase())).size > 1;
+}
 
 const linkRowDefinitions: LinkRow[] = [
   {
@@ -116,7 +121,7 @@ function syncCompactCompare(event?: MediaQueryListEvent) {
 }
 
 onMounted(() => {
-  compactMediaQuery = window.matchMedia('(max-width: 760px)');
+  compactMediaQuery = window.matchMedia('(max-width: 980px)');
   syncCompactCompare();
   compactMediaQuery.addEventListener('change', syncCompactCompare);
 });
@@ -131,11 +136,10 @@ onBeforeUnmount(() => {
     <div class="compare-table-scroll">
       <table class="compare-table">
         <colgroup>
-          <col v-if="!isCompactCompare" class="compare-table__group-col" />
           <col class="compare-table__spec-col" />
           <col v-for="(_, index) in tableDaps" :key="`dap-col-${index}`" class="compare-table__dap-col" />
         </colgroup>
-        <thead v-if="isCompactCompare && props.showMobileStickyNames" class="compare-table__mobile-sticky-head">
+        <thead v-if="!isCompactCompare || props.showMobileStickyNames" class="compare-table__sticky-head">
           <tr>
             <th scope="col" aria-label="Specification"></th>
             <th v-for="(dap, index) in tableDaps" :key="`mobile-head-${index}`" scope="col">
@@ -145,18 +149,10 @@ onBeforeUnmount(() => {
         </thead>
         <tbody>
           <template v-for="group in comparisonSpecGroups" :key="group.key">
-            <tr v-if="isCompactCompare" class="compare-table__mobile-section">
+            <tr class="compare-table__section">
               <th :colspan="tableDaps.length + 1" scope="colgroup">{{ group.label }}</th>
             </tr>
-            <tr v-for="(row, rowIndex) in group.rows" :key="`${group.key}-${row.key}`">
-              <th
-                v-if="!isCompactCompare && rowIndex === 0"
-                class="compare-table__group-cell"
-                :rowspan="group.rows.length"
-                scope="rowgroup"
-              >
-                {{ group.label }}
-              </th>
+            <tr v-for="row in group.rows" :key="`${group.key}-${row.key}`" :class="{ 'compare-table__different': isDifferent(selectedDaps.map((dap) => row.value(dap))) }">
               <th scope="row">{{ row.label }}</th>
               <td v-for="(dap, index) in tableDaps" :key="`${row.key}-${index}`">
                 <span :class="{ 'compare-muted-value': !dap || !row.value(dap).trim() }">
@@ -165,11 +161,10 @@ onBeforeUnmount(() => {
               </td>
             </tr>
           </template>
-          <tr v-if="isCompactCompare" class="compare-table__mobile-section">
+          <tr class="compare-table__section">
             <th :colspan="tableDaps.length + 1" scope="colgroup">Notes</th>
           </tr>
-          <tr class="compare-table__section-start">
-            <th v-if="!isCompactCompare" class="compare-table__group-cell" scope="rowgroup">Notes</th>
+          <tr :class="{ 'compare-table__different': isDifferent(selectedDaps.map((dap) => noteValue(dap))) }">
             <th scope="row">Notes</th>
             <td v-for="(dap, index) in tableDaps" :key="`notes-${index}`">
               <div class="compare-note" :class="{ 'is-collapsed': isLongNote(dap) && !isNoteExpanded(index) }">
@@ -186,22 +181,14 @@ onBeforeUnmount(() => {
             </td>
           </tr>
           <template v-if="visibleLinkRows.length">
-            <tr v-if="isCompactCompare" class="compare-table__mobile-section">
+            <tr class="compare-table__section">
               <th :colspan="tableDaps.length + 1" scope="colgroup">Links</th>
             </tr>
             <tr
-              v-for="(row, rowIndex) in visibleLinkRows"
+              v-for="row in visibleLinkRows"
               :key="`links-${row.key}`"
-              :class="{ 'compare-table__section-start': rowIndex === 0 }"
+              :class="{ 'compare-table__different': isDifferent(selectedDaps.map((dap) => row.links(dap).map((link) => link.url).join('|'))) }"
             >
-              <th
-                v-if="!isCompactCompare && rowIndex === 0"
-                class="compare-table__group-cell"
-                :rowspan="visibleLinkRows.length"
-                scope="rowgroup"
-              >
-                Links
-              </th>
               <th scope="row">{{ row.label }}</th>
               <td v-for="(dap, index) in tableDaps" :key="`${row.key}-${index}`">
                 <div v-if="dap && row.links(dap).length" class="compare-link-list">

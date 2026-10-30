@@ -19,6 +19,7 @@ const selectedDapIds = computed(() => selectedDaps.value.filter((dap): dap is Da
 const selectedCount = computed(() => selectedDapIds.value.length);
 const compareColumnsRef = ref<HTMLElement | null>(null);
 const showMobileStickyNames = ref(false);
+const highlightDifferences = ref(false);
 let compactMediaQuery: MediaQueryList | null = null;
 
 function parseCompareSlugs(hash: string): string[] {
@@ -101,7 +102,7 @@ function syncMobileStickyNames() {
 
 onMounted(() => {
   syncFromHash();
-  compactMediaQuery = window.matchMedia('(max-width: 760px)');
+  compactMediaQuery = window.matchMedia('(max-width: 980px)');
   syncMobileStickyNames();
   window.addEventListener('hashchange', handleHashChange);
   window.addEventListener('scroll', syncMobileStickyNames, { passive: true });
@@ -135,6 +136,11 @@ watch(() => props.daps, () => {
       </nav>
     </header>
 
+    <label v-if="selectedCount >= 2" class="compare-differences-toggle">
+      <input v-model="highlightDifferences" type="checkbox" />
+      <span>Highlight differences</span>
+    </label>
+
     <div class="compare-sheet">
       <div ref="compareColumnsRef" class="compare-columns">
         <div class="compare-side-blank" aria-hidden="true"></div>
@@ -152,7 +158,7 @@ watch(() => props.daps, () => {
         />
       </div>
 
-      <CompareTable v-if="selectedCount >= 1" :daps="selectedDaps" :show-mobile-sticky-names="showMobileStickyNames" />
+      <CompareTable v-if="selectedCount >= 1" :daps="selectedDaps" :show-mobile-sticky-names="showMobileStickyNames" :highlight-differences="highlightDifferences" />
     </div>
   </main>
 </template>

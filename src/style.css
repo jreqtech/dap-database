@@ -3115,9 +3115,11 @@ dd {
 }
 
 .compare-page {
+  --compare-spec-width: clamp(170px, 17vw, 230px);
+  --compare-dap-width: calc((100% - var(--compare-spec-width)) / 3);
   display: grid;
   gap: 14px;
-  width: min(1420px, calc(100vw - 32px));
+  width: calc(100% - 32px);
   margin: 0 auto;
 }
 
@@ -3138,8 +3140,7 @@ dd {
 }
 
 .compare-sheet {
-  width: 1220px;
-  max-width: 100%;
+  width: 100%;
   min-width: 0;
   margin: 0 auto;
   border: 1px solid var(--color-border);
@@ -3149,12 +3150,12 @@ dd {
 
 .compare-columns {
   display: grid;
-  grid-template-columns: 320px repeat(3, 300px);
+  grid-template-columns: var(--compare-spec-width) repeat(3, var(--compare-dap-width));
   overflow: visible;
 }
 
 .compare-side-blank {
-  min-height: 260px;
+  min-height: 0;
   border-right: 1px solid #ece9e2;
   background: #fbfbf8;
 }
@@ -3162,7 +3163,8 @@ dd {
 .compare-column-card {
   position: relative;
   display: grid;
-  grid-template-rows: auto minmax(220px, 1fr);
+  grid-template-rows: auto auto;
+  align-content: start;
   gap: 8px;
   min-width: 0;
   border-right: 1px solid #ece9e2;
@@ -3333,6 +3335,22 @@ dd {
   text-align: center;
 }
 
+.compare-empty-slot {
+  min-height: 100px;
+  padding: 8px;
+}
+
+.compare-differences-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  color: var(--color-text);
+  font-size: 0.86rem;
+  font-weight: 750;
+  cursor: pointer;
+}
+
 .compare-product .dap-photo {
   width: 100%;
   max-width: 220px;
@@ -3395,7 +3413,7 @@ dd {
 }
 
 .compare-table {
-  width: 1220px;
+  width: 100%;
   min-width: 0;
   border-collapse: separate;
   border-spacing: 0;
@@ -3403,16 +3421,12 @@ dd {
   font-size: 0.82rem;
 }
 
-.compare-table__group-col {
-  width: 165px;
-}
-
 .compare-table__spec-col {
-  width: 155px;
+  width: var(--compare-spec-width);
 }
 
 .compare-table__dap-col {
-  width: 300px;
+  width: var(--compare-dap-width);
 }
 
 .compare-empty-heading {
@@ -3429,11 +3443,6 @@ dd {
   vertical-align: top;
   overflow-wrap: anywhere;
   line-height: 1.25;
-}
-
-.compare-table__section-start > th,
-.compare-table__section-start > td {
-  border-top: 3px solid #e6e9ea;
 }
 
 .compare-table th {
@@ -3467,22 +3476,27 @@ dd {
   font-weight: 850;
 }
 
-.compare-table__group-cell {
-  background: #fbfbfb;
+.compare-table__section th {
+  border-top: 2px solid #e1e5e6;
+  background: #f5f6f4;
   color: #3f4a50;
-  font-size: 0.76rem;
   font-weight: 900;
-  text-align: left;
   text-transform: uppercase;
-  vertical-align: top;
 }
 
-.compare-table__mobile-section {
-  display: none;
+.compare-table__sticky-head th {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  border-bottom: 2px solid #cfcfcf;
+  background: #ffffff;
+  font-weight: 850;
 }
 
-.compare-table__mobile-sticky-head {
-  display: none;
+.compare-table tbody tr.compare-table__different > th,
+.compare-table tbody tr.compare-table__different > td,
+.compare-table tbody tr.compare-table__different > th[scope="row"] {
+  background: #fff2cc;
 }
 
 .compare-column-card__remove {
@@ -3722,6 +3736,10 @@ dd {
 }
 
 @media (max-width: 980px) {
+  .compare-page {
+    --compare-spec-width: 112px;
+    --compare-dap-width: calc((100% - var(--compare-spec-width)) / 2);
+  }
   .catalog-layout {
     grid-template-columns: 1fr;
   }
@@ -3870,7 +3888,7 @@ dd {
   }
 
   .compare-columns {
-    grid-template-columns: 112px repeat(2, minmax(0, 1fr));
+    grid-template-columns: var(--compare-spec-width) repeat(2, var(--compare-dap-width));
   }
 
   .compare-sheet {
@@ -3884,14 +3902,8 @@ dd {
     min-height: 100%;
   }
 
-  .compare-column-card:nth-child(4),
-  .compare-table td:nth-child(5) {
+  .compare-column-card:nth-child(4) {
     display: none;
-  }
-
-  .compare-table col:nth-child(5) {
-    width: 0;
-    visibility: collapse;
   }
 
   .compare-product .dap-photo {
@@ -3909,14 +3921,6 @@ dd {
     overflow: visible;
   }
 
-  .compare-table__spec-col {
-    width: 112px;
-  }
-
-  .compare-table__dap-col {
-    width: calc((100% - 112px) / 2);
-  }
-
   .compare-table-scroll {
     display: block;
     width: 100%;
@@ -3932,18 +3936,7 @@ dd {
     line-height: 1.35;
   }
 
-  .compare-table__mobile-section {
-    display: table-row;
-  }
-
-  .compare-table__mobile-sticky-head {
-    display: table-header-group;
-    position: sticky;
-    top: 0;
-    z-index: 5;
-  }
-
-  .compare-table__mobile-sticky-head th {
+  .compare-table__sticky-head th {
     position: sticky;
     top: 0;
     z-index: 4;
@@ -3959,7 +3952,7 @@ dd {
     vertical-align: middle;
   }
 
-  .compare-table__mobile-section th {
+  .compare-table__section th {
     padding: 8px 9px;
     border-top: 3px solid #e1e5e6;
     border-right: 1px solid #ece9e2;
@@ -3971,10 +3964,6 @@ dd {
     text-transform: uppercase;
   }
 
-  .compare-table__section-start > th,
-  .compare-table__section-start > td {
-    border-top: 0;
-  }
 }
 
 @media (max-width: 540px) {
@@ -4195,6 +4184,8 @@ dd {
   }
 
   .compare-page {
+    --compare-spec-width: 110px;
+    --compare-dap-width: calc((100% - var(--compare-spec-width)) / 2);
     width: 100%;
     padding: 10px 12px 28px;
   }
@@ -4210,7 +4201,7 @@ dd {
 
   .compare-columns {
     display: grid;
-    grid-template-columns: 110px repeat(2, minmax(0, 1fr));
+    grid-template-columns: var(--compare-spec-width) repeat(2, var(--compare-dap-width));
     overflow: visible;
   }
 
@@ -4273,14 +4264,6 @@ dd {
     overflow: visible;
   }
 
-  .compare-table__spec-col {
-    width: 110px;
-  }
-
-  .compare-table__dap-col {
-    width: calc((100% - 110px) / 2);
-  }
-
   .compare-table-scroll {
     display: block;
     width: 100%;
@@ -4296,18 +4279,7 @@ dd {
     line-height: 1.35;
   }
 
-  .compare-table__mobile-section {
-    display: table-row;
-  }
-
-  .compare-table__mobile-sticky-head {
-    display: table-header-group;
-    position: sticky;
-    top: 0;
-    z-index: 5;
-  }
-
-  .compare-table__mobile-sticky-head th {
+  .compare-table__sticky-head th {
     position: sticky;
     top: 0;
     z-index: 4;
@@ -4323,7 +4295,7 @@ dd {
     vertical-align: middle;
   }
 
-  .compare-table__mobile-section th {
+  .compare-table__section th {
     padding: 7px 8px;
     border-top: 3px solid #e1e5e6;
     border-right: 1px solid #ece9e2;
@@ -4335,10 +4307,6 @@ dd {
     text-transform: uppercase;
   }
 
-  .compare-table__section-start > th,
-  .compare-table__section-start > td {
-    border-top: 0;
-  }
 }
 
 
