@@ -594,10 +594,17 @@ h1 {
 }
 
 .filter-section {
-  display: grid;
-  gap: 10px;
+  display: block;
   border-bottom: 1px solid var(--color-border);
   padding: 14px 16px;
+}
+
+.filter-section summary {
+  cursor: pointer;
+}
+
+.filter-section[open] > summary {
+  margin-bottom: 10px;
 }
 
 .filter-section:last-child {
@@ -794,6 +801,38 @@ h1 {
   height: 18px;
   margin: 1px 0 0;
   accent-color: var(--color-primary);
+}
+
+.filter-show-all {
+  width: fit-content;
+  border: 0;
+  background: transparent;
+  color: var(--color-primary);
+  padding: 5px 3px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+@media (min-width: 981px) {
+  .filter-section {
+    padding: 10px 14px;
+  }
+
+  .filter-section[open] > summary {
+    margin-bottom: 7px;
+  }
+
+  .checkbox-group {
+    gap: 2px;
+  }
+
+  .filter-checkbox {
+    min-height: 28px;
+    padding: 3px 2px;
+    font-size: 0.84rem;
+  }
 }
 
 .input-with-icon {

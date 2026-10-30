@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import { computed, ref } from 'vue';
 import type { DapFilters } from '../types/dap';
 
-defineProps<{
+const props = defineProps<{
   filters: DapFilters;
   brands: string[];
   statuses: string[];
@@ -19,6 +20,11 @@ defineProps<{
   ramBounds: { min: number; max: number };
   storageBounds: { min: number; max: number };
 }>();
+
+const showAllBrands = ref(false);
+const visibleBrands = computed(() => showAllBrands.value
+  ? props.brands
+  : props.brands.filter((brand, index) => index < 8 || props.filters.brand.includes(brand)));
 
 const emit = defineEmits<{
   'update:filters': [filters: DapFilters];
@@ -131,10 +137,10 @@ const storageExpansionOptions = [
       <button class="btn btn-secondary btn-sm" type="button" @click="emit('clearFilters')">Reset filters</button>
     </header>
 
-    <div class="filter-section">
-      <h3>Brand</h3>
+    <details class="filter-section" open>
+      <summary><h3>Brand</h3></summary>
       <div class="checkbox-group checkbox-group--scroll" aria-label="Brand">
-        <label v-for="brand in brands" :key="brand" class="filter-checkbox">
+        <label v-for="brand in visibleBrands" :key="brand" class="filter-checkbox">
           <input
             type="checkbox"
             :checked="filters.brand.includes(brand)"
@@ -143,11 +149,14 @@ const storageExpansionOptions = [
           <span class="filter-label">{{ brand }}</span>
           <span class="filter-count">({{ brandCounts[brand] ?? 0 }})</span>
         </label>
+        <button v-if="brands.length > 8" class="filter-show-all" type="button" :aria-expanded="showAllBrands" @click="showAllBrands = !showAllBrands">
+          {{ showAllBrands ? 'Show fewer' : `Show all ${brands.length} brands` }}
+        </button>
       </div>
-    </div>
+    </details>
 
-    <div class="filter-section">
-      <h3>Price</h3>
+    <details class="filter-section" open>
+      <summary><h3>Price</h3></summary>
       <fieldset class="range-filter">
         <legend class="sr-only">Price range</legend>
         <div class="range-inputs">
@@ -198,10 +207,10 @@ const storageExpansionOptions = [
           />
         </div>
       </fieldset>
-    </div>
+    </details>
 
-    <div class="filter-section">
-      <h3>Status</h3>
+    <details class="filter-section" open>
+      <summary><h3>Status</h3></summary>
       <div class="checkbox-group" aria-label="Status">
         <label v-for="status in statuses" :key="status" class="filter-checkbox">
           <input
@@ -213,10 +222,10 @@ const storageExpansionOptions = [
           <span class="filter-count">({{ statusCounts[status] ?? 0 }})</span>
         </label>
       </div>
-    </div>
+    </details>
 
-    <div class="filter-section">
-      <h3>Year</h3>
+    <details class="filter-section" open>
+      <summary><h3>Year</h3></summary>
       <fieldset class="range-filter">
         <legend class="sr-only">Release year range</legend>
         <div class="range-inputs">
@@ -267,10 +276,10 @@ const storageExpansionOptions = [
           />
         </div>
       </fieldset>
-    </div>
+    </details>
 
-    <div class="filter-section">
-      <h3>Storage</h3>
+    <details class="filter-section" open>
+      <summary><h3>Storage</h3></summary>
       <div class="storage-filter-grid">
         <fieldset class="range-filter">
           <legend class="sr-only">Storage range</legend>
@@ -337,10 +346,10 @@ const storageExpansionOptions = [
           </div>
         </div>
       </div>
-    </div>
+    </details>
 
-    <div class="filter-section">
-      <h3>RAM</h3>
+    <details class="filter-section" open>
+      <summary><h3>RAM</h3></summary>
       <fieldset class="range-filter">
         <legend class="sr-only">RAM range</legend>
         <div class="range-inputs">
@@ -393,10 +402,10 @@ const storageExpansionOptions = [
           />
         </div>
       </fieldset>
-    </div>
+    </details>
 
-    <div class="filter-section">
-      <h3>Audio</h3>
+    <details class="filter-section" open>
+      <summary><h3>Audio</h3></summary>
       <div class="checkbox-group" aria-label="Output ports">
         <label v-for="port in outputPorts" :key="port" class="filter-checkbox">
           <input
@@ -418,10 +427,10 @@ const storageExpansionOptions = [
           <span class="filter-count">({{ quickFilterCounts.has44mmOnly ?? 0 }})</span>
         </label>
       </div>
-    </div>
+    </details>
 
-    <div class="filter-section">
-      <h3>Platform</h3>
+    <details class="filter-section" open>
+      <summary><h3>Platform</h3></summary>
       <div class="checkbox-group" aria-label="Platform">
         <label v-for="platform in platforms" :key="platform" class="filter-checkbox">
           <input
@@ -443,10 +452,10 @@ const storageExpansionOptions = [
           <span class="filter-count">({{ quickFilterCounts.androidOnly ?? 0 }})</span>
         </label>
       </div>
-    </div>
+    </details>
 
-    <div class="filter-section">
-      <h3>Connectivity</h3>
+    <details class="filter-section" open>
+      <summary><h3>Connectivity</h3></summary>
       <div class="checkbox-group" aria-label="Connectivity">
         <label
           v-for="connectivity in connectivityOptions"
@@ -462,10 +471,10 @@ const storageExpansionOptions = [
           <span class="filter-count">({{ connectivityCounts[connectivity] ?? 0 }})</span>
         </label>
       </div>
-    </div>
+    </details>
 
-    <div class="filter-section">
-      <h3>Source quality</h3>
+    <details class="filter-section" open>
+      <summary><h3>Source quality</h3></summary>
       <div class="checkbox-group checkbox-group--scroll" aria-label="Verification">
         <label v-for="status in verificationStatuses" :key="status" class="filter-checkbox">
           <input
@@ -477,6 +486,6 @@ const storageExpansionOptions = [
           <span class="filter-count">({{ verificationCounts[status] ?? 0 }})</span>
         </label>
       </div>
-    </div>
+    </details>
   </section>
 </template>
