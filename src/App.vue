@@ -229,7 +229,6 @@ const nextDap = computed(() => {
   if (index < 0 || index >= visibleDaps.value.length - 1) return null;
   return visibleDaps.value[index + 1] ?? null;
 });
-const sourcedCount = computed(() => daps.filter((dap) => !dap.verificationStatus.toLowerCase().includes('needs source')).length);
 const androidCount = computed(() => daps.filter(isAndroidBased).length);
 const balancedCount = computed(() => daps.filter((dap) => dap.has44mm).length);
 const activeFilterChips = computed(() => {
@@ -677,7 +676,6 @@ watch(hasMoreCardDaps, (hasMore) => {
           </div>
             <dl class="stats-grid">
               <div><dt>Total DAPs</dt><dd>{{ daps.length }}</dd></div>
-              <div><dt>Rows with Sources</dt><dd>{{ sourcedCount }}</dd></div>
               <div><dt>Android DAPs</dt><dd>{{ androidCount }}</dd></div>
               <div><dt>With 4.4mm</dt><dd>{{ balancedCount }}</dd></div>
             </dl>

@@ -439,16 +439,29 @@ select:focus-visible {
 
 .catalog-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 430px;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  gap: 18px;
   align-items: center;
-  min-height: 214px;
-  margin-bottom: 20px;
+  min-height: 160px;
+  margin-bottom: 14px;
   border: 1px solid var(--color-border);
   border-radius: 12px;
   background: var(--color-surface);
-  padding: 24px 28px;
+  padding: 16px 20px;
   box-shadow: var(--shadow-sm);
+}
+
+.catalog-hero h1 {
+  font-size: clamp(2.25rem, 3.3vw, 3.2rem);
+}
+
+.catalog-hero .intro {
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+.catalog-hero .header-actions {
+  margin-top: 12px;
 }
 
 .eyebrow {
@@ -485,8 +498,8 @@ h1 {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
   margin: 0;
 }
 
@@ -495,7 +508,7 @@ h1 {
   border: 1px solid var(--color-border);
   border-radius: 10px;
   background: var(--color-surface);
-  padding: 16px 18px;
+  padding: 10px 12px;
   box-shadow: var(--shadow-sm);
 }
 
@@ -509,7 +522,7 @@ h1 {
 .stats-grid dd {
   margin: 5px 0 0;
   color: var(--color-text);
-  font-size: clamp(1.85rem, 2.2vw, 2.35rem);
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
   font-weight: 850;
   line-height: 1;
 }
