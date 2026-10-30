@@ -673,8 +673,8 @@ h1 {
 
 .storage-filter-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(120px, 0.75fr);
-  gap: 14px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
   align-items: start;
 }
 
