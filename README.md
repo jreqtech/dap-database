@@ -91,6 +91,8 @@ See [docs/source-data-notes.md](docs/source-data-notes.md) for verification labe
 - Product images, trademarks, brand names, and manufacturer-owned materials remain owned by their respective rights holders.
 - If you reference, adapt, or reuse the database data for non-commercial purposes, please credit JReqTech and link back to this project.
 
+DAP Database is free to browse. Its curated content is available for noncommercial reuse under [CC BY-NC 4.0](DATA_LICENSE.md). Some purchase links may be affiliate links. I may earn commissions from them, which help support the project's maintenance.
+
 ## Credits
 
 Curated by JReqTech.
